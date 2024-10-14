@@ -1,0 +1,135 @@
+[INFO ] 24-10-14 15:43:41 [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 16203 (/Users/song-gilju/Desktop/web3/09-SpringBoot/02-logger/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/02-logger)
+[DEBUG] 24-10-14 15:43:41 [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:43:41 [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 15:43:42 [LoggerApplication:56] - Started LoggerApplication in 0.869 seconds (process running for 1.113)
+[INFO ] 24-10-14 15:43:55 [HomeController:25] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 15:43:55 [HomeController:29] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 15:43:55 [HomeController:33] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 15:43:55 [HomeController:37] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 15:43:55 [HomeController:44] - >>>>>> Client IP : ip
+[DEBUG] 24-10-14 15:43:55 [HomeController:50] - >>>>>> user-agent : ua
+[DEBUG] 24-10-14 15:43:55 [HomeController:56] - >>>>>> user-agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Mac OS X", "major": "10", "minor": "15", "patch": "7", "patch_minor": ""}, "device": {"family": "Mac"}}
+[DEBUG] 24-10-14 15:43:55 [HomeController:63] - osFamily : Mac OS X
+[DEBUG] 24-10-14 15:43:55 [HomeController:64] - osMajor: 10
+[DEBUG] 24-10-14 15:43:55 [HomeController:65] - osMinor : 15
+[DEBUG] 24-10-14 15:43:55 [HomeController:70] - deviceFamily : Mac
+[INFO ] 24-10-14 15:49:01 [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 16524 (/Users/song-gilju/Desktop/web3/09-SpringBoot/02-logger/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/02-logger)
+[DEBUG] 24-10-14 15:49:01 [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:49:01 [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 15:49:02 [LoggerApplication:56] - Started LoggerApplication in 1.017 seconds (process running for 1.302)
+[INFO ] 24-10-14 15:49:16 [HomeController:25] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 15:49:16 [HomeController:29] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 15:49:16 [HomeController:33] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 15:49:16 [HomeController:37] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 15:49:16 [HomeController:44] - >>>>>> Client IP : ip
+[DEBUG] 24-10-14 15:49:16 [HomeController:50] - >>>>>> user-agent : ua
+[DEBUG] 24-10-14 15:49:16 [HomeController:56] - >>>>>> user-agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Mac OS X", "major": "10", "minor": "15", "patch": "7", "patch_minor": ""}, "device": {"family": "Mac"}}
+[DEBUG] 24-10-14 15:49:16 [HomeController:63] - osFamily : Mac OS X
+[DEBUG] 24-10-14 15:49:16 [HomeController:64] - osMajor: 10
+[DEBUG] 24-10-14 15:49:16 [HomeController:65] - osMinor : 15
+[DEBUG] 24-10-14 15:49:16 [HomeController:70] - deviceFamily : Mac
+[INFO ] 24-10-14 15:53:33 [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 16803 (/Users/song-gilju/Desktop/web3/09-SpringBoot/02-logger/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/02-logger)
+[DEBUG] 24-10-14 15:53:33 [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:53:33 [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 15:53:34 [LoggerApplication:56] - Started LoggerApplication in 0.961 seconds (process running for 1.234)
+[INFO ] 24-10-14 15:53:39 [HomeController:25] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 15:53:39 [HomeController:29] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 15:53:39 [HomeController:33] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 15:53:39 [HomeController:37] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 15:53:39 [HomeController:44] - >>>>>> Client IP : ip
+[DEBUG] 24-10-14 15:53:39 [HomeController:50] - >>>>>> user-agent : ua
+[DEBUG] 24-10-14 15:53:39 [HomeController:56] - >>>>>> user-agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Mac OS X", "major": "10", "minor": "15", "patch": "7", "patch_minor": ""}, "device": {"family": "Mac"}}
+[DEBUG] 24-10-14 15:53:39 [HomeController:63] - osFamily : Mac OS X
+[DEBUG] 24-10-14 15:53:39 [HomeController:64] - osMajor: 10
+[DEBUG] 24-10-14 15:53:39 [HomeController:65] - osMinor : 15
+[DEBUG] 24-10-14 15:53:39 [HomeController:70] - deviceFamily : Mac
+[INFO ] 24-10-14 15:55:29 [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 17133 (/Users/song-gilju/Desktop/web3/09-SpringBoot/02-logger/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/02-logger)
+[DEBUG] 24-10-14 15:55:29 [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:55:29 [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 15:55:29 [LoggerApplication:56] - Started LoggerApplication in 0.915 seconds (process running for 1.173)
+[INFO ] 24-10-14 15:55:34 [HomeController:25] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 15:55:34 [HomeController:29] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 15:55:34 [HomeController:33] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 15:55:34 [HomeController:37] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 15:55:34 [HomeController:44] - >>>>>> Client IP : ip
+[DEBUG] 24-10-14 15:55:34 [HomeController:50] - >>>>>> user-agent : ua
+[DEBUG] 24-10-14 15:55:34 [HomeController:56] - >>>>>> user-agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Mac OS X", "major": "10", "minor": "15", "patch": "7", "patch_minor": ""}, "device": {"family": "Mac"}}
+[DEBUG] 24-10-14 15:55:34 [HomeController:63] - osFamily : Mac OS X
+[DEBUG] 24-10-14 15:55:34 [HomeController:64] - osMajor: 10
+[DEBUG] 24-10-14 15:55:34 [HomeController:65] - osMinor : 15
+[DEBUG] 24-10-14 15:55:34 [HomeController:70] - deviceFamily : Mac
+[INFO ] 24-10-14 20:35:30 [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 2591 (/Users/song-gilju/Desktop/web3/09-SpringBoot/02-logger/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/02-logger)
+[DEBUG] 24-10-14 20:35:30 [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 20:35:30 [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 20:35:31 [LoggerApplication:56] - Started LoggerApplication in 0.842 seconds (process running for 1.078)
+[INFO ] 24-10-14 20:35:44 [HomeController:25] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 20:35:44 [HomeController:29] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 20:35:44 [HomeController:33] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 20:35:44 [HomeController:37] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 20:35:44 [HomeController:44] - >>>>>> Client IP : ip
+[DEBUG] 24-10-14 20:35:44 [HomeController:50] - >>>>>> user-agent : ua
+[DEBUG] 24-10-14 20:35:44 [HomeController:56] - >>>>>> user-agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Mac OS X", "major": "10", "minor": "15", "patch": "7", "patch_minor": ""}, "device": {"family": "Mac"}}
+[DEBUG] 24-10-14 20:35:44 [HomeController:63] - osFamily : Mac OS X
+[DEBUG] 24-10-14 20:35:44 [HomeController:64] - osMajor: 10
+[DEBUG] 24-10-14 20:35:44 [HomeController:65] - osMinor : 15
+[DEBUG] 24-10-14 20:35:44 [HomeController:70] - deviceFamily : Mac
+[INFO ] 24-10-14 20:40:52 [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 3068 (/Users/song-gilju/Desktop/web3/09-SpringBoot/02-logger/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/02-logger)
+[DEBUG] 24-10-14 20:40:52 [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 20:40:52 [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 20:40:53 [LoggerApplication:56] - Started LoggerApplication in 0.852 seconds (process running for 1.088)
+[INFO ] 24-10-14 20:40:59 [HomeController:25] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 20:40:59 [HomeController:29] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 20:40:59 [HomeController:33] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 20:40:59 [HomeController:37] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 20:40:59 [HomeController:44] - >>>>>> Client IP : ip
+[DEBUG] 24-10-14 20:40:59 [HomeController:50] - >>>>>> user-agent : ua
+[DEBUG] 24-10-14 20:40:59 [HomeController:56] - >>>>>> user-agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Mac OS X", "major": "10", "minor": "15", "patch": "7", "patch_minor": ""}, "device": {"family": "Mac"}}
+[DEBUG] 24-10-14 20:40:59 [HomeController:63] - browserFamily : Chrome
+[DEBUG] 24-10-14 20:40:59 [HomeController:64] - browserMajor: 129
+[DEBUG] 24-10-14 20:40:59 [HomeController:65] - browserMinor : 0
+[DEBUG] 24-10-14 20:40:59 [HomeController:72] - osFamily : Mac OS X
+[DEBUG] 24-10-14 20:40:59 [HomeController:73] - osMajor: 10
+[DEBUG] 24-10-14 20:40:59 [HomeController:74] - osMinor : 15
+[DEBUG] 24-10-14 20:40:59 [HomeController:79] - deviceFamily : Mac
+[INFO ] 24-10-14 20:42:18 [HomeController:25] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 20:42:18 [HomeController:29] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 20:42:18 [HomeController:33] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 20:42:18 [HomeController:37] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 20:42:18 [HomeController:44] - >>>>>> Client IP : ip
+[DEBUG] 24-10-14 20:42:18 [HomeController:50] - >>>>>> user-agent : ua
+[DEBUG] 24-10-14 20:42:18 [HomeController:56] - >>>>>> user-agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Mac OS X", "major": "10", "minor": "15", "patch": "7", "patch_minor": ""}, "device": {"family": "Mac"}}
+[DEBUG] 24-10-14 20:42:18 [HomeController:63] - browserFamily : Chrome
+[DEBUG] 24-10-14 20:42:18 [HomeController:64] - browserMajor: 129
+[DEBUG] 24-10-14 20:42:18 [HomeController:65] - browserMinor : 0
+[DEBUG] 24-10-14 20:42:18 [HomeController:72] - osFamily : Mac OS X
+[DEBUG] 24-10-14 20:42:18 [HomeController:73] - osMajor: 10
+[DEBUG] 24-10-14 20:42:18 [HomeController:74] - osMinor : 15
+[DEBUG] 24-10-14 20:42:18 [HomeController:79] - deviceFamily : Mac
+[INFO ] 24-10-14 20:42:33 [HomeController:25] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 20:42:33 [HomeController:29] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 20:42:33 [HomeController:33] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 20:42:33 [HomeController:37] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 20:42:33 [HomeController:44] - >>>>>> Client IP : ip
+[DEBUG] 24-10-14 20:42:33 [HomeController:50] - >>>>>> user-agent : ua
+[DEBUG] 24-10-14 20:42:33 [HomeController:56] - >>>>>> user-agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Mac OS X", "major": "10", "minor": "15", "patch": "7", "patch_minor": ""}, "device": {"family": "Mac"}}
+[DEBUG] 24-10-14 20:42:33 [HomeController:63] - browserFamily : Chrome
+[DEBUG] 24-10-14 20:42:33 [HomeController:64] - browserMajor: 129
+[DEBUG] 24-10-14 20:42:33 [HomeController:65] - browserMinor : 0
+[DEBUG] 24-10-14 20:42:33 [HomeController:72] - osFamily : Mac OS X
+[DEBUG] 24-10-14 20:42:33 [HomeController:73] - osMajor: 10
+[DEBUG] 24-10-14 20:42:33 [HomeController:74] - osMinor : 15
+[DEBUG] 24-10-14 20:42:33 [HomeController:79] - deviceFamily : Mac
+[INFO ] 24-10-14 20:42:34 [HomeController:25] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 20:42:34 [HomeController:29] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 20:42:34 [HomeController:33] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 20:42:34 [HomeController:37] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 20:42:34 [HomeController:44] - >>>>>> Client IP : ip
+[DEBUG] 24-10-14 20:42:34 [HomeController:50] - >>>>>> user-agent : ua
+[DEBUG] 24-10-14 20:42:34 [HomeController:56] - >>>>>> user-agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Mac OS X", "major": "10", "minor": "15", "patch": "7", "patch_minor": ""}, "device": {"family": "Mac"}}
+[DEBUG] 24-10-14 20:42:34 [HomeController:63] - browserFamily : Chrome
+[DEBUG] 24-10-14 20:42:34 [HomeController:64] - browserMajor: 129
+[DEBUG] 24-10-14 20:42:34 [HomeController:65] - browserMinor : 0
+[DEBUG] 24-10-14 20:42:34 [HomeController:72] - osFamily : Mac OS X
+[DEBUG] 24-10-14 20:42:34 [HomeController:73] - osMajor: 10
+[DEBUG] 24-10-14 20:42:34 [HomeController:74] - osMinor : 15
+[DEBUG] 24-10-14 20:42:34 [HomeController:79] - deviceFamily : Mac
