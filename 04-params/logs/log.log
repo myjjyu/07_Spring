@@ -1,0 +1,1554 @@
+[INFO ] 24-10-15 10:21:54 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 6529 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 10:21:54 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 10:21:54 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 10:21:55 [ParamsApplication:56] - Started ParamsApplication in 1.036 seconds (process running for 1.273)
+[INFO ] 24-10-15 10:47:38 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 7184 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 10:47:38 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 10:47:38 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 10:47:39 [ParamsApplication:56] - Started ParamsApplication in 0.965 seconds (process running for 1.249)
+[INFO ] 24-10-15 10:53:55 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 7417 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 10:53:55 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 10:53:55 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 10:53:56 [ParamsApplication:56] - Started ParamsApplication in 0.951 seconds (process running for 1.254)
+[INFO ] 24-10-15 10:54:03 [MyInterceptor:32] - -----------------new client connect -----------------
+[INFO ] 24-10-15 10:54:03 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 10:54:03 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 10:54:03 [MyInterceptor:91] - running time: 100(ms)
+[ERROR] 24-10-15 10:54:03 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "myview": Error resolving template [myview], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [myview], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 24-10-15 10:54:03 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [myview], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [myview], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-15 11:51:29 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 8426 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 11:51:29 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 11:51:29 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 11:51:30 [ParamsApplication:56] - Started ParamsApplication in 0.903 seconds (process running for 1.201)
+[INFO ] 24-10-15 11:51:46 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 11:51:46 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 11:51:46 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 11:51:46 [MyInterceptor:91] - running time: 85(ms)
+[ERROR] 24-10-15 11:51:46 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "myview": Error resolving template [myview], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [myview], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 24-10-15 11:51:46 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [myview], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [myview], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-15 11:51:54 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 11:51:54 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 11:51:54 [MyInterceptor:67] - [GET] http://localhost:8080/paht/home
+[INFO ] 24-10-15 11:51:54 [MyInterceptor:91] - running time: 100(ms)
+[INFO ] 24-10-15 11:51:55 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 11:51:55 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 11:51:55 [MyInterceptor:67] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-15 11:51:55 [MyInterceptor:81] - - REFERER : time=-1079, url=http://localhost:8080/paht/home
+[INFO ] 24-10-15 11:51:55 [MyInterceptor:91] - running time: 40(ms)
+[INFO ] 24-10-15 11:51:56 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 11:51:56 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 11:51:56 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 11:51:56 [MyInterceptor:81] - - REFERER : time=-776, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 11:51:56 [MyInterceptor:91] - running time: 43(ms)
+[INFO ] 24-10-15 11:51:57 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 11:51:57 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 11:51:57 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 11:51:57 [MyInterceptor:81] - - REFERER : time=-960, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 11:51:59 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 11:51:59 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 11:51:59 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 11:51:59 [MyInterceptor:81] - - REFERER : time=-3559, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 11:52:01 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 11:52:01 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 11:52:01 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 11:52:01 [MyInterceptor:81] - - REFERER : time=-5718, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 11:52:01 [MyInterceptor:91] - running time: 28(ms)
+[INFO ] 24-10-15 11:52:02 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 11:52:02 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 11:52:02 [MyInterceptor:67] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-15 11:52:02 [MyInterceptor:81] - - REFERER : time=-783, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 11:52:02 [MyInterceptor:91] - running time: 11(ms)
+[INFO ] 24-10-15 11:52:03 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 11:52:03 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 11:52:03 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 11:52:03 [MyInterceptor:81] - - REFERER : time=-764, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 11:52:03 [MyInterceptor:91] - running time: 25(ms)
+[INFO ] 24-10-15 11:52:05 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 11:52:05 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 11:52:05 [MyInterceptor:67] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-15 11:52:05 [MyInterceptor:81] - - REFERER : time=-1581, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 11:52:05 [MyInterceptor:91] - running time: 25(ms)
+[INFO ] 24-10-15 11:52:05 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 11:52:05 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 11:52:05 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 11:52:05 [MyInterceptor:81] - - REFERER : time=-628, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 11:52:05 [MyInterceptor:91] - running time: 20(ms)
+[INFO ] 24-10-15 11:52:06 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 11:52:06 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 11:52:06 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 11:52:06 [MyInterceptor:81] - - REFERER : time=-554, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 11:53:41 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 8753 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 11:53:41 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 11:53:41 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 11:53:41 [ParamsApplication:56] - Started ParamsApplication in 0.968 seconds (process running for 1.239)
+[INFO ] 24-10-15 11:53:49 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 11:53:49 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 11:53:49 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 11:53:49 [MyInterceptor:91] - running time: 100(ms)
+[INFO ] 24-10-15 11:53:50 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 11:53:50 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 11:53:50 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 11:53:50 [MyInterceptor:81] - - REFERER : time=-1326, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 11:53:50 [MyInterceptor:91] - running time: 40(ms)
+[INFO ] 24-10-15 11:53:51 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 11:53:52 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 11:53:52 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 11:53:52 [MyInterceptor:81] - - REFERER : time=-1056, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 11:53:52 [MyInterceptor:91] - running time: 42(ms)
+[INFO ] 24-10-15 11:53:52 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 11:53:52 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 11:53:52 [MyInterceptor:67] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-15 11:53:52 [MyInterceptor:81] - - REFERER : time=-955, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 11:53:52 [MyInterceptor:91] - running time: 41(ms)
+[INFO ] 24-10-15 12:15:25 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 9403 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 12:15:25 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 12:15:25 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 12:15:26 [ParamsApplication:56] - Started ParamsApplication in 0.891 seconds (process running for 1.163)
+[INFO ] 24-10-15 12:18:46 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 9555 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 12:18:46 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 12:18:46 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 12:18:47 [ParamsApplication:56] - Started ParamsApplication in 0.89 seconds (process running for 1.157)
+[INFO ] 24-10-15 12:18:52 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:18:52 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:18:52 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 12:18:52 [MyInterceptor:91] - running time: 94(ms)
+[ERROR] 24-10-15 12:18:52 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "myview": Error resolving template [myview], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [myview], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 24-10-15 12:18:52 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [myview], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [myview], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-15 12:19:03 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 9683 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 12:19:03 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 12:19:03 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 12:19:03 [ParamsApplication:56] - Started ParamsApplication in 0.989 seconds (process running for 1.27)
+[INFO ] 24-10-15 12:19:10 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:19:11 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:19:11 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 12:19:11 [MyInterceptor:91] - running time: 82(ms)
+[INFO ] 24-10-15 12:19:12 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:19:12 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:19:12 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 12:19:12 [MyInterceptor:81] - - REFERER : time=-1500, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 12:19:12 [MyInterceptor:91] - running time: 50(ms)
+[INFO ] 24-10-15 12:19:13 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:19:13 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:19:13 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 12:19:13 [MyInterceptor:81] - - REFERER : time=-627, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 12:19:13 [MyInterceptor:91] - running time: 35(ms)
+[INFO ] 24-10-15 12:19:13 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:19:13 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:19:13 [MyInterceptor:67] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-15 12:19:13 [MyInterceptor:81] - - REFERER : time=-645, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 12:19:13 [MyInterceptor:91] - running time: 32(ms)
+[INFO ] 24-10-15 12:19:17 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:19:17 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:19:17 [MyInterceptor:67] - [GET] http://localhost:8080/get/result?answer=100
+[INFO ] 24-10-15 12:19:17 [MyInterceptor:74] - (parma)<---answer = 100
+[INFO ] 24-10-15 12:19:17 [MyInterceptor:81] - - REFERER : time=-3549, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 12:19:17 [MyInterceptor:91] - running time: 27(ms)
+[INFO ] 24-10-15 12:19:19 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:19:19 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:19:19 [MyInterceptor:67] - [GET] http://localhost:8080/get/result?answer=200
+[INFO ] 24-10-15 12:19:19 [MyInterceptor:74] - (parma)<---answer = 200
+[INFO ] 24-10-15 12:19:19 [MyInterceptor:81] - - REFERER : time=-2327, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 12:19:19 [MyInterceptor:91] - running time: 40(ms)
+[INFO ] 24-10-15 12:19:21 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:19:21 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:19:21 [MyInterceptor:67] - [GET] http://localhost:8080/get/result?answer=300
+[INFO ] 24-10-15 12:19:21 [MyInterceptor:74] - (parma)<---answer = 300
+[INFO ] 24-10-15 12:19:21 [MyInterceptor:81] - - REFERER : time=-2015, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 12:19:21 [MyInterceptor:91] - running time: 28(ms)
+[INFO ] 24-10-15 12:19:23 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:19:23 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:19:23 [MyInterceptor:67] - [GET] http://localhost:8080/get/result?answer=400
+[INFO ] 24-10-15 12:19:23 [MyInterceptor:74] - (parma)<---answer = 400
+[INFO ] 24-10-15 12:19:23 [MyInterceptor:81] - - REFERER : time=-1894, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 12:19:23 [MyInterceptor:91] - running time: 30(ms)
+[INFO ] 24-10-15 12:19:26 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:19:26 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:19:26 [MyInterceptor:67] - [GET] http://localhost:8080/get/result?answer=500
+[INFO ] 24-10-15 12:19:26 [MyInterceptor:74] - (parma)<---answer = 500
+[INFO ] 24-10-15 12:19:26 [MyInterceptor:81] - - REFERER : time=-2688, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 12:19:26 [MyInterceptor:91] - running time: 28(ms)
+[INFO ] 24-10-15 12:19:30 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:19:30 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:19:30 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 12:19:30 [MyInterceptor:81] - - REFERER : time=-3763, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 12:19:30 [MyInterceptor:91] - running time: 27(ms)
+[INFO ] 24-10-15 12:19:32 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:19:32 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:19:32 [MyInterceptor:67] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-15 12:19:32 [MyInterceptor:81] - - REFERER : time=-1654, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 12:19:32 [MyInterceptor:91] - running time: 27(ms)
+[INFO ] 24-10-15 12:19:32 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:19:32 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:19:32 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 12:19:32 [MyInterceptor:81] - - REFERER : time=-726, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 12:19:32 [MyInterceptor:91] - running time: 20(ms)
+[INFO ] 24-10-15 12:19:33 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:19:33 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:19:33 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 12:19:33 [MyInterceptor:81] - - REFERER : time=-842, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 12:19:33 [MyInterceptor:91] - running time: 27(ms)
+[INFO ] 24-10-15 12:29:46 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 10100 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 12:29:46 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 12:29:46 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 12:29:47 [ParamsApplication:56] - Started ParamsApplication in 0.894 seconds (process running for 1.164)
+[INFO ] 24-10-15 12:30:00 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:30:00 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:30:00 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 12:30:00 [MyInterceptor:91] - running time: 80(ms)
+[ERROR] 24-10-15 12:30:00 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "myview": Error resolving template [myview], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [myview], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 24-10-15 12:30:00 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [myview], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [myview], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-15 12:30:09 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:30:09 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:30:09 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 12:30:09 [MyInterceptor:91] - running time: 22(ms)
+[INFO ] 24-10-15 12:30:13 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:30:13 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:30:13 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 12:30:13 [MyInterceptor:81] - - REFERER : time=-3965, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 12:30:13 [MyInterceptor:91] - running time: 34(ms)
+[INFO ] 24-10-15 12:30:14 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:30:14 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:30:14 [MyInterceptor:67] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-15 12:30:14 [MyInterceptor:81] - - REFERER : time=-909, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 12:30:14 [MyInterceptor:91] - running time: 29(ms)
+[INFO ] 24-10-15 12:30:15 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:30:15 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:30:15 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 12:30:15 [MyInterceptor:81] - - REFERER : time=-1000, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 12:30:15 [MyInterceptor:91] - running time: 33(ms)
+[INFO ] 24-10-15 12:30:16 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:30:16 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:30:16 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 12:30:16 [MyInterceptor:81] - - REFERER : time=-797, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 12:30:16 [MyInterceptor:91] - running time: 38(ms)
+[INFO ] 24-10-15 12:30:16 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:30:16 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:30:16 [MyInterceptor:67] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-15 12:30:16 [MyInterceptor:81] - - REFERER : time=-642, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 12:30:16 [MyInterceptor:91] - running time: 22(ms)
+[INFO ] 24-10-15 12:30:21 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:30:21 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:30:21 [MyInterceptor:67] - [GET] http://localhost:8080/get/result?answer=100
+[INFO ] 24-10-15 12:30:21 [MyInterceptor:74] - (parma)<---answer = 100
+[INFO ] 24-10-15 12:30:21 [MyInterceptor:81] - - REFERER : time=-4771, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 12:30:21 [MyInterceptor:91] - running time: 17(ms)
+[INFO ] 24-10-15 12:30:22 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:30:22 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:30:22 [MyInterceptor:67] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-15 12:30:22 [MyInterceptor:81] - - REFERER : time=-1187, url=http://localhost:8080/get/result?answer=100
+[INFO ] 24-10-15 12:30:22 [MyInterceptor:91] - running time: 24(ms)
+[INFO ] 24-10-15 12:30:23 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:30:23 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:30:23 [MyInterceptor:67] - [GET] http://localhost:8080/get/result?answer=200
+[INFO ] 24-10-15 12:30:23 [MyInterceptor:74] - (parma)<---answer = 200
+[INFO ] 24-10-15 12:30:23 [MyInterceptor:81] - - REFERER : time=-925, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 12:30:23 [MyInterceptor:91] - running time: 26(ms)
+[INFO ] 24-10-15 12:30:25 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:30:25 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:30:25 [MyInterceptor:67] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-15 12:30:25 [MyInterceptor:81] - - REFERER : time=-2216, url=http://localhost:8080/get/result?answer=200
+[INFO ] 24-10-15 12:30:25 [MyInterceptor:91] - running time: 26(ms)
+[INFO ] 24-10-15 12:40:54 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 11960 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 12:40:54 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 12:40:54 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 12:40:55 [ParamsApplication:56] - Started ParamsApplication in 0.991 seconds (process running for 1.237)
+[INFO ] 24-10-15 12:41:05 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:41:05 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:41:05 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 12:41:05 [MyInterceptor:91] - running time: 88(ms)
+[INFO ] 24-10-15 12:41:07 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:41:07 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:41:07 [MyInterceptor:67] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-15 12:41:07 [MyInterceptor:81] - - REFERER : time=-1272, url=http://localhost:8080/
+[INFO ] 24-10-15 12:41:07 [MyInterceptor:91] - running time: 41(ms)
+[INFO ] 24-10-15 12:41:08 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:41:08 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:41:08 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 12:41:08 [MyInterceptor:81] - - REFERER : time=-1233, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 12:41:08 [MyInterceptor:91] - running time: 38(ms)
+[INFO ] 24-10-15 12:41:09 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:41:09 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:41:09 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 12:41:09 [MyInterceptor:81] - - REFERER : time=-503, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 12:41:09 [MyInterceptor:91] - running time: 45(ms)
+[INFO ] 24-10-15 12:43:23 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 12152 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 12:43:23 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 12:43:23 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 12:43:24 [ParamsApplication:56] - Started ParamsApplication in 1.008 seconds (process running for 1.286)
+[INFO ] 24-10-15 12:43:29 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:43:30 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:43:30 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 12:43:30 [MyInterceptor:91] - running time: 85(ms)
+[INFO ] 24-10-15 12:43:36 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:43:36 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:43:36 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 12:43:36 [MyInterceptor:91] - running time: 44(ms)
+[INFO ] 24-10-15 12:43:39 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:43:39 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:43:39 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 12:43:39 [MyInterceptor:91] - running time: 39(ms)
+[INFO ] 24-10-15 12:47:05 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 13275 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 12:47:05 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 12:47:05 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 12:47:06 [ParamsApplication:56] - Started ParamsApplication in 0.941 seconds (process running for 1.268)
+[INFO ] 24-10-15 12:47:12 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:47:12 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:47:12 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 12:47:12 [MyInterceptor:91] - running time: 97(ms)
+[INFO ] 24-10-15 12:47:16 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 12:47:16 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:47:16 [MyInterceptor:67] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-15 12:47:16 [MyInterceptor:81] - - REFERER : time=-3828, url=http://localhost:8080/
+[INFO ] 24-10-15 12:47:16 [MyInterceptor:91] - running time: 61(ms)
+[INFO ] 24-10-15 14:51:08 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 17281 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 14:51:08 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 14:51:08 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 14:51:09 [ParamsApplication:56] - Started ParamsApplication in 0.984 seconds (process running for 1.25)
+[INFO ] 24-10-15 14:51:19 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 14:51:19 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 14:51:19 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 14:51:19 [MyInterceptor:91] - running time: 82(ms)
+[INFO ] 24-10-15 14:51:20 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 14:51:20 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 14:51:20 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 14:51:20 [MyInterceptor:81] - - REFERER : time=-1407, url=http://localhost:8080/
+[INFO ] 24-10-15 14:51:20 [MyInterceptor:91] - running time: 48(ms)
+[INFO ] 24-10-15 14:51:21 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 14:51:21 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 14:51:21 [MyInterceptor:67] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-15 14:51:21 [MyInterceptor:81] - - REFERER : time=-1025, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 14:51:21 [MyInterceptor:91] - running time: 48(ms)
+[INFO ] 24-10-15 14:51:24 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 14:51:24 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 14:51:24 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 14:51:24 [MyInterceptor:81] - - REFERER : time=-2167, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 14:51:24 [MyInterceptor:91] - running time: 33(ms)
+[INFO ] 24-10-15 14:51:24 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 14:51:25 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 14:51:25 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 14:51:25 [MyInterceptor:81] - - REFERER : time=-907, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 14:51:25 [MyInterceptor:91] - running time: 37(ms)
+[INFO ] 24-10-15 14:51:25 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 14:51:25 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 14:51:25 [MyInterceptor:67] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-15 14:51:25 [MyInterceptor:81] - - REFERER : time=-624, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 14:51:25 [MyInterceptor:91] - running time: 28(ms)
+[INFO ] 24-10-15 14:54:25 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 17528 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 14:54:25 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 14:54:25 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 14:54:26 [ParamsApplication:56] - Started ParamsApplication in 0.948 seconds (process running for 1.18)
+[INFO ] 24-10-15 14:54:35 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 14:54:35 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 14:54:35 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 14:54:35 [MyInterceptor:91] - running time: 79(ms)
+[INFO ] 24-10-15 14:54:36 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 14:54:36 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 14:54:36 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 14:54:36 [MyInterceptor:81] - - REFERER : time=-1135, url=http://localhost:8080/
+[INFO ] 24-10-15 14:54:36 [MyInterceptor:91] - running time: 42(ms)
+[INFO ] 24-10-15 14:54:37 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 14:54:37 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 14:54:37 [MyInterceptor:67] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-15 14:54:37 [MyInterceptor:81] - - REFERER : time=-695, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 14:54:37 [MyInterceptor:91] - running time: 41(ms)
+[INFO ] 24-10-15 14:54:38 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 14:54:38 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 14:54:38 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 14:54:38 [MyInterceptor:81] - - REFERER : time=-782, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 14:54:38 [MyInterceptor:91] - running time: 39(ms)
+[INFO ] 24-10-15 15:00:00 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 17868 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 15:00:00 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 15:00:00 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 15:00:01 [ParamsApplication:56] - Started ParamsApplication in 1.019 seconds (process running for 1.295)
+[INFO ] 24-10-15 15:00:05 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:00:05 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:00:05 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 15:00:05 [MyInterceptor:91] - running time: 82(ms)
+[INFO ] 24-10-15 15:00:07 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:00:07 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:00:07 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 15:00:07 [MyInterceptor:81] - - REFERER : time=-1086, url=http://localhost:8080/
+[INFO ] 24-10-15 15:00:07 [MyInterceptor:91] - running time: 51(ms)
+[INFO ] 24-10-15 15:01:00 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 18023 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 15:01:00 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 15:01:00 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 15:01:00 [ParamsApplication:56] - Started ParamsApplication in 0.895 seconds (process running for 1.195)
+[INFO ] 24-10-15 15:01:05 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:01:05 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:01:05 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 15:01:05 [MyInterceptor:91] - running time: 78(ms)
+[INFO ] 24-10-15 15:01:06 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:01:06 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:01:06 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 15:01:06 [MyInterceptor:81] - - REFERER : time=-1315, url=http://localhost:8080/
+[INFO ] 24-10-15 15:01:06 [MyInterceptor:91] - running time: 50(ms)
+[INFO ] 24-10-15 15:01:57 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 18141 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 15:01:57 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 15:01:57 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 15:01:58 [ParamsApplication:56] - Started ParamsApplication in 0.922 seconds (process running for 1.199)
+[INFO ] 24-10-15 15:02:04 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:02:04 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:02:04 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 15:02:04 [MyInterceptor:91] - running time: 87(ms)
+[INFO ] 24-10-15 15:02:05 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:02:05 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:02:05 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 15:02:05 [MyInterceptor:81] - - REFERER : time=-1040, url=http://localhost:8080/
+[INFO ] 24-10-15 15:02:05 [MyInterceptor:91] - running time: 38(ms)
+[ERROR] 24-10-15 15:02:05 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "post/home": An error happened during template parsing (template: "class path resource [templates/post/home.html]" - line 39, col 5)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/post/home.html]" - line 39, col 5)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.attoparser.ParseException: (Line = 39, Column = 5) Incomplete structure: "<input type="text" name="user_age" id="user_age"">
+  </div>
+  <div>
+    <button type="submit">전송</button>
+  </div>
+ </form>
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 52 common frames omitted
+[ERROR] 24-10-15 15:02:05 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/post/home.html]" - line 39, col 5)] with root cause
+org.attoparser.ParseException: (Line = 39, Column = 5) Incomplete structure: "<input type="text" name="user_age" id="user_age"">
+  </div>
+  <div>
+    <button type="submit">전송</button>
+  </div>
+ </form>
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-15 15:02:28 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 18141 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 15:02:28 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 15:02:28 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 15:02:31 [ParamsApplication:56] - Started ParamsApplication in 2.441 seconds (process running for 34.357)
+[INFO ] 24-10-15 15:02:39 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 18462 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 15:02:39 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 15:02:39 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 15:02:40 [ParamsApplication:56] - Started ParamsApplication in 0.997 seconds (process running for 1.334)
+[INFO ] 24-10-15 15:02:48 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:02:48 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:02:48 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 15:02:48 [MyInterceptor:91] - running time: 111(ms)
+[INFO ] 24-10-15 15:02:49 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:02:49 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:02:49 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 15:02:49 [MyInterceptor:81] - - REFERER : time=-1172, url=http://localhost:8080/
+[INFO ] 24-10-15 15:02:49 [MyInterceptor:91] - running time: 19(ms)
+[ERROR] 24-10-15 15:02:49 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "post/home": An error happened during template parsing (template: "class path resource [templates/post/home.html]" - line 39, col 5)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/post/home.html]" - line 39, col 5)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.attoparser.ParseException: (Line = 39, Column = 5) Incomplete structure: "<input type="text" name="user_age" id="user_age"">
+  </div>
+  <div>
+    <button type="submit">전송</button>
+  </div>
+ </form>
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 52 common frames omitted
+[ERROR] 24-10-15 15:02:49 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/post/home.html]" - line 39, col 5)] with root cause
+org.attoparser.ParseException: (Line = 39, Column = 5) Incomplete structure: "<input type="text" name="user_age" id="user_age"">
+  </div>
+  <div>
+    <button type="submit">전송</button>
+  </div>
+ </form>
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-15 15:02:58 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:02:58 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:02:58 [MyInterceptor:67] - [POST] http://localhost:8080/post/answer
+[INFO ] 24-10-15 15:02:58 [MyInterceptor:74] - (parma)<---user_name = 
+[INFO ] 24-10-15 15:02:58 [MyInterceptor:81] - - REFERER : time=-8635, url=http://localhost:8080/post/home
+[WARN ] 24-10-15 15:02:58 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'user_age' for method parameter type String is not present]
+[INFO ] 24-10-15 15:03:01 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:03:01 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:03:01 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 15:03:01 [MyInterceptor:81] - - REFERER : time=-11847, url=http://localhost:8080/
+[INFO ] 24-10-15 15:03:01 [MyInterceptor:91] - running time: 27(ms)
+[ERROR] 24-10-15 15:03:01 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-5] Exception processing template "post/home": An error happened during template parsing (template: "class path resource [templates/post/home.html]" - line 39, col 5)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/post/home.html]" - line 39, col 5)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.attoparser.ParseException: (Line = 39, Column = 5) Incomplete structure: "<input type="text" name="user_age" id="user_age"">
+  </div>
+  <div>
+    <button type="submit">전송</button>
+  </div>
+ </form>
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 52 common frames omitted
+[ERROR] 24-10-15 15:03:01 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/post/home.html]" - line 39, col 5)] with root cause
+org.attoparser.ParseException: (Line = 39, Column = 5) Incomplete structure: "<input type="text" name="user_age" id="user_age"">
+  </div>
+  <div>
+    <button type="submit">전송</button>
+  </div>
+ </form>
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-15 15:06:15 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 19928 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 15:06:15 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 15:06:15 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 15:06:16 [ParamsApplication:56] - Started ParamsApplication in 0.963 seconds (process running for 1.223)
+[INFO ] 24-10-15 15:06:29 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:06:29 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:06:29 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 15:06:29 [MyInterceptor:91] - running time: 96(ms)
+[ERROR] 24-10-15 15:06:29 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "post/home": An error happened during template parsing (template: "class path resource [templates/post/home.html]" - line 40, col 5)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/post/home.html]" - line 40, col 5)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.attoparser.ParseException: (Line = 40, Column = 5) Incomplete structure: "<input type="text" name="user_age" id="user_age"">
+  </div>
+
+  <div>
+    <button type="submit">전송</button>
+  </div>
+  
+ </form>
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 52 common frames omitted
+[ERROR] 24-10-15 15:06:29 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/post/home.html]" - line 40, col 5)] with root cause
+org.attoparser.ParseException: (Line = 40, Column = 5) Incomplete structure: "<input type="text" name="user_age" id="user_age"">
+  </div>
+
+  <div>
+    <button type="submit">전송</button>
+  </div>
+  
+ </form>
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-15 15:07:08 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 20168 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 15:07:08 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 15:07:08 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 15:07:09 [ParamsApplication:56] - Started ParamsApplication in 1.062 seconds (process running for 1.391)
+[INFO ] 24-10-15 15:07:15 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:07:15 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:07:15 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 15:07:15 [MyInterceptor:91] - running time: 91(ms)
+[INFO ] 24-10-15 15:07:17 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:07:17 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:07:17 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 15:07:17 [MyInterceptor:81] - - REFERER : time=-1316, url=http://localhost:8080/
+[INFO ] 24-10-15 15:07:17 [MyInterceptor:91] - running time: 34(ms)
+[INFO ] 24-10-15 15:07:25 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:07:25 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:07:25 [MyInterceptor:67] - [POST] http://localhost:8080/post/answer
+[INFO ] 24-10-15 15:07:25 [MyInterceptor:74] - (parma)<---user_name = 송길주
+[INFO ] 24-10-15 15:07:25 [MyInterceptor:74] - (parma)<---user_age = 30
+[INFO ] 24-10-15 15:07:25 [MyInterceptor:81] - - REFERER : time=-8467, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 15:07:25 [MyInterceptor:91] - running time: 54(ms)
+[INFO ] 24-10-15 15:33:23 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 21456 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 15:33:23 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 15:33:23 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 15:33:24 [ParamsApplication:56] - Started ParamsApplication in 0.938 seconds (process running for 1.232)
+[INFO ] 24-10-15 15:33:29 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:33:29 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:33:29 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 15:33:29 [MyInterceptor:91] - running time: 87(ms)
+[INFO ] 24-10-15 15:33:30 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:33:30 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:33:30 [MyInterceptor:67] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-15 15:33:30 [MyInterceptor:81] - - REFERER : time=-995, url=http://localhost:8080/
+[INFO ] 24-10-15 15:33:30 [MyInterceptor:91] - running time: 49(ms)
+[INFO ] 24-10-15 15:33:32 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:33:32 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:33:32 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 15:33:32 [MyInterceptor:81] - - REFERER : time=-1890, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 15:33:32 [MyInterceptor:91] - running time: 48(ms)
+[INFO ] 24-10-15 15:33:33 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:33:33 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:33:33 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 15:33:33 [MyInterceptor:81] - - REFERER : time=-946, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 15:33:33 [MyInterceptor:91] - running time: 20(ms)
+[INFO ] 24-10-15 15:33:35 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:33:35 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:33:35 [MyInterceptor:67] - [GET] http://localhost:8080/mypath/hello/world/1234
+[INFO ] 24-10-15 15:33:35 [MyInterceptor:81] - - REFERER : time=-1611, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 15:33:35 [MyInterceptor:91] - running time: 37(ms)
+[INFO ] 24-10-15 15:33:40 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 15:33:40 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 15:33:40 [MyInterceptor:67] - [GET] http://localhost:8080/mypath/foo/bar/5678
+[INFO ] 24-10-15 15:33:40 [MyInterceptor:81] - - REFERER : time=-5038, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 15:33:40 [MyInterceptor:91] - running time: 32(ms)
+[INFO ] 24-10-15 16:56:30 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 22815 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 16:56:30 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 16:56:30 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 16:56:31 [ParamsApplication:56] - Started ParamsApplication in 0.996 seconds (process running for 1.334)
+[INFO ] 24-10-15 16:56:45 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 16:56:45 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 16:56:45 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 16:56:45 [MyInterceptor:91] - running time: 88(ms)
+[INFO ] 24-10-15 16:56:47 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 16:56:47 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 16:56:47 [MyInterceptor:67] - [GET] http://localhost:8080/survey/home
+[INFO ] 24-10-15 16:56:47 [MyInterceptor:81] - - REFERER : time=-1509, url=http://localhost:8080/
+[INFO ] 24-10-15 16:56:55 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 16:56:55 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 16:56:55 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 16:56:55 [MyInterceptor:81] - - REFERER : time=-9669, url=http://localhost:8080/
+[INFO ] 24-10-15 16:56:55 [MyInterceptor:91] - running time: 43(ms)
+[INFO ] 24-10-15 16:56:57 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 16:56:57 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 16:56:57 [MyInterceptor:67] - [GET] http://localhost:8080/mypath/hello/world/1234
+[INFO ] 24-10-15 16:56:57 [MyInterceptor:81] - - REFERER : time=-1876, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 16:56:57 [MyInterceptor:91] - running time: 33(ms)
+[INFO ] 24-10-15 16:56:59 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 16:56:59 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 16:56:59 [MyInterceptor:67] - [GET] http://localhost:8080/survey/home
+[INFO ] 24-10-15 16:56:59 [MyInterceptor:81] - - REFERER : time=-1836, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 17:08:12 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 23943 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 17:08:12 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 17:08:12 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 17:08:13 [ParamsApplication:56] - Started ParamsApplication in 0.998 seconds (process running for 1.263)
+[INFO ] 24-10-15 17:08:19 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:08:19 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:08:19 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 17:08:19 [MyInterceptor:91] - running time: 90(ms)
+[INFO ] 24-10-15 17:08:20 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:08:20 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:08:20 [MyInterceptor:67] - [GET] http://localhost:8080/survey/home
+[INFO ] 24-10-15 17:08:20 [MyInterceptor:81] - - REFERER : time=-1345, url=http://localhost:8080/
+[INFO ] 24-10-15 17:08:22 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:08:22 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:08:22 [MyInterceptor:67] - [GET] http://localhost:8080/survey/home
+[INFO ] 24-10-15 17:08:22 [MyInterceptor:81] - - REFERER : time=-3524, url=http://localhost:8080/
+[INFO ] 24-10-15 17:09:14 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 24093 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 17:09:14 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 17:09:14 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 17:09:14 [ParamsApplication:56] - Started ParamsApplication in 0.966 seconds (process running for 1.232)
+[INFO ] 24-10-15 17:09:25 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:09:25 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:09:25 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 17:09:25 [MyInterceptor:91] - running time: 91(ms)
+[INFO ] 24-10-15 17:09:26 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:09:26 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:09:26 [MyInterceptor:67] - [GET] http://localhost:8080/survey
+[INFO ] 24-10-15 17:09:26 [MyInterceptor:81] - - REFERER : time=-1494, url=http://localhost:8080/
+[INFO ] 24-10-15 17:09:26 [MyInterceptor:91] - running time: 33(ms)
+[INFO ] 24-10-15 17:09:30 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:09:30 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:09:30 [MyInterceptor:67] - [POST] http://localhost:8080/survey/step1
+[INFO ] 24-10-15 17:09:30 [MyInterceptor:74] - (parma)<---name = 송길주
+[INFO ] 24-10-15 17:09:30 [MyInterceptor:81] - - REFERER : time=-3495, url=http://localhost:8080/survey
+[INFO ] 24-10-15 17:09:30 [MyInterceptor:91] - running time: 40(ms)
+[INFO ] 24-10-15 17:09:33 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:09:33 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:09:33 [MyInterceptor:67] - [POST] http://localhost:8080/survey/step2
+[INFO ] 24-10-15 17:09:33 [MyInterceptor:74] - (parma)<---name = 송길주
+[INFO ] 24-10-15 17:09:33 [MyInterceptor:74] - (parma)<---age = 22
+[INFO ] 24-10-15 17:09:33 [MyInterceptor:81] - - REFERER : time=-2924, url=http://localhost:8080/survey/step1
+[INFO ] 24-10-15 17:09:33 [MyInterceptor:91] - running time: 40(ms)
+[WARN ] 24-10-15 17:09:34 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+[INFO ] 24-10-15 17:11:52 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 24093 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 17:11:52 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 17:11:52 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 17:11:53 [ParamsApplication:56] - Started ParamsApplication in 0.508 seconds (process running for 159.866)
+[INFO ] 24-10-15 17:12:13 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 24093 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 17:12:13 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 17:12:13 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 17:12:14 [ParamsApplication:56] - Started ParamsApplication in 1.215 seconds (process running for 180.655)
+[INFO ] 24-10-15 17:12:17 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:12:17 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:12:17 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 17:12:17 [MyInterceptor:91] - running time: 44(ms)
+[INFO ] 24-10-15 17:12:18 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:12:18 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:12:18 [MyInterceptor:67] - [GET] http://localhost:8080/survey
+[INFO ] 24-10-15 17:12:18 [MyInterceptor:81] - - REFERER : time=-1215, url=http://localhost:8080/
+[INFO ] 24-10-15 17:12:18 [MyInterceptor:91] - running time: 19(ms)
+[INFO ] 24-10-15 17:12:21 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:12:21 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:12:21 [MyInterceptor:67] - [POST] http://localhost:8080/survey/step1
+[INFO ] 24-10-15 17:12:21 [MyInterceptor:74] - (parma)<---name = 송길주
+[INFO ] 24-10-15 17:12:21 [MyInterceptor:81] - - REFERER : time=-2498, url=http://localhost:8080/survey
+[INFO ] 24-10-15 17:12:21 [MyInterceptor:91] - running time: 38(ms)
+[INFO ] 24-10-15 17:12:24 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:12:24 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:12:24 [MyInterceptor:67] - [POST] http://localhost:8080/survey/step2
+[INFO ] 24-10-15 17:12:24 [MyInterceptor:74] - (parma)<---name = 송길주
+[INFO ] 24-10-15 17:12:24 [MyInterceptor:74] - (parma)<---age = 22
+[INFO ] 24-10-15 17:12:24 [MyInterceptor:81] - - REFERER : time=-3701, url=http://localhost:8080/survey/step1
+[INFO ] 24-10-15 17:12:24 [MyInterceptor:91] - running time: 59(ms)
+[INFO ] 24-10-15 17:12:25 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:12:25 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:12:25 [MyInterceptor:67] - [GET] http://localhost:8080/survey/step3?name=%EC%86%A1%EA%B8%B8%EC%A3%BC&age=22&group=student
+[INFO ] 24-10-15 17:12:25 [MyInterceptor:74] - (parma)<---name = 송길주
+[INFO ] 24-10-15 17:12:25 [MyInterceptor:74] - (parma)<---age = 22
+[INFO ] 24-10-15 17:12:25 [MyInterceptor:74] - (parma)<---group = student
+[INFO ] 24-10-15 17:12:25 [MyInterceptor:81] - - REFERER : time=-997, url=http://localhost:8080/survey/step2
+[INFO ] 24-10-15 17:12:25 [MyInterceptor:91] - running time: 20(ms)
+[INFO ] 24-10-15 17:12:27 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:12:27 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:12:27 [MyInterceptor:67] - [GET] http://localhost:8080/survey/step4?name=%EC%86%A1%EA%B8%B8%EC%A3%BC&age=22&group=student&glasses=yes
+[INFO ] 24-10-15 17:12:27 [MyInterceptor:74] - (parma)<---name = 송길주
+[INFO ] 24-10-15 17:12:27 [MyInterceptor:74] - (parma)<---age = 22
+[INFO ] 24-10-15 17:12:27 [MyInterceptor:74] - (parma)<---group = student
+[INFO ] 24-10-15 17:12:27 [MyInterceptor:74] - (parma)<---glasses = yes
+[INFO ] 24-10-15 17:12:27 [MyInterceptor:81] - - REFERER : time=-1166, url=http://localhost:8080/survey/step3?name=%EC%86%A1%EA%B8%B8%EC%A3%BC&age=22&group=student
+[INFO ] 24-10-15 17:12:27 [MyInterceptor:91] - running time: 80(ms)
