@@ -1,0 +1,919 @@
+[INFO ] 24-10-16 10:08:10 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 3621 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-16 10:08:10 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 10:08:10 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 10:08:10 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.99 seconds (process running for 1.234)
+[INFO ] 24-10-16 10:25:54 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 5462 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-16 10:25:54 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 10:25:54 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 10:25:54 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.975 seconds (process running for 1.229)
+[INFO ] 24-10-16 10:26:06 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:26:06 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:26:06 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 10:26:06 [MyInterceptor:91] - running time: 97(ms)
+[INFO ] 24-10-16 10:26:09 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:26:09 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:26:09 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:26:09 [MyInterceptor:81] - - REFERER : time=-2637, url=http://localhost:8080/
+[INFO ] 24-10-16 10:26:09 [MyInterceptor:91] - running time: 62(ms)
+[INFO ] 24-10-16 10:26:10 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:26:10 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:26:10 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 10:26:10 [MyInterceptor:81] - - REFERER : time=-663, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:26:10 [MyInterceptor:91] - running time: 32(ms)
+[INFO ] 24-10-16 10:26:10 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:26:10 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:26:10 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:26:10 [MyInterceptor:81] - - REFERER : time=-755, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 10:26:10 [MyInterceptor:91] - running time: 31(ms)
+[INFO ] 24-10-16 10:26:11 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:26:11 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:26:11 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 10:26:11 [MyInterceptor:81] - - REFERER : time=-538, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:26:11 [MyInterceptor:91] - running time: 24(ms)
+[INFO ] 24-10-16 10:26:12 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:26:12 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:26:12 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:26:12 [MyInterceptor:81] - - REFERER : time=-649, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 10:26:12 [MyInterceptor:91] - running time: 18(ms)
+[INFO ] 24-10-16 10:26:12 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:26:12 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:26:12 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 10:26:12 [MyInterceptor:81] - - REFERER : time=-515, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:26:12 [MyInterceptor:91] - running time: 22(ms)
+[INFO ] 24-10-16 10:26:17 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:26:17 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:26:17 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:26:17 [MyInterceptor:81] - - REFERER : time=-4988, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 10:26:17 [MyInterceptor:91] - running time: 19(ms)
+[INFO ] 24-10-16 10:26:18 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:26:18 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:26:18 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 10:26:18 [MyInterceptor:81] - - REFERER : time=-360, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:26:18 [MyInterceptor:91] - running time: 28(ms)
+[INFO ] 24-10-16 10:27:08 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 5657 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-16 10:27:08 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 10:27:08 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 10:27:09 [CookieSessionApplication:56] - Started CookieSessionApplication in 1.035 seconds (process running for 1.32)
+[INFO ] 24-10-16 10:27:14 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:27:15 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:27:15 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 10:27:15 [MyInterceptor:91] - running time: 91(ms)
+[INFO ] 24-10-16 10:27:17 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:27:17 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:27:17 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:27:17 [MyInterceptor:81] - - REFERER : time=-2832, url=http://localhost:8080/
+[INFO ] 24-10-16 10:27:17 [MyInterceptor:91] - running time: 46(ms)
+[INFO ] 24-10-16 10:27:18 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:27:19 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:27:19 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 10:27:19 [MyInterceptor:81] - - REFERER : time=-1085, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:27:19 [MyInterceptor:91] - running time: 35(ms)
+[INFO ] 24-10-16 10:27:52 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 5781 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-16 10:27:52 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 10:27:52 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 10:27:53 [CookieSessionApplication:56] - Started CookieSessionApplication in 1.0 seconds (process running for 1.284)
+[INFO ] 24-10-16 10:28:05 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:28:05 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:28:05 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 10:28:05 [MyInterceptor:91] - running time: 103(ms)
+[INFO ] 24-10-16 10:31:22 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 5781 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-16 10:31:22 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 10:31:22 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 10:31:22 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.279 seconds (process running for 210.093)
+[INFO ] 24-10-16 10:31:25 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:31:25 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:31:25 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 10:31:25 [MyInterceptor:91] - running time: 31(ms)
+[INFO ] 24-10-16 10:31:27 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:31:27 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:31:27 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:31:27 [MyInterceptor:81] - - REFERER : time=-1921, url=http://localhost:8080/
+[INFO ] 24-10-16 10:31:27 [MyInterceptor:91] - running time: 18(ms)
+[INFO ] 24-10-16 10:31:27 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:31:27 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:31:27 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 10:31:27 [MyInterceptor:81] - - REFERER : time=-569, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:31:27 [MyInterceptor:91] - running time: 31(ms)
+[INFO ] 24-10-16 10:31:28 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:31:28 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:31:28 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 10:31:28 [MyInterceptor:81] - - REFERER : time=-603, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 10:31:28 [MyInterceptor:91] - running time: 11(ms)
+[INFO ] 24-10-16 10:31:29 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:31:29 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:31:29 [MyInterceptor:67] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-16 10:31:29 [MyInterceptor:81] - - REFERER : time=-621, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 10:31:29 [MyInterceptor:91] - running time: 11(ms)
+[INFO ] 24-10-16 10:33:53 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 7434 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-16 10:33:53 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 10:33:53 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 10:33:54 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.952 seconds (process running for 1.206)
+[INFO ] 24-10-16 10:33:59 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 10:34:00 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 10:34:00 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 10:34:00 [MyInterceptor:91] - running time: 102(ms)
+[INFO ] 24-10-16 11:17:26 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 9921 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-16 11:17:26 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 11:17:26 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 11:17:27 [CookieSessionApplication:56] - Started CookieSessionApplication in 1.032 seconds (process running for 1.285)
+[INFO ] 24-10-16 11:17:38 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 11:17:38 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 11:17:38 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 11:17:38 [MyInterceptor:91] - running time: 90(ms)
+[INFO ] 24-10-16 11:17:39 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 11:17:40 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 11:17:40 [MyInterceptor:67] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-16 11:17:40 [MyInterceptor:81] - - REFERER : time=-1226, url=http://localhost:8080/
+[INFO ] 24-10-16 11:17:40 [MyInterceptor:91] - running time: 44(ms)
+[INFO ] 24-10-16 11:17:40 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 11:17:40 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 11:17:40 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 11:17:40 [MyInterceptor:81] - - REFERER : time=-602, url=http://localhost:8080/session/login
+[INFO ] 24-10-16 11:17:40 [MyInterceptor:91] - running time: 38(ms)
+[INFO ] 24-10-16 11:17:41 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 11:17:41 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 11:17:41 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 11:17:41 [MyInterceptor:81] - - REFERER : time=-580, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 11:17:41 [MyInterceptor:91] - running time: 29(ms)
+[INFO ] 24-10-16 11:17:41 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 11:17:41 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 11:17:41 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 11:17:41 [MyInterceptor:81] - - REFERER : time=-531, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 11:17:41 [MyInterceptor:91] - running time: 31(ms)
+[INFO ] 24-10-16 11:59:40 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 12002 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-16 11:59:40 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 11:59:40 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 11:59:41 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.894 seconds (process running for 1.179)
+[INFO ] 24-10-16 11:59:47 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 11:59:47 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 11:59:47 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 11:59:47 [MyInterceptor:91] - running time: 82(ms)
+[INFO ] 24-10-16 11:59:49 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 11:59:49 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 11:59:49 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 11:59:49 [MyInterceptor:81] - - REFERER : time=-2180, url=http://localhost:8080/
+[INFO ] 24-10-16 11:59:49 [MyInterceptor:91] - running time: 53(ms)
+[INFO ] 24-10-16 12:00:09 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:00:09 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:00:09 [MyInterceptor:67] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:00:09 [MyInterceptor:74] - (parma)<---cookie_name = name
+[INFO ] 24-10-16 12:00:09 [MyInterceptor:74] - (parma)<---cookie_time = 
+[INFO ] 24-10-16 12:00:09 [MyInterceptor:74] - (parma)<---cookie_var = dafafgaasdg
+[INFO ] 24-10-16 12:00:09 [MyInterceptor:81] - - REFERER : time=-20149, url=http://localhost:8080/cookie/home
+[WARN ] 24-10-16 12:00:09 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: ""]
+[INFO ] 24-10-16 12:00:19 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:00:19 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:00:19 [MyInterceptor:67] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:00:19 [MyInterceptor:74] - (parma)<---cookie_name = name
+[INFO ] 24-10-16 12:00:19 [MyInterceptor:74] - (parma)<---cookie_time = 0
+[INFO ] 24-10-16 12:00:19 [MyInterceptor:74] - (parma)<---cookie_var = 가나다
+[INFO ] 24-10-16 12:00:19 [MyInterceptor:81] - - REFERER : time=-29797, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:00:19 [MyInterceptor:91] - running time: 39(ms)
+[ERROR] 24-10-16 12:00:19 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-6] Exception processing template "rediredt:/cookie/home": Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 24-10-16 12:00:19 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-16 12:01:01 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:01:01 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:01:01 [MyInterceptor:67] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:01:01 [MyInterceptor:74] - (parma)<---cookie_name = name
+[INFO ] 24-10-16 12:01:01 [MyInterceptor:74] - (parma)<---cookie_time = 0
+[INFO ] 24-10-16 12:01:01 [MyInterceptor:74] - (parma)<---cookie_var = 가나다
+[INFO ] 24-10-16 12:01:01 [MyInterceptor:81] - - REFERER : time=-41634, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:01:01 [MyInterceptor:91] - running time: 40(ms)
+[ERROR] 24-10-16 12:01:01 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-8] Exception processing template "rediredt:/cookie/home": Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 24-10-16 12:01:01 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-16 12:03:47 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 12466 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-16 12:03:47 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 12:03:47 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 12:03:48 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.913 seconds (process running for 1.186)
+[INFO ] 24-10-16 12:03:53 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:03:53 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:03:53 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 12:03:53 [MyInterceptor:91] - running time: 82(ms)
+[INFO ] 24-10-16 12:03:55 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:03:55 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:03:55 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:03:55 [MyInterceptor:81] - - REFERER : time=-1316, url=http://localhost:8080/
+[INFO ] 24-10-16 12:03:55 [MyInterceptor:91] - running time: 32(ms)
+[INFO ] 24-10-16 12:04:01 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:04:01 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:04:01 [MyInterceptor:67] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:04:01 [MyInterceptor:74] - (parma)<---cookie_name = name
+[INFO ] 24-10-16 12:04:01 [MyInterceptor:74] - (parma)<---cookie_time = 5
+[INFO ] 24-10-16 12:04:01 [MyInterceptor:74] - (parma)<---cookie_var = 가나다
+[INFO ] 24-10-16 12:04:01 [MyInterceptor:81] - - REFERER : time=-6127, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:04:01 [MyInterceptor:91] - running time: 51(ms)
+[ERROR] 24-10-16 12:04:01 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-5] Exception processing template "rediredt:/cookie/home": Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 24-10-16 12:04:01 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-16 12:16:03 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 12868 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-16 12:16:03 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 12:16:03 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 12:16:04 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.959 seconds (process running for 1.259)
+[INFO ] 24-10-16 12:16:08 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:16:08 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:16:08 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 12:16:08 [MyInterceptor:91] - running time: 80(ms)
+[INFO ] 24-10-16 12:16:10 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:16:10 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:16:10 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:16:10 [MyInterceptor:81] - - REFERER : time=-1661, url=http://localhost:8080/
+[INFO ] 24-10-16 12:16:10 [MyInterceptor:91] - running time: 54(ms)
+[INFO ] 24-10-16 12:16:17 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:16:18 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:16:18 [MyInterceptor:67] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:16:18 [MyInterceptor:74] - (parma)<---cookie_name = name
+[INFO ] 24-10-16 12:16:18 [MyInterceptor:74] - (parma)<---cookie_time = 10
+[INFO ] 24-10-16 12:16:18 [MyInterceptor:74] - (parma)<---cookie_var = 송길주
+[INFO ] 24-10-16 12:16:18 [MyInterceptor:81] - - REFERER : time=-7618, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:16:18 [MyInterceptor:91] - running time: 46(ms)
+[ERROR] 24-10-16 12:16:18 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-5] Exception processing template "rediredt:/cookie/home": Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 24-10-16 12:16:18 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-16 12:20:15 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 13080 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-16 12:20:15 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 12:20:15 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 12:20:15 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.929 seconds (process running for 1.21)
+[INFO ] 24-10-16 12:20:19 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:20:19 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:20:19 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 12:20:19 [MyInterceptor:91] - running time: 85(ms)
+[INFO ] 24-10-16 12:20:21 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:20:21 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:20:21 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:20:21 [MyInterceptor:81] - - REFERER : time=-1865, url=http://localhost:8080/
+[INFO ] 24-10-16 12:20:21 [MyInterceptor:91] - running time: 60(ms)
+[INFO ] 24-10-16 12:20:26 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:20:26 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:20:26 [MyInterceptor:67] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:20:26 [MyInterceptor:74] - (parma)<---cookie_name = name
+[INFO ] 24-10-16 12:20:26 [MyInterceptor:74] - (parma)<---cookie_time = 5
+[INFO ] 24-10-16 12:20:26 [MyInterceptor:74] - (parma)<---cookie_var = 가나다
+[INFO ] 24-10-16 12:20:26 [MyInterceptor:81] - - REFERER : time=-4918, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:20:26 [MyInterceptor:91] - running time: 45(ms)
+[ERROR] 24-10-16 12:20:26 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-5] Exception processing template "rediredt:/cookie/home": Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 24-10-16 12:20:26 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [rediredt:/cookie/home], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-16 12:21:58 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 13080 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-16 12:21:58 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 12:21:58 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 12:21:58 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.217 seconds (process running for 103.868)
+[INFO ] 24-10-16 12:22:02 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:22:02 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:22:02 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 12:22:02 [MyInterceptor:91] - running time: 29(ms)
+[INFO ] 24-10-16 12:22:04 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:22:04 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:22:04 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:22:04 [MyInterceptor:81] - - REFERER : time=-1608, url=http://localhost:8080/
+[INFO ] 24-10-16 12:22:04 [MyInterceptor:91] - running time: 14(ms)
+[INFO ] 24-10-16 12:22:07 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:22:07 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:22:07 [MyInterceptor:67] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:22:07 [MyInterceptor:74] - (parma)<---cookie_name = name
+[INFO ] 24-10-16 12:22:07 [MyInterceptor:74] - (parma)<---cookie_time = 5
+[INFO ] 24-10-16 12:22:07 [MyInterceptor:74] - (parma)<---cookie_var = 송길주
+[INFO ] 24-10-16 12:22:07 [MyInterceptor:81] - - REFERER : time=-3412, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:22:07 [MyInterceptor:91] - running time: 15(ms)
+[INFO ] 24-10-16 12:22:07 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:22:07 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:22:07 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:22:07 [MyInterceptor:81] - - REFERER : time=-5, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:22:07 [MyInterceptor:91] - running time: 12(ms)
+[INFO ] 24-10-16 12:22:22 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:22:22 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:22:22 [MyInterceptor:67] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:22:22 [MyInterceptor:74] - (parma)<---cookie_name = name
+[INFO ] 24-10-16 12:22:22 [MyInterceptor:74] - (parma)<---cookie_time = 30
+[INFO ] 24-10-16 12:22:22 [MyInterceptor:74] - (parma)<---cookie_var = 송길주
+[INFO ] 24-10-16 12:22:22 [MyInterceptor:81] - - REFERER : time=-14662, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:22:22 [MyInterceptor:91] - running time: 13(ms)
+[INFO ] 24-10-16 12:22:22 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:22:22 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:22:22 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:22:22 [MyInterceptor:81] - - REFERER : time=-4, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:22:22 [MyInterceptor:91] - running time: 16(ms)
+[INFO ] 24-10-16 12:22:43 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:22:43 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:22:43 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 12:22:43 [MyInterceptor:91] - running time: 17(ms)
+[INFO ] 24-10-16 12:22:52 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:22:52 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:22:52 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 12:22:52 [MyInterceptor:81] - - REFERER : time=-9027, url=http://localhost:8080/
+[INFO ] 24-10-16 12:22:52 [MyInterceptor:91] - running time: 11(ms)
+[INFO ] 24-10-16 12:22:53 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:22:53 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:22:53 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 12:22:53 [MyInterceptor:81] - - REFERER : time=-787, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 12:22:53 [MyInterceptor:91] - running time: 14(ms)
+[INFO ] 24-10-16 12:22:53 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:22:53 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:22:53 [MyInterceptor:67] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-16 12:22:53 [MyInterceptor:81] - - REFERER : time=-596, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:22:53 [MyInterceptor:91] - running time: 10(ms)
+[INFO ] 24-10-16 12:22:54 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 12:22:54 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 12:22:54 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:22:54 [MyInterceptor:81] - - REFERER : time=-926, url=http://localhost:8080/session/login
+[INFO ] 24-10-16 12:22:54 [MyInterceptor:91] - running time: 13(ms)
+[INFO ] 24-10-16 13:13:19 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 16680 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-16 13:13:19 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 13:13:19 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 13:13:20 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.979 seconds (process running for 1.226)
+[INFO ] 24-10-16 13:13:24 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 13:13:24 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 13:13:24 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 13:13:24 [MyInterceptor:91] - running time: 83(ms)
+[INFO ] 24-10-16 13:13:25 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 13:13:25 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 13:13:25 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 13:13:25 [MyInterceptor:81] - - REFERER : time=-1218, url=http://localhost:8080/
+[INFO ] 24-10-16 13:13:25 [MyInterceptor:91] - running time: 40(ms)
+[INFO ] 24-10-16 13:14:23 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 16680 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-16 13:14:23 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 13:14:23 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 13:14:23 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.262 seconds (process running for 64.53)
+[INFO ] 24-10-16 13:14:24 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 13:14:24 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 13:14:24 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 13:14:24 [MyInterceptor:91] - running time: 16(ms)
+[INFO ] 24-10-16 13:14:59 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 16680 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-16 13:14:59 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 13:14:59 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 13:14:59 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.186 seconds (process running for 100.434)
+[INFO ] 24-10-16 15:28:18 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 21815 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-16 15:28:18 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 15:28:18 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 15:28:19 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.934 seconds (process running for 1.172)
+[INFO ] 24-10-16 15:28:23 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 15:28:23 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 15:28:23 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 15:28:23 [MyInterceptor:91] - running time: 89(ms)
+[INFO ] 24-10-16 15:28:24 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 15:28:24 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 15:28:24 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 15:28:24 [MyInterceptor:81] - - REFERER : time=-1421, url=http://localhost:8080/
+[INFO ] 24-10-16 15:28:24 [MyInterceptor:91] - running time: 40(ms)
+[INFO ] 24-10-16 15:28:25 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 15:28:25 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 15:28:25 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:28:25 [MyInterceptor:81] - - REFERER : time=-659, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 15:28:25 [MyInterceptor:91] - running time: 30(ms)
+[INFO ] 24-10-16 15:28:29 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 15:28:29 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 15:28:29 [MyInterceptor:67] - [POST] http://localhost:8080/cookie/popup_close
+[INFO ] 24-10-16 15:28:29 [MyInterceptor:74] - (parma)<---no-open = Y
+[INFO ] 24-10-16 15:28:29 [MyInterceptor:81] - - REFERER : time=-4075, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:28:29 [MyInterceptor:91] - running time: 39(ms)
+[INFO ] 24-10-16 15:28:29 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 15:28:29 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 15:28:29 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:28:29 [MyInterceptor:81] - - REFERER : time=-6, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:28:29 [MyInterceptor:91] - running time: 14(ms)
+[INFO ] 24-10-16 15:28:31 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 15:28:31 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 15:28:31 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 15:28:31 [MyInterceptor:81] - - REFERER : time=-2004, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:28:31 [MyInterceptor:91] - running time: 35(ms)
+[INFO ] 24-10-16 15:28:32 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 15:28:32 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 15:28:32 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:28:32 [MyInterceptor:81] - - REFERER : time=-609, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 15:28:32 [MyInterceptor:91] - running time: 19(ms)
+[INFO ] 24-10-16 15:28:38 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 15:28:38 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 15:28:38 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:28:38 [MyInterceptor:81] - - REFERER : time=-6406, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:28:38 [MyInterceptor:91] - running time: 28(ms)
+[INFO ] 24-10-16 15:28:42 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-16 15:28:42 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-16 15:28:42 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:28:42 [MyInterceptor:81] - - REFERER : time=-3464, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:28:42 [MyInterceptor:91] - running time: 27(ms)

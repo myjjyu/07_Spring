@@ -8,5 +8,36 @@
   <body>
     <div th:replace="~{fragments/header :: my-header}"></div>
     <h2>Login</h2>
+
+    <!-- view는 세션 객체에 컨트롤러 도움 없이 직접 접근 가능 -->
+    <!-- @{/session/login_ok} 에서 login_ok 주소이름이라서 마음대로 지어도됨 -->
+    <form
+      method="post"
+      th:action="@{/session/login_ok}"
+      th:if="${session.memberInfo == null}"
+    >
+      <input
+        type="text"
+        name="user_id"
+        placeholder="이름을 입력하세요"
+        th:value="${rememverId}"
+      />
+      <input
+        type="password"
+        name="user_password"
+        placeholder="비밀번호를 입력하세요"
+      />
+      <label>
+        <input type="checkbox" name="rememver_id" value="Y" />
+        아이디 저장
+      </label>
+      <button type="submit">로그인</button>
+    </form>
+
+    <!-- 주어진 조건이 맞지 않을 경우 : else에 해당함 -->
+    <div th:unless="${session.memberInfo == null}">
+      <h3>안녕하세요 <span th:text="${session.memberInfo.userId}" />님</h3>
+      <a th:href="@{/session/logout}">로그아웃</a>
+    </div>
   </body>
 </html>
