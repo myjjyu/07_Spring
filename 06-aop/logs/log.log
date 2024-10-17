@@ -1,0 +1,33 @@
+[INFO ] 24-10-17 14:57:14 [AopApplication:50] - Starting AopApplication using Java 17.0.2 with PID 14860 (/Users/song-gilju/Desktop/web3/09-SpringBoot/06-aop/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/06-aop)
+[DEBUG] 24-10-17 14:57:14 [AopApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-17 14:57:14 [AopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-17 14:57:15 [AopApplication:56] - Started AopApplication in 1.151 seconds (process running for 1.472)
+[INFO ] 24-10-17 15:26:28 [AopApplication:50] - Starting AopApplication using Java 17.0.2 with PID 16454 (/Users/song-gilju/Desktop/web3/09-SpringBoot/06-aop/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/06-aop)
+[DEBUG] 24-10-17 15:26:28 [AopApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-17 15:26:28 [AopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-17 15:26:29 [AopApplication:56] - Started AopApplication in 1.077 seconds (process running for 1.39)
+[INFO ] 24-10-17 15:26:37 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 15:26:37 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 15:26:37 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-17 15:26:37 [MyInterceptor:91] - running time: 109(ms)
+[INFO ] 24-10-17 15:31:05 [AopApplication:50] - Starting AopApplication using Java 17.0.2 with PID 18397 (/Users/song-gilju/Desktop/web3/09-SpringBoot/06-aop/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/06-aop)
+[DEBUG] 24-10-17 15:31:05 [AopApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-17 15:31:05 [AopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-17 15:31:05 [AopApplication:56] - Started AopApplication in 0.95 seconds (process running for 1.17)
+[INFO ] 24-10-17 15:31:11 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 15:31:11 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 15:31:11 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-17 15:31:11 [MyInterceptor:91] - running time: 86(ms)
+[INFO ] 24-10-17 15:31:14 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 15:31:14 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 15:31:14 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-17 15:31:14 [MyInterceptor:91] - running time: 52(ms)
+[INFO ] 24-10-17 15:34:29 [AopApplication:50] - Starting AopApplication using Java 17.0.2 with PID 18711 (/Users/song-gilju/Desktop/web3/09-SpringBoot/06-aop/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/06-aop)
+[DEBUG] 24-10-17 15:34:29 [AopApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-17 15:34:29 [AopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-17 15:34:29 [MyCalcServiceImpl:12] - MyCalcServiceImpl() 생성자 호출됨!
+[INFO ] 24-10-17 15:34:30 [AopApplication:56] - Started AopApplication in 1.031 seconds (process running for 1.35)
+[INFO ] 24-10-17 15:34:36 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 15:34:36 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 15:34:36 [MyInterceptor:73] - [GET] http://localhost:8080/
+[INFO ] 24-10-17 15:34:36 [MyInterceptor:97] - running time: 95(ms)
