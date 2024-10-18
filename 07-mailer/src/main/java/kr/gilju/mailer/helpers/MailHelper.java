@@ -6,7 +6,6 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
 
-import jakarta.mail.MessagingException;
 import jakarta.mail.internet.InternetAddress;
 import jakarta.mail.internet.MimeMessage;
 import lombok.extern.slf4j.Slf4j;
@@ -65,7 +64,7 @@ public class MailHelper {
      * @param content
      * @throws Exception
      */
-    public void sendMail(String receiverName, String receiverEmail, String subject, String content) throws Exception {
+    public void sendMail(String receiverEmail, String subject, String content) throws Exception {
       this.sendMail(null, receiverEmail, subject, content);
   }
 }

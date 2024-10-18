@@ -3,8 +3,6 @@ package kr.gilju.mailer.controllers;
 import java.util.Calendar;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -29,12 +27,17 @@ public class OrderController {
   @Autowired
   private UtilHelper utilHelper = null;
 
+  @GetMapping("/order")
+  public String order() {
+    return "order";
+  }
+
   @PostMapping("/order_ok")
   public String orderOk(
     HttpServletResponse response,
     @RequestParam("order-name") String orderName,
     @RequestParam("order-email") String orderEmail,
-    @RequestParam("order-price") int orderPrice {
+    @RequestParam("order-price") int orderPrice) {
 
       /** 1) db에서 상품정보를 가져 왔다고 가정 -> 상품명, 주문수량 */
       String productName = "내가 주문한 상품명";
@@ -87,7 +90,7 @@ public class OrderController {
         mailHelper.sendMail(orderEmail, subject, template);
       } catch (Exception e) {
         utilHelper.redirect(response, 500, null, "메일 발송에 실패했습니다");
-        ex.printStackTrace();
+        e.printStackTrace();
         return null;
       } 
 
@@ -98,5 +101,4 @@ public class OrderController {
     public String orderResult(){
       return "order_result";
     }
-  )
   }
