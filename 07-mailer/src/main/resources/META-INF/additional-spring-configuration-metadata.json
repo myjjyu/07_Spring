@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "mailhelper.sender.email",
+      "type": "java.lang.String",
+      "description": "시스템 발송 이메일의 발신주소"
+    },
+    {
+      "name": "mailhelper.sender.name",
+      "type": "java.lang.String",
+      "description": "시스템 발송 이메일의 발신자 이름"
+    }
+  ]
+}
