@@ -13,12 +13,12 @@ import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
-import kr.gilju.database.models.Members;
+import kr.gilju.database.models.Member;
 
 @Mapper
 public interface MemberMapper {
 
-    @Insert("INSERT INTO members (" +
+    @Insert("INSERT INTO member (" +
             "user_id, user_pw, user_name, email, phone, " +
             "birthday, gender, postcode, addr1, addr2, " +
             "photo, is_out, is_admin, login_data, reg_data, edit_date) " +
@@ -26,9 +26,9 @@ public interface MemberMapper {
             "#{birthday}, #{gender}, #{postcode}, #{addr1}, #{addr2}, " +
             "#{photo}, #{is_out}, #{is_admin}, #{login_data}, #{reg_data}, #{edit_date})")
     @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
-    int insert(Members input);
+    int insert(Member input);
 
-    @Update("UPDATE members SET " +
+    @Update("UPDATE member SET " +
             "user_id=#{user_id}, " +
             "user_pw=MD5(#{user_pw}), " + 
             "user_name=#{user_name}, " +
@@ -41,18 +41,18 @@ public interface MemberMapper {
             "addr2=#{addr2}, " +
             "edit_date=NOW() " +
             "WHERE id = #{id}")
-    int update(Members input);
+    int update(Member input);
 
-    @Delete("DELETE FROM members WHERE id=#{id}")
-    int delete(Members input); 
+    @Delete("DELETE FROM member WHERE id=#{id}")
+    int delete(Member input); 
 
     @Select("SELECT " +
             "id, user_id, user_pw, user_name, email, phone, " +
             "birthday, gender, postcode, addr1, addr2, " +
             "photo, is_out, is_admin, login_data, reg_data, " +
-            "edit_date FROM members " +
+            "edit_date FROM member " +
             "WHERE id = #{id}")
-    @Results(id = "membersMap", value = {
+    @Results(id = "memberMap", value = {
             @Result(property = "id", column = "id"),
             @Result(property = "user_id", column = "user_id"),
             @Result(property = "user_pw", column = "user_pw"),
@@ -73,14 +73,14 @@ public interface MemberMapper {
     })
 
 
-    public Members selectItem(Members input);
+    public Member selectItem(Member input);
     @Select("SELECT " +
             "id, user_id, user_pw, user_name, email, phone, " +
             "birthday, gender, postcode, addr1, addr2, " +
             "photo, is_out, is_admin, login_data, reg_data, " +
-            "edit_date FROM members " +
+            "edit_date FROM member " +
             "ORDER BY id DESC")
 
-    @ResultMap("membersMap")
-    public List<Members> selectList(Members input);
+    @ResultMap("memberMap")
+    public List<Member> selectList(Member input);
 }

@@ -78,7 +78,7 @@
 
 
     <!-- 데이터베이스 관련 패키지에 대한 로그 레벨 설정 -->
-    <logger name="jdbc.sqlonly" level="INFO">
+    <logger name="jdbc.sqlonly" level="INFO" additivity="false">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
         <appender-ref ref="Error" />
@@ -93,7 +93,7 @@
         <appender-ref ref="FILE" />
         <appender-ref ref="Error" />
     </logger>
-    <logger name="jdbc.resultset" level="ERROR">
+    <logger name="jdbc.resultset" level="ERROR" additivity="false">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
         <appender-ref ref="Error" />

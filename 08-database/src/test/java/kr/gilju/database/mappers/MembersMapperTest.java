@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import kr.gilju.database.models.Members;
+import kr.gilju.database.models.Member;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -20,7 +20,7 @@ public class MembersMapperTest {
     @Test
     @DisplayName("회원 추가 테스트")
     void insertMembers() {
-        Members input = new Members();
+        Member input = new Member();
         input.setUser_id("헬로");
         input.setUser_pw("월드");
         input.setUser_name("메가");
@@ -51,7 +51,7 @@ public class MembersMapperTest {
   @Test
   @DisplayName("회원 수정 테스트")
   void updateMembers() {
-    Members input = new Members();
+    Member input = new Member();
     input.setUser_id("헬로");  
     input.setUser_pw("메가");
     input.setUser_name("스터디");
@@ -79,7 +79,7 @@ public class MembersMapperTest {
   @Test
   @DisplayName("회원 삭제 테스트")
   void deleteMembers() {
-    Members input = new Members();
+    Member input = new Member();
     input.setId(2);
 
     int output = memberMapper.delete(input);
@@ -92,20 +92,20 @@ public class MembersMapperTest {
   @Test
   @DisplayName("하나의 회원 조회 테스트")
   void selectOneMember() {
-    Members input = new Members();
+    Member input = new Member();
     input.setId(3);
 
 
-    Members output = memberMapper.selectItem(input);
+    Member output = memberMapper.selectItem(input);
     log.debug("output: " + output.toString());
   }
 
   @Test
   @DisplayName("회원 목록 조회 테스트")
   void selectListMembers() {
-    List<Members> output = memberMapper.selectList(null);
+    List<Member> output = memberMapper.selectList(null);
 
-    for (Members item : output) {
+    for (Member item : output) {
       log.debug("output: " + item.toString());
     }
   }

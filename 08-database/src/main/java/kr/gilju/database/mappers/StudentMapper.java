@@ -49,6 +49,15 @@ public interface StudentMapper {
   @Delete("DELETE FROM student WHERE studno=#{studno}")
   int delete(Student input);
 
+  // 학과를 삭제하기 전에 학과에 소속된 학생 데이터를 삭제 
+  @Delete("DELETE FROM student WHERE deptno=#{deptno}")
+  int deleteByDeptno(Student input);
+
+  // 교수를 삭제하기 전에 교수에게 소속된 학생들과의 연결을 해제
+  // --> profno 컬럼이 null 허용으로 설정되야 함
+  @Update("UPDATE student SET profno = Null WHRE profno = #{profno}")
+  int updateByProfno(Student input);
+
   // 학생 한 명 조회
   @Select("SELECT studno, name, userid, grade, idnum, " +
       "DATE_FORMAT(birthdate, '%Y-%M-%d')as birthdate, " +

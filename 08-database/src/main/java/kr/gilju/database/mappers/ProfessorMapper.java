@@ -39,6 +39,9 @@ public interface ProfessorMapper {
   @Delete("DELETE FROM professor WHERE profno=#{profno};")
   public int delete(Professor input);
 
+  @Delete("DELETE FROM professor WHERE deptno=#{deptno};")
+  public int deleteByDeptno(Professor input);
+
   @Select("SELECT " +
       "profno, name, userid, position, sal," +
       "DATE_FORMAT(hiredate, '%Y-%m-%d') AS hiredate, comm, deptno " +
