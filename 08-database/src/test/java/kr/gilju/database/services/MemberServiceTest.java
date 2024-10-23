@@ -20,28 +20,28 @@ public class MemberServiceTest {
   @Test
   @DisplayName("회원 추가 테스트")
   void insertMember() throws Exception {
-    Member member = new Member();
-    member.setUser_id("스프링");
-    member.setUser_pw("스터디");
-    member.setUser_name("헬로월드");
-    member.setEmail("abcd@naver.com");
-    member.setPhone("010-2345-0000");
-    member.setBirthday("2011-06-06");
-    member.setGender("F");
-    member.setPostcode("2345");
-    member.setAddr1("서울시 서초구");
-    member.setAddr2("테스트동");
-    member.setPhoto(null);
-    member.setIs_out("N");
-    member.setIs_admin("N");
-    member.setLogin_data("2011-11-11");
-    member.setReg_data("2011-11-11");
-    member.setEdit_date("2011-11-11");
+    Member input = new Member();
+    input.setUser_id("스프링");
+    input.setUser_pw("스터디");
+    input.setUser_name("헬로월드");
+    input.setEmail("abcd@naver.com");
+    input.setPhone("010-2345-0000");
+    input.setBirthday("2011-06-06");
+    input.setGender("F");
+    input.setPostcode("2345");
+    input.setAddr1("서울시 서초구");
+    input.setAddr2("테스트동");
+    input.setPhoto(null);
+    input.setIs_out("N");
+    input.setIs_admin("N");
+    input.setLogin_data("2011-11-11");
+    input.setReg_data("2011-11-11");
+    input.setEdit_date("2011-11-11");
 
    Member result = null;
 
     try {
-      result = memberService.addItem(member);
+      result = memberService.addItem(input);
     } catch (ServiceNoResultException e) {
       log.error("SQL문 처리 결과 없음", e);
     } catch (Exception e) {
@@ -51,35 +51,35 @@ public class MemberServiceTest {
 
     if (result != null) {
       log.debug("result: " + result);
-      log.debug("new User_name: " + member.getUser_name());
+      log.debug("new User_name: " + input.getUser_name());
     }
   }
 
   @Test
   @DisplayName("회원 수정 테스트")
   void updateMember() throws Exception {
-    Member member = new Member();
-    member.setId(10);
-    member.setUser_id("스프링");  
-    member.setUser_pw("songgilju");
-    member.setUser_name("메가스터디");
-    member.setEmail("test@naver.com");
-    member.setPhone("010-0000-0000");
-    member.setBirthday("2021-06-01");  
-    member.setGender("F");              
-    member.setPostcode("12345");
-    member.setAddr1("서울시 테스트구");
-    member.setAddr2("태스트동");
-    member.setPhoto(null);  
-    member.setIs_admin("N");           
-    member.setLogin_data("2011-11-11"); 
-    member.setReg_data("2011-11-11");   
-    member.setEdit_date("2011-11-11");  
+    Member input = new Member();
+    input.setId(10);
+    input.setUser_id("스프링");  
+    input.setUser_pw("songgilju");
+    input.setUser_name("메가스터디");
+    input.setEmail("test@naver.com");
+    input.setPhone("010-0000-0000");
+    input.setBirthday("2021-06-01");  
+    input.setGender("F");              
+    input.setPostcode("12345");
+    input.setAddr1("서울시 테스트구");
+    input.setAddr2("태스트동");
+    input.setPhoto(null);  
+    input.setIs_admin("N");           
+    input.setLogin_data("2011-11-11"); 
+    input.setReg_data("2011-11-11");   
+    input.setEdit_date("2011-11-11");  
 
     Member result = null;
 
     try {
-      result = memberService.editItem(member);
+      result = memberService.editItem(input);
     } catch (ServiceNoResultException e) {
       log.error("SQL문 처리 결과 없음", e);
     } catch (Exception e) {
@@ -111,13 +111,13 @@ public class MemberServiceTest {
   @Test
   @DisplayName("하나의 회원 조회 테스트")
   void selectOneMember() throws Exception {
-    Member member = new Member();
-    member.setId(3);
+    Member input = new Member();
+    input.setId(3);
 
     Member result = null;
 
     try {
-      result = memberService.getItem(member);
+      result = memberService.getItem(input);
     } catch (ServiceNoResultException e) {
       log.error("SQL문 처리 결과 없음", e);
     } catch (Exception e) {

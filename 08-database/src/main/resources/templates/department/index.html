@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Spring</title>
+    <link rel="stylesheet" th:href="@{/assets/css/common.css}" />
+  </head>
+  <body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+
+    <h2>학과관리</h2>
+    <hr />
+    <table class="mytable">
+      <tr>
+        <th>학과번호</th>
+        <th>학과이름</th>
+        <th>학과위치</th>
+        <th>-</th>
+      </tr>
+      <tbody>
+        <tr th:each="department : ${departments}">
+          <td th:text="${department.deptno}"></td>
+
+          <td>
+            <a
+              th:href="@{/department/detail/{deptno}(deptno=${department.deptno})}"
+              th:text="${department.dname}" /></td>
+          <td th:text="${department.loc}"></td>
+          <td>
+            <a href="#">수정</a>
+            <a href="#">삭제</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

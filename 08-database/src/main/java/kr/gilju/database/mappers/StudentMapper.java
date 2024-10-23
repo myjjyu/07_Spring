@@ -18,10 +18,9 @@ import kr.gilju.database.models.Student;
 public interface StudentMapper {
 
   // 학생 등록
-  // 학생 등록
   @Insert("INSERT INTO student(" +
       "name, userid, grade, idnum, birthdate," +
-      "tel, height, weight, deptno, profno" + // 쉼표 제거
+      "tel, height, weight, deptno, profno" + 
       ") VALUES (" +
       "#{name}, #{userid}, #{grade}, #{idnum}, #{birthdate}," +
       "#{tel}, #{height}, #{weight}, #{deptno}, #{profno}" +
@@ -82,7 +81,7 @@ public interface StudentMapper {
   @Select("SELECT studno, name, userid, grade, idnum, " +
       "DATE_FORMAT(birthdate, '%Y-%M-%d')as birthdate, " +
       "tel, height, weight, deptno, profno " +
-      "FROM student WHERE studno=#{studno}")
+      "FROM student")
   @ResultMap("studentMap")
   List<Student> selectList(Student input);
 }

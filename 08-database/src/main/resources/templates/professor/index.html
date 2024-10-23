@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Spring</title>
+    <link rel="stylesheet" th:href="@{/assets/css/common.css}" />
+  </head>
+  <body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+
+    <h2>학과관리</h2>
+    <hr />
+    <table class="mytable">
+      <tr>
+        <th>교수번호</th>
+        <th>교수이름</th>
+        <th>교수아이디</th>
+        <th>위치/직책</th>
+        <th>교수급여</th>
+        <th>입사날짜</th>
+        <th>성과금</th>
+        <th>학과번호</th>
+        <th>-</th>
+      </tr>
+      <tbody>
+        <tr th:each="professor : ${professors}">
+          <td th:text="${professor.profno}"></td>
+
+          <td>
+            <a
+              th:href="@{/professor/detail/{profno}(profno=${professor.profno})}"
+              th:text="${professor.name}" /></td>
+          <td th:text="${professor.userid}"></td>
+          <td th:text="${professor.position}"></td>
+          <td th:text="${professor.sal}"></td>
+          <td th:text="${professor.hiredate}"></td>
+          <td th:text="${professor.comm}"></td>
+          <td th:text="${professor.deptno}"></td>
+          <td>
+            <a href="#">수정</a>
+            <a href="#">삭제</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

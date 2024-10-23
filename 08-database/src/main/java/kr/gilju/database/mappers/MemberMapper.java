@@ -1,6 +1,5 @@
 package kr.gilju.database.mappers;
 
-
 import java.util.List;
 
 import org.apache.ibatis.annotations.Delete;
@@ -21,16 +20,17 @@ public interface MemberMapper {
     @Insert("INSERT INTO member (" +
             "user_id, user_pw, user_name, email, phone, " +
             "birthday, gender, postcode, addr1, addr2, " +
-            "photo, is_out, is_admin, login_data, reg_data, edit_date) " +
-            "VALUES (#{user_id}, MD5(#{user_pw}), #{user_name}, #{email}, #{phone}, " +
+            "photo, is_out, is_admin, login_data, reg_data, edit_date" +
+            ") VALUES (" +
+            "#{user_id}, MD5(#{user_pw}), #{user_name}, #{email}, #{phone}, " +
             "#{birthday}, #{gender}, #{postcode}, #{addr1}, #{addr2}, " +
-            "#{photo}, #{is_out}, #{is_admin}, #{login_data}, #{reg_data}, #{edit_date})")
+            "#{photo}, 'N', 'N', null, now(), now())")
     @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
     int insert(Member input);
 
     @Update("UPDATE member SET " +
             "user_id=#{user_id}, " +
-            "user_pw=MD5(#{user_pw}), " + 
+            "user_pw=MD5(#{user_pw}), " +
             "user_name=#{user_name}, " +
             "email=#{email}, " +
             "phone=#{phone}, " +
@@ -39,18 +39,19 @@ public interface MemberMapper {
             "postcode=#{postcode}, " +
             "addr1=#{addr1}, " +
             "addr2=#{addr2}, " +
-            "edit_date=NOW() " +
+            "edit_date=now() " +
             "WHERE id = #{id}")
     int update(Member input);
 
     @Delete("DELETE FROM member WHERE id=#{id}")
-    int delete(Member input); 
+    int delete(Member input);
 
     @Select("SELECT " +
-            "id, user_id, user_pw, user_name, email, phone, " +
-            "birthday, gender, postcode, addr1, addr2, " +
-            "photo, is_out, is_admin, login_data, reg_data, " +
-            "edit_date FROM member " +
+            "user_id, user_pw, user_name, email, phone, " +
+            "DATE_FORMAT(birthday,'%Y-%m-%d') as birthday, " +
+            "gender, postcode, addr1, addr2, photo, " +  
+            "is_out, is_admin, login_data, reg_data, edit_date " +
+            "FROM member " +
             "WHERE id = #{id}")
     @Results(id = "memberMap", value = {
             @Result(property = "id", column = "id"),
@@ -71,16 +72,14 @@ public interface MemberMapper {
             @Result(property = "reg_data", column = "reg_data"),
             @Result(property = "edit_date", column = "edit_date")
     })
-
-
     public Member selectItem(Member input);
-    @Select("SELECT " +
-            "id, user_id, user_pw, user_name, email, phone, " +
-            "birthday, gender, postcode, addr1, addr2, " +
-            "photo, is_out, is_admin, login_data, reg_data, " +
-            "edit_date FROM member " +
-            "ORDER BY id DESC")
 
+    @Select("SELECT " +
+            "user_id, user_pw, user_name, email, phone, " +
+            "DATE_FORMAT(birthday,'%Y-%m-%d') as birthday, " +
+            "gender, postcode, addr1, addr2, photo, " +  
+            "is_out, is_admin, login_data, reg_data, edit_date " +
+            "FROM member ")
     @ResultMap("memberMap")
     public List<Member> selectList(Member input);
 }

@@ -32,11 +32,6 @@ public class MembersMapperTest {
         input.setAddr1("서울시 강남구");
         input.setAddr2("테스트동");
         input.setPhoto(null);             
-        input.setIs_out("N");              
-        input.setIs_admin("N");           
-        input.setLogin_data("2011-11-11"); 
-        input.setReg_data("2011-11-11");   
-        input.setEdit_date("2011-11-11");  
 
         int output = memberMapper.insert(input);
 
@@ -63,11 +58,7 @@ public class MembersMapperTest {
     input.setAddr1("서울시 서초구");
     input.setAddr2("행복동");
     input.setPhoto(null);             
-    input.setIs_out("N");              
-    input.setIs_admin("N");           
-    input.setLogin_data("2011-11-11"); 
-    input.setReg_data("2011-11-11");   
-    input.setEdit_date("2011-11-11");  
+
 
     int output = memberMapper.update(input);
 
