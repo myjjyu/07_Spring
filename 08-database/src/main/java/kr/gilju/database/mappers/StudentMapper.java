@@ -54,7 +54,7 @@ public interface StudentMapper {
 
   // 교수를 삭제하기 전에 교수에게 소속된 학생들과의 연결을 해제
   // --> profno 컬럼이 null 허용으로 설정되야 함
-  @Update("UPDATE student SET profno = Null WHRE profno = #{profno}")
+  @Update("UPDATE student SET profno = Null WHERE profno = #{profno}")
   int updateByProfno(Student input);
 
   // 학생 한 명 조회

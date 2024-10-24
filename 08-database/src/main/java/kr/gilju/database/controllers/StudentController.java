@@ -17,7 +17,6 @@ import kr.gilju.database.helpers.WebHelper;
 import kr.gilju.database.models.Student;
 import kr.gilju.database.services.StudentService;
 
-
 @Controller
 public class StudentController {
   /** 학생 관리 서비스 객체 주입 */
@@ -87,7 +86,6 @@ public class StudentController {
     return "/student/detail";
   }
 
-
   /**
    * 학생 등록 화면
    * 
@@ -98,20 +96,21 @@ public class StudentController {
     return "/student/add";
   }
 
- /**
-  * 학생 수정
-  * @param request
-  * @param name
-  * @param userid
-  * @param grade
-  * @param idnum
-  * @param birthdate
-  * @param tel
-  * @param height
-  * @param weight
-  * @param deptno
-  * @param profno
-  */
+  /**
+   * 학생 수정
+   * 
+   * @param request
+   * @param name
+   * @param userid
+   * @param grade
+   * @param idnum
+   * @param birthdate
+   * @param tel
+   * @param height
+   * @param weight
+   * @param deptno
+   * @param profno
+   */
   @ResponseBody
   @PostMapping("/student/add_ok")
   public void addOk(HttpServletRequest request,
@@ -124,10 +123,10 @@ public class StudentController {
       @RequestParam("height") int height,
       @RequestParam("weight") int weight,
       @RequestParam("deptno") int deptno,
-      @RequestParam("profno") Integer profno) {
+      @RequestParam(value = "profno", required = false) Integer profno
+      ) {
 
-
-        String referer = request.getHeader("referer");
+    String referer = request.getHeader("referer");
 
     if (referer == null || !referer.contains("/student")) {
       webHelper.badRequest("올바르지 않은 접근 입니다");
@@ -145,7 +144,7 @@ public class StudentController {
     student.setHeight(height);
     student.setWeight(weight);
     student.setDeptno(deptno);
-    student.setProfno(profno);
+    student.setProfno(null);
 
     try {
       studentService.addItem(student);
@@ -163,17 +162,18 @@ public class StudentController {
     webHelper.redirect("/student/detail/" + student.getStudno(), "등록되었습니다");
   }
 
-/**
- * 학생삭제
- * @param request
- * @param studno
- */
+  /**
+   * 학생삭제
+   * 
+   * @param request
+   * @param studno
+   */
 
   @ResponseBody
   @GetMapping("/student/delete/{studno}")
   public void delete(HttpServletRequest request,
-  @PathVariable("studno") int studno) {
-  
+      @PathVariable("studno") int studno) {
+
     String referer = request.getHeader("referer");
 
     if (referer == null || !referer.contains("/student")) {
@@ -195,8 +195,7 @@ public class StudentController {
     webHelper.redirect("/student", "삭제되었습니다");
   }
 
-
- /**
+  /**
    * 학생 수정 페이지
    * 
    * @param moder  모델객체
@@ -232,18 +231,18 @@ public class StudentController {
   @ResponseBody
   @PostMapping("/student/edit_ok/{studno}")
   public void edit_ok(
-    @PathVariable("studno") int studno,
-    @RequestParam("name") String name,
-    @RequestParam("userid") String userid,
-    @RequestParam("grade") int grade,
-    @RequestParam("idnum") String idnum,
-    @RequestParam("birthdate") String birthdate,
-    @RequestParam("tel") String tel,
-    @RequestParam("height") int height,
-    @RequestParam("weight") int weight,
-    @RequestParam("deptno") int deptno,
-    @RequestParam("profno") Integer profno)  {
-
+      @PathVariable("studno") int studno,
+      @RequestParam("name") String name,
+      @RequestParam("userid") String userid,
+      @RequestParam("grade") int grade,
+      @RequestParam("idnum") String idnum,
+      @RequestParam("birthdate") String birthdate,
+      @RequestParam("tel") String tel,
+      @RequestParam("height") int height,
+      @RequestParam("weight") int weight,
+      @RequestParam("deptno") int deptno,
+      // @RequestParam("profno") Integer profno
+      @RequestParam(value = "profno", required = false) Integer profno) { 
 
     // 수정할 값을을 beans에 담는다
     Student student = new Student();
@@ -258,7 +257,6 @@ public class StudentController {
     student.setWeight(weight);
     student.setDeptno(deptno);
     student.setProfno(profno);
-
 
     // 데이터를 수정한다
 

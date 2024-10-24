@@ -9,7 +9,7 @@
   <body>
     <div th:replace="~{fragments/header :: my-header}"></div>
 
-    <h2>교수관리</h2>
+    <h2>학생관리</h2>
     <hr />
     <form method="post" th:action="@{/student/add_ok}">
       <table class="mytable">
@@ -18,13 +18,7 @@
           <col />
         </colgroup>
         <tbody>
-          <tr>
-            <th>학생학번</th>
-            <td class="text-left field">
-              <input type="text" name="studno">
-            </td>
-          </tr>
-    
+
           <tr>
             <th>학생이름</th>
             <td class="text-left field">
@@ -63,7 +57,7 @@
           <tr>
             <th>전화번호</th>
             <td class="text-left field">
-              <input type="number" name="tel">
+              <input type="text" name="tel">
             </td>
           </tr>
     

@@ -114,7 +114,8 @@ public class ProfessorController {
       @RequestParam("position") String position,
       @RequestParam("sal") int sal,
       @RequestParam("hiredate") String hiredate,
-      @RequestParam("comm") int comm,
+      // @RequestParam("comm") int comm,
+      @RequestParam(value = "comm", required = false) Integer comm,
       @RequestParam("deptno") int deptno) {
 
 
@@ -132,7 +133,7 @@ public class ProfessorController {
     professor.setPosition(position);
     professor.setSal(sal);
     professor.setHiredate(hiredate);
-    professor.setComm(comm);
+    professor.setComm(null);
     professor.setDeptno(deptno);
 
     try {
