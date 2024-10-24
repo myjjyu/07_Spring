@@ -168,10 +168,10 @@ private HttpServletResponse response;
       return;
     }
 
-    //에러시 알럿창에 에러메시지 보이게 하기
+    // 알럿창에 메세지 보이게 하기
     if (message != null && !message.equals("")) {
       out.println("<script>");
-      out.println("alert('" + message + "';");
+      out.println("alert('" + message + "');");
       out.println("</script>");
 
     if (url != null && !url.equals("")) {

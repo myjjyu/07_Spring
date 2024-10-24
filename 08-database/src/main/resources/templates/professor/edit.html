@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Spring</title>
+    <link rel="stylesheet" th:href="@{/assets/css/common.css}" />
+  </head>
+  <body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+
+    <h2>교수관리</h2>
+    <hr />
+    <form method="post" th:action="@{/professor/edit_ok/{profno}(profno=${professor.profno})}">
+      <table class="mytable">
+        <colgroup>
+          <col width="150" />
+          <col />
+        </colgroup>
+        <tbody>
+
+          <tr>
+            <th>교수이름</th>
+            <td class="text-left field">
+              <input type="text" name="name" />
+            </td>
+          </tr>
+
+          <tr>
+            <th>교수아이디</th>
+            <td class="text-left field">
+              <input type="text" name="userid" />
+            </td>
+          </tr>
+
+          <tr>
+            <th>교수직책</th>
+            <td class="text-left field">
+              <input type="text" name="position" />
+            </td>
+          </tr>
+
+          <tr>
+            <th>교수급여</th>
+            <td class="text-left field">
+              <input type="number" name="sal" />
+            </td>
+          </tr>
+
+          <tr>
+            <th>입사날짜</th>
+            <td class="text-left field">
+              <input type="date" name="hiredate" />
+            </td>
+          </tr>
+
+          <tr>
+            <th>성과금</th>
+            <td class="text-left field">
+              <input type="number" name="comm" />
+            </td>
+          </tr>
+
+          <tr>
+            <th>학과번호</th>
+            <td class="text-left field">
+              <input type="text" name="deptno" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="button-container">
+        <button type="submit" class="mybutton green">등록</button>
+        <a class="mybutton red" th:href="@{/professor}">취소</a>
+      </div>
+    </form>
+  </body>
+</html>

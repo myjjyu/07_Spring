@@ -11,6 +11,9 @@
 
     <h2>학과관리</h2>
     <hr />
+    <div class="button-container">
+      <a class="mybutton blue" th:href="@{/department/add}">새 학과 등록</a>
+    </div>
     <table class="mytable">
       <tr>
         <th>학과번호</th>
@@ -28,8 +31,8 @@
               th:text="${department.dname}" /></td>
           <td th:text="${department.loc}"></td>
           <td>
-            <a href="#">수정</a>
-            <a href="#">삭제</a>
+            <a th:href="@{/department/edit/{deptno}(deptno=${department.deptno})}">수정</a>
+            <a th:href="@{/department/delete/{deptno}(deptno=${department.deptno})}">삭제</a>
           </td>
         </tr>
       </tbody>

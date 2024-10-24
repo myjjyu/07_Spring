@@ -77,6 +77,8 @@
 
     <div class="button-container">
       <a class="mybutton green" th:href="@{/student}">목록보기</a>
+      <a class="mybutton blue" th:href="@{/student/edit/{studno}(studno=${student.studno})}">수정</a>
+      <a class="mybutton red" th:href="@{/student/delete/{studno}(studno=${student.studno})}">삭제</a>
     </div>
   </body>
 </html>

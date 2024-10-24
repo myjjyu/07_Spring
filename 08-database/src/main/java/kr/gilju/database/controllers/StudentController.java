@@ -7,7 +7,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
+import jakarta.servlet.http.HttpServletRequest;
 import kr.gilju.database.exceptions.ServiceNoResultException;
 import kr.gilju.database.helpers.WebHelper;
 import kr.gilju.database.models.Student;
@@ -81,5 +85,193 @@ public class StudentController {
     // view 에 데이터 전달
     model.addAttribute("student", student);
     return "/student/detail";
+  }
+
+
+  /**
+   * 학생 등록 화면
+   * 
+   * @return 교수 등록 화면을 구현한 뷰 경로
+   */
+  @GetMapping("student/add")
+  public String add() {
+    return "/student/add";
+  }
+
+ /**
+  * 학생 수정
+  * @param request
+  * @param name
+  * @param userid
+  * @param grade
+  * @param idnum
+  * @param birthdate
+  * @param tel
+  * @param height
+  * @param weight
+  * @param deptno
+  * @param profno
+  */
+  @ResponseBody
+  @PostMapping("/student/add_ok")
+  public void addOk(HttpServletRequest request,
+      @RequestParam("name") String name,
+      @RequestParam("userid") String userid,
+      @RequestParam("grade") int grade,
+      @RequestParam("idnum") String idnum,
+      @RequestParam("birthdate") String birthdate,
+      @RequestParam("tel") String tel,
+      @RequestParam("height") int height,
+      @RequestParam("weight") int weight,
+      @RequestParam("deptno") int deptno,
+      @RequestParam("profno") Integer profno) {
+
+
+        String referer = request.getHeader("referer");
+
+    if (referer == null || !referer.contains("/student")) {
+      webHelper.badRequest("올바르지 않은 접근 입니다");
+      return;
+    }
+
+    // 저장할 값을을 beans에 담는다
+    Student student = new Student();
+    student.setName(name);
+    student.setUserid(userid);
+    student.setGrade(grade);
+    student.setIdnum(idnum);
+    student.setBirthdate(birthdate);
+    student.setTel(tel);
+    student.setHeight(height);
+    student.setWeight(weight);
+    student.setDeptno(deptno);
+    student.setProfno(profno);
+
+    try {
+      studentService.addItem(student);
+    } catch (ServiceNoResultException e) {
+      webHelper.serverError(e);
+    } catch (Exception e) {
+      webHelper.serverError(e);
+    }
+
+    // insert, update, delete 처리를 수행하는 경우에는 리다이렉트로 이동
+    // insert 결과를 확인할 수 있는 상세 페이지로 이동해야 한다
+    // 상세 페이지에 조회 대상의 pk 값을 전달해야 한다
+    // 등록하면 새로 생성된 학과 번호를 들고 해당 페이지로 이동(주소창 보면 새로 생성된 학과 번호 확인 가능함)
+    // 학과번호가 department 에서의 pk값임
+    webHelper.redirect("/student/detail/" + student.getStudno(), "등록되었습니다");
+  }
+
+/**
+ * 학생삭제
+ * @param request
+ * @param studno
+ */
+
+  @ResponseBody
+  @GetMapping("/student/delete/{studno}")
+  public void delete(HttpServletRequest request,
+  @PathVariable("studno") int studno) {
+  
+    String referer = request.getHeader("referer");
+
+    if (referer == null || !referer.contains("/student")) {
+      webHelper.badRequest("올바르지 않은 접근 입니다");
+      return;
+    }
+
+    Student student = new Student();
+    student.setStudno(studno);
+
+    try {
+      studentService.deleteItem(student);
+    } catch (ServiceNoResultException e) {
+      webHelper.serverError(e);
+    } catch (Exception e) {
+      webHelper.serverError(e);
+    }
+
+    webHelper.redirect("/student", "삭제되었습니다");
+  }
+
+
+ /**
+   * 학생 수정 페이지
+   * 
+   * @param moder  모델객체
+   * @param deptno 학과번호
+   * @return 뷰페이지의 경로
+   */
+  @GetMapping("/student/edit/{studno}")
+  public String edit(Model model,
+      @PathVariable("studno") int studno) {
+
+    // 파라미터로 받은 pk값을 빈즈에객체에 담기
+    // --> 검색조건으로 사용하기 위힘
+    Student params = new Student();
+    params.setStudno(studno);
+
+    // 수정할 데이터의 현재값을 조회한다
+    Student student = null;
+
+    try {
+      student = studentService.getItem(params);
+    } catch (ServiceNoResultException e) {
+      webHelper.serverError(e);
+    } catch (Exception e) {
+      webHelper.serverError(e);
+    }
+
+    // 뷰에데이터 전달
+    model.addAttribute("student", student);
+
+    return "/Student/edit";
+  }
+
+  @ResponseBody
+  @PostMapping("/student/edit_ok/{studno}")
+  public void edit_ok(
+    @RequestParam("studno") int studno,
+    @RequestParam("name") String name,
+    @RequestParam("userid") String userid,
+    @RequestParam("grade") int grade,
+    @RequestParam("idnum") String idnum,
+    @RequestParam("birthdate") String birthdate,
+    @RequestParam("tel") String tel,
+    @RequestParam("height") int height,
+    @RequestParam("weight") int weight,
+    @RequestParam("deptno") int deptno,
+    @RequestParam("profno") Integer profno)  {
+
+
+    // 수정할 값을을 beans에 담는다
+    Student student = new Student();
+    student.setStudno(studno);
+    student.setName(name);
+    student.setUserid(userid);
+    student.setGrade(grade);
+    student.setIdnum(idnum);
+    student.setBirthdate(birthdate);
+    student.setTel(tel);
+    student.setHeight(height);
+    student.setWeight(weight);
+    student.setDeptno(deptno);
+    student.setProfno(profno);
+
+
+    // 데이터를 수정한다
+
+    try {
+      studentService.editItem(student);
+    } catch (ServiceNoResultException e) {
+      webHelper.serverError(e);
+    } catch (Exception e) {
+      webHelper.serverError(e);
+    }
+
+    // 수정결과를 확인하기 위해서 상세 페이지로 이동
+    webHelper.redirect("/student/detail/" + student.getStudno(), "수정되었습니다");
+
   }
 }

@@ -17,51 +17,59 @@
         <col />
       </colgroup>
       <tbody>
-        <tr>
-          <th>교수번호</th>
-          <td class="text-left" th:text="${professor.profno}"></td>
-        </tr>
+      <tr>
+        <th>교수번호</th>
+        <td class="text-left" th:text="${professor.profno}"></td>
+      </tr>
 
-        <tr>
-          <th>교수이름</th>
-          <td class="text-left" th:text="${professor.name}"></td>
-        </tr>
+      <tr>
+        <th>교수이름</th>
+        <td class="text-left" th:text="${professor.name}"></td>
+      </tr>
 
-        <tr>
-          <th>교수아이디</th>
-          <td class="text-left" th:text="${professor.userid}"></td>
-        </tr>
 
-        <tr>
-          <th>교수직책</th>
-          <td class="text-left" th:text="${professor.position}"></td>
-        </tr>
+      <tr>
+        <th>교수아이디</th>
+        <td class="text-left" th:text="${professor.userid}"></td>
+      </tr>
 
-        <tr>
-          <th>교수급여</th>
-          <td class="text-left" th:text="${professor.sal}"></td>
-        </tr>
 
-        <tr>
-          <th>입사날짜</th>
-          <td class="text-left" th:text="${professor.hiredate}"></td>
-        </tr>
+      <tr>
+        <th>교수직책</th>
+        <td class="text-left" th:text="${professor.position}"></td>
+      </tr>
 
-        <tr>
-          <th>성과금</th>
-          <td class="text-left" th:text="${professor.comm}"></td>
-        </tr>
 
-        <tr>
-          <th>학과번호</th>
-          <td class="text-left" th:text="${professor.deptno}"></td>
-        </tr>
+      <tr>
+        <th>교수급여</th>
+        <td class="text-left" th:text="${professor.sal}"></td>
+      </tr>
+
+
+      <tr>
+        <th>입사날짜</th>
+        <td class="text-left" th:text="${professor.hiredate}"></td>
+      </tr>
+
+
+      <tr>
+        <th>성과금</th>
+        <td class="text-left" th:text="${professor.comm}"></td>
+      </tr>
+
+
+      <tr>
+        <th>학과번호</th>
+        <td class="text-left" th:text="${professor.deptno}"></td>
+      </tr>
 
       </tbody>
     </table>
 
     <div class="button-container">
       <a class="mybutton green" th:href="@{/professor}">목록보기</a>
+      <a class="mybutton blue" th:href="@{/professor/edit/{profno}(profno=${professor.profno})}">수정</a>
+      <a class="mybutton red" th:href="@{/professor/delete/{profno}(profno=${professor.profno})}">삭제</a>
     </div>
   </body>
 </html>
