@@ -232,7 +232,7 @@ public class StudentController {
   @ResponseBody
   @PostMapping("/student/edit_ok/{studno}")
   public void edit_ok(
-    @RequestParam("studno") int studno,
+    @PathVariable("studno") int studno,
     @RequestParam("name") String name,
     @RequestParam("userid") String userid,
     @RequestParam("grade") int grade,
