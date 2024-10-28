@@ -76,12 +76,17 @@
           </tr>
     
           <tr>
-            <th>학과</th>
+            <th>소속학과</th>
             <td class="text-left field">
-              <input type="number" name="deptno">
+              <!-- <input type="text" name="deptno" /> -->
+               <select name="deptno">
+                <option value="">------ 소속 학과 선택 ------</option>
+                <option th:each="dept : ${departments}" th:value="${dept.deptno}"
+                th:text="${dept.dname}"></option>
+               </select>
             </td>
           </tr>
-    
+          
           <tr>
             <th>담당교수</th>
             <td class="text-left field">

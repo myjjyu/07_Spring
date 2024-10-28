@@ -65,7 +65,7 @@
 .button-container {
   display: flex;
   justify-content: center;
-  margin: 15px 0;
+  margin: 20px 0;
 
   &.search-field {
     justify-content: space-between;
@@ -88,8 +88,9 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   transition: all 0.2s ease-in-out;
+  margin: 0 5px;
 
   &:hover {
     filter: brightness(70%);

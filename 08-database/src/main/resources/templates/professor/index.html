@@ -12,16 +12,11 @@
     <h2>교수관리</h2>
     <hr />
     <div class="button-container search-field">
-      <!-- 검색폼 -->
-      <!-- 1) 검색어는 get방식으로 전송 
-      2) 검색결과 페이지가 별도로 엇ㅂ는 경우 action은 자기 스스로를 지정 
-      3) submit은 컨트롤러에게 검색어를 전송한다
-      4) 컨트롤러는 전송받은 검색어를 다시 view 에게 전달하여 자동환성 시켜야 한다-->
       <form method="get" th:action="@{/professor}">
         <input
           type="search"
           name="keyword"
-          placeholder="학과명 or 위치 검색"
+          placeholder="교수이름 or 교수 아이디"
           th:value="${keyword}"
         />
         <button type="submit" class="mybutton gray">검색</button>
@@ -42,24 +37,23 @@
       </tr>
       <tbody>
         <tr th:each="professor : ${professors}">
-          <td th:text="${professor.profno}"></td>
-
-          <td>
-            <a
-              th:href="@{/professor/detail/{profno}(profno=${professor.profno})}"
-              th:text="${professor.name}" /></td>
-          <td th:text="${professor.userid}"></td>
-          <td th:text="${professor.position}"></td>
-          <td th:text="${#numbers.formatInteger(professor.sal, 1, 'COMMA')}"></td>
-          <td th:text="${professor.hiredate}"></td>
-          <td th:text="${#number.formatInteger(professor.comm, 1, 'COMMA')}"></td>
-          <td th:text="${professor.dname}"></td>
-          <td>
-            <a th:href="@{/professor/edit/{profno}(profno=${professor.profno})}">수정</a>
-            <a th:href="@{/professor/delete/{profno}(profno=${professor.profno})}">삭제</a>
-          </td>
+            <td th:text="${professor.profno}"></td>
+            <td>
+                <a th:href="@{/professor/detail/{profno}(profno=${professor.profno})}" th:text="${professor.name}"></a>
+            </td>
+            <td th:text="${professor.userid}"></td>
+            <td th:text="${professor.position}"></td>
+            <td th:text="${#numbers.formatInteger(professor.sal, 1, 'COMMA')}"></td>
+            <td th:text="${professor.hiredate}"></td>
+            <td th:text="${#numbers.formatInteger(professor.comm, 1, 'COMMA')}"></td>
+            <td th:text="${professor.dname}"></td>
+            <td>
+                <a th:href="@{/professor/edit/{profno}(profno=${professor.profno})}">수정</a>
+                <a th:href="@{/professor/delete/{profno}(profno=${professor.profno})}">삭제</a>
+            </td>
         </tr>
-      </tbody>
+    </tbody>
+    
     </table>
 
     <!-- 페이지 번호 -->
@@ -91,7 +85,8 @@
       <li th:if="${pagination.nextPage > 0}">
         <a
           th:href="@{/professor(keyword=${keyword}, page=${pagination.nextPage})}"
-          >&raquo;</a>
+          >&raquo;</a
+        >
       </li>
 
       <li th:unless="${pagination.nextPage > 0}"><a>&raquo;</a></li>

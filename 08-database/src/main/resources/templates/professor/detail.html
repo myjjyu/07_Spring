@@ -54,7 +54,7 @@
 
       <tr>
         <th>성과금</th>
-        <td class="text-left" th:text="${#numbers.comm}"></td>
+        <td class="text-left" th:text="${#numbers.formatInteger(professor.comm, 1, 'COMMA')}"></td>
       </tr>
 
 

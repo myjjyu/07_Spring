@@ -5,73 +5,122 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import kr.gilju.database.exceptions.ServiceNoResultException;
 import kr.gilju.database.mappers.StudentMapper;
 import kr.gilju.database.models.Student;
 import kr.gilju.database.services.StudentService;
+import lombok.extern.slf4j.Slf4j;
 
 /**
- * 학과 관리 기능과 관련된 MyBatis Mapper를 간접적으로 호출하기 위한 기능 명세
- * 
- * 1) 모든 메서드를 재정의 한 직후 리턴값 먼저 정의
+ * 학생 관리 기능에 대한 비즈니스 로직 처리를 담당하는 서비스 계층의 구현체
  */
 
- @Service
+@Slf4j
+@Service
 public class StudentServiceImpl implements StudentService {
-
 
     /** sql문을 구현하고 있는 mapper객체 주입 */
     @Autowired
     private StudentMapper studentMapper;
 
-
     @Override
-    public Student addItem(Student input) throws ServiceNoResultException, Exception {
-    int rows = studentMapper.insert(input);
+    public Student addItem(Student input) throws Exception {
+        int rows = 0;
 
-    if (rows == 0) {
-        throw new ServiceNoResultException("저장된 데이터가 없습니다");
-    }
-    
-    return studentMapper.selectItem(input);
-    }
+        try {
+            rows = studentMapper.insert(input);
 
-    @Override
-    public Student editItem(Student input) throws ServiceNoResultException, Exception {
-    int rows = studentMapper.update(input);
+            if (rows == 0) {
+                throw new Exception("저장된 데이터가 없습니다");
+            }
+        } catch (Exception e) {
+            log.error("데이터 저장에 실패했습니다", e);
+            throw e;
+        }
 
-    if (rows == 0) {
-        throw new ServiceNoResultException("수정된 데이터가 없습니다");
-    }
-    
-    return studentMapper.selectItem(input);
+        return studentMapper.selectItem(input);
     }
 
     @Override
-    public int deleteItem(Student input) throws ServiceNoResultException, Exception {
+    public Student editItem(Student input) throws Exception {
+        int rows = 0;
 
-        int rows = studentMapper.delete(input);
+        try {
+            rows = studentMapper.update(input);
 
-        if (rows == 0) {
-            throw new ServiceNoResultException("삭제된 데이터가 없습니다");
+            if (rows == 0) {
+                throw new Exception("수정된 데이터가 없습니다");
+            }
+        } catch (Exception e) {
+            log.error("데이터 수정에 실패했습니다", e);
+            throw e;
+        }
+
+        return studentMapper.selectItem(input);
+    }
+
+    @Override
+    public int deleteItem(Student input) throws Exception {
+
+        int rows = 0;
+
+        Student student = new Student();
+        student.setStudno(input.getStudno());
+
+        try {
+            rows = studentMapper.delete(input);
+
+            if (rows == 0) {
+                throw new Exception("삭제된 데이터가 없습니다");
+            }
+
+        } catch (Exception e) {
+            log.error("데이터 삭제에 실패했습니다", e);
+            throw e;
         }
 
         return rows;
     }
 
     @Override
-    public Student getItem(Student input) throws ServiceNoResultException, Exception {
-        Student output = studentMapper.selectItem(input);
+    public Student getItem(Student input) throws Exception {
+        Student output = null;
 
-        if (output == null) {
-            throw new ServiceNoResultException("조회된 데이터가 없습니다");
+        try {
+            output = studentMapper.selectItem(input);
+            if (output == null) {
+                throw new Exception("조회된 데이터가 없습니다");
+            }
+
+        } catch (Exception e) {
+            log.error("학생 조회에 실패했습니다", e);
+            throw e;
         }
 
         return output;
     }
 
     @Override
-    public List<Student> getList(Student input) throws ServiceNoResultException, Exception {
-        return studentMapper.selectList(input);
+    public List<Student> getList(Student input) throws Exception {
+        List<Student> output = null;
+
+        try {
+            output = studentMapper.selectList(input);
+        } catch (Exception e) {
+            log.error("학생 목록 조회에 실패했습니다");
+            throw e;
+        }
+        return output;
+    }
+
+    public int getCount(Student input) throws Exception {
+        int output = 0;
+
+        try {
+            output = studentMapper.selectCount(input);
+        } catch (Exception e) {
+            log.error("데이터 집계에 실패했습니다", e);
+            throw e;
+        }
+        return output;
     }
 }

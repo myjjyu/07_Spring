@@ -75,7 +75,8 @@ public interface ProfessorMapper {
          */
         @Select("SELECT " +
                         "profno, name, userid, position, sal," +
-                        "DATE_FORMAT(hiredate, '%Y-%m-%d') AS hiredate, comm, deptno " +
+                        "DATE_FORMAT(hiredate, '%Y-%m-%d') AS hiredate, comm, " +
+                        "p.deptno as deptno, dname " +
                         "FROM professor p " +
                         "INNER JOIN department d ON p.deptno = d.deptno " +
                         "WHERE profno=#{profno}")

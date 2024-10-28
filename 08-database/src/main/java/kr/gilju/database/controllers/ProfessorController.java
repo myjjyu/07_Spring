@@ -100,17 +100,17 @@ public class ProfessorController {
     input.setProfno(profno);
 
     // 조회 결과를 저장할 객체 선언
-    Professor professor = null;
+    Professor output = null;
 
     try {
       // 데이터 조회
-      professor = professorService.getItem(input);
+      output = professorService.getItem(input);
     } catch (Exception e) {
       webHelper.serverError(e);
     }
 
     // view 에 데이터 전달
-    model.addAttribute("professor", professor);
+    model.addAttribute("professor", output);
     return "/professor/detail";
   }
 
@@ -119,7 +119,7 @@ public class ProfessorController {
    * 
    * @return 교수 등록 화면을 구현한 뷰 경로
    */
-  @GetMapping("professor/add")
+  @GetMapping("/professor/add")
   public String add(Model model) {
     //모든 학과 목록을 조회하여 뷰에 전달한다
     List<Department> output = null;
@@ -154,7 +154,7 @@ public class ProfessorController {
       @RequestParam("position") String position,
       @RequestParam("sal") int sal,
       @RequestParam("hiredate") String hiredate,
-      // @RequestParam("comm") int comm,
+      // @RequestParam("comm")Integer comm,
       @RequestParam(value = "comm", required = false) Integer comm,
       @RequestParam("deptno") int deptno) {
 
@@ -263,7 +263,7 @@ public class ProfessorController {
       @RequestParam("position") String position,
       @RequestParam("sal") int sal,
       @RequestParam("hiredate") String hiredate,
-      // @RequestParam("comm") int comm,
+      // @RequestParam("comm") Integer comm,
       @RequestParam(value = "comm", required = false) Integer comm,
       @RequestParam("deptno") int deptno) {
 

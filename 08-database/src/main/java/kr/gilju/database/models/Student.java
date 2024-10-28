@@ -1,6 +1,8 @@
 package kr.gilju.database.models;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * Student 테이블의 구조를 정의하는 클래스
@@ -19,6 +21,17 @@ import lombok.Data;
     private int weight; // 몸무게
     private int deptno; // 학과
     private Integer profno; // 담당 교수 번호
+
+    private String dname; //학과명(조인을 통해 조합된 값)
+    private String pName; //교수이름
+
+    @Getter
+    @Setter
+    private static int listCount = 0;
+
+    @Getter
+    @Setter
+    private static int offset = 0;
   }
   
 
