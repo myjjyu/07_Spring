@@ -17,6 +17,8 @@ public class Professor {
   private String hiredate; // 입사날짜
   private Integer comm; // 성과금 / 숫자, null 둘다 가능
   private int deptno; // 학과번호
+
+  
   private String dname; // 학과명(조인을 통해 조합된 값)
 
   @Getter

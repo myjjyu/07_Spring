@@ -25,6 +25,7 @@
     </div>
 
     <table class="mytable">
+      <thead>
       <tr>
         <th>학생학번</th>
         <th>학생이름</th>
@@ -35,18 +36,15 @@
         <th>전화번호</th>
         <th>키</th>
         <th>몸무게</th>
-        <th>학과</th>
-        <th>담당교수</th>
-
+        <th>소속학과</th>
+        <th>담당교수이름</th>
         <th>-</th>
       </tr>
+    </thead>
       <tbody>
         <tr th:each="student : ${students}">
           <td th:text="${student.studno}"></td>
-
-          <td>
-            <a
-              th:href="@{/student/detail/{studno}(studno=${student.studno})}"
+          <td><a th:href="@{/student/detail/{studno}(studno=${student.studno})}"
               th:text="${student.name}" /></td>
           <td th:text="${student.userid}"></td>
           <td th:text="${student.grade}"></td>
@@ -55,8 +53,12 @@
           <td th:text="${student.tel}"></td>
           <td th:text="${student.height}"></td>
           <td th:text="${student.weight}"></td>
-          <td th:text="${student.deptno}"></td>
-          <td th:text="${student.profno}"></td>
+
+          
+          <!-- //학과명(조인을 통해 조합된 값) -->
+          <td th:text="${student.dname}"></td>
+          <!-- //교수이름 -->
+          <td th:text="${student.pName}"></td>
           <td>
             <a th:href="@{/student/edit/{studno}(studno=${student.studno})}">수정</a>
             <a th:href="@{/student/delete/{studno}(studno=${student.studno})}">삭제</a>

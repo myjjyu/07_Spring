@@ -1,5 +1,6 @@
 package kr.gilju.database.controllers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,14 +13,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import jakarta.servlet.http.HttpServletRequest;
-import kr.gilju.database.exceptions.ServiceNoResultException;
 import kr.gilju.database.helpers.Pagination;
 import kr.gilju.database.helpers.WebHelper;
 import kr.gilju.database.models.Department;
 import kr.gilju.database.models.Professor;
 import kr.gilju.database.models.Student;
 import kr.gilju.database.services.DepartmentService;
-import kr.gilju.database.services.ProfessorService; 
+import kr.gilju.database.services.ProfessorService;
 import kr.gilju.database.services.StudentService;
 
 @Controller
@@ -34,15 +34,12 @@ public class StudentController {
 
   /** 교수 서비스 객체 주입 추가 */
   @Autowired
-  private ProfessorService professorService; 
-
+  private ProfessorService professorService;
 
   /** WebHelper 주입 */
   @Autowired
   private WebHelper webHelper;
 
-
-  
   /**
    * 학생 목록 화면
    * 
@@ -77,27 +74,27 @@ public class StudentController {
       // 페이지 번호 계산 --> 계산 결과를 로그로 출력된 것이다
       pagination = new Pagination(nowPage, totalCount, listCount, pageCount);
 
-       // sql의 Limit 절에서 사용될 값을 beans 의 static 변수에 저장 
-       Student.setOffset(pagination.getOffset());
-       Student.setListCount(pagination.getListCount());
+      // sql의 Limit 절에서 사용될 값을 beans 의 static 변수에 저장
+      Student.setOffset(pagination.getOffset());
+      Student.setListCount(pagination.getListCount());
 
-       output = studentService.getList(input);
-      } catch (Exception e) {
-        webHelper.serverError(e);
-      }
+      output = studentService.getList(input);
+    } catch (Exception e) {
+      webHelper.serverError(e);
+    }
 
-      model.addAttribute("students", output);
-      model.addAttribute("keyword", keyword);
-      model.addAttribute("pagination", pagination);
-      
+    model.addAttribute("students", output);
+    model.addAttribute("keyword", keyword);
+    model.addAttribute("pagination", pagination);
+
     return "/student/index";
   }
 
   /**
    * 학생 상세 화면
    * 
-   * @param model
-   * @param profno
+   * @param model  모델
+   * @param profno 담당 교수 번호
    * @return
    */
 
@@ -124,33 +121,43 @@ public class StudentController {
     return "/student/detail";
   }
 
- /**
- * 학생 등록 화면
- * 
- * @return 학생 등록 화면을 구현한 뷰 경로
- */
-@GetMapping("student/add")
-public String add(Model model) {
+  /**
+   * 학생 등록 화면
+   * 
+   * @return 학생 등록 화면을 구현한 뷰 경로
+   */
+  @GetMapping("student/add")
+  public String add(Model model) {
     // 모든 학과와 교수 목록을 조회하여 뷰에 전달한다
-    List<Department> output2 = null; // 학과 목록
-    List<Professor> output3 = null; // 교수 목록
+    List<Department> output = null; // 학과 목록
+    List<Professor> output2 = null; // 교수 목록
 
     try {
-        output2 = departmentService.getList(null); // 학과 목록 조회
-        output3 = professorService.getList(null); // 교수 목록 조회
+      output = departmentService.getList(null); // 학과 목록 조회
+      output2 = professorService.getList(null); // 교수 목록 조회
+
+      // 학과 목록과 교수 목록이 null일 경우 빈 리스트로 초기화
+      if (output == null) {
+        output = new ArrayList<>();
+      }
+      if (output2 == null) {
+        output2 = new ArrayList<>();
+      }
+
     } catch (Exception e) {
-        webHelper.serverError(e); // 서버 오류 처리
+      webHelper.serverError(e); // 서버 오류 처리
     }
 
-    model.addAttribute("departments", output2); // 학과 목록을 모델에 추가
-    model.addAttribute("professors", output3); // 교수 목록을 모델에 추가
+    model.addAttribute("departments", output); // 학과 목록을 모델에 추가
+    model.addAttribute("professors", output2); // 교수 목록을 모델에 추가
     return "/student/add"; // 학생 등록 화면 뷰 경로 반환
-}
+  }
 
   /**
    * 학생 등록 처리
-   * 액션 페이지들은 뷰를 사용하지 않고 다른페이지로 이동해야 하므로 
+   * 액션 페이지들은 뷰를 사용하지 않고 다른페이지로 이동해야 하므로
    * 메서드 상단에 ResponseBody 를 적용하여 뷰없이 직접 응답을 구현한다
+   * 
    * @param request
    * @param name
    * @param userid
@@ -175,8 +182,7 @@ public String add(Model model) {
       @RequestParam("height") int height,
       @RequestParam("weight") int weight,
       @RequestParam("deptno") int deptno,
-      @RequestParam(value = "profno", required = false) Integer profno
-      ) {
+      @RequestParam(value = "profno", required = false) Integer profno) {
 
     String referer = request.getHeader("referer");
 
@@ -200,7 +206,7 @@ public String add(Model model) {
 
     try {
       studentService.addItem(input);
-    }catch (Exception e) {
+    } catch (Exception e) {
       webHelper.serverError(e);
     }
 
@@ -236,7 +242,7 @@ public String add(Model model) {
 
     try {
       studentService.deleteItem(input);
-    }catch (Exception e) {
+    } catch (Exception e) {
       webHelper.serverError(e);
     }
 
@@ -268,6 +274,7 @@ public String add(Model model) {
       output = studentService.getItem(input);
       output2 = departmentService.getList(null); // 학과 목록 조회
       output3 = professorService.getList(null); // 교수 목록 조회
+
     } catch (Exception e) {
       webHelper.serverError(e);
     }
@@ -294,7 +301,7 @@ public String add(Model model) {
       @RequestParam("weight") int weight,
       @RequestParam("deptno") int deptno,
       // @RequestParam("profno") Integer profno
-      @RequestParam(value = "profno", required = false) Integer profno) { 
+      @RequestParam(value = "profno", required = false) Integer profno) {
 
     // 수정할 값을을 beans에 담는다
     Student input = new Student();
@@ -311,11 +318,8 @@ public String add(Model model) {
     input.setProfno(profno);
 
     // 데이터를 수정한다
-
     try {
       studentService.editItem(input);
-    } catch (ServiceNoResultException e) {
-      webHelper.serverError(e);
     } catch (Exception e) {
       webHelper.serverError(e);
     }

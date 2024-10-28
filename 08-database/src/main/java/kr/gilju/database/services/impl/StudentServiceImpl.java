@@ -63,9 +63,6 @@ public class StudentServiceImpl implements StudentService {
 
         int rows = 0;
 
-        Student student = new Student();
-        student.setStudno(input.getStudno());
-
         try {
             rows = studentMapper.delete(input);
 

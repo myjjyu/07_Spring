@@ -32,11 +32,31 @@
               <input type="text" name="userid" th:value="${student.userid}" >
             </td>
           </tr>
-    
+<!--     
           <tr>
             <th>학생학년</th>
             <td class="text-left field">
               <input type="number" name="grade" th:value="${student.grade}" >
+            </td>
+          </tr> -->
+
+          <tr>
+            <th>학생학년</th>
+            <td class="text-left field">
+              <label>
+              <input type="radio" name="grade" value="1학년" th:checked="${student.grade == '1학년'}"/>
+              1학년
+            </label>
+
+            <label>
+              <input type="radio" name="position" value="2학년" th:checked="${student.grade == '2학년'}"/>
+              2학년
+            </label>
+
+            <label>
+              <input type="radio" name="position" value="3학년" th:checked="${student.grade == '3학년'}"/>
+              3학년
+            </label>
             </td>
           </tr>
     
@@ -50,7 +70,7 @@
           <tr>
             <th>생일</th>
             <td class="text-left field">
-              <input type="date" name="birthdate" th:value="${#dates.format(student.birthdate, 'yyyy-MM-dd')}" >
+              <input type="date" name="birthdate" th:value="${student.birthdate}"  >
             </td>
           </tr>
     
@@ -75,29 +95,31 @@
             </td>
           </tr>
     
+    
           <tr>
             <th>소속학과</th>
             <td class="text-left field">
-              <select name="deptno" required>
+              <!-- <input type="text" name="deptno" /> -->
+              <select name="deptno">
                 <option value="">------ 소속 학과 선택 ------</option>
                 <option th:each="dept : ${departments}" 
-                        th:value="${dept.deptno}"
-                        th:text="${dept.dname}" 
-                        th:selected="${dept.deptno == student.deptno}"></option>
-              </select>
+                        th:value="${dept.deptno}" 
+                        th:text="${dept.dname != null ? dept.dname : 'N/A'}">
+                </option>
+            </select>
+            
             </td>
           </tr>
     
           <tr>
-            <th>담당 교수</th>
+            <th>담당교수이름</th>
             <td class="text-left field">
-              <select name="profno" required>
-                <option value="">------ 담당 교수 선택 ------</option>
-                <option th:each="prof : ${professors}" 
-                        th:value="${prof.profno}" 
-                        th:text="${prof.name}" 
-                        th:selected="${prof.profno == student.profno}"></option>
-              </select>
+              <!-- <input type="text" name="deptno" /> -->
+               <select name="profno">
+                <option value="">------ 담당교수이름 ------</option>
+                <option th:each="prof : ${professors}" th:value="${prof.profno}"
+                th:text="${prof.profname}"></option>
+               </select>
             </td>
           </tr>
         </tbody>
