@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import jakarta.servlet.http.HttpServletRequest;
 import kr.gilju.database.exceptions.ServiceNoResultException;
+import kr.gilju.database.helpers.Pagination;
 import kr.gilju.database.helpers.WebHelper;
 import kr.gilju.database.models.Department;
 import kr.gilju.database.services.DepartmentService;
@@ -34,22 +35,47 @@ public class DepartmentController {
    * @param response 학과 목록 화면을 구현한 view 경로
    * @return
    */
-  @GetMapping("/department")
-  public String index(Model model) {
+  @GetMapping({ "/", "/department" })
+  public String index(Model model,
+      // 검색어 파라미터 (페이지가 처음 열릴때는 값이 없음. 필수(required)가 아님)
+      @RequestParam(value = "keyword", required = false) String keyword,
+      // 페이지 구현에서 사용할 현재 페이지 번호 
+      @RequestParam(value="page", defaultValue="1") int nowPage){
+        
+        int totalCount = 0; // 전체 게시글 수
+        int listCount = 5; // 한 페이지당 표시할 목록 수
+        int pageCount = 2; // 한 그룹당 표시할 페이지 번호 수
 
-    List<Department> departments = null;
+        // 페이지 번호를 계산한 결과가 저장될 객체 
+        Pagination pagination = null;
+        
+    // 조회 조건에 사용할 객체
+    Department input = new Department();
+    input.setDname(keyword);
+    input.setLoc(keyword);
+
+    List<Department> output = null;
 
     try {
-      departments = departmentService.getList(null);
-    } catch (ServiceNoResultException e) {
-      webHelper.serverError(e);
-      return null;
+      // 전체 게시글 수 조회
+      totalCount = departmentService.getCount(input);
+      // 페이지 번호 계산 --> 계산 결과를 로그로 출력된 것이다
+      pagination = new Pagination(nowPage, totalCount, listCount, pageCount);
+
+      // sql의 Limit 절에서 사용될 값을 beans 의 static 변수에 저장 
+
+      Department.setOffset(pagination.getOffset());
+      Department.setListCount(pagination.getListCount());
+
+      output = departmentService.getList(input);
     } catch (Exception e) {
       webHelper.serverError(e);
-      return null;
     }
 
-    model.addAttribute("departments", departments);
+    model.addAttribute("departments", output);
+    model.addAttribute("keyword", keyword);
+    model.addAttribute("pagination", pagination);
+
     return "/department/index";
   }
 

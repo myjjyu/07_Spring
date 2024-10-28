@@ -42,7 +42,7 @@
 
       <tr>
         <th>교수급여</th>
-        <td class="text-left" th:text="${professor.sal}"></td>
+        <td class="text-left" th:text="${#numbers.formatInteger(professor.sal, 1, 'COMMA')}"></td>
       </tr>
 
 
@@ -54,13 +54,13 @@
 
       <tr>
         <th>성과금</th>
-        <td class="text-left" th:text="${professor.comm}"></td>
+        <td class="text-left" th:text="${#numbers.comm}"></td>
       </tr>
 
 
       <tr>
-        <th>학과번호</th>
-        <td class="text-left" th:text="${professor.deptno}"></td>
+        <th>소속학과</th>
+        <td class="text-left" th:text="${professor.dname}"></td>
       </tr>
 
       </tbody>

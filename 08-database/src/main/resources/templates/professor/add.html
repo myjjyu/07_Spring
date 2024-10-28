@@ -43,7 +43,7 @@
           <tr>
             <th>교수급여</th>
             <td class="text-left field">
-              <input type="number" name="sal" />
+              <input type="number" name="sal" step="1" min="0"/>
             </td>
           </tr>
 
@@ -57,14 +57,19 @@
           <tr>
             <th>성과금</th>
             <td class="text-left field">
-              <input type="number" name="comm" />
+              <input type="number" name="comm" step="1" min="0" />
             </td>
           </tr>
 
           <tr>
-            <th>학과번호</th>
+            <th>소속학과</th>
             <td class="text-left field">
-              <input type="text" name="deptno" />
+              <!-- <input type="text" name="deptno" /> -->
+               <select name="deptno">
+                <option value="">------ 소속 학과 선택 ------</option>
+                <option th:each="dept : ${departments}" th:value="${dept.deptno}"
+                th:text="${dept.dname}"></option>
+               </select>
             </td>
           </tr>
         </tbody>
@@ -72,7 +77,7 @@
 
       <div class="button-container">
         <button type="submit" class="mybutton green">등록</button>
-        <a class="mybutton red" th:href="@{/professer}">취소</a>
+        <a class="mybutton red" th:href="@{/professor}">취소</a>
       </div>
     </form>
   </body>

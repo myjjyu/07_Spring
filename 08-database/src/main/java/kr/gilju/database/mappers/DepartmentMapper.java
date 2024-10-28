@@ -74,10 +74,35 @@ public interface DepartmentMapper {
    * @param input
    * @return
    */
-  @Select("SELECT deptno, dname, loc FROM department " +
-      "ORDER BY deptno DESC")
+  @Select("<script>" +
+      "SELECT deptno, dname, loc FROM department " +
+      "<where>" +
+      "<if test='dname != null'>dname LIKE concat('%', #{dname}, '%')</if>" +
+      "<if test='loc != null'>OR loc LIKE concat('%', #{loc}, '%')</if>" +
+      "</where>" +
+      "ORDER BY deptno DESC" +
+      "<if test='listCount > 0'>LIMIT #{offset}, #{listCount}</if>" +
+      "</script>")
+
   // 조회 결과와 모델 의 맵핑이 이전 규칙과 동일한 경우 id값으로 이전 규칙을 재사용
   @ResultMap("departmentMap")
   public List<Department> selectList(Department input);
+
+
+  /**
+   * 검색 결과의 수를 조회하는 메서드
+   * 목록 조회와 동일한 검색 조건을 적용해야 한다
+   * @param input 조회 조건을 담고있는 객체 
+   * @return 조회 결과 수
+   */
+  @Select("<script>" +
+      "SELECT COUNT(*) AS cnt FROM department " +
+      "<where>" +
+      "<if test='dname != null'>dname LIKE concat('%', #{dname}, '%')</if>" +
+      "<if test='loc != null'>OR loc LIKE concat('%', #{loc}, '%')</if>" +
+      "</where>" +
+      "</script>")
+
+      public int selectCount(Department input);
 
 }

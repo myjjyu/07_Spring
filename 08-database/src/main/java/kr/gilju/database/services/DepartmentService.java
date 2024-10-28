@@ -46,6 +46,7 @@ public interface DepartmentService {
   public int deleteItem(Department input) throws ServiceNoResultException, Exception;
 
   /**
+   * 학과정보 단일행조회
    * 학과 정보를 조회한다. 조회된 데이터가 없는 경우 예외가 발생한다
    * @param input - 조회할 학과의 일련번호를 담고 있는 Beans
    * @return Department - 조회된 데이터
@@ -55,6 +56,7 @@ public interface DepartmentService {
   public Department getItem(Department input) throws ServiceNoResultException, Exception;
 
   /**
+   * 학과정보 다중행조회
    * 학과 정보를 조회한다. 조회된 데이터가 없는 경우 예외가 발생한다
    * @param input - 조회할 학과의 일련번호를 담고 있는 Beans
    * @return Department - 조회된 데이터
@@ -62,4 +64,14 @@ public interface DepartmentService {
    * @throws ServiceNoResultException - 조회된 데이터가 없는 경우
    */
   public List<Department> getList(Department input) throws ServiceNoResultException, Exception;
+
+
+  /**
+   * 학과 목록에 대한 카운트 결과를 반환한다
+   * 
+   * @param input 조회할 학과의 학과번호를 담고있는 beans
+   * @return Department -조회된 데이터
+   * @throws Exception -sql 처리에 실패한 경우
+   */
+  public int getCount(Department input) throws Exception;
 }

@@ -144,7 +144,7 @@ public class StudentController {
     student.setHeight(height);
     student.setWeight(weight);
     student.setDeptno(deptno);
-    student.setProfno(null);
+    student.setProfno(profno);
 
     try {
       studentService.addItem(student);
