@@ -76,7 +76,7 @@ public class ProfessorController {
         webHelper.serverError(e);
       }
 
-      model.addAttribute("departments", output);
+      model.addAttribute("professors", output);
       model.addAttribute("keyword", keyword);
       model.addAttribute("pagination", pagination);
       
