@@ -23,7 +23,7 @@ import lombok.Setter;
     private Integer profno; // 담당 교수 번호
 
     private String dname; //학과명(조인을 통해 조합된 값)
-    private String pName; //교수이름
+    private String pname; //교수이름
 
     @Getter
     @Setter

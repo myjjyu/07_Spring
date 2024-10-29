@@ -92,11 +92,11 @@ public interface StudentMapper {
         @Select("SELECT " +
                         "studno, s.name AS name, s.userid AS userid, grade, idnum, " +
                         "DATE_FORMAT(birthdate, '%Y-%m-%d') AS birthdate, " +
-                        "tel, height, weight, p.name AS pName, d.dname AS dname, " + // dname과 pName 가져오기
+                        "tel, height, weight, p.name AS pname, d.dname AS dname, " + // dname과 pname 가져오기
                         "s.deptno AS deptno, s.profno AS profno " + // deptno와 profno를 명확하게 선택
                         "FROM student s " +
                         "INNER JOIN department d ON s.deptno = d.deptno " +
-                        "INNER JOIN professor p ON s.profno = p.profno " +
+                        "LEFT OUTER JOIN professor p ON s.profno = p.profno " +
                         "WHERE studno = #{studno}")
         @Results(id = "studentMap", value = {
                         @Result(property = "studno", column = "studno"),
@@ -111,7 +111,7 @@ public interface StudentMapper {
                         @Result(property = "deptno", column = "deptno"), // deptno 매핑
                         @Result(property = "profno", column = "profno"), // profno 매핑
                         @Result(property = "dname", column = "dname"), // dname 매핑
-                        @Result(property = "pName", column = "pName") // pName 매핑
+                        @Result(property = "pname", column = "pname") // pname 매핑
         })
         public Student selectItem(Student input);
 
@@ -130,7 +130,7 @@ public interface StudentMapper {
                         "d.dname AS dname, p.name AS pname " + // 학과 이름과 교수 이름 선택
                         "FROM student s " +
                         "INNER JOIN department d ON s.deptno = d.deptno " + // 학과 테이블과 결합
-                        "INNER JOIN professor p ON s.profno = p.profno " + // 교수 테이블과 결합
+                        "LEFT OUTER JOIN professor p ON s.profno = p.profno " +
                         "<where>" +
                         "<if test='name != null'>s.name LIKE concat('%', #{name}, '%')</if>" + // 이름 조건
                         "<if test='userid != null'> OR s.userid LIKE concat('%', #{userid}, '%')</if>" + // 사용자 ID 조건
@@ -153,7 +153,7 @@ public interface StudentMapper {
                         "FROM student s " +
                         "INNER JOIN department d ON s.deptno = d.deptno " +
                         // department 테이블을 d라는 별칭으로 지정하고, 학생의 deptno와 학과의 deptno를 기준으로 결합
-                        "INNER JOIN professor p ON s.profno = p.profno " +
+                        "LEFT OUTER JOIN professor p ON s.profno = p.profno " +
                         // professor 테이블을 p라는 별칭으로 지정하고, 학생의 profno와 교수의 profno를 기준으로 결합
                         // -->이로 인해 학생에게 담당 교수의 정보를 포함할 수 있다
                         "<where>" +

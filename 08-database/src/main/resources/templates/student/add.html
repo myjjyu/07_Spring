@@ -36,7 +36,27 @@
           <tr>
             <th>학생학년</th>
             <td class="text-left field">
-              <input type="number" name="grade" >
+              
+              <!-- <input type="number" name="grade" > -->
+              <label>
+                <input type="radio" name="grade" value="1" />
+                1학년
+              </label>
+  
+              <label>
+                <input type="radio" name="grade" value="2" />
+                2학년
+              </label>
+  
+              <label>
+                <input type="radio" name="grade" value="3" />
+                3학년
+              </label>
+
+              <label>
+                <input type="radio" name="grade" value="4" />
+                4학년
+              </label>
             </td>
           </tr>
     
@@ -81,12 +101,14 @@
               <!-- <input type="text" name="deptno" /> -->
               <select name="deptno">
                 <option value="">------ 소속 학과 선택 ------</option>
-                <option th:each="dept : ${departments}" th:value="${dept.deptno}" th:text="${dept.dname != null ? dept.dname : 'N/A'}"></option>
+                <option th:each="dept : ${departments}" 
+                        th:value="${dept.deptno}" 
+                        th:text="${dept.dname}" ></option>
             </select>
             
             </td>
           </tr>
-          
+    
           <tr>
             <th>담당교수이름</th>
             <td class="text-left field">
@@ -94,7 +116,7 @@
                <select name="profno">
                 <option value="">------ 담당교수이름 ------</option>
                 <option th:each="prof : ${professors}" th:value="${prof.profno}"
-                th:text="${dept.dname}"></option>
+                th:text="${prof.name}"></option>
                </select>
             </td>
           </tr>

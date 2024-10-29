@@ -58,7 +58,7 @@
           <!-- //학과명(조인을 통해 조합된 값) -->
           <td th:text="${student.dname}"></td>
           <!-- //교수이름 -->
-          <td th:text="${student.pName}"></td>
+          <td th:text="${student.pname}"></td>
           <td>
             <a th:href="@{/student/edit/{studno}(studno=${student.studno})}">수정</a>
             <a th:href="@{/student/delete/{studno}(studno=${student.studno})}">삭제</a>

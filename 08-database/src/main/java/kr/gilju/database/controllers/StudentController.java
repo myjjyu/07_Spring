@@ -1,6 +1,5 @@
 package kr.gilju.database.controllers;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -126,7 +125,7 @@ public class StudentController {
    * 
    * @return 학생 등록 화면을 구현한 뷰 경로
    */
-  @GetMapping("student/add")
+  @GetMapping("/student/add")
   public String add(Model model) {
     // 모든 학과와 교수 목록을 조회하여 뷰에 전달한다
     List<Department> output = null; // 학과 목록
@@ -135,15 +134,7 @@ public class StudentController {
     try {
       output = departmentService.getList(null); // 학과 목록 조회
       output2 = professorService.getList(null); // 교수 목록 조회
-
-      // 학과 목록과 교수 목록이 null일 경우 빈 리스트로 초기화
-      if (output == null) {
-        output = new ArrayList<>();
-      }
-      if (output2 == null) {
-        output2 = new ArrayList<>();
-      }
-
+      
     } catch (Exception e) {
       webHelper.serverError(e); // 서버 오류 처리
     }
