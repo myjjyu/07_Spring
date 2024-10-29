@@ -156,6 +156,7 @@ public interface StudentMapper {
                         "LEFT OUTER JOIN professor p ON s.profno = p.profno " +
                         // professor 테이블을 p라는 별칭으로 지정하고, 학생의 profno와 교수의 profno를 기준으로 결합
                         // -->이로 인해 학생에게 담당 교수의 정보를 포함할 수 있다
+                        // --> null 값도 가져오려고 LEFT OUTER JOIN 사용
                         "<where>" +
                         "<if test='name != null'>s.name LIKE concat('%', #{name}, '%')</if>" + // 이름 조건
                         "<if test='userid != null'> OR s.userid LIKE concat('%', #{userid}, '%')</if>" + // 사용자 ID 조건
