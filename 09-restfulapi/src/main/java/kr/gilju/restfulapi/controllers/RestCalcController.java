@@ -87,9 +87,6 @@ public class RestCalcController {
     // result.put("result", x / y); // 나누기
 
     if (y != 0) {
-      // result.put("x", x);
-      // result.put("y", y);
-      // result.put("result", x / y); 
     } else {
       result.put("x", x);
       result.put("y", y);

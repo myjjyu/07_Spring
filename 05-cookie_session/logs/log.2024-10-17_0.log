@@ -1,0 +1,296 @@
+[INFO ] 24-10-17 10:33:39 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 3792 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-17 10:33:39 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-17 10:33:39 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-17 10:33:40 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.859 seconds (process running for 1.147)
+[INFO ] 24-10-17 10:33:48 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:33:48 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:33:48 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-17 10:33:48 [MyInterceptor:91] - running time: 74(ms)
+[INFO ] 24-10-17 10:33:49 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:33:49 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:33:49 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-17 10:33:49 [MyInterceptor:81] - - REFERER : time=-1570, url=http://localhost:8080/
+[INFO ] 24-10-17 10:33:49 [MyInterceptor:91] - running time: 46(ms)
+[INFO ] 24-10-17 10:33:51 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:33:51 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:33:51 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 10:33:51 [MyInterceptor:81] - - REFERER : time=-1871, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-17 10:33:51 [MyInterceptor:91] - running time: 18(ms)
+[INFO ] 24-10-17 10:33:55 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:33:55 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:33:55 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-17 10:33:55 [MyInterceptor:81] - - REFERER : time=-3844, url=http://localhost:8080/session/home
+[INFO ] 24-10-17 10:33:55 [MyInterceptor:91] - running time: 39(ms)
+[INFO ] 24-10-17 10:34:05 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:34:05 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:34:05 [MyInterceptor:67] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-17 10:34:05 [MyInterceptor:74] - (parma)<---cookie_name = name
+[INFO ] 24-10-17 10:34:05 [MyInterceptor:74] - (parma)<---cookie_time = 5
+[INFO ] 24-10-17 10:34:05 [MyInterceptor:74] - (parma)<---cookie_var = 송길주
+[INFO ] 24-10-17 10:34:05 [MyInterceptor:81] - - REFERER : time=-9897, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-17 10:34:05 [MyInterceptor:91] - running time: 25(ms)
+[INFO ] 24-10-17 10:34:05 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:34:05 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:34:05 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-17 10:34:05 [MyInterceptor:81] - - REFERER : time=-5, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-17 10:34:05 [MyInterceptor:91] - running time: 15(ms)
+[INFO ] 24-10-17 10:34:06 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:34:06 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:34:06 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 10:34:06 [MyInterceptor:81] - - REFERER : time=-849, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-17 10:34:06 [MyInterceptor:91] - running time: 23(ms)
+[INFO ] 24-10-17 10:34:11 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:34:11 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:34:11 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 10:34:11 [MyInterceptor:81] - - REFERER : time=-5038, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-17 10:34:11 [MyInterceptor:91] - running time: 29(ms)
+[INFO ] 24-10-17 10:34:46 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 4005 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-17 10:34:46 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-17 10:34:46 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-17 10:34:47 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.945 seconds (process running for 1.169)
+[INFO ] 24-10-17 10:36:02 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 4284 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-17 10:36:02 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-17 10:36:02 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-17 10:36:03 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.917 seconds (process running for 1.164)
+[INFO ] 24-10-17 10:36:07 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:36:07 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:36:07 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-17 10:36:07 [MyInterceptor:91] - running time: 78(ms)
+[INFO ] 24-10-17 10:36:08 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:36:08 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:36:08 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 10:36:08 [MyInterceptor:81] - - REFERER : time=-1235, url=http://localhost:8080/
+[INFO ] 24-10-17 10:36:08 [MyInterceptor:91] - running time: 36(ms)
+[INFO ] 24-10-17 10:39:27 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 4627 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-17 10:39:27 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-17 10:39:27 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-17 10:39:28 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.871 seconds (process running for 1.131)
+[INFO ] 24-10-17 10:39:32 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:39:33 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:39:33 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-17 10:39:33 [MyInterceptor:91] - running time: 72(ms)
+[INFO ] 24-10-17 10:39:34 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:39:34 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:39:34 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 10:39:34 [MyInterceptor:81] - - REFERER : time=-958, url=http://localhost:8080/
+[INFO ] 24-10-17 10:39:34 [MyInterceptor:91] - running time: 45(ms)
+[INFO ] 24-10-17 10:39:37 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:39:37 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:39:37 [MyInterceptor:67] - [POST] http://localhost:8080/session/save;jsessionid=2201561991A07D9A2DEDEEA5EBC0B9D9
+[INFO ] 24-10-17 10:39:37 [MyInterceptor:74] - (parma)<---user_name = 송길주
+[INFO ] 24-10-17 10:39:37 [MyInterceptor:74] - (parma)<---user_age = 30
+[INFO ] 24-10-17 10:39:37 [MyInterceptor:81] - - REFERER : time=-3761, url=http://localhost:8080/session/home
+[INFO ] 24-10-17 10:39:37 [MyInterceptor:91] - running time: 24(ms)
+[INFO ] 24-10-17 10:39:37 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:39:37 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:39:37 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 10:39:37 [MyInterceptor:81] - - REFERER : time=-5, url=http://localhost:8080/session/home
+[INFO ] 24-10-17 10:39:37 [MyInterceptor:91] - running time: 16(ms)
+[INFO ] 24-10-17 10:39:42 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:39:42 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:39:42 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 10:39:42 [MyInterceptor:81] - - REFERER : time=-4437, url=http://localhost:8080/session/home
+[INFO ] 24-10-17 10:39:42 [MyInterceptor:91] - running time: 39(ms)
+[INFO ] 24-10-17 10:39:42 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:39:43 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:39:43 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-17 10:39:43 [MyInterceptor:81] - - REFERER : time=-644, url=http://localhost:8080/session/home
+[INFO ] 24-10-17 10:39:43 [MyInterceptor:91] - running time: 25(ms)
+[INFO ] 24-10-17 10:39:44 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:39:44 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:39:44 [MyInterceptor:67] - [POST] http://localhost:8080/cookie/popup_close
+[INFO ] 24-10-17 10:39:44 [MyInterceptor:74] - (parma)<---no-open = Y
+[INFO ] 24-10-17 10:39:44 [MyInterceptor:81] - - REFERER : time=-1862, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-17 10:39:44 [MyInterceptor:91] - running time: 35(ms)
+[INFO ] 24-10-17 10:39:44 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:39:44 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:39:44 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-17 10:39:44 [MyInterceptor:81] - - REFERER : time=-4, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-17 10:39:44 [MyInterceptor:91] - running time: 15(ms)
+[INFO ] 24-10-17 10:39:46 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:39:46 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:39:46 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-17 10:39:46 [MyInterceptor:81] - - REFERER : time=-1683, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-17 10:39:46 [MyInterceptor:91] - running time: 31(ms)
+[INFO ] 24-10-17 10:39:48 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:39:48 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:39:48 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-17 10:39:48 [MyInterceptor:81] - - REFERER : time=-1527, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-17 10:39:48 [MyInterceptor:91] - running time: 28(ms)
+[INFO ] 24-10-17 10:39:48 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:39:48 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:39:48 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 10:39:48 [MyInterceptor:81] - - REFERER : time=-543, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-17 10:39:48 [MyInterceptor:91] - running time: 22(ms)
+[INFO ] 24-10-17 10:39:49 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:39:49 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:39:49 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-17 10:39:49 [MyInterceptor:81] - - REFERER : time=-1103, url=http://localhost:8080/session/home
+[INFO ] 24-10-17 10:39:49 [MyInterceptor:91] - running time: 21(ms)
+[INFO ] 24-10-17 10:39:51 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:39:51 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:39:51 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-17 10:39:51 [MyInterceptor:81] - - REFERER : time=-1800, url=http://localhost:8080/session/home
+[INFO ] 24-10-17 10:39:51 [MyInterceptor:91] - running time: 26(ms)
+[INFO ] 24-10-17 10:39:52 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:39:52 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:39:52 [MyInterceptor:67] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 10:39:52 [MyInterceptor:81] - - REFERER : time=-876, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-17 10:39:52 [MyInterceptor:91] - running time: 19(ms)
+[INFO ] 24-10-17 10:39:53 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 10:39:53 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 10:39:53 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 10:39:53 [MyInterceptor:81] - - REFERER : time=-613, url=http://localhost:8080/session/login
+[INFO ] 24-10-17 10:39:53 [MyInterceptor:91] - running time: 17(ms)
+[INFO ] 24-10-17 11:14:59 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 11:14:59 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 11:14:59 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 11:14:59 [MyInterceptor:81] - - REFERER : time=-2106153, url=http://localhost:8080/session/home
+[INFO ] 24-10-17 11:14:59 [MyInterceptor:91] - running time: 25(ms)
+[INFO ] 24-10-17 11:15:00 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 11:15:00 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 11:15:00 [MyInterceptor:67] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 11:15:00 [MyInterceptor:81] - - REFERER : time=-972, url=http://localhost:8080/session/home
+[INFO ] 24-10-17 11:15:00 [MyInterceptor:91] - running time: 26(ms)
+[INFO ] 24-10-17 11:15:01 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 11:15:01 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 11:15:01 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 11:15:01 [MyInterceptor:81] - - REFERER : time=-692, url=http://localhost:8080/session/login
+[INFO ] 24-10-17 11:15:01 [MyInterceptor:91] - running time: 24(ms)
+[INFO ] 24-10-17 11:15:01 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 11:15:01 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 11:15:01 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-17 11:15:01 [MyInterceptor:81] - - REFERER : time=-651, url=http://localhost:8080/session/home
+[INFO ] 24-10-17 11:15:01 [MyInterceptor:91] - running time: 20(ms)
+[INFO ] 24-10-17 11:15:02 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 11:15:02 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 11:15:02 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-17 11:15:02 [MyInterceptor:81] - - REFERER : time=-624, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-17 11:15:02 [MyInterceptor:91] - running time: 18(ms)
+[INFO ] 24-10-17 11:15:04 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 11:15:04 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 11:15:04 [MyInterceptor:67] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-17 11:15:04 [MyInterceptor:81] - - REFERER : time=-1634, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-17 11:15:04 [MyInterceptor:91] - running time: 12(ms)
+[INFO ] 24-10-17 11:15:05 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 11:15:05 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 11:15:05 [MyInterceptor:67] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 11:15:05 [MyInterceptor:81] - - REFERER : time=-1212, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-17 11:15:05 [MyInterceptor:91] - running time: 23(ms)
+[INFO ] 24-10-17 11:15:07 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 11:15:07 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 11:15:07 [MyInterceptor:67] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 11:15:07 [MyInterceptor:81] - - REFERER : time=-2004, url=http://localhost:8080/session/home
+[INFO ] 24-10-17 11:15:07 [MyInterceptor:91] - running time: 25(ms)
+[INFO ] 24-10-17 13:10:30 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 4627 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-17 13:10:30 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-17 13:10:30 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-17 13:10:30 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.458 seconds (process running for 8505.748)
+[INFO ] 24-10-17 13:10:41 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 9655 (/Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/05-cookie_session)
+[DEBUG] 24-10-17 13:10:41 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-17 13:10:41 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-17 13:10:41 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.859 seconds (process running for 1.075)
+[INFO ] 24-10-17 13:10:46 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 13:10:46 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 13:10:46 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-17 13:10:46 [MyInterceptor:91] - running time: 81(ms)
+[INFO ] 24-10-17 13:10:48 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 13:10:48 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 13:10:48 [MyInterceptor:67] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 13:10:48 [MyInterceptor:81] - - REFERER : time=-1292, url=http://localhost:8080/
+[INFO ] 24-10-17 13:10:48 [MyInterceptor:91] - running time: 42(ms)
+[INFO ] 24-10-17 13:10:55 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 13:10:55 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 13:10:55 [MyInterceptor:67] - [POST] http://localhost:8080/session/login_ok
+[INFO ] 24-10-17 13:10:55 [MyInterceptor:74] - (parma)<---user_id = asdg
+[INFO ] 24-10-17 13:10:55 [MyInterceptor:74] - (parma)<---user_password = 12345
+[INFO ] 24-10-17 13:10:55 [MyInterceptor:81] - - REFERER : time=-7176, url=http://localhost:8080/session/login
+[ERROR] 24-10-17 13:10:55 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: Cannot create a session after the response has been committed] with root cause
+java.lang.IllegalStateException: Cannot create a session after the response has been committed
+	at org.apache.catalina.connector.Request.doGetSession(Request.java:2710)
+	at org.apache.catalina.connector.Request.getSession(Request.java:2199)
+	at org.apache.catalina.connector.RequestFacade.getSession(RequestFacade.java:639)
+	at org.apache.catalina.connector.RequestFacade.getSession(RequestFacade.java:645)
+	at kr.gilju.cookie_session.controllers.SessionController.loginOk(SessionController.java:123)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 24-10-17 13:10:55 [ErrorMvcAutoConfiguration$StaticView:202] - Cannot render error page for request [/session/login_ok] and exception [Cannot create a session after the response has been committed] as the response has already been committed. As a result, the response may have the wrong status code.
+[INFO ] 24-10-17 13:11:04 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 13:11:04 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 13:11:04 [MyInterceptor:67] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 13:11:04 [MyInterceptor:81] - - REFERER : time=-16090, url=http://localhost:8080/
+[INFO ] 24-10-17 13:11:04 [MyInterceptor:91] - running time: 40(ms)
+[INFO ] 24-10-17 13:11:12 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 13:11:12 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 13:11:12 [MyInterceptor:67] - [POST] http://localhost:8080/session/login_ok
+[INFO ] 24-10-17 13:11:12 [MyInterceptor:74] - (parma)<---user_id = gilju
+[INFO ] 24-10-17 13:11:12 [MyInterceptor:74] - (parma)<---user_password = 1234
+[INFO ] 24-10-17 13:11:12 [MyInterceptor:81] - - REFERER : time=-7932, url=http://localhost:8080/session/login
+[INFO ] 24-10-17 13:11:12 [MyInterceptor:91] - running time: 38(ms)
+[INFO ] 24-10-17 13:11:12 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 13:11:12 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 13:11:12 [MyInterceptor:67] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 13:11:12 [MyInterceptor:81] - - REFERER : time=-4, url=http://localhost:8080/session/login
+[INFO ] 24-10-17 13:11:12 [MyInterceptor:91] - running time: 16(ms)
+[INFO ] 24-10-17 13:11:16 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 13:11:16 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 13:11:16 [MyInterceptor:67] - [GET] http://localhost:8080/session/logout
+[INFO ] 24-10-17 13:11:16 [MyInterceptor:81] - - REFERER : time=-4184, url=http://localhost:8080/session/login
+[INFO ] 24-10-17 13:11:16 [MyInterceptor:91] - running time: 31(ms)
+[INFO ] 24-10-17 13:11:16 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-17 13:11:16 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-17 13:11:16 [MyInterceptor:67] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 13:11:16 [MyInterceptor:81] - - REFERER : time=-4, url=http://localhost:8080/session/login
+[INFO ] 24-10-17 13:11:16 [MyInterceptor:91] - running time: 16(ms)

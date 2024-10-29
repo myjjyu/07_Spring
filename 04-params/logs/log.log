@@ -1552,3 +1552,146 @@ org.attoparser.ParseException: (Line = 40, Column = 5) Incomplete structure: "<i
 [INFO ] 24-10-15 17:12:27 [MyInterceptor:74] - (parma)<---glasses = yes
 [INFO ] 24-10-15 17:12:27 [MyInterceptor:81] - - REFERER : time=-1166, url=http://localhost:8080/survey/step3?name=%EC%86%A1%EA%B8%B8%EC%A3%BC&age=22&group=student
 [INFO ] 24-10-15 17:12:27 [MyInterceptor:91] - running time: 80(ms)
+[INFO ] 24-10-15 17:40:39 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 31400 (/Users/song-gilju/Desktop/web3/09-SpringBoot/04-params/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/04-params)
+[DEBUG] 24-10-15 17:40:39 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 17:40:39 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 17:40:40 [ParamsApplication:56] - Started ParamsApplication in 1.829 seconds (process running for 2.158)
+[INFO ] 24-10-15 17:41:31 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:31 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:31 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 17:41:31 [MyInterceptor:91] - running time: 103(ms)
+[INFO ] 24-10-15 17:41:33 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:33 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:33 [MyInterceptor:67] - [GET] http://localhost:8080/survey
+[INFO ] 24-10-15 17:41:33 [MyInterceptor:81] - - REFERER : time=-1660, url=http://localhost:8080/
+[INFO ] 24-10-15 17:41:33 [MyInterceptor:91] - running time: 21(ms)
+[INFO ] 24-10-15 17:41:34 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:34 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:34 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 17:41:34 [MyInterceptor:81] - - REFERER : time=-1004, url=http://localhost:8080/survey
+[INFO ] 24-10-15 17:41:34 [MyInterceptor:91] - running time: 22(ms)
+[INFO ] 24-10-15 17:41:35 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:35 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:35 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 17:41:35 [MyInterceptor:81] - - REFERER : time=-755, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 17:41:35 [MyInterceptor:91] - running time: 11(ms)
+[INFO ] 24-10-15 17:41:35 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:35 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:35 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 17:41:35 [MyInterceptor:81] - - REFERER : time=-530, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 17:41:35 [MyInterceptor:91] - running time: 11(ms)
+[INFO ] 24-10-15 17:41:36 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:36 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:36 [MyInterceptor:67] - [GET] http://localhost:8080/survey
+[INFO ] 24-10-15 17:41:36 [MyInterceptor:81] - - REFERER : time=-577, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 17:41:36 [MyInterceptor:91] - running time: 11(ms)
+[INFO ] 24-10-15 17:41:37 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:37 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:37 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 17:41:37 [MyInterceptor:81] - - REFERER : time=-453, url=http://localhost:8080/survey
+[INFO ] 24-10-15 17:41:37 [MyInterceptor:91] - running time: 9(ms)
+[INFO ] 24-10-15 17:41:38 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:38 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:38 [MyInterceptor:67] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-15 17:41:38 [MyInterceptor:81] - - REFERER : time=-1447, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 17:41:38 [MyInterceptor:91] - running time: 11(ms)
+[INFO ] 24-10-15 17:41:39 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:39 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:39 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 17:41:39 [MyInterceptor:81] - - REFERER : time=-1372, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 17:41:39 [MyInterceptor:91] - running time: 15(ms)
+[INFO ] 24-10-15 17:41:41 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:41 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:41 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 17:41:41 [MyInterceptor:81] - - REFERER : time=-1833, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 17:41:41 [MyInterceptor:91] - running time: 12(ms)
+[INFO ] 24-10-15 17:41:42 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:42 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:42 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 17:41:42 [MyInterceptor:81] - - REFERER : time=-964, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 17:41:42 [MyInterceptor:91] - running time: 15(ms)
+[INFO ] 24-10-15 17:41:43 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:43 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:43 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 17:41:43 [MyInterceptor:81] - - REFERER : time=-1152, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 17:41:43 [MyInterceptor:91] - running time: 13(ms)
+[INFO ] 24-10-15 17:41:44 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:44 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:44 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 17:41:44 [MyInterceptor:81] - - REFERER : time=-1074, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 17:41:44 [MyInterceptor:91] - running time: 10(ms)
+[INFO ] 24-10-15 17:41:46 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:46 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:46 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 17:41:46 [MyInterceptor:81] - - REFERER : time=-1302, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 17:41:46 [MyInterceptor:91] - running time: 25(ms)
+[INFO ] 24-10-15 17:41:47 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:47 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:47 [MyInterceptor:67] - [GET] http://localhost:8080/survey
+[INFO ] 24-10-15 17:41:47 [MyInterceptor:81] - - REFERER : time=-1381, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 17:41:47 [MyInterceptor:91] - running time: 15(ms)
+[INFO ] 24-10-15 17:41:48 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:48 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:48 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 17:41:48 [MyInterceptor:81] - - REFERER : time=-632, url=http://localhost:8080/survey
+[INFO ] 24-10-15 17:41:48 [MyInterceptor:91] - running time: 8(ms)
+[INFO ] 24-10-15 17:41:48 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:48 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:48 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 17:41:48 [MyInterceptor:81] - - REFERER : time=-568, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 17:41:48 [MyInterceptor:91] - running time: 12(ms)
+[INFO ] 24-10-15 17:41:49 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:49 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:49 [MyInterceptor:67] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-15 17:41:49 [MyInterceptor:81] - - REFERER : time=-618, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 17:41:49 [MyInterceptor:91] - running time: 14(ms)
+[INFO ] 24-10-15 17:41:50 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:50 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:50 [MyInterceptor:67] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-15 17:41:50 [MyInterceptor:81] - - REFERER : time=-502, url=http://localhost:8080/get/home
+[INFO ] 24-10-15 17:41:50 [MyInterceptor:91] - running time: 10(ms)
+[INFO ] 24-10-15 17:41:52 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:52 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:52 [MyInterceptor:67] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-15 17:41:52 [MyInterceptor:81] - - REFERER : time=-2688, url=http://localhost:8080/post/home
+[INFO ] 24-10-15 17:41:52 [MyInterceptor:91] - running time: 9(ms)
+[INFO ] 24-10-15 17:41:56 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:56 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:56 [MyInterceptor:67] - [GET] http://localhost:8080/mypath/hello/world/1234
+[INFO ] 24-10-15 17:41:56 [MyInterceptor:81] - - REFERER : time=-3987, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 17:41:56 [MyInterceptor:91] - running time: 21(ms)
+[INFO ] 24-10-15 17:41:59 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:41:59 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:41:59 [MyInterceptor:67] - [GET] http://localhost:8080/survey
+[INFO ] 24-10-15 17:41:59 [MyInterceptor:81] - - REFERER : time=-3199, url=http://localhost:8080/path/home
+[INFO ] 24-10-15 17:41:59 [MyInterceptor:91] - running time: 10(ms)
+[INFO ] 24-10-15 17:42:03 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:42:03 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:42:03 [MyInterceptor:67] - [POST] http://localhost:8080/survey/step1
+[INFO ] 24-10-15 17:42:03 [MyInterceptor:74] - (parma)<---name = 송길주
+[INFO ] 24-10-15 17:42:03 [MyInterceptor:81] - - REFERER : time=-3316, url=http://localhost:8080/survey
+[INFO ] 24-10-15 17:42:03 [MyInterceptor:91] - running time: 10(ms)
+[INFO ] 24-10-15 17:42:06 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:42:06 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:42:06 [MyInterceptor:67] - [POST] http://localhost:8080/survey/step2
+[INFO ] 24-10-15 17:42:06 [MyInterceptor:74] - (parma)<---name = 송길주
+[INFO ] 24-10-15 17:42:06 [MyInterceptor:74] - (parma)<---age = 22
+[INFO ] 24-10-15 17:42:06 [MyInterceptor:81] - - REFERER : time=-2949, url=http://localhost:8080/survey/step1
+[INFO ] 24-10-15 17:42:06 [MyInterceptor:91] - running time: 11(ms)
+[INFO ] 24-10-15 17:42:07 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:42:07 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:42:07 [MyInterceptor:67] - [GET] http://localhost:8080/survey/step3?name=%EC%86%A1%EA%B8%B8%EC%A3%BC&age=22&group=teacher
+[INFO ] 24-10-15 17:42:07 [MyInterceptor:74] - (parma)<---name = 송길주
+[INFO ] 24-10-15 17:42:07 [MyInterceptor:74] - (parma)<---age = 22
+[INFO ] 24-10-15 17:42:07 [MyInterceptor:74] - (parma)<---group = teacher
+[INFO ] 24-10-15 17:42:07 [MyInterceptor:81] - - REFERER : time=-1067, url=http://localhost:8080/survey/step2
+[INFO ] 24-10-15 17:42:07 [MyInterceptor:91] - running time: 14(ms)
+[INFO ] 24-10-15 17:42:09 [MyInterceptor:32] - ----------------- new client connect -----------------
+[INFO ] 24-10-15 17:42:09 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 17:42:09 [MyInterceptor:67] - [GET] http://localhost:8080/survey/step4?name=%EC%86%A1%EA%B8%B8%EC%A3%BC&age=22&group=teacher&glasses=yes
+[INFO ] 24-10-15 17:42:09 [MyInterceptor:74] - (parma)<---name = 송길주
+[INFO ] 24-10-15 17:42:09 [MyInterceptor:74] - (parma)<---age = 22
+[INFO ] 24-10-15 17:42:09 [MyInterceptor:74] - (parma)<---group = teacher
+[INFO ] 24-10-15 17:42:09 [MyInterceptor:74] - (parma)<---glasses = yes
+[INFO ] 24-10-15 17:42:09 [MyInterceptor:81] - - REFERER : time=-1864, url=http://localhost:8080/survey/step3?name=%EC%86%A1%EA%B8%B8%EC%A3%BC&age=22&group=teacher
+[INFO ] 24-10-15 17:42:09 [MyInterceptor:91] - running time: 14(ms)

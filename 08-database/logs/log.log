@@ -19607,3 +19607,4 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 |-------|-----|-------|------|--------------|-----------|------------|-------|-------|-------|-----|
 
 [DEBUG] 24-10-29 17:44:21 [selectList:135] - <==      Total: 5
+[WARN ] 24-10-29 17:48:23 [HikariPool:789] - HikariPool-1 - Retrograde clock change detected (housekeeper delta=27s936ms), soft-evicting connections from pool.

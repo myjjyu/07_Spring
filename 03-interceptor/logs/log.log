@@ -1,0 +1,16 @@
+[INFO ] 24-10-15 10:12:13 [InterceptorApplication:50] - Starting InterceptorApplication using Java 17.0.2 with PID 6021 (/Users/song-gilju/Desktop/web3/09-SpringBoot/03-interceptor/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/03-interceptor)
+[DEBUG] 24-10-15 10:12:13 [InterceptorApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 10:12:13 [InterceptorApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 10:12:14 [InterceptorApplication:56] - Started InterceptorApplication in 0.93 seconds (process running for 1.167)
+[INFO ] 24-10-15 10:12:33 [MyInterceptor:32] - -----------------new client connect -----------------
+[INFO ] 24-10-15 10:12:33 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 10:12:33 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 10:12:33 [MyInterceptor:91] - running time: 80(ms)
+[INFO ] 24-10-15 12:37:01 [InterceptorApplication:50] - Starting InterceptorApplication using Java 17.0.2 with PID 11102 (/Users/song-gilju/Desktop/web3/09-SpringBoot/03-interceptor/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/03-interceptor)
+[DEBUG] 24-10-15 12:37:01 [InterceptorApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-15 12:37:01 [InterceptorApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-15 12:37:02 [InterceptorApplication:56] - Started InterceptorApplication in 0.985 seconds (process running for 1.224)
+[INFO ] 24-10-15 12:37:10 [MyInterceptor:32] - -----------------new client connect -----------------
+[INFO ] 24-10-15 12:37:10 [MyInterceptor:49] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 129.0
+[INFO ] 24-10-15 12:37:10 [MyInterceptor:67] - [GET] http://localhost:8080/
+[INFO ] 24-10-15 12:37:10 [MyInterceptor:91] - running time: 97(ms)
