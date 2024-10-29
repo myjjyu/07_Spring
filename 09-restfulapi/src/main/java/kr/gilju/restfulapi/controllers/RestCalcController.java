@@ -81,11 +81,6 @@ public class RestCalcController {
 
     // 3) 제이슨으로 변환될 map객체 구성
     Map<String, Object> result = new LinkedHashMap<String, Object>();
-
-    // result.put("x", x);
-    // result.put("y", y);
-    // result.put("result", x / y); // 나누기
-
     if (y != 0) {
     } else {
       result.put("x", x);
