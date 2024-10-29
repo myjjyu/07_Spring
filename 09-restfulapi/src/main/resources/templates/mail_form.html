@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
   </head>
   <body>
     <div th:replace="~{fragments/header :: my-header}"></div>
-    <h2>JAVA 메일 발송 연습</h2>
+    <h2>Ajax 메일 발송 연습</h2>
     <form id="mailform" method="post" th:action="@{/sendmail}">
       <div>
         <label for="sender-name">발신인: </label>
@@ -54,26 +54,33 @@
           const backend = e.currentTarget.getAttribute("action");
 
           let response = null;
-
+          // 가상의 form 데이터를 생성한 axios 로 전송
           const formData = new FormData(form);
 
           try {
             response = await axios.post(backend, formData);
           } catch (error) {
+
+            //axios의 기본 에러 베시지를 추출하여 문자열로 구성 
             console.error(`[Error Code] ${error.code}`);
             console.error(`[Error Message] ${error.message}`);
             let alerMsg = error.message;
 
+            //http 상태메시지가 포함되어 있다면 해당 내용을 에러 문자열에 추가
             if (error.response !== undefined) {
               const errorMsg = `${error.response.status} error - ${error.response.statusText}`;
               console.error(`[HTTP Status] ${errorMsg}`);
               alerMsg += `\n${errorMsg}`;
             }
+            // 메시지박스로 에러 내용 표시
             alert(alerMsg);
 
+            // catch에서 return을 하더라도 finally가 수행된 후 실행이 취소된다
             return;
           }
           alert("메일이 발송되었습니다");
+
+          // 이후 다른 페이지로 이동하거나 다른 작업을 수행한다
         });
     </script>
   </body>
