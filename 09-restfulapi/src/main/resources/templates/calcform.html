@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+    <h2>Ajax 계산기</h2>
+    <form id="calcform" action="/my_calc">
+      <div>
+        <input type="text" name="x" id="x" />
+        <select name="op">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+        <input type="text" name="y" id="y" />
+        <input type="submit" value="계산" />
+      </div>
+    </form>
+    
+    <ul id="result">
+      <!-- 결과가 여기에 추가됩니다 -->
+    </ul>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/37.0.1/classic/ckeditor.js"></script>
+    <script>
+      document.querySelector("#calcform").addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const form = e.currentTarget;
+    
+        // 백엔드 주소
+        const backend = form.getAttribute("action");
+    
+        // 응답결과가 저장될 객체
+        let response = null;
+    
+        // 선택된 연산자만 추출
+        const op = form.querySelector("select[name='op']").value;
+    
+        // 가상의 form 데이터를 생성한 axios 로 전송
+        const formData = new FormData(form);
+    
+        try {
+          // 연산자에 따라 GET, POST, PUT, DELETE 선택
+          switch (op) {
+            case "+":
+              response = await axios.get(backend, {
+                params: Object.fromEntries(formData),
+              });
+              break;
+            case "-":
+              response = await axios.post(backend, formData);
+              break;
+            case "*":
+              response = await axios.put(backend, formData);
+              break;
+            case "/":
+              response = await axios.delete(backend, {
+                data: formData,
+              });
+              break;
+          }
+        } catch (error) {
+          let alertMsg = null;
+          console.log(error);
+    
+          if (error.response?.data) {
+            const data = error.response.data;
+            alertMsg = data.message;
+            console.error("Error occurred in the backend server.");
+            console.error(`[${data.status}] ${data.error}`);
+            console.error(data.trace);
+          } else {
+            alertMsg = error.message;
+            console.error("Error occurred in Axios.");
+            console.error(`[${error.code}] ${error.message}`);
+          }
+    
+          alert(alertMsg);
+          return;
+        }
+    
+        // 결과처리
+        const result = response.data;
+    
+        // 결과물을 화면에 출력
+        const li = document.createElement("li");
+        li.textContent = `${result.x} ${op} ${result.y} = ${result.result}`;
+        document.querySelector("#result").appendChild(li);
+      });
+    </script>
+    
+    </script>
+  </body>
+</html>
