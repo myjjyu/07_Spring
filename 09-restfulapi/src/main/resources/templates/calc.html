@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+    <h2>Ajax 계산기</h2>
+    <form id="calcform" th:action="@{/my_calc}">
+      <div>
+        <input type="text" name="x" id="x" />
+        <select name="op">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="x">*</option>
+          <option value="/">/</option>
+        </select>
+        <input type="text" name="y" id="y" />
+        <input type="submit" value="계산" />
+      </div>
+    </form>
+    
+    <ul id="result">
+      <!-- 결과가 여기에 추가 -->
+    </ul>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/assets/js/calc.js"></script>
+    
+  </body>
+</html>

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import kr.gilju.restfulapi.helpers.RestHelper;
 
 @Controller
-public class CalcformController {
+public class CalcController {
   
 
     @Autowired
@@ -18,9 +18,9 @@ public class CalcformController {
  * 프론트엔드 역할
  * @return 
  */
-  @GetMapping("/calcform")
-  public String calcForm() {
-    return "calcform.html";
+  @GetMapping("/calc")
+  public String calc() {
+    return "calc.html";
   }
 
 }
