@@ -60,18 +60,35 @@
           try {
             response = await axios.post(backend, formData);
           } catch (error) {
+            console.error();
 
             //axios의 기본 에러 베시지를 추출하여 문자열로 구성 
             console.error(`[Error Code] ${error.code}`);
             console.error(`[Error Message] ${error.message}`);
             let alerMsg = error.message;
 
-            //http 상태메시지가 포함되어 있다면 해당 내용을 에러 문자열에 추가
+
+            // http 상태메시지가 포함되어 있다면 해당 내용을 에러 문자열에 추가
             if (error.response !== undefined) {
               const errorMsg = `${error.response.status} error - ${error.response.statusText}`;
               console.error(`[HTTP Status] ${errorMsg}`);
               alerMsg += `\n${errorMsg}`;
             }
+
+
+
+            // springboot 한정 
+            // springboot로 부터 전달받은 에러 메시지가 있다면?
+            //   if (error.response?.data) {
+            //   const errorMsg = `${error.response.status} error - ${error.response.statusText}`;
+            //   console.error(`[HTTP Status] ${errorMsg}`);
+            //   alerMsg += `\n${errorMsg}`;
+            // }
+
+
+
+
+
             // 메시지박스로 에러 내용 표시
             alert(alerMsg);
 

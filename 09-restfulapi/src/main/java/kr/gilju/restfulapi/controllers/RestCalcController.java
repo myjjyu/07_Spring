@@ -1,6 +1,6 @@
 package kr.gilju.restfulapi.controllers;
 
-import java.io.Console;
+
 import java.util.LinkedHashMap;
 
 import java.util.Map;
@@ -21,8 +21,6 @@ import lombok.extern.slf4j.Slf4j;
 public class RestCalcController {
 
 
-
-
   @GetMapping("/my_calc")
   public Map<String, Object> getcalc(
       HttpServletResponse response,
@@ -34,7 +32,7 @@ public class RestCalcController {
 
     result.put("x", x);
     result.put("y", y);
-    result.put("result", x + y); // 더하기
+    result.put("result", x + y);  // 더하기
 
     return result;
   }
@@ -79,16 +77,21 @@ public class RestCalcController {
       @RequestParam("x") int x,
       @RequestParam("y") int y) {
 
+
     // 3) 제이슨으로 변환될 map객체 구성
     Map<String, Object> result = new LinkedHashMap<String, Object>();
-    if (y != 0) {
-    } else {
-      result.put("x", x);
-      result.put("y", y);
+
+    if (x == 0 || y == 0) {
       result.put("result", "0으로 나눌 수 없습니다");
+    } else {
+      result.put("result", x/y);
     }
 
+    
 
     return result;
   }
 }
+
+
+
