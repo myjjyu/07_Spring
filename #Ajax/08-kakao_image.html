@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #loading {
+        width: 100px;
+        height: 100px;
+        background: url(./img/loading.gif) no-repeat center/cover;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999999;
+        display: none;
+      }
+
+      #loading.active {
+        display: block;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 127px;
+      }
+
+      #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+        padding: 0px 10px 5px 10px;
+        box-sizing: border-box;
+      }
+
+      #list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+      }
+
+      #list li {
+        width: 150px;
+        margin: 10px;
+      }
+
+      #list li a {
+        display: block;
+        text-decoration: none;
+        color: #000;
+      }
+
+      #list li a img {
+        display: block;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 10px;
+      }
+
+      #list li span {
+        display: block;
+        font-size: 14px;
+        margin: 5px auto;
+        height: 30px;
+        padding: 0 10px;
+        text-align: center;
+      }
+
+      /* 검색바 가운데정렬,,ㅎ*/
+      /* input {
+        margin-top: 5px;
+        width: 90%;
+      }  */
+    </style>
+  </head>
+  <body>
+    <div id="loading"></div>
+    <div id="header">
+      <h1>kakao Image Search</h1>
+
+      <form id="SearchForm">
+        <fieldset>
+          <input type="search" id="query" placeholder="Search..." />
+          <button type="submit">검색</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- 검색결과가 표시될 목록 -->
+
+    <ul id="list">
+      <!--- <li>
+        <a href="#" target="_blank" title="제목">
+          <img src="./img/noimage.jpg" />
+          <span>제목이 위치할 곳</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" target="_blank" title="제목">
+          <img src="./img/noimage.jpg" />
+          <span>제목이 위치할 곳</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" target="_blank" title="제목">
+          <img src="./img/noimage.jpg" />
+          <span>제목이 위치할 곳</span>
+        </a>
+      </li> -->
+    </ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      // kakao rest key
+
+      const KAKAO_REST_KEY = "f5af340f85889a417c937a415881a2fc";
+
+      //페이지번호
+      let currentPage = 1;
+      //검색어
+      let queryKeyword = null;
+      //마지막 페이지인지 검사
+      let isEnd = false;
+
+      // 검색폼의 submit 이벤트 - 신규검색
+      document.querySelector("#SearchForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        //입력된 검색어를 가져온다
+        const queryField = document.querySelector("#query");
+        queryKeyword = queryField.value.trim();
+
+        // 검색어가 입력되지 않은 경우에 대한 예외처리
+        if (!queryKeyword) {
+          alert("검색어를 입력하세요");
+          queryField.focus();
+          return;
+        }
+
+        //신규검색
+        currentPage = 1;
+        get_image_search();
+      });
+
+      //스크롤 이벤트 - 추가검색
+      window.addEventListener("scroll", (e) => {});
+
+      //ajax 요청 후 결과를 화면에 html로 출력하는 함수
+      async function get_image_search() {
+        const loading = document.querySelector("#loading");
+
+        //로딩바 화면에 표시하기
+        loading.classList.add("active");
+
+        // 검색 결과가 표시될 영역
+        const list = document.querySelector("#list");
+
+        if (currentPage == 1) {
+          Array.from(list.getElementsByTagName("li")).forEach((v, i) => {
+            list.removeChild(v);
+          });
+        }
+
+        //검색결과를 저장할 변수
+
+        let response = null;
+        try {
+          response = await axios.get("https://dapi.kakao.com/v2/search/image", {
+            params: {
+              query: queryKeyword,
+              page: currentPage,
+            },
+            headers: {
+              Authorization: `KakaoAK ${KAKAO_REST_KEY}`,
+            },
+          });
+          //응답 결과 확인
+          console.log(response.data);
+        } catch (error) {
+          console.error(`[Error code] ${error.code}`);
+          console.error(`[Error code] ${error.message}`);
+          let alertMsg = error.message;
+
+          if (error.response !== undefined) {
+            const errorMsg = `${error.response.status} error - ${error.response.statusText}`;
+            console.error(`[HTTP Status] ${errorMsg}`);
+            alertMsg += `\n${errorMsg}`;
+          }
+          alert(alertMsg);
+          return;
+        } finally {
+          loading.classList.remove("active");
+        }
+        // 다음 페이지를 요철할수 있는지 판단하기 위한 값
+        isEnd = response.data.meta.is_end;
+
+        response.data.documents.forEach((v, i) => {
+          const li = document.createElement("li");
+
+          const a = document.createElement("a");
+          a.setAttribute("href", v.doc_url);
+          a.setAttribute("target", "_blank");
+          a.setAttribute("title", v.display_sitename);
+
+          const img = document.createElement("img");
+          img.setAttribute("src", v.thumbnail_url); 
+
+          const span = document.createElement("sapn");
+          span.innerHTML = v.display_sitename;
+
+          a.appendChild(img);
+          a.appendChild(span);
+
+          li.appendChild(a);
+          list.appendChild(li);
+        });
+      }
+    </script>
+  </body>
+</html>

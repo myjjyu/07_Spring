@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container{
+        border-bottom: 1px dotted #ccc;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        display: flex;
+      }
+
+      .container a{
+        display: block;
+        margin-right: 30px;
+      }
+
+      .text-success{
+        color: rgb(142, 186, 172);
+        font-size: 24px;
+      }
+
+      .text-primary{
+        color: rgb(197, 123, 32);
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simple Get</h1>
+    <div class="container">
+      <a href="../backend/public/hello.html">move to hello.html</a>
+      <a href="#" id="btn1">promise Load</a>
+      <a href="#" id="btn2">Async Await Load</a>
+    </div>
+    <div id="result"></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      document.querySelector("#btn1").addEventListener("click", (e) => {
+        e.preventDefault(); //a(link) 달았으면 필수!
+
+        console.log("loading");
+  
+
+      const url = "../backend/public/hello.html";
+
+      axios
+        .get(url)
+        .then((response) => {
+          console.log(response.data);
+
+          //응답 결과를 출력할 대상 객체
+          const result = document.querySelector("#result");
+          result.insertAdjacentHTML("beforeend", response.data);
+        })
+        .catch((error) => {
+          console.log(error);
+          alert(error.message);
+        })
+        .finally(() => {
+          console.log("Finish");
+        });
+      });
+
+
+        document.querySelector("#btn2").addEventListener("click",async (e)=>{
+          console.log("loading");
+          const url =  "../backend/public/world.html";
+          let response = null;
+
+          try {
+            response = await axios.get(url); //  response  백엔드에서 프론트한테 전해주는것 // 리퀘스트 프론트에서 백엔드한테 "요청"하는것
+            console.log(response.data);
+          } catch (error){
+            console.error(error);
+            alert(error.message);
+
+            return;
+          } finally{
+            console.log("Finish!!!");
+          }
+
+          const result = document.querySelector("#result");
+          result.insertAdjacentHTML("beforeend",response.data);
+        });
+
+    </script>
+  </body>
+</html>

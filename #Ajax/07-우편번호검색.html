@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #loading {
+        width: 100px;
+        height: 100px;
+        background: url(./img/loading.gif) no-repeat center/cover;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999999;
+        display: none;
+      }
+
+      #loading.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loading"></div>
+    <h1>우편번호 검색</h1>
+
+    <input type="text" id="keyword" />
+    <button id="btn" type="button">데이터 가져오기</button>
+    <hr />
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>우편번호</th>
+          <th>도로명주소</th>
+          <th>지번주소</th>
+        </tr>
+      </thead>
+      <tbody id="list-body"></tbody>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      document.querySelector("#btn").addEventListener("click", async (e) => {
+        const loading = document.querySelector("#loading ");
+        loading.classList.add("active");
+
+        const userInput = document.querySelector("#keyword").value.trim();
+
+        if (!userInput) {
+          alert("검색어를 입력해 주세요");
+          document.querySelector("#keyword").focus();
+          return;
+        }
+
+        // 요청할 openAPI 의 주소
+        const url = "https://business.juso.go.kr/addrlink/addrLinkApi.do";
+
+        let response = null;
+
+        try {
+          response = await axios.get(url, {
+            params: {
+              confmKey: "devU01TX0FVVEgyMDI0MDkwNTE3NTAyMzExNTA2Njg=",
+              currentPage: 1,
+              countPerPage: 50,
+              keyword: userInput,
+              resultType: "json",
+            },
+          });
+
+          // 응답 데이터 확인
+          console.log(response.data); // 응답 데이터 전체 확인
+        } catch (error) {
+          console.error(`[Error Code] ${error.code}`);
+          console.error(`[Error Message] ${error.message}`);
+          let alertMsg = error.message;
+
+          if (error.response !== undefined) {
+            const errorMsg = `${error.response.status} error - ${error.response.statusText}`;
+            console.error(`[HTTP Status] ${errorMsg}`);
+            alertMsg += `\n${errorMsg}`;
+          }
+          alert(alertMsg);
+          loading.classList.remove("active");
+          return;
+        } finally {
+          loading.classList.remove("#active");
+        }
+
+        const listBody = document.querySelector("#list-body");
+        listBody.innerHTML = ""; // 새로운 빈 데이터 공간 생성
+
+        // juso 데이터가 있을 경우에만 forEach 실행
+        response.data.results.juso.forEach((v, i) => {
+          const tr = document.createElement("tr");
+
+          const td1 = document.createElement("td");
+          td1.innerHTML = v.zipNo;
+
+          const td2 = document.createElement("td");
+          td2.innerHTML = v.roadAddr;
+
+          const td3 = document.createElement("td");
+          td3.innerHTML = v.jibunAddr;
+
+          tr.appendChild(td1);
+          tr.appendChild(td2);
+          tr.appendChild(td3);
+
+          listBody.appendChild(tr);
+        });
+      });
+    </script>
+  </body>
+</html>

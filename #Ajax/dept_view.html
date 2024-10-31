@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #loading {
+        width: 100px;
+        height: 100px;
+        background: url(./img/loading.gif) no-repeat center/cover;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999999;
+        display: none;
+      }
+      #loading.active {
+        display: block;
+      }
+      dt {
+        font-weight: bold;
+        margin: 10px 0px;
+        font-size: 20px;
+      }
+
+      dt:before {
+        content: "⭐️";
+        padding-right: 5px;
+      }
+
+      dd {
+        font-weight: normal;
+        margin-bottom: 30px;
+        border-left: 5px solid #ed7b7b;
+        padding-left: 15px;
+        font-size: 16px;
+      }
+
+      #container {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loading"></div>
+    <h1>Async Await Axios</h1>
+
+    <a href="#" class="mylink" data-deptno="101">컴퓨터공학과</a>
+    <a href="#" class="mylink" data-deptno="102">멀티미디어학과</a>
+    <a href="#" class="mylink" data-deptno="201">전자공학과</a>
+    <a href="#" class="mylink" data-deptno="202">기계공학과</a>
+
+    <dl id="container">
+      <dt>학과번호</dt>
+      <dd class="id"></dd>
+      <dt>학과명</dt>
+      <dd class="dname"></dd>
+      <dt>학과위치</dt>
+      <dd class="loc"></dd>
+    </dl>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      const mylink = document.querySelectorAll(".mylink");
+
+      /**링크 객체에 대한 반복 처리**/
+      mylink.forEach((v, i) => {
+        v.addEventListener("click", async (e) => {
+          e.preventDefault();
+
+          const loading = document.querySelector("#loading");
+          loading.classList.add("active");
+
+          // 링크에 숨겨진 data-deptno의 값을 가져옴
+          const dno = e.currentTarget.dataset.deptno;
+          //console.log(deptno);
+          // 검색결과를 저장할 빈 변수
+          let response = null;
+
+          try {
+            response = await axios.get(
+              `http://localhost:8080/api/department/${dno}`
+            );
+            console.log(response.data);
+          } catch (error) {
+            let alertMsg = null;
+            console.log(error);
+
+            //springboot로 부터 전달받은 에러 메시지가 있다면?
+            if (error.response?.data) {
+              const data = error.response.data;
+
+              //메시지 창에 표시할 내용
+              alertMsg = data.message;
+
+              // 백엔드에서 발생한 상세 에러 내용을 브라우저 콘솔에 출력
+              // --> 이 코드는 보안에 취약할 수 있으므로 실제 서비스에서는 제거할것
+              console.error("Error occurred in the backend server.");
+              console.error(`[${data.status}] ${data.error}`);
+              console.error(data.trace);
+            } else {
+              //springboot 로 부터 전달받은 에러메시자가 없다면?
+              // axios의 에러 메시지를 그대로 사용
+
+              // 메시지 창에 표시할 내용
+              alertMsg = error.message;
+
+              // axios의 기본 에러 메시지를 추출하여 문자열로 구성
+              console.error("Error occurred in Axios.");
+              console.error(`[${error.code}] ${error.message}`);
+            }
+
+            // 메시지박스로 에러 내용 표시
+            alert(alertMsg);
+
+            // catch에서 RETURN을 하더라도 FINALLY 가 수행된 후 실행이 취소된다
+            return;
+          } finally {
+            loading.classList.remove("active");
+          }
+
+          // Ajax의 응답결과를 구조분해하여 개별 변수로 추출
+          const { deptno, dname, loc } = response.data.item;
+          // 키값과 변수명이 같으면 에러가 생김 해결방법⬇️
+          // 1) 변수명바꾸기
+          // 2) 키값을 : id 로 주면 해결~   js  7단원 9번
+          // const { deptno:id, dname, loc } = response.data.item;
+          // 
+
+          // 추출한 결과를 미리 준비한 HTML 구조에 출력하고 컨테이너를 화면에 표시함
+          document.querySelector(".id").innerHTML = deptno;
+          document.querySelector(".dname").innerHTML = dname;
+          document.querySelector(".loc").innerHTML = loc;
+          document.querySelector("#container").style.display = "block";
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exeam</title>
+    <style>
+      #loading {
+        width: 100px;
+        height: 100px;
+        background: url(./img/loading.gif) no-repeat center/cover;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999999;
+        display: none;
+      }
+
+      fieldset{
+        padding: 10px;
+      }
+
+      #loading.active {
+        display: block;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 127px;
+      }
+
+      #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+        padding: 0px 10px 5px 10px;
+        box-sizing: border-box;
+      }
+
+      #list {
+        display: none; 
+      }
+
+      #list li a img {
+        display: block;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 10px;
+      }
+
+      * {
+        /* margin: 0; */
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      ul,
+      ol {
+        list-style: none;
+      }
+
+      #list {
+        li {
+          border-bottom: 1px dotted #ccc;
+
+          &:first-child {
+            border-top: 1px dotted #ccc;
+          }
+          &:hover {
+            background-color: rgba(184, 126, 241, 0.914);
+          }
+          a {
+            display: block;
+            width: auto;
+            padding: 5px;
+            color: black;
+            text-decoration: none;
+            position: relative;
+
+            .thumb {
+              width: 80px;
+              height: 80px;
+              display: block;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .text {
+              display: block;
+              width: 100%;
+              position: absolute;
+              left: 0;
+              top: 21px;
+              padding-left: 100px;
+              padding-right: 10px;
+
+              span {
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                &.title {
+                  font-size: 17px;
+                  font-weight: bold;
+                  line-height: 150%;
+                }
+                &.desc {
+                  font-size: 14px;
+                  line-height: 150%;
+                }
+              }
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loading"></div>
+    <div id="header">
+      <h1>kakao Image Search</h1>
+
+      <form id="SearchForm">
+        <fieldset>
+          <select id="search">
+            <option value="blog">블로그 탐색</option>
+            <option value="cafe">카페 탐색</option>
+          </select>
+          <input type="search" id="query" placeholder="Search..." />
+          <button type="submit">검색</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <ul id="list">
+      <li>
+        <a href="#">
+          <span class="thumb">
+            <img src="" alt="이미지1" />
+          </span>
+          <span class="text">
+            <span class="title"></span>
+            <span class="desc"></span>
+          </span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <span class="thumb">
+            <img src="" alt="이미지2" />
+          </span>
+          <span class="text">
+            <span class="title"></span>
+            <span class="desc"></span>
+          </span>
+        </a>
+      </li>
+    </ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      // kakao rest key
+
+      const KAKAO_REST_KEY = "f5af340f85889a417c937a415881a2fc";
+
+      //페이지번호
+      let currentPage = 1;
+      //검색어
+      let queryKeyword = null;
+      //마지막 페이지인지 검사
+      let isEnd = false;
+
+      // 검색폼의 submit 이벤트 - 신규검색
+      document.querySelector("#SearchForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        //입력된 검색어를 가져온다
+        const queryField = document.querySelector("#query");
+        queryKeyword = queryField.value.trim();
+
+        // 검색어가 입력되지 않은 경우에 대한 예외처리
+        if (!queryKeyword) {
+          alert("검색어를 입력하세요");
+          queryField.focus();
+          return;
+        }
+
+        //신규검색
+        currentPage = 1;
+        get_image_search();
+      });
+
+      //스크롤 이벤트 - 추가검색
+      window.addEventListener("scroll", (e) => {});
+
+      //ajax 요청 후 결과를 화면에 html로 출력하는 함수
+      async function get_image_search() {
+        const loading = document.querySelector("#loading");
+
+        //로딩바 화면에 표시하기
+        loading.classList.add("active");
+
+        // 검색 결과가 표시될 영역
+        const list = document.querySelector("#list");
+
+        if (currentPage == 1) {
+          Array.from(list.getElementsByTagName("li")).forEach((v, i) => {
+            list.removeChild(v);
+          });
+        }
+
+        //검색결과를 저장할 변수
+
+        const search = document.querySelector("#search");
+        const searchchoose = search[search.selectedIndex].value;
+
+        let response = null;
+        try {
+          response = await axios.get(
+            `https://dapi.kakao.com/v2/search/${searchchoose}`,
+            {
+              params: {
+                query: queryKeyword,
+                page: currentPage,
+                size: 50,
+              },
+              headers: {
+                Authorization: `KakaoAK ${KAKAO_REST_KEY}`,
+              },
+            }
+          );
+
+          //응답 결과 확인
+          console.log(response.data);
+        } catch (error) {
+          console.error(`[Error code] ${error.code}`);
+          console.error(`[Error code] ${error.message}`);
+          let alertMsg = error.message;
+
+          if (error.response !== undefined) {
+            const errorMsg = `${error.response.status} error - ${error.response.statusText}`;
+            console.error(`[HTTP Status] ${errorMsg}`);
+            alertMsg += `\n${errorMsg}`;
+          }
+          alert(alertMsg);
+          return;
+        } finally {
+          loading.classList.remove("active");
+        }
+        //   // 다음 페이지를 요청할수 있는지 판단하기 위한 값
+        isEnd = response.data.meta.is_end;
+
+
+        // 화면에 리스트보이게
+        if (response.data.documents.length > 0) {
+          list.style.display = "block";
+        }
+
+        response.data.documents.forEach((v, i) => {
+          const li = document.createElement("li");
+
+          const a = document.createElement("a");
+          a.setAttribute("href", v.url);
+
+          // 썸네일을 감싸는 span 요소
+          const spanThumb = document.createElement("span");
+          spanThumb.classList.add("thumb");
+
+          // 이미지 요소 생성 및 속성 설정
+          const img = document.createElement("img");
+          img.setAttribute("src", v.thumbnail); 
+          img.setAttribute("alt", v.title); 
+
+          // 텍스트를감싸는 span 요소
+          const spanText = document.createElement("span");
+          spanText.classList.add("text");
+
+          // 제목 : span 요소
+          const spanTitle = document.createElement("span"); 
+          spanTitle.classList.add("title");
+          spanTitle.innerHTML = v.title;
+
+          // 설명: span 요소
+          const spanDesc = document.createElement("span"); 
+          spanDesc.classList.add("desc");
+          spanDesc.innerHTML = v.contents; 
+
+         
+          spanThumb.appendChild(img);
+
+          // spanText에 제목, 설명 추가
+          spanText.appendChild(spanTitle);
+          spanText.appendChild(spanDesc);
+
+   
+          a.appendChild(spanThumb); 
+          a.appendChild(spanText);
+
+         
+          li.appendChild(a);
+          list.appendChild(li);
+        });
+      }
+    </script>
+  </body>
+</html>
