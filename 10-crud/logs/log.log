@@ -2801,3 +2801,2503 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 
 [DEBUG] 24-10-31 13:06:45 [delete:135] - <==    Updates: 1
 [INFO ] 24-10-31 13:06:45 [MyInterceptor:97] - running time: 115(ms)
+[INFO ] 24-10-31 14:47:56 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 34020 (/Users/song-gilju/Desktop/web3/09-SpringBoot/10-crud/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/10-crud)
+[DEBUG] 24-10-31 14:47:56 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-31 14:47:56 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-31 14:47:56 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-10-31 14:47:56 [CrudApplication:56] - Started CrudApplication in 0.808 seconds (process running for 0.92)
+[INFO ] 24-10-31 14:49:14 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 14:49:14 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 14:49:14 [MyInterceptor:73] - [GET] http://localhost:8080/api/department
+[DEBUG] 24-10-31 14:49:14 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 14:49:14 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 14:49:14 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 14:49:14 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 14:49:14 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 14:49:14 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 14:49:14 [Pagination:84] - Pagination(nowPage=1, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=0)
+[DEBUG] 24-10-31 14:49:14 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 14:49:14 [selectList:135] - ==> Parameters: 0(Integer), 5(Integer)
+[INFO ] 24-10-31 14:49:14 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 5
+
+[INFO ] 24-10-31 14:49:14 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[INFO ] 24-10-31 14:49:14 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[DEBUG] 24-10-31 14:49:14 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 14:49:14 [MyInterceptor:97] - running time: 233(ms)
+[INFO ] 24-10-31 15:00:45 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:00:45 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:00:45 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/101
+[INFO ] 24-10-31 15:00:45 [MyInterceptor:87] - - REFERER : time=-690679, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:00:45 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:00:45 [selectItem:135] - ==> Parameters: 101(Integer)
+[INFO ] 24-10-31 15:00:45 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=101
+
+[INFO ] 24-10-31 15:00:45 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|-------|------|----|
+
+[INFO ] 24-10-31 15:00:45 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|-------|------|----|
+
+[DEBUG] 24-10-31 15:00:45 [selectItem:135] - <==      Total: 0
+[INFO ] 24-10-31 15:00:45 [MyInterceptor:97] - running time: 51(ms)
+[INFO ] 24-10-31 15:01:32 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:01:32 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:01:32 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/101
+[DEBUG] 24-10-31 15:01:32 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:01:32 [selectItem:135] - ==> Parameters: 101(Integer)
+[INFO ] 24-10-31 15:01:32 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=101
+
+[INFO ] 24-10-31 15:01:32 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|-------|------|----|
+
+[INFO ] 24-10-31 15:01:32 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|-------|------|----|
+
+[DEBUG] 24-10-31 15:01:32 [selectItem:135] - <==      Total: 0
+[INFO ] 24-10-31 15:01:32 [MyInterceptor:97] - running time: 46(ms)
+[INFO ] 24-10-31 15:02:15 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:02:15 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:02:15 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[DEBUG] 24-10-31 15:02:15 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:02:15 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:02:15 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:02:15 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:02:15 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:02:15 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:02:15 [MyInterceptor:97] - running time: 57(ms)
+[INFO ] 24-10-31 15:02:46 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:02:46 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:02:46 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:02:46 [MyInterceptor:87] - - REFERER : time=-31073, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:02:46 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:02:46 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:02:46 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:02:46 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:02:46 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:02:46 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:02:46 [MyInterceptor:97] - running time: 42(ms)
+[INFO ] 24-10-31 15:02:47 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:02:47 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:02:47 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:02:47 [MyInterceptor:87] - - REFERER : time=-1243, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:02:47 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:02:47 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:02:47 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:02:47 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:02:47 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:02:47 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:02:47 [MyInterceptor:97] - running time: 58(ms)
+[INFO ] 24-10-31 15:02:48 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:02:48 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:02:48 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:02:48 [MyInterceptor:87] - - REFERER : time=-940, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:02:48 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:02:48 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:02:48 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:02:48 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:02:48 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:02:48 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:02:48 [MyInterceptor:97] - running time: 56(ms)
+[INFO ] 24-10-31 15:02:52 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:02:52 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:02:52 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:02:52 [MyInterceptor:87] - - REFERER : time=-4073, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:02:52 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:02:52 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:02:52 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:02:52 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:02:52 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:02:52 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:02:52 [MyInterceptor:97] - running time: 54(ms)
+[INFO ] 24-10-31 15:02:53 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:02:53 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:02:53 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:02:53 [MyInterceptor:87] - - REFERER : time=-230, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:02:53 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:02:53 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:02:53 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:02:53 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:02:53 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:02:53 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:02:53 [MyInterceptor:97] - running time: 55(ms)
+[INFO ] 24-10-31 15:03:02 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:03:02 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:03:02 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[DEBUG] 24-10-31 15:03:02 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:03:02 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:03:02 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:03:02 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:03:02 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:03:02 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:03:02 [MyInterceptor:97] - running time: 41(ms)
+[INFO ] 24-10-31 15:03:09 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:03:09 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:03:09 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:03:09 [MyInterceptor:87] - - REFERER : time=-6601, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:03:09 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:03:09 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:03:09 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:03:09 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:03:09 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:03:09 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:03:09 [MyInterceptor:97] - running time: 47(ms)
+[INFO ] 24-10-31 15:03:48 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:03:48 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:03:48 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:03:48 [MyInterceptor:87] - - REFERER : time=-39237, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:03:48 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:03:48 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:03:48 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:03:48 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:03:48 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:03:48 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:03:48 [MyInterceptor:97] - running time: 42(ms)
+[INFO ] 24-10-31 15:03:53 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:03:53 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:03:53 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:03:53 [MyInterceptor:87] - - REFERER : time=-5168, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:03:53 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:03:53 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:03:53 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:03:53 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:03:53 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:03:53 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:03:53 [MyInterceptor:97] - running time: 57(ms)
+[INFO ] 24-10-31 15:03:54 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:03:54 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:03:54 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:03:54 [MyInterceptor:87] - - REFERER : time=-578, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:03:54 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:03:54 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:03:54 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:03:54 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:03:54 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:03:54 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:03:54 [MyInterceptor:97] - running time: 55(ms)
+[INFO ] 24-10-31 15:03:54 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:03:55 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:03:55 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:03:55 [MyInterceptor:87] - - REFERER : time=-682, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:03:55 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:03:55 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:03:55 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:03:55 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:03:55 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:03:55 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:03:55 [MyInterceptor:97] - running time: 56(ms)
+[INFO ] 24-10-31 15:03:59 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:03:59 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:03:59 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:03:59 [MyInterceptor:87] - - REFERER : time=-4357, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:03:59 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:03:59 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:03:59 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:03:59 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:03:59 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:03:59 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:03:59 [MyInterceptor:97] - running time: 56(ms)
+[INFO ] 24-10-31 15:04:03 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:04:03 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:04:03 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:04:03 [MyInterceptor:87] - - REFERER : time=-3961, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:04:03 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:04:03 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:04:03 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:04:03 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:04:03 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:04:03 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:04:03 [MyInterceptor:97] - running time: 53(ms)
+[INFO ] 24-10-31 15:04:04 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:04:04 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:04:04 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:04:04 [MyInterceptor:87] - - REFERER : time=-1290, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:04:04 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:04:04 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:04:04 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:04:04 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:04:04 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:04:04 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:04:04 [MyInterceptor:97] - running time: 55(ms)
+[INFO ] 24-10-31 15:04:21 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:04:21 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:04:21 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:04:21 [MyInterceptor:87] - - REFERER : time=-16691, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:04:21 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:04:21 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:04:21 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:04:21 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:04:21 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:04:21 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:04:21 [MyInterceptor:97] - running time: 51(ms)
+[INFO ] 24-10-31 15:04:21 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:04:21 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:04:21 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:04:21 [MyInterceptor:87] - - REFERER : time=-356, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:04:21 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:04:21 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:04:21 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:04:21 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:04:21 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:04:21 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:04:21 [MyInterceptor:97] - running time: 55(ms)
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:87] - - REFERER : time=-105, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:04:22 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:04:22 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:04:22 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:04:22 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:04:22 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:04:22 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:97] - running time: 43(ms)
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:87] - - REFERER : time=-125, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:04:22 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:04:22 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:04:22 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:04:22 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:04:22 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:04:22 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:97] - running time: 46(ms)
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:87] - - REFERER : time=-132, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:04:22 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:04:22 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:04:22 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:04:22 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:04:22 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:04:22 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:97] - running time: 44(ms)
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:87] - - REFERER : time=-119, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:04:22 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:04:22 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:04:22 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:04:22 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:04:22 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:04:22 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:97] - running time: 44(ms)
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:87] - - REFERER : time=-116, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:04:22 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:04:22 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:04:22 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:04:22 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:04:22 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:04:22 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:97] - running time: 41(ms)
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:87] - - REFERER : time=-124, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:04:22 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:04:22 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:04:22 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:04:22 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:04:22 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:04:22 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:04:22 [MyInterceptor:97] - running time: 39(ms)
+[INFO ] 24-10-31 15:04:23 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:04:23 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:04:23 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:04:23 [MyInterceptor:87] - - REFERER : time=-125, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:04:23 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:04:23 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:04:23 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:04:23 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:04:23 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:04:23 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:04:23 [MyInterceptor:97] - running time: 43(ms)
+[WARN ] 24-10-31 15:08:43 [HikariPool:797] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m28s816ms).
+[WARN ] 24-10-31 15:18:42 [HikariPool:797] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m59s42ms).
+[INFO ] 24-10-31 15:19:02 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:19:02 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:19:02 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:19:02 [MyInterceptor:87] - - REFERER : time=-879210, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:19:02 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:19:02 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:19:02 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:19:02 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:19:02 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:19:02 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:19:02 [MyInterceptor:97] - running time: 47(ms)
+[INFO ] 24-10-31 15:19:03 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:19:03 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:19:03 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:19:03 [MyInterceptor:87] - - REFERER : time=-898, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:19:03 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:19:03 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:19:03 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:19:03 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:19:03 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:19:03 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:19:03 [MyInterceptor:97] - running time: 56(ms)
+[INFO ] 24-10-31 15:21:37 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:21:37 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:21:37 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:21:37 [MyInterceptor:87] - - REFERER : time=-153702, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:21:37 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:21:37 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:21:37 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:21:37 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:21:37 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:21:37 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:21:37 [MyInterceptor:97] - running time: 45(ms)
+[INFO ] 24-10-31 15:28:37 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:28:37 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:28:37 [MyInterceptor:73] - [GET] http://localhost:8080/api/department
+[INFO ] 24-10-31 15:28:37 [MyInterceptor:87] - - REFERER : time=-420708, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:28:37 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 15:28:37 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 15:28:37 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 15:28:37 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 15:28:37 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 15:28:37 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 15:28:37 [Pagination:84] - Pagination(nowPage=1, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=0)
+[DEBUG] 24-10-31 15:28:37 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 15:28:37 [selectList:135] - ==> Parameters: 0(Integer), 5(Integer)
+[INFO ] 24-10-31 15:28:37 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 5
+
+[INFO ] 24-10-31 15:28:37 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[INFO ] 24-10-31 15:28:37 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[DEBUG] 24-10-31 15:28:37 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 15:28:37 [MyInterceptor:97] - running time: 59(ms)
+[INFO ] 24-10-31 15:28:42 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:28:42 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:28:42 [MyInterceptor:73] - [GET] http://localhost:8080/api/department
+[INFO ] 24-10-31 15:28:42 [MyInterceptor:87] - - REFERER : time=-4435, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:28:42 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 15:28:42 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 15:28:42 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 15:28:42 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 15:28:42 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 15:28:42 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 15:28:42 [Pagination:84] - Pagination(nowPage=1, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=0)
+[DEBUG] 24-10-31 15:28:42 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 15:28:42 [selectList:135] - ==> Parameters: 0(Integer), 5(Integer)
+[INFO ] 24-10-31 15:28:42 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 5
+
+[INFO ] 24-10-31 15:28:42 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[INFO ] 24-10-31 15:28:42 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[DEBUG] 24-10-31 15:28:42 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 15:28:42 [MyInterceptor:97] - running time: 61(ms)
+[INFO ] 24-10-31 15:28:59 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:28:59 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:28:59 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:28:59 [MyInterceptor:87] - - REFERER : time=-17378, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:28:59 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:28:59 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:28:59 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:28:59 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:28:59 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:28:59 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:28:59 [MyInterceptor:97] - running time: 55(ms)
+[INFO ] 24-10-31 15:29:41 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:29:42 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:29:42 [MyInterceptor:73] - [GET] http://localhost:8080/api/department
+[INFO ] 24-10-31 15:29:42 [MyInterceptor:87] - - REFERER : time=-42190, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:29:42 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 15:29:42 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 15:29:42 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 15:29:42 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 15:29:42 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 15:29:42 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 15:29:42 [Pagination:84] - Pagination(nowPage=1, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=0)
+[DEBUG] 24-10-31 15:29:42 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 15:29:42 [selectList:135] - ==> Parameters: 0(Integer), 5(Integer)
+[INFO ] 24-10-31 15:29:42 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 5
+
+[INFO ] 24-10-31 15:29:42 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[INFO ] 24-10-31 15:29:42 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[DEBUG] 24-10-31 15:29:42 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 15:29:42 [MyInterceptor:97] - running time: 61(ms)
+[INFO ] 24-10-31 15:29:43 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:29:43 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:29:43 [MyInterceptor:73] - [GET] http://localhost:8080/api/department
+[INFO ] 24-10-31 15:29:43 [MyInterceptor:87] - - REFERER : time=-1191, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:29:43 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 15:29:43 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 15:29:43 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 15:29:43 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 15:29:43 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 15:29:43 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 15:29:43 [Pagination:84] - Pagination(nowPage=1, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=0)
+[DEBUG] 24-10-31 15:29:43 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 15:29:43 [selectList:135] - ==> Parameters: 0(Integer), 5(Integer)
+[INFO ] 24-10-31 15:29:43 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 5
+
+[INFO ] 24-10-31 15:29:43 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[INFO ] 24-10-31 15:29:43 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[DEBUG] 24-10-31 15:29:43 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 15:29:43 [MyInterceptor:97] - running time: 59(ms)
+[INFO ] 24-10-31 15:30:09 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:30:09 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:30:09 [MyInterceptor:73] - [GET] http://localhost:8080/api/department
+[INFO ] 24-10-31 15:30:09 [MyInterceptor:87] - - REFERER : time=-26156, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:30:09 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 15:30:09 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 15:30:09 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 15:30:09 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 15:30:09 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 15:30:09 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 15:30:09 [Pagination:84] - Pagination(nowPage=1, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=0)
+[DEBUG] 24-10-31 15:30:09 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 15:30:09 [selectList:135] - ==> Parameters: 0(Integer), 5(Integer)
+[INFO ] 24-10-31 15:30:09 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 5
+
+[INFO ] 24-10-31 15:30:09 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[INFO ] 24-10-31 15:30:09 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[DEBUG] 24-10-31 15:30:09 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 15:30:09 [MyInterceptor:97] - running time: 58(ms)
+[INFO ] 24-10-31 15:34:42 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:34:42 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:34:42 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=1
+[INFO ] 24-10-31 15:34:42 [MyInterceptor:80] - (parma)<---page = 1
+[INFO ] 24-10-31 15:34:42 [MyInterceptor:87] - - REFERER : time=-273283, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:34:42 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 15:34:42 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 15:34:42 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 15:34:42 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 15:34:42 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 15:34:42 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 15:34:42 [Pagination:84] - Pagination(nowPage=1, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=0)
+[DEBUG] 24-10-31 15:34:42 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 15:34:42 [selectList:135] - ==> Parameters: 0(Integer), 5(Integer)
+[INFO ] 24-10-31 15:34:42 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 5
+
+[INFO ] 24-10-31 15:34:42 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[INFO ] 24-10-31 15:34:42 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[DEBUG] 24-10-31 15:34:42 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 15:34:42 [MyInterceptor:97] - running time: 59(ms)
+[INFO ] 24-10-31 15:34:43 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:34:43 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:34:43 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=2
+[INFO ] 24-10-31 15:34:43 [MyInterceptor:80] - (parma)<---page = 2
+[INFO ] 24-10-31 15:34:43 [MyInterceptor:87] - - REFERER : time=-757, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:34:43 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 15:34:43 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 15:34:43 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 15:34:43 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 15:34:43 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 15:34:43 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 15:34:43 [Pagination:84] - Pagination(nowPage=2, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=5)
+[DEBUG] 24-10-31 15:34:43 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 15:34:43 [selectList:135] - ==> Parameters: 5(Integer), 5(Integer)
+[INFO ] 24-10-31 15:34:43 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 5, 5
+
+[INFO ] 24-10-31 15:34:43 [resultsettable:610] - 
+|-------|-----------|------|
+|deptno |dname      |loc   |
+|-------|-----------|------|
+|307    |mysql학과    |7호관   |
+|306    |헬로월드       |메가스터디 |
+|305    |메가스터디      |호관    |
+|304    |helloworld |ㅗ관    |
+|205    |mysql학과    |5호관   |
+|-------|-----------|------|
+
+[INFO ] 24-10-31 15:34:43 [resultsettable:610] - 
+|-------|-----------|------|
+|deptno |dname      |loc   |
+|-------|-----------|------|
+|307    |mysql학과    |7호관   |
+|306    |헬로월드       |메가스터디 |
+|305    |메가스터디      |호관    |
+|304    |helloworld |ㅗ관    |
+|205    |mysql학과    |5호관   |
+|-------|-----------|------|
+
+[DEBUG] 24-10-31 15:34:43 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 15:34:43 [MyInterceptor:97] - running time: 60(ms)
+[INFO ] 24-10-31 15:34:47 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:34:47 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:34:47 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=3
+[INFO ] 24-10-31 15:34:47 [MyInterceptor:80] - (parma)<---page = 3
+[INFO ] 24-10-31 15:34:47 [MyInterceptor:87] - - REFERER : time=-4276, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:34:47 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 15:34:47 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 15:34:47 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 15:34:47 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 15:34:47 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 15:34:47 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 15:34:47 [Pagination:84] - Pagination(nowPage=3, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=3, endPage=3, prevPage=2, nextPage=0, offset=10)
+[DEBUG] 24-10-31 15:34:47 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 15:34:47 [selectList:135] - ==> Parameters: 10(Integer), 5(Integer)
+[INFO ] 24-10-31 15:34:47 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 10, 5
+
+[INFO ] 24-10-31 15:34:47 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|202    |기계공학과  |4호관 |
+|201    |전자공학과  |3호관 |
+|103    |인터넷정보과 |5호관 |
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:34:47 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|202    |기계공학과  |4호관 |
+|201    |전자공학과  |3호관 |
+|103    |인터넷정보과 |5호관 |
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:34:47 [selectList:135] - <==      Total: 4
+[INFO ] 24-10-31 15:34:47 [MyInterceptor:97] - running time: 61(ms)
+[INFO ] 24-10-31 15:34:50 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:34:50 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:34:50 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=4
+[INFO ] 24-10-31 15:34:50 [MyInterceptor:80] - (parma)<---page = 4
+[INFO ] 24-10-31 15:34:50 [MyInterceptor:87] - - REFERER : time=-2234, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:34:50 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 15:34:50 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 15:34:50 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 15:34:50 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 15:34:50 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 15:34:50 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 15:34:50 [Pagination:84] - Pagination(nowPage=4, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=3, endPage=3, prevPage=2, nextPage=0, offset=10)
+[DEBUG] 24-10-31 15:34:50 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 15:34:50 [selectList:135] - ==> Parameters: 10(Integer), 5(Integer)
+[INFO ] 24-10-31 15:34:50 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 10, 5
+
+[INFO ] 24-10-31 15:34:50 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|202    |기계공학과  |4호관 |
+|201    |전자공학과  |3호관 |
+|103    |인터넷정보과 |5호관 |
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:34:50 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|202    |기계공학과  |4호관 |
+|201    |전자공학과  |3호관 |
+|103    |인터넷정보과 |5호관 |
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:34:50 [selectList:135] - <==      Total: 4
+[INFO ] 24-10-31 15:34:50 [MyInterceptor:97] - running time: 58(ms)
+[INFO ] 24-10-31 15:34:51 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:34:51 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:34:51 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=5
+[INFO ] 24-10-31 15:34:51 [MyInterceptor:80] - (parma)<---page = 5
+[INFO ] 24-10-31 15:34:51 [MyInterceptor:87] - - REFERER : time=-1516, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:34:51 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 15:34:51 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 15:34:51 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 15:34:51 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 15:34:51 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 15:34:51 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 15:34:51 [Pagination:84] - Pagination(nowPage=5, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=3, endPage=3, prevPage=2, nextPage=0, offset=10)
+[DEBUG] 24-10-31 15:34:51 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 15:34:51 [selectList:135] - ==> Parameters: 10(Integer), 5(Integer)
+[INFO ] 24-10-31 15:34:51 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 10, 5
+
+[INFO ] 24-10-31 15:34:51 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|202    |기계공학과  |4호관 |
+|201    |전자공학과  |3호관 |
+|103    |인터넷정보과 |5호관 |
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:34:51 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|202    |기계공학과  |4호관 |
+|201    |전자공학과  |3호관 |
+|103    |인터넷정보과 |5호관 |
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:34:51 [selectList:135] - <==      Total: 4
+[INFO ] 24-10-31 15:34:51 [MyInterceptor:97] - running time: 56(ms)
+[INFO ] 24-10-31 15:34:52 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:34:52 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:34:52 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=6
+[INFO ] 24-10-31 15:34:52 [MyInterceptor:80] - (parma)<---page = 6
+[INFO ] 24-10-31 15:34:52 [MyInterceptor:87] - - REFERER : time=-747, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:34:52 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 15:34:52 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 15:34:52 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 15:34:52 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 15:34:52 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 15:34:52 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 15:34:52 [Pagination:84] - Pagination(nowPage=6, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=3, endPage=3, prevPage=2, nextPage=0, offset=10)
+[DEBUG] 24-10-31 15:34:52 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 15:34:52 [selectList:135] - ==> Parameters: 10(Integer), 5(Integer)
+[INFO ] 24-10-31 15:34:52 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 10, 5
+
+[INFO ] 24-10-31 15:34:52 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|202    |기계공학과  |4호관 |
+|201    |전자공학과  |3호관 |
+|103    |인터넷정보과 |5호관 |
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:34:52 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|202    |기계공학과  |4호관 |
+|201    |전자공학과  |3호관 |
+|103    |인터넷정보과 |5호관 |
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:34:52 [selectList:135] - <==      Total: 4
+[INFO ] 24-10-31 15:34:52 [MyInterceptor:97] - running time: 58(ms)
+[INFO ] 24-10-31 15:35:49 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:35:49 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:35:49 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=1
+[INFO ] 24-10-31 15:35:49 [MyInterceptor:80] - (parma)<---page = 1
+[INFO ] 24-10-31 15:35:49 [MyInterceptor:87] - - REFERER : time=-56467, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:35:49 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 15:35:49 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 15:35:49 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 15:35:49 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 15:35:49 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 15:35:49 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 15:35:49 [Pagination:84] - Pagination(nowPage=1, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=0)
+[DEBUG] 24-10-31 15:35:49 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 15:35:49 [selectList:135] - ==> Parameters: 0(Integer), 5(Integer)
+[INFO ] 24-10-31 15:35:49 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 5
+
+[INFO ] 24-10-31 15:35:49 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[INFO ] 24-10-31 15:35:49 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[DEBUG] 24-10-31 15:35:49 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 15:35:49 [MyInterceptor:97] - running time: 58(ms)
+[INFO ] 24-10-31 15:42:02 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:42:02 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:42:02 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=1
+[INFO ] 24-10-31 15:42:02 [MyInterceptor:80] - (parma)<---page = 1
+[INFO ] 24-10-31 15:42:02 [MyInterceptor:87] - - REFERER : time=-373623, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 15:42:02 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 15:42:02 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 15:42:02 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 15:42:02 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 15:42:02 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 15:42:02 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 15:42:02 [Pagination:84] - Pagination(nowPage=1, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=0)
+[DEBUG] 24-10-31 15:42:02 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 15:42:02 [selectList:135] - ==> Parameters: 0(Integer), 5(Integer)
+[INFO ] 24-10-31 15:42:02 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 5
+
+[INFO ] 24-10-31 15:42:02 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[INFO ] 24-10-31 15:42:02 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[DEBUG] 24-10-31 15:42:02 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 15:42:02 [MyInterceptor:97] - running time: 58(ms)
+[INFO ] 24-10-31 15:59:21 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 38554 (/Users/song-gilju/Desktop/web3/09-SpringBoot/10-crud/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/10-crud)
+[DEBUG] 24-10-31 15:59:21 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-31 15:59:21 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-31 15:59:21 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-10-31 15:59:22 [CrudApplication:56] - Started CrudApplication in 1.014 seconds (process running for 1.26)
+[INFO ] 24-10-31 15:59:35 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:59:35 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:59:35 [MyInterceptor:73] - [GET] http://localhost:8080/dept_item
+[INFO ] 24-10-31 15:59:35 [MyInterceptor:97] - running time: 73(ms)
+[INFO ] 24-10-31 15:59:35 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:59:35 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:59:35 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 15:59:35 [MyInterceptor:87] - - REFERER : time=-73, url=http://localhost:8080/dept_item
+[DEBUG] 24-10-31 15:59:35 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 15:59:35 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 15:59:35 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 15:59:35 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 15:59:35 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 15:59:35 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 15:59:35 [MyInterceptor:97] - running time: 201(ms)
+[INFO ] 24-10-31 15:59:46 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:59:46 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:59:46 [MyInterceptor:73] - [GET] http://localhost:8080/dept_list
+[INFO ] 24-10-31 15:59:46 [MyInterceptor:97] - running time: 24(ms)
+[INFO ] 24-10-31 15:59:47 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 15:59:47 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 15:59:47 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=1
+[INFO ] 24-10-31 15:59:47 [MyInterceptor:80] - (parma)<---page = 1
+[INFO ] 24-10-31 15:59:47 [MyInterceptor:87] - - REFERER : time=-1353, url=http://localhost:8080/dept_list
+[DEBUG] 24-10-31 15:59:47 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 15:59:47 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 15:59:47 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 15:59:47 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 15:59:47 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 15:59:47 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 15:59:47 [Pagination:84] - Pagination(nowPage=1, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=0)
+[DEBUG] 24-10-31 15:59:47 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 15:59:47 [selectList:135] - ==> Parameters: 0(Integer), 5(Integer)
+[INFO ] 24-10-31 15:59:47 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 5
+
+[INFO ] 24-10-31 15:59:47 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[INFO ] 24-10-31 15:59:47 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[DEBUG] 24-10-31 15:59:47 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 15:59:47 [MyInterceptor:97] - running time: 57(ms)
+[INFO ] 24-10-31 16:21:23 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 41082 (/Users/song-gilju/Desktop/web3/09-SpringBoot/10-crud/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/10-crud)
+[DEBUG] 24-10-31 16:21:23 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-31 16:21:23 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-31 16:21:23 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-10-31 16:21:23 [CrudApplication:56] - Started CrudApplication in 0.784 seconds (process running for 0.891)
+[INFO ] 24-10-31 16:21:32 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:21:32 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:21:32 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/101
+[DEBUG] 24-10-31 16:21:32 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:21:32 [selectItem:135] - ==> Parameters: 101(Integer)
+[INFO ] 24-10-31 16:21:32 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=101
+
+[INFO ] 24-10-31 16:21:32 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|-------|------|----|
+
+[INFO ] 24-10-31 16:21:32 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|-------|------|----|
+
+[DEBUG] 24-10-31 16:21:32 [selectItem:135] - <==      Total: 0
+[INFO ] 24-10-31 16:21:32 [MyInterceptor:97] - running time: 193(ms)
+[INFO ] 24-10-31 16:21:35 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:21:36 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:21:36 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 16:21:36 [MyInterceptor:87] - - REFERER : time=-3198, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 16:21:36 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:21:36 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 16:21:36 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 16:21:36 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 16:21:36 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 16:21:36 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:21:36 [MyInterceptor:97] - running time: 68(ms)
+[INFO ] 24-10-31 16:21:37 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:21:37 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:21:37 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/101
+[INFO ] 24-10-31 16:21:37 [MyInterceptor:87] - - REFERER : time=-1274, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 16:21:37 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:21:37 [selectItem:135] - ==> Parameters: 101(Integer)
+[INFO ] 24-10-31 16:21:37 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=101
+
+[INFO ] 24-10-31 16:21:37 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|-------|------|----|
+
+[INFO ] 24-10-31 16:21:37 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|-------|------|----|
+
+[DEBUG] 24-10-31 16:21:37 [selectItem:135] - <==      Total: 0
+[INFO ] 24-10-31 16:21:37 [MyInterceptor:97] - running time: 58(ms)
+[INFO ] 24-10-31 16:21:39 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:21:39 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:21:39 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 16:21:39 [MyInterceptor:87] - - REFERER : time=-2279, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 16:21:39 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:21:39 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 16:21:39 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 16:21:39 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 16:21:39 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 16:21:39 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:21:39 [MyInterceptor:97] - running time: 55(ms)
+[INFO ] 24-10-31 16:21:40 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:21:40 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:21:40 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/201
+[INFO ] 24-10-31 16:21:40 [MyInterceptor:87] - - REFERER : time=-624, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 16:21:40 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:21:40 [selectItem:135] - ==> Parameters: 201(Integer)
+[INFO ] 24-10-31 16:21:40 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=201
+
+[INFO ] 24-10-31 16:21:40 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|201    |전자공학과 |3호관 |
+|-------|------|----|
+
+[INFO ] 24-10-31 16:21:40 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|201    |전자공학과 |3호관 |
+|-------|------|----|
+
+[DEBUG] 24-10-31 16:21:40 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:21:40 [MyInterceptor:97] - running time: 63(ms)
+[INFO ] 24-10-31 16:21:41 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:21:41 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:21:41 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/202
+[INFO ] 24-10-31 16:21:41 [MyInterceptor:87] - - REFERER : time=-1035, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 16:21:41 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:21:41 [selectItem:135] - ==> Parameters: 202(Integer)
+[INFO ] 24-10-31 16:21:41 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=202
+
+[INFO ] 24-10-31 16:21:41 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|202    |기계공학과 |4호관 |
+|-------|------|----|
+
+[INFO ] 24-10-31 16:21:41 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|202    |기계공학과 |4호관 |
+|-------|------|----|
+
+[DEBUG] 24-10-31 16:21:41 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:21:41 [MyInterceptor:97] - running time: 43(ms)
+[INFO ] 24-10-31 16:21:42 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:21:42 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:21:42 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/101
+[INFO ] 24-10-31 16:21:42 [MyInterceptor:87] - - REFERER : time=-1449, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 16:21:42 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:21:42 [selectItem:135] - ==> Parameters: 101(Integer)
+[INFO ] 24-10-31 16:21:42 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=101
+
+[INFO ] 24-10-31 16:21:42 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|-------|------|----|
+
+[INFO ] 24-10-31 16:21:42 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|-------|------|----|
+
+[DEBUG] 24-10-31 16:21:42 [selectItem:135] - <==      Total: 0
+[INFO ] 24-10-31 16:21:42 [MyInterceptor:97] - running time: 58(ms)
+[INFO ] 24-10-31 16:22:01 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:22:01 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:22:01 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=1
+[INFO ] 24-10-31 16:22:01 [MyInterceptor:80] - (parma)<---page = 1
+[INFO ] 24-10-31 16:22:01 [MyInterceptor:87] - - REFERER : time=-18360, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 16:22:01 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 16:22:01 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 16:22:01 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 16:22:01 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 16:22:01 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 16:22:01 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 16:22:01 [Pagination:84] - Pagination(nowPage=1, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=0)
+[DEBUG] 24-10-31 16:22:01 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 16:22:01 [selectList:135] - ==> Parameters: 0(Integer), 5(Integer)
+[INFO ] 24-10-31 16:22:01 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 5
+
+[INFO ] 24-10-31 16:22:01 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[INFO ] 24-10-31 16:22:01 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[DEBUG] 24-10-31 16:22:01 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 16:22:01 [MyInterceptor:97] - running time: 76(ms)
+[INFO ] 24-10-31 16:24:01 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:24:01 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:24:01 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=1
+[INFO ] 24-10-31 16:24:01 [MyInterceptor:80] - (parma)<---page = 1
+[INFO ] 24-10-31 16:24:01 [MyInterceptor:87] - - REFERER : time=-119592, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 16:24:01 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 16:24:01 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 16:24:01 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 16:24:01 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 16:24:01 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 16:24:01 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 16:24:01 [Pagination:84] - Pagination(nowPage=1, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=0)
+[DEBUG] 24-10-31 16:24:01 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 16:24:01 [selectList:135] - ==> Parameters: 0(Integer), 5(Integer)
+[INFO ] 24-10-31 16:24:01 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 5
+
+[INFO ] 24-10-31 16:24:01 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[INFO ] 24-10-31 16:24:01 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[DEBUG] 24-10-31 16:24:01 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 16:24:01 [MyInterceptor:97] - running time: 61(ms)
+[INFO ] 24-10-31 16:26:09 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:26:10 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:26:10 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=1
+[INFO ] 24-10-31 16:26:10 [MyInterceptor:80] - (parma)<---page = 1
+[INFO ] 24-10-31 16:26:10 [MyInterceptor:87] - - REFERER : time=-128902, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 16:26:10 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 16:26:10 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 16:26:10 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 16:26:10 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 16:26:10 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 16:26:10 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 16:26:10 [Pagination:84] - Pagination(nowPage=1, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=0)
+[DEBUG] 24-10-31 16:26:10 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 16:26:10 [selectList:135] - ==> Parameters: 0(Integer), 5(Integer)
+[INFO ] 24-10-31 16:26:10 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 5
+
+[INFO ] 24-10-31 16:26:10 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[INFO ] 24-10-31 16:26:10 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[DEBUG] 24-10-31 16:26:10 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 16:26:10 [MyInterceptor:97] - running time: 59(ms)
+[INFO ] 24-10-31 16:26:11 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:26:11 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:26:11 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=2
+[INFO ] 24-10-31 16:26:11 [MyInterceptor:80] - (parma)<---page = 2
+[INFO ] 24-10-31 16:26:11 [MyInterceptor:87] - - REFERER : time=-1169, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 16:26:11 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 16:26:11 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 16:26:11 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 16:26:11 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 16:26:11 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 16:26:11 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 16:26:11 [Pagination:84] - Pagination(nowPage=2, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=5)
+[DEBUG] 24-10-31 16:26:11 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 16:26:11 [selectList:135] - ==> Parameters: 5(Integer), 5(Integer)
+[INFO ] 24-10-31 16:26:11 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 5, 5
+
+[INFO ] 24-10-31 16:26:11 [resultsettable:610] - 
+|-------|-----------|------|
+|deptno |dname      |loc   |
+|-------|-----------|------|
+|307    |mysql학과    |7호관   |
+|306    |헬로월드       |메가스터디 |
+|305    |메가스터디      |호관    |
+|304    |helloworld |ㅗ관    |
+|205    |mysql학과    |5호관   |
+|-------|-----------|------|
+
+[INFO ] 24-10-31 16:26:11 [resultsettable:610] - 
+|-------|-----------|------|
+|deptno |dname      |loc   |
+|-------|-----------|------|
+|307    |mysql학과    |7호관   |
+|306    |헬로월드       |메가스터디 |
+|305    |메가스터디      |호관    |
+|304    |helloworld |ㅗ관    |
+|205    |mysql학과    |5호관   |
+|-------|-----------|------|
+
+[DEBUG] 24-10-31 16:26:11 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 16:26:11 [MyInterceptor:97] - running time: 62(ms)
+[INFO ] 24-10-31 16:26:11 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:26:12 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:26:12 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=3
+[INFO ] 24-10-31 16:26:12 [MyInterceptor:80] - (parma)<---page = 3
+[INFO ] 24-10-31 16:26:12 [MyInterceptor:87] - - REFERER : time=-717, url=http://127.0.0.1:5500/
+[DEBUG] 24-10-31 16:26:12 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 16:26:12 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 16:26:12 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 16:26:12 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 16:26:12 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 16:26:12 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 16:26:12 [Pagination:84] - Pagination(nowPage=3, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=3, endPage=3, prevPage=2, nextPage=0, offset=10)
+[DEBUG] 24-10-31 16:26:12 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 16:26:12 [selectList:135] - ==> Parameters: 10(Integer), 5(Integer)
+[INFO ] 24-10-31 16:26:12 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 10, 5
+
+[INFO ] 24-10-31 16:26:12 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|202    |기계공학과  |4호관 |
+|201    |전자공학과  |3호관 |
+|103    |인터넷정보과 |5호관 |
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 16:26:12 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|202    |기계공학과  |4호관 |
+|201    |전자공학과  |3호관 |
+|103    |인터넷정보과 |5호관 |
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 16:26:12 [selectList:135] - <==      Total: 4
+[INFO ] 24-10-31 16:26:12 [MyInterceptor:97] - running time: 59(ms)
+[INFO ] 24-10-31 16:31:05 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 42030 (/Users/song-gilju/Desktop/web3/09-SpringBoot/10-crud/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/10-crud)
+[DEBUG] 24-10-31 16:31:05 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-31 16:31:05 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-31 16:31:06 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-10-31 16:31:06 [CrudApplication:56] - Started CrudApplication in 1.199 seconds (process running for 1.447)
+[INFO ] 24-10-31 16:31:13 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:13 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:13 [MyInterceptor:73] - [GET] http://localhost:8080/dept_item
+[INFO ] 24-10-31 16:31:13 [MyInterceptor:97] - running time: 100(ms)
+[INFO ] 24-10-31 16:31:13 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:13 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:13 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 16:31:13 [MyInterceptor:87] - - REFERER : time=-85, url=http://localhost:8080/dept_item
+[DEBUG] 24-10-31 16:31:13 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:31:13 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 16:31:13 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 16:31:13 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 16:31:13 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 16:31:13 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:31:13 [MyInterceptor:97] - running time: 226(ms)
+[INFO ] 24-10-31 16:31:18 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:18 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:18 [MyInterceptor:73] - [GET] http://localhost:8080/dept_item
+[INFO ] 24-10-31 16:31:18 [MyInterceptor:97] - running time: 25(ms)
+[INFO ] 24-10-31 16:31:19 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:19 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:19 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 16:31:19 [MyInterceptor:87] - - REFERER : time=-32, url=http://localhost:8080/dept_item
+[DEBUG] 24-10-31 16:31:19 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:31:19 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 16:31:19 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 16:31:19 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 16:31:19 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 16:31:19 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:31:19 [MyInterceptor:97] - running time: 29(ms)
+[INFO ] 24-10-31 16:31:21 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:21 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:21 [MyInterceptor:73] - [GET] http://localhost:8080/dept_list
+[INFO ] 24-10-31 16:31:21 [MyInterceptor:97] - running time: 19(ms)
+[INFO ] 24-10-31 16:31:22 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:22 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:22 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=1
+[INFO ] 24-10-31 16:31:22 [MyInterceptor:80] - (parma)<---page = 1
+[INFO ] 24-10-31 16:31:22 [MyInterceptor:87] - - REFERER : time=-1716, url=http://localhost:8080/dept_list
+[DEBUG] 24-10-31 16:31:23 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 16:31:23 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 16:31:23 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 16:31:23 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 16:31:23 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 16:31:23 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 16:31:23 [Pagination:84] - Pagination(nowPage=1, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=0)
+[DEBUG] 24-10-31 16:31:23 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 16:31:23 [selectList:135] - ==> Parameters: 0(Integer), 5(Integer)
+[INFO ] 24-10-31 16:31:23 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 5
+
+[INFO ] 24-10-31 16:31:23 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[INFO ] 24-10-31 16:31:23 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[DEBUG] 24-10-31 16:31:23 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 16:31:23 [MyInterceptor:97] - running time: 65(ms)
+[INFO ] 24-10-31 16:31:23 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:23 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:23 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=2
+[INFO ] 24-10-31 16:31:23 [MyInterceptor:80] - (parma)<---page = 2
+[INFO ] 24-10-31 16:31:23 [MyInterceptor:87] - - REFERER : time=-762, url=http://localhost:8080/dept_list
+[DEBUG] 24-10-31 16:31:23 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 16:31:23 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 16:31:23 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 16:31:23 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 16:31:23 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 16:31:23 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 16:31:23 [Pagination:84] - Pagination(nowPage=2, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=5)
+[DEBUG] 24-10-31 16:31:23 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 16:31:23 [selectList:135] - ==> Parameters: 5(Integer), 5(Integer)
+[INFO ] 24-10-31 16:31:23 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 5, 5
+
+[INFO ] 24-10-31 16:31:23 [resultsettable:610] - 
+|-------|-----------|------|
+|deptno |dname      |loc   |
+|-------|-----------|------|
+|307    |mysql학과    |7호관   |
+|306    |헬로월드       |메가스터디 |
+|305    |메가스터디      |호관    |
+|304    |helloworld |ㅗ관    |
+|205    |mysql학과    |5호관   |
+|-------|-----------|------|
+
+[INFO ] 24-10-31 16:31:23 [resultsettable:610] - 
+|-------|-----------|------|
+|deptno |dname      |loc   |
+|-------|-----------|------|
+|307    |mysql학과    |7호관   |
+|306    |헬로월드       |메가스터디 |
+|305    |메가스터디      |호관    |
+|304    |helloworld |ㅗ관    |
+|205    |mysql학과    |5호관   |
+|-------|-----------|------|
+
+[DEBUG] 24-10-31 16:31:23 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 16:31:23 [MyInterceptor:97] - running time: 38(ms)
+[INFO ] 24-10-31 16:31:24 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:24 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:24 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=3
+[INFO ] 24-10-31 16:31:24 [MyInterceptor:80] - (parma)<---page = 3
+[INFO ] 24-10-31 16:31:24 [MyInterceptor:87] - - REFERER : time=-517, url=http://localhost:8080/dept_list
+[DEBUG] 24-10-31 16:31:24 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 16:31:24 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 16:31:24 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 16:31:24 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 16:31:24 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 16:31:24 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 16:31:24 [Pagination:84] - Pagination(nowPage=3, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=3, endPage=3, prevPage=2, nextPage=0, offset=10)
+[DEBUG] 24-10-31 16:31:24 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 16:31:24 [selectList:135] - ==> Parameters: 10(Integer), 5(Integer)
+[INFO ] 24-10-31 16:31:24 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 10, 5
+
+[INFO ] 24-10-31 16:31:24 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|202    |기계공학과  |4호관 |
+|201    |전자공학과  |3호관 |
+|103    |인터넷정보과 |5호관 |
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 16:31:24 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|202    |기계공학과  |4호관 |
+|201    |전자공학과  |3호관 |
+|103    |인터넷정보과 |5호관 |
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 16:31:24 [selectList:135] - <==      Total: 4
+[INFO ] 24-10-31 16:31:24 [MyInterceptor:97] - running time: 28(ms)
+[INFO ] 24-10-31 16:31:28 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:28 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:28 [MyInterceptor:73] - [GET] http://localhost:8080/dept_list
+[INFO ] 24-10-31 16:31:28 [MyInterceptor:97] - running time: 13(ms)
+[INFO ] 24-10-31 16:31:29 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:29 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:29 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=1
+[INFO ] 24-10-31 16:31:29 [MyInterceptor:80] - (parma)<---page = 1
+[INFO ] 24-10-31 16:31:29 [MyInterceptor:87] - - REFERER : time=-1285, url=http://localhost:8080/dept_list
+[DEBUG] 24-10-31 16:31:29 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 16:31:29 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 16:31:29 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 16:31:29 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 16:31:29 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 16:31:29 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 16:31:29 [Pagination:84] - Pagination(nowPage=1, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=0)
+[DEBUG] 24-10-31 16:31:29 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 16:31:29 [selectList:135] - ==> Parameters: 0(Integer), 5(Integer)
+[INFO ] 24-10-31 16:31:29 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 5
+
+[INFO ] 24-10-31 16:31:29 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[INFO ] 24-10-31 16:31:29 [resultsettable:610] - 
+|-------|-------|-----|
+|deptno |dname  |loc  |
+|-------|-------|-----|
+|323    |스프링학과  |G강의실 |
+|319    |컴퓨터공학과 |1호관  |
+|313    |메가스터디  |다산   |
+|312    |헬로     |키티   |
+|311    |메가스터디  |강남   |
+|-------|-------|-----|
+
+[DEBUG] 24-10-31 16:31:29 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 16:31:29 [MyInterceptor:97] - running time: 33(ms)
+[INFO ] 24-10-31 16:31:30 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:30 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:30 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=2
+[INFO ] 24-10-31 16:31:30 [MyInterceptor:80] - (parma)<---page = 2
+[INFO ] 24-10-31 16:31:30 [MyInterceptor:87] - - REFERER : time=-353, url=http://localhost:8080/dept_list
+[DEBUG] 24-10-31 16:31:30 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 16:31:30 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 16:31:30 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 16:31:30 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 16:31:30 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 16:31:30 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 16:31:30 [Pagination:84] - Pagination(nowPage=2, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=1, endPage=2, prevPage=0, nextPage=3, offset=5)
+[DEBUG] 24-10-31 16:31:30 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 16:31:30 [selectList:135] - ==> Parameters: 5(Integer), 5(Integer)
+[INFO ] 24-10-31 16:31:30 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 5, 5
+
+[INFO ] 24-10-31 16:31:30 [resultsettable:610] - 
+|-------|-----------|------|
+|deptno |dname      |loc   |
+|-------|-----------|------|
+|307    |mysql학과    |7호관   |
+|306    |헬로월드       |메가스터디 |
+|305    |메가스터디      |호관    |
+|304    |helloworld |ㅗ관    |
+|205    |mysql학과    |5호관   |
+|-------|-----------|------|
+
+[INFO ] 24-10-31 16:31:30 [resultsettable:610] - 
+|-------|-----------|------|
+|deptno |dname      |loc   |
+|-------|-----------|------|
+|307    |mysql학과    |7호관   |
+|306    |헬로월드       |메가스터디 |
+|305    |메가스터디      |호관    |
+|304    |helloworld |ㅗ관    |
+|205    |mysql학과    |5호관   |
+|-------|-----------|------|
+
+[DEBUG] 24-10-31 16:31:30 [selectList:135] - <==      Total: 5
+[INFO ] 24-10-31 16:31:30 [MyInterceptor:97] - running time: 31(ms)
+[INFO ] 24-10-31 16:31:30 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:30 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:30 [MyInterceptor:73] - [GET] http://localhost:8080/api/department?page=3
+[INFO ] 24-10-31 16:31:30 [MyInterceptor:80] - (parma)<---page = 3
+[INFO ] 24-10-31 16:31:30 [MyInterceptor:87] - - REFERER : time=-272, url=http://localhost:8080/dept_list
+[DEBUG] 24-10-31 16:31:30 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) AS cnt FROM department
+[DEBUG] 24-10-31 16:31:30 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-10-31 16:31:30 [sqlonly:228] - SELECT COUNT(*) AS cnt FROM department
+
+[INFO ] 24-10-31 16:31:30 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[INFO ] 24-10-31 16:31:30 [resultsettable:610] - 
+|----|
+|cnt |
+|----|
+|14  |
+|----|
+
+[DEBUG] 24-10-31 16:31:30 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-10-31 16:31:30 [Pagination:84] - Pagination(nowPage=3, totalCount=14, listCount=5, groupCount=2, totalPage=3, startPage=3, endPage=3, prevPage=2, nextPage=0, offset=10)
+[DEBUG] 24-10-31 16:31:30 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-10-31 16:31:30 [selectList:135] - ==> Parameters: 10(Integer), 5(Integer)
+[INFO ] 24-10-31 16:31:30 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 10, 5
+
+[INFO ] 24-10-31 16:31:30 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|202    |기계공학과  |4호관 |
+|201    |전자공학과  |3호관 |
+|103    |인터넷정보과 |5호관 |
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 16:31:30 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|202    |기계공학과  |4호관 |
+|201    |전자공학과  |3호관 |
+|103    |인터넷정보과 |5호관 |
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 16:31:30 [selectList:135] - <==      Total: 4
+[INFO ] 24-10-31 16:31:30 [MyInterceptor:97] - running time: 34(ms)
+[INFO ] 24-10-31 16:31:35 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:35 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:35 [MyInterceptor:73] - [GET] http://localhost:8080/dept_view
+[INFO ] 24-10-31 16:31:35 [MyInterceptor:97] - running time: 12(ms)
+[INFO ] 24-10-31 16:31:37 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:37 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:37 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:37 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/101
+[INFO ] 24-10-31 16:31:37 [MyInterceptor:87] - - REFERER : time=-1342, url=http://localhost:8080/dept_view
+[INFO ] 24-10-31 16:31:37 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:37 [MyInterceptor:73] - [GET] http://localhost:8080/img/loading.gif
+[INFO ] 24-10-31 16:31:37 [MyInterceptor:87] - - REFERER : time=-1342, url=http://localhost:8080/dept_view
+[DEBUG] 24-10-31 16:31:37 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:31:37 [selectItem:135] - ==> Parameters: 101(Integer)
+[INFO ] 24-10-31 16:31:37 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=101
+
+[INFO ] 24-10-31 16:31:37 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|-------|------|----|
+
+[INFO ] 24-10-31 16:31:37 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|-------|------|----|
+
+[DEBUG] 24-10-31 16:31:37 [selectItem:135] - <==      Total: 0
+[INFO ] 24-10-31 16:31:37 [MyInterceptor:97] - running time: 22(ms)
+[INFO ] 24-10-31 16:31:37 [MyInterceptor:97] - running time: 24(ms)
+[INFO ] 24-10-31 16:31:40 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:40 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:40 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 16:31:40 [MyInterceptor:87] - - REFERER : time=-2984, url=http://localhost:8080/dept_view
+[DEBUG] 24-10-31 16:31:40 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:31:40 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 16:31:40 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 16:31:40 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 16:31:40 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 16:31:40 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:31:40 [MyInterceptor:97] - running time: 30(ms)
+[INFO ] 24-10-31 16:31:40 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:41 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:41 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/201
+[INFO ] 24-10-31 16:31:41 [MyInterceptor:87] - - REFERER : time=-815, url=http://localhost:8080/dept_view
+[DEBUG] 24-10-31 16:31:41 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:31:41 [selectItem:135] - ==> Parameters: 201(Integer)
+[INFO ] 24-10-31 16:31:41 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=201
+
+[INFO ] 24-10-31 16:31:41 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|201    |전자공학과 |3호관 |
+|-------|------|----|
+
+[INFO ] 24-10-31 16:31:41 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|201    |전자공학과 |3호관 |
+|-------|------|----|
+
+[DEBUG] 24-10-31 16:31:41 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:31:41 [MyInterceptor:97] - running time: 30(ms)
+[INFO ] 24-10-31 16:31:41 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:41 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:41 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/202
+[INFO ] 24-10-31 16:31:41 [MyInterceptor:87] - - REFERER : time=-740, url=http://localhost:8080/dept_view
+[DEBUG] 24-10-31 16:31:41 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:31:41 [selectItem:135] - ==> Parameters: 202(Integer)
+[INFO ] 24-10-31 16:31:41 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=202
+
+[INFO ] 24-10-31 16:31:41 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|202    |기계공학과 |4호관 |
+|-------|------|----|
+
+[INFO ] 24-10-31 16:31:41 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|202    |기계공학과 |4호관 |
+|-------|------|----|
+
+[DEBUG] 24-10-31 16:31:41 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:31:41 [MyInterceptor:97] - running time: 28(ms)
+[INFO ] 24-10-31 16:31:42 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:42 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:42 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/201
+[INFO ] 24-10-31 16:31:42 [MyInterceptor:87] - - REFERER : time=-824, url=http://localhost:8080/dept_view
+[DEBUG] 24-10-31 16:31:42 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:31:42 [selectItem:135] - ==> Parameters: 201(Integer)
+[INFO ] 24-10-31 16:31:42 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=201
+
+[INFO ] 24-10-31 16:31:42 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|201    |전자공학과 |3호관 |
+|-------|------|----|
+
+[INFO ] 24-10-31 16:31:42 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|201    |전자공학과 |3호관 |
+|-------|------|----|
+
+[DEBUG] 24-10-31 16:31:42 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:31:42 [MyInterceptor:97] - running time: 29(ms)
+[INFO ] 24-10-31 16:31:43 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:31:43 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:31:43 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 16:31:43 [MyInterceptor:87] - - REFERER : time=-461, url=http://localhost:8080/dept_view
+[DEBUG] 24-10-31 16:31:43 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:31:43 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 16:31:43 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 16:31:43 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 16:31:43 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 16:31:43 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:31:43 [MyInterceptor:97] - running time: 18(ms)
