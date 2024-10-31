@@ -5301,3 +5301,306 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 
 [DEBUG] 24-10-31 16:31:43 [selectItem:135] - <==      Total: 1
 [INFO ] 24-10-31 16:31:43 [MyInterceptor:97] - running time: 18(ms)
+[INFO ] 24-10-31 16:38:32 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 46207 (/Users/song-gilju/Desktop/web3/09-SpringBoot/10-crud/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/10-crud)
+[DEBUG] 24-10-31 16:38:32 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-31 16:38:32 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-31 16:38:32 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-10-31 16:38:33 [CrudApplication:56] - Started CrudApplication in 1.188 seconds (process running for 1.414)
+[INFO ] 24-10-31 16:38:45 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:38:45 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:38:45 [MyInterceptor:73] - [GET] http://localhost:8080/dept_view
+[INFO ] 24-10-31 16:38:45 [MyInterceptor:97] - running time: 91(ms)
+[INFO ] 24-10-31 16:38:46 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:38:46 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:38:46 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:38:46 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:38:46 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 16:38:46 [MyInterceptor:73] - [GET] http://localhost:8080/img/loading.gif
+[INFO ] 24-10-31 16:38:46 [MyInterceptor:87] - - REFERER : time=-968, url=http://localhost:8080/dept_view
+[INFO ] 24-10-31 16:38:46 [MyInterceptor:87] - - REFERER : time=-968, url=http://localhost:8080/dept_view
+[INFO ] 24-10-31 16:38:46 [MyInterceptor:97] - running time: 58(ms)
+[DEBUG] 24-10-31 16:38:46 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:38:46 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 16:38:46 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 16:38:46 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 16:38:46 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 16:38:46 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:38:46 [MyInterceptor:97] - running time: 230(ms)
+[INFO ] 24-10-31 16:38:47 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:38:47 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:38:47 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/201
+[INFO ] 24-10-31 16:38:47 [MyInterceptor:87] - - REFERER : time=-739, url=http://localhost:8080/dept_view
+[DEBUG] 24-10-31 16:38:47 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:38:47 [selectItem:135] - ==> Parameters: 201(Integer)
+[INFO ] 24-10-31 16:38:47 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=201
+
+[INFO ] 24-10-31 16:38:47 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|201    |전자공학과 |3호관 |
+|-------|------|----|
+
+[INFO ] 24-10-31 16:38:47 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|201    |전자공학과 |3호관 |
+|-------|------|----|
+
+[DEBUG] 24-10-31 16:38:47 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:38:47 [MyInterceptor:97] - running time: 43(ms)
+[INFO ] 24-10-31 16:38:47 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:38:47 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:38:47 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/202
+[INFO ] 24-10-31 16:38:47 [MyInterceptor:87] - - REFERER : time=-637, url=http://localhost:8080/dept_view
+[DEBUG] 24-10-31 16:38:47 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:38:47 [selectItem:135] - ==> Parameters: 202(Integer)
+[INFO ] 24-10-31 16:38:47 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=202
+
+[INFO ] 24-10-31 16:38:47 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|202    |기계공학과 |4호관 |
+|-------|------|----|
+
+[INFO ] 24-10-31 16:38:47 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|202    |기계공학과 |4호관 |
+|-------|------|----|
+
+[DEBUG] 24-10-31 16:38:47 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:38:47 [MyInterceptor:97] - running time: 32(ms)
+[INFO ] 24-10-31 16:38:54 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:38:54 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:38:54 [MyInterceptor:73] - [GET] http://localhost:8080/dept_view
+[INFO ] 24-10-31 16:38:54 [MyInterceptor:97] - running time: 34(ms)
+[INFO ] 24-10-31 16:38:55 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:38:55 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:38:55 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:38:55 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:38:55 [MyInterceptor:73] - [GET] http://localhost:8080/img/loading.gif
+[INFO ] 24-10-31 16:38:55 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 16:38:55 [MyInterceptor:87] - - REFERER : time=-1147, url=http://localhost:8080/dept_view
+[INFO ] 24-10-31 16:38:55 [MyInterceptor:87] - - REFERER : time=-1147, url=http://localhost:8080/dept_view
+[DEBUG] 24-10-31 16:38:55 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:38:55 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 16:38:55 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 16:38:55 [MyInterceptor:97] - running time: 38(ms)
+[INFO ] 24-10-31 16:38:55 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 16:38:55 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 16:38:55 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:38:55 [MyInterceptor:97] - running time: 42(ms)
+[INFO ] 24-10-31 16:38:56 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:38:56 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:38:56 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/201
+[INFO ] 24-10-31 16:38:56 [MyInterceptor:87] - - REFERER : time=-709, url=http://localhost:8080/dept_view
+[DEBUG] 24-10-31 16:38:56 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:38:56 [selectItem:135] - ==> Parameters: 201(Integer)
+[INFO ] 24-10-31 16:38:56 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=201
+
+[INFO ] 24-10-31 16:38:56 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|201    |전자공학과 |3호관 |
+|-------|------|----|
+
+[INFO ] 24-10-31 16:38:56 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|201    |전자공학과 |3호관 |
+|-------|------|----|
+
+[DEBUG] 24-10-31 16:38:56 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:38:56 [MyInterceptor:97] - running time: 30(ms)
+[INFO ] 24-10-31 16:38:56 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:38:56 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:38:56 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/202
+[INFO ] 24-10-31 16:38:56 [MyInterceptor:87] - - REFERER : time=-529, url=http://localhost:8080/dept_view
+[DEBUG] 24-10-31 16:38:56 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:38:56 [selectItem:135] - ==> Parameters: 202(Integer)
+[INFO ] 24-10-31 16:38:56 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=202
+
+[INFO ] 24-10-31 16:38:56 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|202    |기계공학과 |4호관 |
+|-------|------|----|
+
+[INFO ] 24-10-31 16:38:56 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|202    |기계공학과 |4호관 |
+|-------|------|----|
+
+[DEBUG] 24-10-31 16:38:56 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:38:56 [MyInterceptor:97] - running time: 15(ms)
+[INFO ] 24-10-31 16:38:57 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:38:57 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:38:57 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/101
+[INFO ] 24-10-31 16:38:57 [MyInterceptor:87] - - REFERER : time=-843, url=http://localhost:8080/dept_view
+[DEBUG] 24-10-31 16:38:57 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:38:57 [selectItem:135] - ==> Parameters: 101(Integer)
+[INFO ] 24-10-31 16:38:57 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=101
+
+[INFO ] 24-10-31 16:38:57 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|-------|------|----|
+
+[INFO ] 24-10-31 16:38:57 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|-------|------|----|
+
+[DEBUG] 24-10-31 16:38:57 [selectItem:135] - <==      Total: 0
+[INFO ] 24-10-31 16:38:57 [MyInterceptor:97] - running time: 19(ms)
+[INFO ] 24-10-31 16:41:00 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 46686 (/Users/song-gilju/Desktop/web3/09-SpringBoot/10-crud/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/10-crud)
+[DEBUG] 24-10-31 16:41:00 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-31 16:41:00 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-31 16:41:01 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-10-31 16:41:01 [CrudApplication:56] - Started CrudApplication in 1.223 seconds (process running for 1.446)
+[INFO ] 24-10-31 16:41:09 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:41:09 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:41:09 [MyInterceptor:73] - [GET] http://localhost:8080/dept_view
+[INFO ] 24-10-31 16:41:09 [MyInterceptor:97] - running time: 84(ms)
+[INFO ] 24-10-31 16:41:11 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:41:11 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:41:11 [MyInterceptor:73] - [GET] http://localhost:8080/img/loading.gif
+[INFO ] 24-10-31 16:41:11 [MyInterceptor:87] - - REFERER : time=-1279, url=http://localhost:8080/dept_view
+[INFO ] 24-10-31 16:41:11 [MyInterceptor:97] - running time: 53(ms)
+[INFO ] 24-10-31 16:43:24 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 47626 (/Users/song-gilju/Desktop/web3/09-SpringBoot/10-crud/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/10-crud)
+[DEBUG] 24-10-31 16:43:24 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-31 16:43:24 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-31 16:43:25 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-10-31 16:43:25 [CrudApplication:56] - Started CrudApplication in 1.229 seconds (process running for 1.466)
+[INFO ] 24-10-31 16:43:32 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:43:32 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:43:32 [MyInterceptor:73] - [GET] http://localhost:8080/dept_view
+[INFO ] 24-10-31 16:43:32 [MyInterceptor:97] - running time: 87(ms)
+[INFO ] 24-10-31 16:43:33 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:43:33 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:43:33 [MyInterceptor:73] - [GET] http://localhost:8080/img/loading.gif
+[INFO ] 24-10-31 16:43:33 [MyInterceptor:87] - - REFERER : time=-892, url=http://localhost:8080/dept_view
+[INFO ] 24-10-31 16:43:33 [MyInterceptor:97] - running time: 53(ms)
+[INFO ] 24-10-31 16:44:45 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 48720 (/Users/song-gilju/Desktop/web3/09-SpringBoot/10-crud/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/10-crud)
+[DEBUG] 24-10-31 16:44:45 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-31 16:44:45 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-31 16:44:45 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-10-31 16:44:46 [CrudApplication:56] - Started CrudApplication in 1.222 seconds (process running for 1.454)
+[INFO ] 24-10-31 16:44:54 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:44:54 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:44:54 [MyInterceptor:73] - [GET] http://localhost:8080/dept_view
+[INFO ] 24-10-31 16:44:54 [MyInterceptor:97] - running time: 85(ms)
+[INFO ] 24-10-31 16:44:55 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:44:55 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:44:55 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:44:55 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:44:55 [MyInterceptor:73] - [GET] http://localhost:8080/img/loading.gif
+[INFO ] 24-10-31 16:44:55 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/102
+[INFO ] 24-10-31 16:44:55 [MyInterceptor:87] - - REFERER : time=-1056, url=http://localhost:8080/dept_view
+[INFO ] 24-10-31 16:44:55 [MyInterceptor:87] - - REFERER : time=-1056, url=http://localhost:8080/dept_view
+[INFO ] 24-10-31 16:44:55 [MyInterceptor:97] - running time: 58(ms)
+[DEBUG] 24-10-31 16:44:55 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:44:55 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-10-31 16:44:55 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=102
+
+[INFO ] 24-10-31 16:44:55 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[INFO ] 24-10-31 16:44:55 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|102    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-10-31 16:44:55 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:44:55 [MyInterceptor:97] - running time: 223(ms)
+[INFO ] 24-10-31 16:44:56 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:44:56 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:44:56 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/201
+[INFO ] 24-10-31 16:44:56 [MyInterceptor:87] - - REFERER : time=-610, url=http://localhost:8080/dept_view
+[DEBUG] 24-10-31 16:44:56 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:44:56 [selectItem:135] - ==> Parameters: 201(Integer)
+[INFO ] 24-10-31 16:44:56 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=201
+
+[INFO ] 24-10-31 16:44:56 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|201    |전자공학과 |3호관 |
+|-------|------|----|
+
+[INFO ] 24-10-31 16:44:56 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|201    |전자공학과 |3호관 |
+|-------|------|----|
+
+[DEBUG] 24-10-31 16:44:56 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:44:56 [MyInterceptor:97] - running time: 39(ms)
+[INFO ] 24-10-31 16:44:56 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-10-31 16:44:56 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-10-31 16:44:56 [MyInterceptor:73] - [GET] http://localhost:8080/api/department/202
+[INFO ] 24-10-31 16:44:56 [MyInterceptor:87] - - REFERER : time=-438, url=http://localhost:8080/dept_view
+[DEBUG] 24-10-31 16:44:56 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno=?
+[DEBUG] 24-10-31 16:44:56 [selectItem:135] - ==> Parameters: 202(Integer)
+[INFO ] 24-10-31 16:44:56 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno=202
+
+[INFO ] 24-10-31 16:44:56 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|202    |기계공학과 |4호관 |
+|-------|------|----|
+
+[INFO ] 24-10-31 16:44:56 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|202    |기계공학과 |4호관 |
+|-------|------|----|
+
+[DEBUG] 24-10-31 16:44:56 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-31 16:44:56 [MyInterceptor:97] - running time: 37(ms)

@@ -74,14 +74,14 @@
           loading.classList.add("active");
 
           // 링크에 숨겨진 data-deptno의 값을 가져옴
-          const dno = e.currentTarget.dataset.deptno;
+          const deptno = e.currentTarget.dataset.deptno;
           //console.log(deptno);
           // 검색결과를 저장할 빈 변수
           let response = null;
 
           try {
             response = await axios.get(
-              `http://localhost:8080/api/department/${dno}`
+              `http://localhost:8080/api/department/${deptno}`
             );
             console.log(response.data);
           } catch (error) {
@@ -90,7 +90,7 @@
 
             //springboot로 부터 전달받은 에러 메시지가 있다면?
             if (error.response?.data) {
-              const data = error.response.data;
+              const deptno = error.response.data;
 
               //메시지 창에 표시할 내용
               alertMsg = data.message;
@@ -122,15 +122,17 @@
           }
 
           // Ajax의 응답결과를 구조분해하여 개별 변수로 추출
-          const { deptno, dname, loc } = response.data.item;
+          const { deptno:id, dname, loc } = response.data.item;
           // 키값과 변수명이 같으면 에러가 생김 해결방법⬇️
           // 1) 변수명바꾸기
           // 2) 키값을 : id 로 주면 해결~   js  7단원 9번
+          // --> 키값을 구조분해로 변경시 출력하는 구문에도 id 넣어주기
           // const { deptno:id, dname, loc } = response.data.item;
           // 
 
           // 추출한 결과를 미리 준비한 HTML 구조에 출력하고 컨테이너를 화면에 표시함
-          document.querySelector(".id").innerHTML = deptno;
+          document.querySelector(".id").innerHTML = id;
+          //1)번 사용시 document.querySelector(".id").innerHTML = deptno;
           document.querySelector(".dname").innerHTML = dname;
           document.querySelector(".loc").innerHTML = loc;
           document.querySelector("#container").style.display = "block";
