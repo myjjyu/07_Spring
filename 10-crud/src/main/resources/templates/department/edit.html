@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>학과관리 ::: MySchool</title>
+    <link rel="stylesheet" th:href="@{/assets/css/style.css}" />
+    <!-- <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      .container {
+        padding: 20px 0;
+        width: 640px;
+        margin: auto;
+      }
+
+      header h1 {
+        color: #0066ff;
+        font-size: 28px;
+      }
+
+      footer {
+        text-align: center; /* 중앙 정렬 */
+        padding: 10px 0; /* 상하 패딩 추가 */
+      }
+
+      footer address {
+        display: block;
+        font-size: 12px;
+        color: #555;
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>학과관리</h1>
+        <hr />
+      </header>
+
+      <section>
+        <!-- 데이터 추가 페이지로 이동하기 위한 링크 -->
+        <form name="form" id="department-form">
+          <!-- 수정할 대상에 대한 일련번호값을 포함해야 하므로 히든 필드로 처리 -->
+          <input type="hidden" name="deptno" id="deptno" />
+
+          <div class="form-group">
+            <label for="dname"
+              >학과이름 <span class="text-danger">*</span></label
+            >
+            <div>
+              <input type="text" name="dname" id="dname" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="loc">학과위치</label>
+            <div>
+              <input type="text" name="loc" id="loc" />
+            </div>
+          </div>
+          <hr />
+
+          <div class="text-center">
+            <button type="submit">수정하기</button>
+            <button type="reset">다시작성</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <hr />
+      <address>copyright&copy;2024. megastudy</address>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script th:src="@{/assets/js/axios-helper.js}"></script>
+    <script>
+      // 페이지가 실행되면서 자동으로 동작해야 하므로 즉시 실행함수 형태로 구현
+      (async () => {
+        // 컨트롤러에서 넘어온 변수받기
+        const deptno = [[${deptno}]];
+
+        // Ajax요청
+        let data = await axiosHelper.get(`[[@{/api/department}]]/${deptno}`);
+
+        if(data){
+          // 가져온 데이터가 있다면 인풋 태그의 벨류 속성으로 가져온 값을 적용한다
+          // 일련 번호와 같이 시스템이 관리하는 값은 히든요소로 포함시킨다
+          document.querySelector('#deptno').value = data.item.deptno;
+          document.querySelector('#dname').value = data.item.dname;
+          document.querySelector('#loc').value = data.item.loc;
+        }
+      })();
+
+      // 수정버튼의 서브밋이벤트
+      document.querySelector('#department-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+      // 입력값 받아오기
+      const formData = new FormData(e.currentTarget);
+
+      // 입력값에 대한 유효성검사 (여기서는 생략)
+      const data = await axiosHelper.put(`[[@{/api/department}]]/[[${deptno}]]`, formData);
+
+      if(data){
+        alert("수정되었습니다");
+        window.location = `[[@{/department/view}]]/[[${deptno}]]`;
+      }
+      });
+    </script>
+  </body>
+</html>

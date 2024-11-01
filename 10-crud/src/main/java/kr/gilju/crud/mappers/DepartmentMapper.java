@@ -104,5 +104,4 @@ public interface DepartmentMapper {
       "</script>")
 
       public int selectCount(Department input);
-
 }

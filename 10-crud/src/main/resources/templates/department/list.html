@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>학과관리 ::: MySchool</title>
+    <link rel="stylesheet" th:href="@{/assets/css/style.css}" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>학과관리</h1>
+        <hr />
+      </header>
+
+      <section>
+        <!-- 데이터 추가 페이지로 이동하기 위한링크 -->
+        <p>
+          <a th:href="@{/department/add}">새 학과 추가</a>
+        </p>
+        <!-- 데이터 조회 목록을 위한 테이블 시작 -->
+        <table class="table">
+          <colgroup>
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="text-center">학과번호</th>
+              <th class="text-center">학과이름</th>
+              <th class="text-center">학과위치</th>
+              <th class="text-center">-</th>
+            </tr>
+          </thead>
+          <tbody id="listBody">
+            <!-- Ajax로 조회한 목록이 출력될 위치 -->
+          </tbody>
+        </table>
+      </section>
+      <footer>
+        <hr />
+        <address>copyringht&copy;2024. megastudy</address>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script th:src="@{/assets/js/axios-helper.js}"></script>
+
+    <script>
+      const listBody = document.querySelector("#listBody");
+
+      (async () => {
+        let data = await axiosHelper.get("/api/department");
+
+        data?.item.forEach((v, i) => {
+          //tr을 tbody에 추가
+          const tr = document.createElement("tr");
+          listBody.appendChild(tr);
+
+          //일련번호를 출력한 첫번째칸을 tr에 추가
+          const td1 = document.createElement("td");
+          td1.innerHTML = v.deptno;
+          tr.appendChild(td1);
+
+          // 두번째칸을 생성후 tr에 추가
+          const td2 = document.createElement("td");
+          tr.appendChild(td2);
+
+          // 상세보기를 위한 링크로 구현된 학과 이름을 두번재 칸에 추가
+          // --> 어떤 학과를 열람할 것인가를 의미하는 id 값을 get파라미터로 전달함
+          // 대체로 id라는 이름의 변수는 그 대상을 식별하기 위한 고유한 값을 의미 (=일련번호)
+          const a1 = document.createElement("a");
+          a1.setAttribute("href", `/department/view/${v.deptno}`);
+          a1.innerHTML = v.dname;
+          td2.appendChild(a1);
+
+          // 학과 위치를 포함하는 세번째 칸을 tr에 추가
+          const td3 = document.createElement("td");
+          td3.innerHTML = v.loc;
+          tr.appendChild(td3);
+
+          // 네번째 칸을 tr에 추가
+          const td4 = document.createElement("td");
+          tr.appendChild(td4);
+
+          // 어떤 항목을 수정할 것인지를 get파라미터로 담은 링크를 네 번째 칸에 추가
+          const a2 = document.createElement("a");
+          a2.setAttribute("href", `/department/edit/${v.deptno}`);
+          a2.innerHTML = "수정";
+          td4.appendChild(a2);
+
+          // 어떤 항목을 삭제할 것인지를 dataset으로 지ㅓ장하고 있는 링크를 네번째 칸에 추가
+          const a3 = document.createElement("a");
+          a3.setAttribute("href", `#`);
+          a3.dataset.deptno = v.deptno;
+          a3.dataset.dname = v.dname;
+          a3.innerHTML = "삭제";
+          a3.classList.add("btn-delete");
+          td4.appendChild(a3);
+
+          //삭제버튼에 대한 클릭 이벤트 구현
+          a3.addEventListener("click", async (e) => {
+            e.preventDefault();
+            const current = e.currentTarget;
+            const deptno = current.dataset.deptno;
+            const dname = current.dataset.dname;
+
+            if (confirm(`정말 ${dname}(을)를 삭제하시겠습니까?`)) {
+              const data = axiosHelper.delete(`/api/department/${deptno}`);
+
+              if (data) {
+                alert("삭제 되었습니다");
+                // 클릭된 링크를 기준으로 가장 가까운 tr태그를 상위 요소중에서 찾아 제거함
+                current.closest("tr").remove();
+              }
+            }
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

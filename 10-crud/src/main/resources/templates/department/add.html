@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>학과관리 ::: MySchool</title>
+    <link rel="stylesheet" th:href="@{/assets/css/style.css}" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header>
+        <h1>학과관리</h1>
+        <hr />
+      </header>
+
+      <!-- body -->
+      <section>
+        <!-- 데이터 추가 페이지로 이동하기 위한 링크 -->
+        <form name="form" id="department-form">
+          <div class="form-group">
+            <label for="dname"
+              >학과이름 <span class="text-danger">*</span></label
+            >
+            <div>
+              <input type="text" name="dname" id="dname" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="loc">학과위치 <span class="text-danger">*</span></label>
+            <div>
+              <input type="text" name="loc" id="loc" />
+            </div>
+          </div>
+          <hr />
+
+          <div class="text-center">
+            <button type="submit">저장하기</button>
+            <button type="reset">다시작성</button>
+          </div>
+        </form>
+      </section>
+
+      <footer>
+        <hr />
+        <address>copyright&copy;2024. megastudy</address>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script th:src="@{/assets/js/axios-helper.js}"></script>
+
+    <script>
+      document
+        .querySelector("#department-form")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          // 입력값 받아오기
+          const dname = document.querySelector("#dname").value;
+          const loc = document.querySelector("#loc").value;
+
+          const formData = new FormData(e.currentTarget);
+
+          let data = await axiosHelper.post('[[@{/api/department}]]', formData);
+
+  
+          window.location = `[[@{/department/view}]]/${data.item.deptno}`;
+        });
+    </script>
+  </body>
+</html>
