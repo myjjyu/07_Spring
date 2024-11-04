@@ -963,3 +963,61 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 [INFO ] 24-11-04 13:04:53 [MyInterceptor:73] - [GET] http://localhost:8080/files/%E1%84%8F%E1%85%A5%E1%86%B7%E1%84%91%E1%85%B2%E1%84%90%E1%85%A5.png
 [INFO ] 24-11-04 13:04:53 [MyInterceptor:87] - - REFERER : time=-32, url=http://localhost:8080/simple/upload_single_ok
 [INFO ] 24-11-04 13:04:53 [MyInterceptor:97] - running time: 25(ms)
+[INFO ] 24-11-04 14:35:11 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 46470 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 14:35:11 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 14:35:11 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-04 14:35:12 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-04 14:35:12 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 14:35:12 [FileuploadApplication:56] - Started FileuploadApplication in 1.461 seconds (process running for 1.704)
+[INFO ] 24-11-04 14:35:17 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 14:35:17 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 14:35:17 [MyInterceptor:73] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 14:35:17 [MyInterceptor:97] - running time: 106(ms)
+[INFO ] 24-11-04 14:35:30 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 14:35:30 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 14:35:30 [MyInterceptor:73] - [POST] http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 14:35:30 [MyInterceptor:80] - (parma)<---subject = 제목
+[INFO ] 24-11-04 14:35:30 [MyInterceptor:87] - - REFERER : time=-13065, url=http://localhost:8080/simple/upload_single
+[DEBUG] 24-11-04 14:35:30 [SimpleUploadController:65] - ==========================
+[DEBUG] 24-11-04 14:35:30 [SimpleUploadController:66] - 원본 파일 이름 : 스프링.png
+[DEBUG] 24-11-04 14:35:30 [SimpleUploadController:67] - <input type='file'>의 name 속성값: photo
+[DEBUG] 24-11-04 14:35:30 [SimpleUploadController:68] - 파일형식: image/png
+[DEBUG] 24-11-04 14:35:30 [SimpleUploadController:69] - 파일크기: 2577
+[DEBUG] 24-11-04 14:35:30 [SimpleUploadController:129] - 업로드된 파일의 경로: /Users/song-gilju/Desktop/web3/09-SpringBoot/upload/2024/11/04/17306985309460.png
+[DEBUG] 24-11-04 14:35:30 [SimpleUploadController:143] - 업로드 폴더 내에서 최종 경로: /2024/11/04/17306985309460.png
+[DEBUG] 24-11-04 14:35:30 [SimpleUploadController:156] - 파일의 url : /files/2024/11/04/17306985309460.png
+[DEBUG] 24-11-04 14:35:30 [SimpleUploadController:157] - ==========================
+[INFO ] 24-11-04 14:35:30 [MyInterceptor:97] - running time: 43(ms)
+[INFO ] 24-11-04 14:35:30 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 14:35:31 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 14:35:31 [MyInterceptor:73] - [GET] http://localhost:8080/files/2024/11/04/17306985309460.png
+[INFO ] 24-11-04 14:35:31 [MyInterceptor:87] - - REFERER : time=-28, url=http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 14:35:31 [MyInterceptor:97] - running time: 26(ms)
+[INFO ] 24-11-04 14:35:33 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 14:35:33 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 14:35:33 [MyInterceptor:73] - [GET] http://localhost:8080/simple.upload_single
+[INFO ] 24-11-04 14:35:33 [MyInterceptor:87] - - REFERER : time=-2605, url=http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 14:35:48 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 14:35:48 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 14:35:48 [MyInterceptor:73] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 14:35:48 [MyInterceptor:97] - running time: 30(ms)
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:73] - [POST] http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:80] - (parma)<---subject = 제목
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:87] - - REFERER : time=-6098, url=http://localhost:8080/simple/upload_single
+[DEBUG] 24-11-04 14:35:54 [SimpleUploadController:65] - ==========================
+[DEBUG] 24-11-04 14:35:54 [SimpleUploadController:66] - 원본 파일 이름 : 스프링.png
+[DEBUG] 24-11-04 14:35:54 [SimpleUploadController:67] - <input type='file'>의 name 속성값: photo
+[DEBUG] 24-11-04 14:35:54 [SimpleUploadController:68] - 파일형식: image/png
+[DEBUG] 24-11-04 14:35:54 [SimpleUploadController:69] - 파일크기: 2577
+[DEBUG] 24-11-04 14:35:54 [SimpleUploadController:129] - 업로드된 파일의 경로: /Users/song-gilju/Desktop/web3/09-SpringBoot/upload/2024/11/04/17306985548150.png
+[DEBUG] 24-11-04 14:35:54 [SimpleUploadController:143] - 업로드 폴더 내에서 최종 경로: /2024/11/04/17306985548150.png
+[DEBUG] 24-11-04 14:35:54 [SimpleUploadController:156] - 파일의 url : /files/2024/11/04/17306985548150.png
+[DEBUG] 24-11-04 14:35:54 [SimpleUploadController:157] - ==========================
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:97] - running time: 27(ms)
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:73] - [GET] http://localhost:8080/files/2024/11/04/17306985548150.png
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:87] - - REFERER : time=-16, url=http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:97] - running time: 18(ms)

@@ -1,6 +1,7 @@
 package kr.gilju.fileupload.controllers;
 
 import java.io.File;
+import java.util.Calendar;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -68,14 +69,48 @@ public class SimpleUploadController {
     log.debug("파일크기: " + photo.getSize());
 
     // 업로드된 파일이 저장될 폴더의 이름을 "년/월/일" 형식으로 생성한다
-    
+    Calendar c = Calendar.getInstance();
+    String targetDir = String.format("%s/%04d/%02d/%02d", uploadDir,c.get(Calendar.YEAR),
+    c.get(Calendar.MONTH) + 1, c.get(Calendar.DAY_OF_MONTH));
+
+    //폴더가 존재하지 않는다면 생성한다
+    File f = new File(targetDir);
+    if (!f.exists()) {
+      f.mkdirs();
+    }
+
+    //저장될 파일의 이름을 생성한다
+    //파일의 원본 이름 추출
+    String originName = photo.getOriginalFilename();
+    //파일의 원본 이름에서 확장자만 추출
+    String ext = originName.substring(originName.lastIndexOf("."));
+    String fileName = null; // 웹 서버에 저장될 파일 이름
+    File targetFile = null; // 저장된 파일 정보를 담기 위한 file객체
+    int count = 0; // 중복된 파일 수
+
+    // 일단 무한 루프
+    while (true) { 
+        // 저장될 파일이름 --> 현재시각 + 카운트값 + 확장자
+        fileName = String.format("%d%d%s", System.currentTimeMillis(), count, ext);
+        // 업로드 파일이 저장될 폴더 + 파일이름으로 파일객체를 생성한다
+        targetFile = new File(targetDir, fileName);
+
+        // 동일한 이름의 파일이 없다면 반복 중단.
+        if(!targetFile.exists()){
+          break;
+        }
+
+        //if 문을 빠져나올 경우 중복된 이름의 파일이 존재한다는 의미이르모 count를 1증가
+        count++;
+    }
+
 
 
 
 
 
     // 업로드 된 파일이 저장될 경로 정보를 생성한다
-    File targetFile = new File(uploadDir, photo.getOriginalFilename());
+    // File targetFile = new File(uploadDir, photo.getOriginalFilename());
 
     // 업로드 된 파일을 지정된 경로로 복사한다
     // 업로드 실패를 위해 try/chtch 구문을 사용한다(직접추가)
