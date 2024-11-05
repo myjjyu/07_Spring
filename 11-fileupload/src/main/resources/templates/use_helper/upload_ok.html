@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div th:replace="~{/fragments/header :: my-header}"></div>
+
+    <h2>헬퍼 사용 업로드 결과 확인</h2>
+
+    <ul>
+      <li>filedName: <span th:text="${item.filedName}"></span></li>
+      <li>originName: <span th:text="${item.originName}"></span></li>
+      <li>contentType: <span th:text="${item.contentType}"></span></li>
+      <li>fileSize: <span th:text="${item.fileSize}"></span></li>
+      <li>filePath: <span th:text="${item.filePath}"></span></li>
+      <li>fileUrl: <span th:text="${item.fileUrl}"></span></li>
+      <li>thumbnailPath: <span th:text="${item.thumbnailPath}"></span></li>
+      <li>thumbnailUrl: <span th:text="${item.thumbnailUrl}"></span></li>
+    </ul>
+
+    <img th:src="${item.thumbnailUrl}" width="320" />
+  </body>
+</html>

@@ -1,0 +1,1023 @@
+[INFO ] 24-11-04 10:41:25 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 7792 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 10:41:25 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 10:41:25 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-04 10:41:25 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-04 10:41:25 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 10:41:26 [FileuploadApplication:56] - Started FileuploadApplication in 1.223 seconds (process running for 1.469)
+[INFO ] 24-11-04 10:41:34 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 10:41:34 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 10:41:34 [MyInterceptor:73] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 10:41:34 [MyInterceptor:97] - running time: 88(ms)
+[ERROR] 24-11-04 10:41:34 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "simlpe/upload_single": Error resolving template [simlpe/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [simlpe/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 24-11-04 10:41:34 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [simlpe/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [simlpe/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-11-04 10:50:05 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 14749 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 10:50:05 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 10:50:05 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-04 10:50:06 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-04 10:50:06 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 10:50:06 [FileuploadApplication:56] - Started FileuploadApplication in 1.221 seconds (process running for 1.579)
+[INFO ] 24-11-04 10:50:12 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 10:50:12 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 10:50:12 [MyInterceptor:73] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 10:50:12 [MyInterceptor:97] - running time: 97(ms)
+[ERROR] 24-11-04 10:50:12 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "simlpe/upload_single": Error resolving template [simlpe/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [simlpe/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 24-11-04 10:50:12 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [simlpe/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [simlpe/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-11-04 10:51:58 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 16632 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 10:51:58 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 10:51:58 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-04 10:51:59 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-04 10:51:59 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 10:51:59 [FileuploadApplication:56] - Started FileuploadApplication in 1.227 seconds (process running for 1.528)
+[INFO ] 24-11-04 10:52:10 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 10:52:10 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 10:52:10 [MyInterceptor:73] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 10:52:10 [MyInterceptor:97] - running time: 89(ms)
+[ERROR] 24-11-04 10:52:10 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "simlpe/upload_single": Error resolving template [simlpe/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [simlpe/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 24-11-04 10:52:10 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [simlpe/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [simlpe/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-11-04 10:55:29 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 22839 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 10:55:29 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 10:55:29 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-04 10:55:30 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-04 10:55:30 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 10:55:30 [FileuploadApplication:56] - Started FileuploadApplication in 1.265 seconds (process running for 1.591)
+[INFO ] 24-11-04 10:55:44 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 10:55:44 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 10:55:44 [MyInterceptor:73] - [GET] http://localhost:8080/
+[INFO ] 24-11-04 10:58:34 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 26130 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 10:58:34 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 10:58:34 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-04 10:58:34 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-04 10:58:34 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 10:58:35 [FileuploadApplication:56] - Started FileuploadApplication in 1.172 seconds (process running for 1.531)
+[INFO ] 24-11-04 10:58:41 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 10:58:41 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 10:58:41 [MyInterceptor:73] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 10:58:41 [MyInterceptor:97] - running time: 94(ms)
+[ERROR] 24-11-04 10:58:41 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "simlpe/upload_single": Error resolving template [simlpe/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [simlpe/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 24-11-04 10:58:41 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [simlpe/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [simlpe/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-11-04 11:00:02 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 27603 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 11:00:02 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 11:00:02 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-04 11:00:02 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-04 11:00:02 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 11:00:03 [FileuploadApplication:56] - Started FileuploadApplication in 1.219 seconds (process running for 1.534)
+[INFO ] 24-11-04 11:00:07 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 11:00:07 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 11:00:07 [MyInterceptor:73] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 11:00:07 [MyInterceptor:97] - running time: 93(ms)
+[ERROR] 24-11-04 11:00:07 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "simple/upload_single": Error resolving template [simple/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [simple/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 24-11-04 11:00:07 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [simple/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [simple/upload_single], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-11-04 11:14:34 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 33384 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 11:14:34 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 11:14:34 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-04 11:14:35 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-04 11:14:35 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 11:14:35 [FileuploadApplication:56] - Started FileuploadApplication in 1.196 seconds (process running for 1.495)
+[INFO ] 24-11-04 11:14:39 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 11:14:39 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 11:14:39 [MyInterceptor:73] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 11:14:39 [MyInterceptor:97] - running time: 103(ms)
+[INFO ] 24-11-04 11:14:42 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 11:14:42 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 11:14:42 [MyInterceptor:73] - [GET] http://localhost:8080/simple.upload_single
+[INFO ] 24-11-04 11:14:42 [MyInterceptor:87] - - REFERER : time=-2278, url=http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 11:14:56 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 11:14:56 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 11:14:56 [MyInterceptor:73] - [POST] http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 11:14:56 [MyInterceptor:80] - (parma)<---subject = 
+[INFO ] 24-11-04 11:14:56 [MyInterceptor:87] - - REFERER : time=-16276, url=http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 12:28:46 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 37183 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 12:28:46 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 12:28:46 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-04 12:28:46 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-04 12:28:46 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 12:28:47 [FileuploadApplication:56] - Started FileuploadApplication in 1.106 seconds (process running for 1.351)
+[INFO ] 24-11-04 12:28:55 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 12:28:55 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 12:28:55 [MyInterceptor:73] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 12:28:55 [MyInterceptor:97] - running time: 77(ms)
+[INFO ] 24-11-04 12:28:59 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 12:28:59 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 12:28:59 [MyInterceptor:73] - [GET] http://localhost:8080/simple.upload_single
+[INFO ] 24-11-04 12:28:59 [MyInterceptor:87] - - REFERER : time=-4342, url=http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 12:29:03 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 12:29:03 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 12:29:03 [MyInterceptor:73] - [POST] http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 12:29:03 [MyInterceptor:80] - (parma)<---subject = 
+[INFO ] 24-11-04 12:29:03 [MyInterceptor:87] - - REFERER : time=-7588, url=http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 12:30:18 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 12:30:18 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 12:30:18 [MyInterceptor:73] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 12:30:18 [MyInterceptor:97] - running time: 35(ms)
+[INFO ] 24-11-04 12:30:28 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 12:30:28 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 12:30:28 [MyInterceptor:73] - [POST] http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 12:30:28 [MyInterceptor:80] - (parma)<---subject = 제목
+[INFO ] 24-11-04 12:30:28 [MyInterceptor:87] - - REFERER : time=-10700, url=http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 12:31:35 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 37183 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 12:31:35 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 12:31:35 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-11-04 12:31:35 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 12:31:36 [FileuploadApplication:56] - Started FileuploadApplication in 0.291 seconds (process running for 169.871)
+[INFO ] 24-11-04 12:31:55 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 37183 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 12:31:55 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 12:31:55 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-11-04 12:31:55 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 12:31:55 [FileuploadApplication:56] - Started FileuploadApplication in 0.211 seconds (process running for 189.664)
+[INFO ] 24-11-04 12:32:02 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 38064 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 12:32:02 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 12:32:02 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-04 12:32:03 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-04 12:32:03 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 12:32:03 [FileuploadApplication:56] - Started FileuploadApplication in 1.097 seconds (process running for 1.36)
+[INFO ] 24-11-04 12:32:10 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 12:32:10 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 12:32:10 [MyInterceptor:73] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 12:32:10 [MyInterceptor:97] - running time: 79(ms)
+[INFO ] 24-11-04 12:32:26 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 12:32:26 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 12:32:26 [MyInterceptor:73] - [POST] http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 12:32:26 [MyInterceptor:80] - (parma)<---subject = 제목
+[INFO ] 24-11-04 12:32:26 [MyInterceptor:87] - - REFERER : time=-15555, url=http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 12:33:33 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 38064 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 12:33:33 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 12:33:33 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-11-04 12:33:34 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 12:33:34 [FileuploadApplication:56] - Started FileuploadApplication in 0.666 seconds (process running for 92.36)
+[INFO ] 24-11-04 12:34:25 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 12:34:27 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 12:34:27 [MyInterceptor:73] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 12:34:27 [MyInterceptor:97] - running time: 2548(ms)
+[INFO ] 24-11-04 12:34:40 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 12:34:40 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 12:34:40 [MyInterceptor:73] - [POST] http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 12:34:40 [MyInterceptor:80] - (parma)<---subject = 제목
+[INFO ] 24-11-04 12:34:40 [MyInterceptor:87] - - REFERER : time=-12548, url=http://localhost:8080/simple/upload_single
+[DEBUG] 24-11-04 12:34:40 [SimpleUploadController:67] - ==========================
+[DEBUG] 24-11-04 12:34:40 [SimpleUploadController:68] - 원본 파일 이름 : 스프링.png
+[DEBUG] 24-11-04 12:34:40 [SimpleUploadController:69] - <input type='file'>의 name 속성값: photo
+[DEBUG] 24-11-04 12:34:40 [SimpleUploadController:70] - 파일형식: image/png
+[DEBUG] 24-11-04 12:34:40 [SimpleUploadController:71] - 파일크기: 2577
+[DEBUG] 24-11-04 12:34:40 [SimpleUploadController:86] - 업로드된 파일의 경로: /Users/song-gilju/Desktop/web3/09-SpringBoot/upload/스프링.png
+[DEBUG] 24-11-04 12:34:40 [SimpleUploadController:95] - 업로드 폴더 내에서 최종 경로: /스프링.png
+[DEBUG] 24-11-04 12:34:40 [SimpleUploadController:109] - 파일의 url : /files/스프링.png
+[DEBUG] 24-11-04 12:34:40 [SimpleUploadController:110] - ==========================
+[INFO ] 24-11-04 12:34:40 [MyInterceptor:97] - running time: 438(ms)
+[INFO ] 24-11-04 12:34:41 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 12:34:41 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 12:34:41 [MyInterceptor:73] - [GET] http://localhost:8080/files/%E1%84%89%E1%85%B3%E1%84%91%E1%85%B3%E1%84%85%E1%85%B5%E1%86%BC.png
+[INFO ] 24-11-04 12:34:41 [MyInterceptor:87] - - REFERER : time=-187, url=http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 12:34:41 [MyInterceptor:97] - running time: 311(ms)
+[INFO ] 24-11-04 12:41:09 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 40974 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 12:41:09 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 12:41:09 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-04 12:41:10 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-04 12:41:10 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 12:41:11 [FileuploadApplication:56] - Started FileuploadApplication in 1.244 seconds (process running for 1.548)
+[INFO ] 24-11-04 12:41:17 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 12:41:17 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 12:41:17 [MyInterceptor:73] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 12:41:17 [MyInterceptor:97] - running time: 93(ms)
+[INFO ] 24-11-04 12:41:26 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 12:41:26 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 12:41:26 [MyInterceptor:73] - [POST] http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 12:41:26 [MyInterceptor:80] - (parma)<---subject = 연습
+[INFO ] 24-11-04 12:41:26 [MyInterceptor:87] - - REFERER : time=-9039, url=http://localhost:8080/simple/upload_single
+[DEBUG] 24-11-04 12:41:26 [SimpleUploadController:67] - ==========================
+[DEBUG] 24-11-04 12:41:26 [SimpleUploadController:68] - 원본 파일 이름 : 데이터베이스.png
+[DEBUG] 24-11-04 12:41:26 [SimpleUploadController:69] - <input type='file'>의 name 속성값: photo
+[DEBUG] 24-11-04 12:41:26 [SimpleUploadController:70] - 파일형식: image/png
+[DEBUG] 24-11-04 12:41:26 [SimpleUploadController:71] - 파일크기: 3592
+[INFO ] 24-11-04 12:41:26 [MyInterceptor:97] - running time: 45(ms)
+[ERROR] 24-11-04 12:41:26 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "simple/upload_single_ok": An error happened during template parsing (template: "class path resource [templates/simple/upload_single_ok.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/simple/upload_single_ok.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "item.filedName" (template: "simple/upload_single_ok" - line 16, col 24)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "item.filedName" (template: "simple/upload_single_ok" - line 16, col 24)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 54 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'filedName' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:225)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:417)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 73 common frames omitted
+[ERROR] 24-11-04 12:41:26 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/simple/upload_single_ok.html]")] with root cause
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'filedName' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:225)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:417)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 24-11-04 12:41:26 [ErrorMvcAutoConfiguration$StaticView:202] - Cannot render error page for request [/simple/upload_single_ok] and exception [An error happened during template parsing (template: "class path resource [templates/simple/upload_single_ok.html]")] as the response has already been committed. As a result, the response may have the wrong status code.
+[INFO ] 24-11-04 12:41:34 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 40974 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 12:41:34 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 12:41:34 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-11-04 12:41:34 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 12:41:35 [FileuploadApplication:56] - Started FileuploadApplication in 0.425 seconds (process running for 25.655)
+[INFO ] 24-11-04 12:41:53 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 40974 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 12:41:53 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 12:41:53 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-11-04 12:41:53 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 12:41:53 [FileuploadApplication:56] - Started FileuploadApplication in 0.233 seconds (process running for 44.456)
+[INFO ] 24-11-04 12:55:47 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 42396 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 12:55:47 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 12:55:47 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-04 12:55:47 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-04 12:55:47 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 12:55:48 [FileuploadApplication:56] - Started FileuploadApplication in 1.144 seconds (process running for 1.411)
+[INFO ] 24-11-04 12:55:53 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 12:55:53 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 12:55:53 [MyInterceptor:73] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 12:55:53 [MyInterceptor:97] - running time: 100(ms)
+[INFO ] 24-11-04 12:56:01 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 12:56:01 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 12:56:01 [MyInterceptor:73] - [POST] http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 12:56:01 [MyInterceptor:80] - (parma)<---subject = 제목
+[INFO ] 24-11-04 12:56:01 [MyInterceptor:87] - - REFERER : time=-8235, url=http://localhost:8080/simple/upload_single
+[DEBUG] 24-11-04 12:56:01 [SimpleUploadController:64] - ==========================
+[DEBUG] 24-11-04 12:56:01 [SimpleUploadController:65] - 원본 파일 이름 : 컴퓨터.png
+[DEBUG] 24-11-04 12:56:01 [SimpleUploadController:66] - <input type='file'>의 name 속성값: photo
+[DEBUG] 24-11-04 12:56:01 [SimpleUploadController:67] - 파일형식: image/png
+[DEBUG] 24-11-04 12:56:01 [SimpleUploadController:68] - 파일크기: 2538
+[DEBUG] 24-11-04 12:56:01 [SimpleUploadController:87] - 업로드된 파일의 경로: /Users/song-gilju/Desktop/web3/09-SpringBoot/upload/컴퓨터.png
+[DEBUG] 24-11-04 12:56:01 [SimpleUploadController:101] - 업로드 폴더 내에서 최종 경로: /컴퓨터.png
+[DEBUG] 24-11-04 12:56:01 [SimpleUploadController:114] - 파일의 url : /files/컴퓨터.png
+[DEBUG] 24-11-04 12:56:01 [SimpleUploadController:115] - ==========================
+[INFO ] 24-11-04 12:56:01 [MyInterceptor:97] - running time: 47(ms)
+[INFO ] 24-11-04 12:56:01 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 12:56:01 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 12:56:01 [MyInterceptor:73] - [GET] http://localhost:8080/files/%E1%84%8F%E1%85%A5%E1%86%B7%E1%84%91%E1%85%B2%E1%84%90%E1%85%A5.png
+[INFO ] 24-11-04 12:56:01 [MyInterceptor:87] - - REFERER : time=-25, url=http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 12:56:01 [MyInterceptor:97] - running time: 25(ms)
+[INFO ] 24-11-04 13:04:39 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 44599 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 13:04:39 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 13:04:39 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-04 13:04:39 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-04 13:04:39 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 13:04:40 [FileuploadApplication:56] - Started FileuploadApplication in 1.124 seconds (process running for 1.38)
+[INFO ] 24-11-04 13:04:44 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 13:04:44 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 13:04:44 [MyInterceptor:73] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 13:04:44 [MyInterceptor:97] - running time: 98(ms)
+[INFO ] 24-11-04 13:04:53 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 13:04:53 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 13:04:53 [MyInterceptor:73] - [POST] http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 13:04:53 [MyInterceptor:80] - (parma)<---subject = 제목
+[INFO ] 24-11-04 13:04:53 [MyInterceptor:87] - - REFERER : time=-8181, url=http://localhost:8080/simple/upload_single
+[DEBUG] 24-11-04 13:04:53 [SimpleUploadController:64] - ==========================
+[DEBUG] 24-11-04 13:04:53 [SimpleUploadController:65] - 원본 파일 이름 : 컴퓨터.png
+[DEBUG] 24-11-04 13:04:53 [SimpleUploadController:66] - <input type='file'>의 name 속성값: photo
+[DEBUG] 24-11-04 13:04:53 [SimpleUploadController:67] - 파일형식: image/png
+[DEBUG] 24-11-04 13:04:53 [SimpleUploadController:68] - 파일크기: 2538
+[DEBUG] 24-11-04 13:04:53 [SimpleUploadController:87] - 업로드된 파일의 경로: /Users/song-gilju/Desktop/web3/09-SpringBoot/upload/컴퓨터.png
+[DEBUG] 24-11-04 13:04:53 [SimpleUploadController:101] - 업로드 폴더 내에서 최종 경로: /컴퓨터.png
+[DEBUG] 24-11-04 13:04:53 [SimpleUploadController:114] - 파일의 url : /files/컴퓨터.png
+[DEBUG] 24-11-04 13:04:53 [SimpleUploadController:115] - ==========================
+[INFO ] 24-11-04 13:04:53 [MyInterceptor:97] - running time: 45(ms)
+[INFO ] 24-11-04 13:04:53 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 13:04:53 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 13:04:53 [MyInterceptor:73] - [GET] http://localhost:8080/files/%E1%84%8F%E1%85%A5%E1%86%B7%E1%84%91%E1%85%B2%E1%84%90%E1%85%A5.png
+[INFO ] 24-11-04 13:04:53 [MyInterceptor:87] - - REFERER : time=-32, url=http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 13:04:53 [MyInterceptor:97] - running time: 25(ms)
+[INFO ] 24-11-04 14:35:11 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 46470 (/Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/11-fileupload)
+[DEBUG] 24-11-04 14:35:11 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-04 14:35:11 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-04 14:35:12 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-04 14:35:12 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.gilju.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-04 14:35:12 [FileuploadApplication:56] - Started FileuploadApplication in 1.461 seconds (process running for 1.704)
+[INFO ] 24-11-04 14:35:17 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 14:35:17 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 14:35:17 [MyInterceptor:73] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 14:35:17 [MyInterceptor:97] - running time: 106(ms)
+[INFO ] 24-11-04 14:35:30 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 14:35:30 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 14:35:30 [MyInterceptor:73] - [POST] http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 14:35:30 [MyInterceptor:80] - (parma)<---subject = 제목
+[INFO ] 24-11-04 14:35:30 [MyInterceptor:87] - - REFERER : time=-13065, url=http://localhost:8080/simple/upload_single
+[DEBUG] 24-11-04 14:35:30 [SimpleUploadController:65] - ==========================
+[DEBUG] 24-11-04 14:35:30 [SimpleUploadController:66] - 원본 파일 이름 : 스프링.png
+[DEBUG] 24-11-04 14:35:30 [SimpleUploadController:67] - <input type='file'>의 name 속성값: photo
+[DEBUG] 24-11-04 14:35:30 [SimpleUploadController:68] - 파일형식: image/png
+[DEBUG] 24-11-04 14:35:30 [SimpleUploadController:69] - 파일크기: 2577
+[DEBUG] 24-11-04 14:35:30 [SimpleUploadController:129] - 업로드된 파일의 경로: /Users/song-gilju/Desktop/web3/09-SpringBoot/upload/2024/11/04/17306985309460.png
+[DEBUG] 24-11-04 14:35:30 [SimpleUploadController:143] - 업로드 폴더 내에서 최종 경로: /2024/11/04/17306985309460.png
+[DEBUG] 24-11-04 14:35:30 [SimpleUploadController:156] - 파일의 url : /files/2024/11/04/17306985309460.png
+[DEBUG] 24-11-04 14:35:30 [SimpleUploadController:157] - ==========================
+[INFO ] 24-11-04 14:35:30 [MyInterceptor:97] - running time: 43(ms)
+[INFO ] 24-11-04 14:35:30 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 14:35:31 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 14:35:31 [MyInterceptor:73] - [GET] http://localhost:8080/files/2024/11/04/17306985309460.png
+[INFO ] 24-11-04 14:35:31 [MyInterceptor:87] - - REFERER : time=-28, url=http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 14:35:31 [MyInterceptor:97] - running time: 26(ms)
+[INFO ] 24-11-04 14:35:33 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 14:35:33 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 14:35:33 [MyInterceptor:73] - [GET] http://localhost:8080/simple.upload_single
+[INFO ] 24-11-04 14:35:33 [MyInterceptor:87] - - REFERER : time=-2605, url=http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 14:35:48 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 14:35:48 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 14:35:48 [MyInterceptor:73] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 24-11-04 14:35:48 [MyInterceptor:97] - running time: 30(ms)
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:73] - [POST] http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:80] - (parma)<---subject = 제목
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:87] - - REFERER : time=-6098, url=http://localhost:8080/simple/upload_single
+[DEBUG] 24-11-04 14:35:54 [SimpleUploadController:65] - ==========================
+[DEBUG] 24-11-04 14:35:54 [SimpleUploadController:66] - 원본 파일 이름 : 스프링.png
+[DEBUG] 24-11-04 14:35:54 [SimpleUploadController:67] - <input type='file'>의 name 속성값: photo
+[DEBUG] 24-11-04 14:35:54 [SimpleUploadController:68] - 파일형식: image/png
+[DEBUG] 24-11-04 14:35:54 [SimpleUploadController:69] - 파일크기: 2577
+[DEBUG] 24-11-04 14:35:54 [SimpleUploadController:129] - 업로드된 파일의 경로: /Users/song-gilju/Desktop/web3/09-SpringBoot/upload/2024/11/04/17306985548150.png
+[DEBUG] 24-11-04 14:35:54 [SimpleUploadController:143] - 업로드 폴더 내에서 최종 경로: /2024/11/04/17306985548150.png
+[DEBUG] 24-11-04 14:35:54 [SimpleUploadController:156] - 파일의 url : /files/2024/11/04/17306985548150.png
+[DEBUG] 24-11-04 14:35:54 [SimpleUploadController:157] - ==========================
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:97] - running time: 27(ms)
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:38] - ----------------- new client connect -----------------
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:55] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:73] - [GET] http://localhost:8080/files/2024/11/04/17306985548150.png
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:87] - - REFERER : time=-16, url=http://localhost:8080/simple/upload_single_ok
+[INFO ] 24-11-04 14:35:54 [MyInterceptor:97] - running time: 18(ms)

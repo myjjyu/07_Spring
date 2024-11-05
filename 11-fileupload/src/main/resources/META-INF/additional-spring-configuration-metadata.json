@@ -1,12 +1,30 @@
-{"properties": [
-  {
-    "name": "upload.dir",
-    "type": "java.lang.String",
-    "description": "A description for 'upload.dir'"
-  },
-  {
-    "name": "upload.url",
-    "type": "java.lang.String",
-    "description": "A description for 'upload.url'"
-  }
-]}
+{
+  "properties": [
+    {
+      "name": "upload.dir",
+      "type": "java.lang.String",
+      "description": "A description for 'upload.dir'"
+    },
+    {
+      "name": "upload.url",
+      "type": "java.lang.String",
+      "description": "A description for 'upload.url'"
+    },
+    {
+      "name": "thumbnail.crop",
+      "type": "java.lang.String",
+      "description": "A description for 'thumbnail.crop'"
+    },
+
+    {
+      "name": "thumbnail.height",
+      "type": "java.lang.String",
+      "description": "A description for 'thumbnail.height'"
+    },
+    {
+      "name": "thumbnail.width",
+      "type": "java.lang.String",
+      "description": "A description for 'thumbnail.width'"
+    }
+  ]
+}
