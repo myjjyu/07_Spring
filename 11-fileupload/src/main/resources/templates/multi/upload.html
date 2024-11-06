@@ -36,13 +36,14 @@
         2) enctype="multipart/form-data" 는 파일 업로드시 필수 -->
 
     <form
+      id="upload-form"
       method="post"
       th:action="@{/multi/upload_ok}"
       enctype="multipart/form-data"
     >
       <div class="image-upload">
         <label for="file-input">
-          <img th:src="@{/assets/img/upload.jpg}" width="200" />
+          <img th:src="@{/assets/img/noimage.jpg}" width="200" />
         </label>
 
         <input id="file-input" type="file" name="photo" multiple />

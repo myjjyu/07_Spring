@@ -365,7 +365,7 @@ public class FileHelper {
       // window 용 경로 처리 ==> 설정파일에 명시한 첫 글자(/)를 제거해야함
       thumbnailPath = saveFile.replace(uploadDir.substring(1), "");
     }
-    return "thumbnailPath";
+    return thumbnailPath;
   }
 
   /**
