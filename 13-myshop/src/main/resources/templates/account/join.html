@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" th:href="@{/assets/css/account.css}">
+</head>
+<body>
+
+    <div class="account-container">
+        <h2 class="page-title">회원가입</h2>
+        <form id="signup-form">
+            <!-- 아이디 -->
+            <div class="input-container">
+                <input type="text" id="user_id" class="input-field" placeholder="아이디" required />
+                <button type="button" class="inline-btn">중복 검사</button>
+            </div>
+
+            <!-- 비밀번호 -->
+            <div class="input-container">
+                <input type="password" id="user_pw" class="input-field" placeholder="비밀번호" required />
+            </div>
+
+            <!-- 이름 -->
+            <div class="input-container">
+                <input type="text" id="user_name" class="input-field" placeholder="이름" required />
+            </div>
+
+            <!-- 이메일 -->
+            <div class="input-container">
+                <input type="email" id="email" class="input-field" placeholder="이메일" required />
+                <button type="button" class="inline-btn">중복 검사</button>
+            </div>
+
+            <!-- 전화번호 -->
+            <div class="input-container">
+                <input type="tel" id="phone" class="input-field" placeholder="전화번호" required />
+            </div>
+
+            <!-- 생년월일 -->
+            <div class="input-container">
+                <input type="date" id="birthday" class="input-field" placeholder="생년월일" required />
+            </div>
+
+            <!-- 성별 (라디오 버튼 형태) -->
+            <div class="input-container gender-container">
+                <span>성별:</span>
+                <label class="gender-label">
+                    <input type="radio" name="gender" value="M" class="gender-input" required />
+                    <span class="gender-custom"></span>남성
+                </label>
+                <label class="gender-label">
+                    <input type="radio" name="gender" value="F" class="gender-input" />
+                    <span class="gender-custom"></span>여성
+                </label>
+            </div>
+
+            <!-- 우편번호 -->
+            <div class="input-container">
+                <input type="text" id="postcode" class="input-field" placeholder="우편번호" required />
+                <button type="button" class="inline-btn">우편번호 찾기</button>
+            </div>
+
+            <!-- 주소 -->
+            <div class="input-container">
+                <input type="text" id="addr1" class="input-field" placeholder="주소" required />
+            </div>
+            <div class="input-container">
+                <input type="text" id="addr2" class="input-field" placeholder="상세 주소" />
+            </div>
+
+            <!-- 사진 -->
+            <div class="input-container">
+                <input type="file" id="photo" class="input-field" />
+            </div>
+
+            <!-- 회원가입 버튼 -->
+            <button type="submit" class="btn">회원가입</button>
+        </form>
+
+        <div class="form-footer">
+            <p>이미 계정이 있으신가요? <a th:href="@{/account/login}">로그인</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('회원가입 처리 기능이 실행됩니다.');
+        });
+    </script>
+
+</body>
+</html>
