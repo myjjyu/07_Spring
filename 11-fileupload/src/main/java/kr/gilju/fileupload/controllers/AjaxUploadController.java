@@ -9,4 +9,9 @@ public class AjaxUploadController {
   public String upload(){
     return "ajax/upload";
   }
+
+  @GetMapping("/ajax/upload_multi")
+  public String uploadMulti(){
+    return "ajax/upload_multi";
+  }
 }

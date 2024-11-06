@@ -1,6 +1,7 @@
 package kr.gilju.fileupload.controllers.apis;
 
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,4 +40,23 @@ public class UploadRestController {
 
     return restHelper.sendJson(data);
   }
+
+
+  @PostMapping("/ajax/upload_multi_ok")
+  public Map<String, Object> uploadMultiOk(Model model,
+  @RequestParam(value = "profile-photo", required = false) MultipartFile[] proFilePhoto) {
+
+    List<UploadItem> itemList =null;
+
+    try {
+      itemList = fileHelper.saveMultipartFile(proFilePhoto);
+    } catch (Exception e) {
+      return restHelper.serverError(e);
+    }
+
+    Map<String, Object> data = new LinkedHashMap<String, Object>();
+    data.put("item", itemList);
+
+    return restHelper.sendJson(data);
+}
 }
