@@ -12,9 +12,16 @@ const axiosHelper = {
       // 전송방식에 따라 axios에서 파라미터를 처리하는 방법이 다름
       switch (methood.toLowerCase()) {
         case "get":
+        let data = null;
+        try {
+          formData = Object.fromEntries(formData);
+        } catch (e) {
+          data = formData;
+        }
+
           response = await axios.get(url, {
             // GET 방식으로 전송할 때는 params 속성을 사용하여 JSON 객체로 구성해야 함
-            params: formData && Object.fromEntries(formData),
+            params: data,
             headers: headers
           });
           break;
@@ -37,6 +44,7 @@ const axiosHelper = {
           break;
       }
     } catch (error) {
+      let alertTitle = null;
       let alertMsg = null;
       console.log(error);
 
@@ -44,6 +52,8 @@ const axiosHelper = {
       if (error.response?.data) {
         const data = error.response.data;
 
+
+        alertTitle =`${data.status} Error`;
         // 메시지 창에 표시할 내용
         alertMsg = data.message;
 
@@ -64,7 +74,8 @@ const axiosHelper = {
         console.error(`[${error.code}] ${error.message}`);
       }
       // 메시지박스로 에러 내용 표시
-      alert(alertMsg);
+      // alert(alertMsg);
+      await utilHelper.alertDanger(alertTitle, alertMsg);
     }
     return response?.data;
   },
