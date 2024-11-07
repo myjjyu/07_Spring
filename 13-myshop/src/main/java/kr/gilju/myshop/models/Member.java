@@ -3,7 +3,7 @@ package kr.gilju.myshop.models;
 import lombok.Data;
 
 /**
- * Members 테이블의 구조를 정의하는 클래스
+ * Member 테이블의 구조를 정의하는 클래스
  */
 @Data
 public class Member {

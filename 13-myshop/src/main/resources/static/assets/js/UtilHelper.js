@@ -4,9 +4,10 @@
  * 재사용 가능한 기능들을 모아 놓은 클래스
  */
 
+// 알럿창 컬러
 class UtilHelper {
   colorMap = {
-    primary: "#0D6EFD",
+    primary: "#0D6EFD", 
     success: "#198754",
     danger: "#DC3545",
     warning: "#ffc107",
@@ -123,6 +124,15 @@ class UtilHelper {
     }).open();
   }
 
+  /**
+   *  회원가입 유효성 검사 
+   * @param {*} title 제목
+   * @param {*} text 내용
+   * @param {*} icon  종류
+   * @param {*} confirmButtonText 확인 버튼 표시 문구
+   * @param {*} confirmButtonColor  확인버튼 색상
+   * @returns 
+   */
   async alert(title, text, icon, confirmButtonText, confirmButtonColor) {
     if (Swal != undefined) {
       if (text === undefined) {
@@ -131,13 +141,13 @@ class UtilHelper {
       }
 
       return await Swal.fire({
-        title: title,
-        text: text,
-        icon: icon,
-        showCloseButton: true,
-        confirmButtonText: confirmButtonText,
-        confirmButtonColor: confirmButtonColor,
-        showCloseButton: false,
+        title: title, // 제목
+        text: text, // 내용
+        icon: icon, // 종류
+        showCloseButton: true, // 닫기버튼 표시 여부
+        confirmButtonText: confirmButtonText, // 확인버튼 표시 문구
+        confirmButtonColor: confirmButtonColor, // 확인버튼 색상
+        showCloseButton: false, // 최소버튼 표시 여부 
       });
     } else {
       alert(text);
@@ -187,15 +197,15 @@ class UtilHelper {
   ) {
     if (Swal != undefined) {
       return await Swal.fire({
-        title: title,
-        text: text,
-        icon: icon,
-        showCloseButton: true,
-        confirmButtonText: confirmButtonText,
-        confirmButtonColor: confirmButtonColor,
-        showCloseButton: true,
-        cancelButtonText: cancelButtonText,
-        cancelButtonColor: cancelButtonColor,
+        title: title, // 제목
+        text: text, // 내용
+        icon: icon, // 종류
+        showCloseButton: true, // 닫기 버튼 표시여부
+        confirmButtonText: confirmButtonText, // 확인버튼 표시 문구
+        confirmButtonColor: confirmButtonColor, // 확인버튼 색상
+        showCloseButton: true, // 취버튼 표시여부
+        cancelButtonText: cancelButtonText, // 취소버튼 표시문구
+        cancelButtonColor: cancelButtonColor, // 취소버튼 색상
       });
     } else {
       return confirm(text);

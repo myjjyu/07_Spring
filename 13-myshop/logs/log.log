@@ -3154,3 +3154,188 @@ java.lang.Exception: 사용할 수 없는 아이디 입니다
 
 [DEBUG] 24-11-07 15:07:29 [selectCount:135] - <==      Total: 1
 [INFO ] 24-11-07 15:07:29 [MyInterceptor:98] - running time: 237(ms)
+[INFO ] 24-11-07 20:40:47 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 1863 (/Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop)
+[DEBUG] 24-11-07 20:40:47 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-07 20:40:47 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-07 20:40:47 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-07 20:40:48 [MyshopApplication:56] - Started MyshopApplication in 1.208 seconds (process running for 1.52)
+[INFO ] 24-11-07 20:41:00 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-07 20:41:00 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-07 20:41:00 [MyInterceptor:74] - [GET] http://localhost:8080/account/join
+[INFO ] 24-11-07 20:41:00 [MyInterceptor:98] - running time: 126(ms)
+[INFO ] 24-11-07 20:41:03 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-07 20:41:03 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-07 20:41:03 [MyInterceptor:74] - [GET] http://localhost:8080/api/account/id_unique_check?user_id=asdg
+[INFO ] 24-11-07 20:41:03 [MyInterceptor:81] - (parma)<---user_id = asdg
+[INFO ] 24-11-07 20:41:03 [MyInterceptor:88] - - REFERER : time=-2708, url=http://localhost:8080/account/join
+[DEBUG] 24-11-07 20:41:03 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM member WHERE user_id = ?
+[DEBUG] 24-11-07 20:41:03 [selectCount:135] - ==> Parameters: asdg(String)
+[INFO ] 24-11-07 20:41:03 [sqlonly:228] - SELECT COUNT(*) FROM member
+ WHERE user_id = 'asdg'
+
+[INFO ] 24-11-07 20:41:03 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[INFO ] 24-11-07 20:41:03 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 24-11-07 20:41:03 [selectCount:135] - <==      Total: 1
+[INFO ] 24-11-07 20:41:03 [MyInterceptor:98] - running time: 274(ms)
+[INFO ] 24-11-07 20:41:07 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-07 20:41:07 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-07 20:41:07 [MyInterceptor:74] - [GET] http://localhost:8080/api/account/email_unique_check?email=N
+[INFO ] 24-11-07 20:41:07 [MyInterceptor:81] - (parma)<---email = N
+[INFO ] 24-11-07 20:41:07 [MyInterceptor:88] - - REFERER : time=-3704, url=http://localhost:8080/account/join
+[DEBUG] 24-11-07 20:41:07 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM member WHERE user_id = ?
+[DEBUG] 24-11-07 20:41:07 [selectCount:135] - ==> Parameters: N(String)
+[INFO ] 24-11-07 20:41:07 [sqlonly:228] - SELECT COUNT(*) FROM member
+ WHERE user_id = 'N'
+
+[INFO ] 24-11-07 20:41:07 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[INFO ] 24-11-07 20:41:07 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 24-11-07 20:41:07 [selectCount:135] - <==      Total: 1
+[INFO ] 24-11-07 20:41:07 [MyInterceptor:98] - running time: 43(ms)
+[INFO ] 24-11-07 20:41:11 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-07 20:41:11 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-07 20:41:11 [MyInterceptor:74] - [GET] http://localhost:8080/api/account/email_unique_check?email=N
+[INFO ] 24-11-07 20:41:11 [MyInterceptor:81] - (parma)<---email = N
+[INFO ] 24-11-07 20:41:11 [MyInterceptor:88] - - REFERER : time=-3714, url=http://localhost:8080/account/join
+[DEBUG] 24-11-07 20:41:11 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM member WHERE user_id = ?
+[DEBUG] 24-11-07 20:41:11 [selectCount:135] - ==> Parameters: N(String)
+[INFO ] 24-11-07 20:41:11 [sqlonly:228] - SELECT COUNT(*) FROM member
+ WHERE user_id = 'N'
+
+[INFO ] 24-11-07 20:41:11 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[INFO ] 24-11-07 20:41:11 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 24-11-07 20:41:11 [selectCount:135] - <==      Total: 1
+[INFO ] 24-11-07 20:41:11 [MyInterceptor:98] - running time: 40(ms)
+[INFO ] 24-11-07 20:41:18 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-07 20:41:18 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-07 20:41:18 [MyInterceptor:74] - [GET] http://localhost:8080/api/account/email_unique_check?email=N
+[INFO ] 24-11-07 20:41:18 [MyInterceptor:81] - (parma)<---email = N
+[INFO ] 24-11-07 20:41:18 [MyInterceptor:88] - - REFERER : time=-6710, url=http://localhost:8080/account/join
+[DEBUG] 24-11-07 20:41:18 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM member WHERE user_id = ?
+[DEBUG] 24-11-07 20:41:18 [selectCount:135] - ==> Parameters: N(String)
+[INFO ] 24-11-07 20:41:18 [sqlonly:228] - SELECT COUNT(*) FROM member
+ WHERE user_id = 'N'
+
+[INFO ] 24-11-07 20:41:18 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[INFO ] 24-11-07 20:41:18 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 24-11-07 20:41:18 [selectCount:135] - <==      Total: 1
+[INFO ] 24-11-07 20:41:18 [MyInterceptor:98] - running time: 34(ms)
+[INFO ] 24-11-07 20:41:23 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-07 20:41:23 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-07 20:41:23 [MyInterceptor:74] - [GET] http://localhost:8080/api/account/email_unique_check?email=N
+[INFO ] 24-11-07 20:41:23 [MyInterceptor:81] - (parma)<---email = N
+[INFO ] 24-11-07 20:41:23 [MyInterceptor:88] - - REFERER : time=-5469, url=http://localhost:8080/account/join
+[DEBUG] 24-11-07 20:41:23 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM member WHERE user_id = ?
+[DEBUG] 24-11-07 20:41:23 [selectCount:135] - ==> Parameters: N(String)
+[INFO ] 24-11-07 20:41:23 [sqlonly:228] - SELECT COUNT(*) FROM member
+ WHERE user_id = 'N'
+
+[INFO ] 24-11-07 20:41:23 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[INFO ] 24-11-07 20:41:23 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 24-11-07 20:41:23 [selectCount:135] - <==      Total: 1
+[INFO ] 24-11-07 20:41:23 [MyInterceptor:98] - running time: 38(ms)
+[INFO ] 24-11-07 20:41:27 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-07 20:41:27 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-07 20:41:27 [MyInterceptor:74] - [GET] http://localhost:8080/api/account/id_unique_check?user_id=asdg
+[INFO ] 24-11-07 20:41:27 [MyInterceptor:81] - (parma)<---user_id = asdg
+[INFO ] 24-11-07 20:41:27 [MyInterceptor:88] - - REFERER : time=-4031, url=http://localhost:8080/account/join
+[DEBUG] 24-11-07 20:41:27 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM member WHERE user_id = ?
+[DEBUG] 24-11-07 20:41:27 [selectCount:135] - ==> Parameters: asdg(String)
+[INFO ] 24-11-07 20:41:27 [sqlonly:228] - SELECT COUNT(*) FROM member
+ WHERE user_id = 'asdg'
+
+[INFO ] 24-11-07 20:41:27 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[INFO ] 24-11-07 20:41:27 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 24-11-07 20:41:27 [selectCount:135] - <==      Total: 1
+[INFO ] 24-11-07 20:41:27 [MyInterceptor:98] - running time: 33(ms)
+[INFO ] 24-11-07 20:41:55 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-07 20:41:55 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-07 20:41:55 [MyInterceptor:74] - [GET] http://localhost:8080/account/login
+[INFO ] 24-11-07 20:41:55 [MyInterceptor:88] - - REFERER : time=-27650, url=http://localhost:8080/account/join
+[INFO ] 24-11-07 20:41:55 [MyInterceptor:98] - running time: 28(ms)
+[INFO ] 24-11-07 20:42:02 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-07 20:42:02 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-07 20:42:02 [MyInterceptor:74] - [GET] http://localhost:8080/account/join
+[INFO ] 24-11-07 20:42:02 [MyInterceptor:88] - - REFERER : time=-6686, url=http://localhost:8080/account/login
+[INFO ] 24-11-07 20:42:02 [MyInterceptor:98] - running time: 27(ms)
+[INFO ] 24-11-07 20:42:04 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-07 20:42:04 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-07 20:42:04 [MyInterceptor:74] - [GET] http://localhost:8080/account/login
+[INFO ] 24-11-07 20:42:04 [MyInterceptor:88] - - REFERER : time=-1852, url=http://localhost:8080/account/join
+[INFO ] 24-11-07 20:42:04 [MyInterceptor:98] - running time: 24(ms)
+[INFO ] 24-11-07 20:42:04 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-07 20:42:04 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-07 20:42:04 [MyInterceptor:74] - [GET] http://localhost:8080/account/reset_pw
+[INFO ] 24-11-07 20:42:04 [MyInterceptor:88] - - REFERER : time=-843, url=http://localhost:8080/account/login
+[INFO ] 24-11-07 20:42:04 [MyInterceptor:98] - running time: 25(ms)
