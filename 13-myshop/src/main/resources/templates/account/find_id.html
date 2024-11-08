@@ -1,42 +1,102 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아이디 찾기</title>
-    <link rel="stylesheet" th:href="@{/assets/css/account.css}">
-</head>
-<body>
+  <head>
+    <th:bloc th:replace="~{/_fragments/_head :: my-head('아이디 찾기')}" />
+    <link rel="stylesheet" th:href="@{/assets/css/account.css}" />
+  </head>
+  <style>
+    .find-result {
+      display: none;
+      font-size: 18px;
+      margin-top: 20px;
+      text-align: center;
 
+      .user-name {
+        font-weight: bold;
+        color: #0066ff;
+      }
+      .user-id {
+        font-weight: bold;
+        color: #df1b1b;
+      }
+    }
+  </style>
+
+  <body>
     <div class="account-container">
-        <h2 class="page-title">아이디 찾기</h2>
-        <form id="find-id-form">
-            <!-- 이름 -->
-            <div class="input-container">
-                <input type="text" id="user_name" class="input-field" placeholder="이름" required />
-            </div>
-
-            <!-- 이메일 -->
-            <div class="input-container">
-                <input type="email" id="email" class="input-field" placeholder="이메일" required />
-            </div>
-
-            <!-- 아이디 찾기 버튼 -->
-            <button type="submit" class="btn">아이디 찾기</button>
-        </form>
-
-        <div class="form-footer">
-            <p>로그인이 필요하신가요? <a th:href="@{/account/login}">로그인</a></p>
-            <p>계정이 없으신가요? <a th:href="@{/account/join}">회원가입</a></p>
+      <h2 class="page-title">아이디 찾기</h2>
+      <form id="find-id-form">
+        <!-- 이름 -->
+        <div class="input-container">
+          <input
+            type="text"
+            name="user_name"
+            id="user_name"
+            class="input-field"
+            placeholder="이름"
+          />
         </div>
+
+        <!-- 이메일 -->
+        <div class="input-container">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="input-field"
+            placeholder="이메일"
+          />
+        </div>
+
+        <p class="find-result">
+          <span class="user-name">000</span>님의 아이디는
+          <span class="user-id">00000</span>입니다
+        </p>
+
+        <!-- 아이디 찾기 버튼 -->
+        <button type="submit" class="btn">아이디 찾기</button>
+      </form>
+
+      <div class="form-footer">
+        <p>로그인이 필요하신가요? <a th:href="@{/account/login}">로그인</a></p>
+        <p>계정이 없으신가요? <a th:href="@{/account/join}">회원가입</a></p>
+      </div>
     </div>
 
+    <th:bloc th:replace="~{/_fragments/_scripts :: my-scripts}"></th:bloc>
     <script>
-        document.getElementById('find-id-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('아이디 찾기 기능이 실행됩니다.');
+      document
+        .getElementById("find-id-form")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          /** 입력값 유효성 검사 */
+
+          try {
+            regexHelper.value("#user_name", "이름을 입력하세요");
+            regexHelper.value("#email", "이메일 주소를 입력하세요");
+          } catch (err) {
+            await utilHelper.alertDanger(err.message);
+
+            setTimeout(() => err.element.focus(), 1);
+            return;
+          }
+
+          const data = await axiosHelper.post(
+            "[[@{/api/account/find_id}]]",
+            new FormData(e.currentTarget)
+          );
+
+          if (data) {
+            const user_name = document.querySelector("#user_name").value;
+            const user_id = data.item;
+
+            document.querySelector(".user-name").innerHTML = user_name;
+            document.querySelector(".user-id").innerHTML = user_id;
+
+            document.querySelector("#find-result").style.display = "block";
+          }
         });
     </script>
-
-</body>
+  </body>
 </html>

@@ -18,7 +18,7 @@ public class Member {
   private String postcode;       // 우편번호
   private String addr1;          // 검색된주소
   private String addr2;          // 나머지주소
-  private byte[] photo;          // 프로필사진 정보
+  private String photo;          // 프로필사진 정보
   private String is_out;          // 탈퇴 여부 (Y/N)
   private String is_admin;        // 관리자 여부 (Y/N)
   private String login_data;       // 마지막 로그인 일시

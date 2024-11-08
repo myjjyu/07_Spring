@@ -40,4 +40,9 @@ public class AccountController {
   public String resetPw(){
     return "account/reset_pw";
   }
+
+  @GetMapping("/account/join_result")
+  public String joinResult(){
+    return  "account/join_result";
+  }
 }

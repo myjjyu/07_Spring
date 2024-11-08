@@ -24,7 +24,6 @@ public interface MemberService {
    */
   public Member editItem(Member params) throws ServiceNoResultException, Exception;
 
-
   /**
    * 
    * @param params
@@ -43,7 +42,6 @@ public interface MemberService {
    */
   public Member getItem(Member params) throws ServiceNoResultException, Exception;
 
-
   /**
    * 
    * @param params
@@ -60,11 +58,18 @@ public interface MemberService {
    */
   public void isUniqueUserId(String user_id) throws Exception;
 
-
   /**
    * 
    * @param email
    * @throws Exception
    */
   public void isUniqueEmail(String email) throws Exception;
+
+  /**
+   * 
+   * @param input
+   * @return
+   * @throws Exception
+   */
+  public Member findId(Member input) throws Exception;
 }

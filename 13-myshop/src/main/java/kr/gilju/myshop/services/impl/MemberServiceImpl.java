@@ -117,4 +117,25 @@ public class MemberServiceImpl implements MemberService {
             throw e;
         }
     }
+
+
+    // 조회한 아이디가 일치하는게 없으면 강제 에러냄
+    // => 작성후 단위테스트
+    @Override
+    public Member findId(Member input) throws Exception {
+        Member output = null;
+
+        try {
+            output = memberMapper.findId(input);
+
+            if(output == null){
+                throw new Exception("조회된 데이터가 없습니다");
+            }
+        } catch (Exception e) {
+            log.error("아이디 검색에 실패했습니다", e);
+            throw e;
+        }
+        return output;
+    }
+
 }

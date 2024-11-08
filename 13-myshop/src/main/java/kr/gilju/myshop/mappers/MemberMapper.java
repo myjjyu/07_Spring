@@ -17,6 +17,11 @@ import kr.gilju.myshop.models.Member;
 @Mapper
 public interface MemberMapper {
 
+        /**
+         * 
+         * @param input
+         * @return
+         */
         @Insert("INSERT INTO member (" +
                         "user_id, user_pw, user_name, email, phone, " +
                         "birthday, gender, postcode, addr1, addr2, " +
@@ -28,6 +33,11 @@ public interface MemberMapper {
         @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
         int insert(Member input);
 
+        /**
+         * 
+         * @param input
+         * @return
+         */
         @Update("UPDATE member SET " +
                         "user_id=#{user_id}, " +
                         "user_pw=MD5(#{user_pw}), " +
@@ -46,6 +56,12 @@ public interface MemberMapper {
         @Delete("DELETE FROM member WHERE id=#{id}")
         int delete(Member input);
 
+
+        /**
+         * 
+         * @param input
+         * @return
+         */
         @Select("SELECT " +
                         "user_id, user_pw, user_name, email, phone, " +
                         "DATE_FORMAT(birthday,'%Y-%m-%d') as birthday, " +
@@ -74,6 +90,12 @@ public interface MemberMapper {
         })
         public Member selectItem(Member input);
 
+
+        /**
+         * 
+         * @param input
+         * @return
+         */
         @Select("SELECT " +
                         "user_id, user_pw, user_name, email, phone, " +
                         "DATE_FORMAT(birthday,'%Y-%m-%d') as birthday, " +
@@ -83,7 +105,11 @@ public interface MemberMapper {
         @ResultMap("memberMap")
         public List<Member> selectList(Member input);
 
-        
+        /**
+         * 
+         * @param input
+         * @return
+         */
         @Select("<script>" +
                         "SELECT COUNT(*) FROM member\n" +
                         "<where>" +
@@ -93,4 +119,14 @@ public interface MemberMapper {
                         "</script>")
         public int selectCount(Member input);
 
+
+        /**
+         * 
+         * @param input
+         * @return
+         */
+        @Select("SELECT user_id FROM member " +
+                        "WHERE user_name = #{user_name} AND email = #{email}")
+        @ResultMap("memberMap") // resultMap 으로하면 에러남,,?!
+        public Member findId(Member input);
 }
