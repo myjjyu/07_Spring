@@ -89,7 +89,7 @@ public class MemberServiceImpl implements MemberService {
         try {
             output = memberMapper.selectCount(input);
 
-            if(output > 0){
+            if (output > 0) {
                 throw new Exception("사용할 수 없는 아이디 입니다");
             }
         } catch (Exception e) {
@@ -109,7 +109,7 @@ public class MemberServiceImpl implements MemberService {
         try {
             output = memberMapper.selectCount(input);
 
-            if(output > 0){
+            if (output > 0) {
                 throw new Exception("사용할 수 없는 이메일 입니다");
             }
         } catch (Exception e) {
@@ -118,9 +118,9 @@ public class MemberServiceImpl implements MemberService {
         }
     }
 
-
     // 조회한 아이디가 일치하는게 없으면 강제 에러냄
     // => 작성후 단위테스트
+    // 아이디 찾기
     @Override
     public Member findId(Member input) throws Exception {
         Member output = null;
@@ -128,7 +128,7 @@ public class MemberServiceImpl implements MemberService {
         try {
             output = memberMapper.findId(input);
 
-            if(output == null){
+            if (output == null) {
                 throw new Exception("조회된 데이터가 없습니다");
             }
         } catch (Exception e) {
@@ -136,6 +136,25 @@ public class MemberServiceImpl implements MemberService {
             throw e;
         }
         return output;
+    }
+
+    /**
+     * 비밀번호 재발급
+     */
+    @Override
+    public void resetPw(Member input) throws Exception {
+        int rows = 0;
+
+        try {
+            rows = memberMapper.resetPw(input);
+
+            if (rows == 0) {
+                throw new Exception("아이디와 이메일을 확인하세요");
+            }
+        } catch (Exception e) {
+            log.error("Member 데이터 수정에 실패했습니다", e);
+            throw e;
+        }
     }
 
 }

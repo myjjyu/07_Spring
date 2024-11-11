@@ -66,10 +66,18 @@ public interface MemberService {
   public void isUniqueEmail(String email) throws Exception;
 
   /**
-   * 
+   * 아이디 찾기
    * @param input
    * @return
    * @throws Exception
    */
   public Member findId(Member input) throws Exception;
+
+
+  /**
+   * 비밀번호 재 발급
+   * @param input
+   * @throws Exception
+   */
+  public void resetPw(Member input) throws Exception;
 }

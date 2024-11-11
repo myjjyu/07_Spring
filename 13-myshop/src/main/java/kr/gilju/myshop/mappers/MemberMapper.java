@@ -56,7 +56,6 @@ public interface MemberMapper {
         @Delete("DELETE FROM member WHERE id=#{id}")
         int delete(Member input);
 
-
         /**
          * 
          * @param input
@@ -90,7 +89,6 @@ public interface MemberMapper {
         })
         public Member selectItem(Member input);
 
-
         /**
          * 
          * @param input
@@ -119,9 +117,8 @@ public interface MemberMapper {
                         "</script>")
         public int selectCount(Member input);
 
-
         /**
-         * 
+         * 아이디 찾기
          * @param input
          * @return
          */
@@ -129,4 +126,14 @@ public interface MemberMapper {
                         "WHERE user_name = #{user_name} AND email = #{email}")
         @ResultMap("memberMap") // resultMap 으로하면 에러남,,?!
         public Member findId(Member input);
+
+        /**
+         * 비밀번호 재 발급
+         * 
+         * @param input
+         * @return
+         */
+        @Update("UPDATE member SET user_pw = MD5(#{user_pw}) " +
+                        "WHERE user_id = #{user_id} AND email = #{email}")
+        public int resetPw(Member input);
 }

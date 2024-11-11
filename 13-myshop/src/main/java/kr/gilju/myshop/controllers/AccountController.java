@@ -45,4 +45,5 @@ public class AccountController {
   public String joinResult(){
     return  "account/join_result";
   }
+
 }
