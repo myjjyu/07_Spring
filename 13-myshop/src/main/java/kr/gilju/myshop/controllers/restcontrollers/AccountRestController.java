@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 import kr.gilju.myshop.helpers.FileHelper;
 import kr.gilju.myshop.helpers.MailHelper;
 import kr.gilju.myshop.helpers.RestHelper;
@@ -219,4 +221,48 @@ public class AccountRestController {
 
     return restHelper.sendJson();
   }
+
+
+  // 로그인
+  // 삭제
+  // ==> 단위테스트진행(썬더클라이언트)
+
+  @PostMapping("/api/account/login")
+  public Map<String, Object> login(
+    // 세션을 사용해야 하므로 reqest 객체가 필요하다
+    HttpServletRequest request,
+    @RequestParam("user_id") String user_id,
+    @RequestParam("user_pw") String user_pw) {
+    /** 1) 입력값에 대한 유효성 검사 */
+    // 여기서는 생략
+
+    /** 2) 입력값을 빈즈객체에 저장 */
+    Member input = new Member();
+    input.setUser_id(user_id);
+    input.setUser_pw(user_pw);
+
+    /** 3) 로그인 시도 */
+    Member output = null;
+
+    try {
+        output = memberService.login(input);
+    } catch (Exception e) {
+      output.setPhoto(fileHelper.getUrl(output.getPhoto()));
+      return restHelper.serverError(e);
+    }
+
+    /** 4) 로그인에 성공했다면 회원정보를 세션에 저장한다 */
+    HttpSession session = request.getSession();
+    session.setAttribute("memberInfo", output);
+   
+    /** 5) 로그인이 처리되었음을 응답한다 */
+    return restHelper.sendJson();
+    }
+
+    @GetMapping("/account/logout")
+    public Map<String, Object> logout(HttpServletRequest request){
+      HttpSession session = request.getSession();
+      session.invalidate();
+      return restHelper.sendJson();
+    }
 }

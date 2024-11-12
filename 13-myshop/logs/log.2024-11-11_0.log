@@ -1,0 +1,644 @@
+[INFO ] 24-11-11 10:00:58 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 4648 (/Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop)
+[DEBUG] 24-11-11 10:00:58 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 10:00:58 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 10:00:58 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 10:00:59 [MyshopApplication:56] - Started MyshopApplication in 1.267 seconds (process running for 1.512)
+[INFO ] 24-11-11 10:01:08 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 10:01:08 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-11 10:01:08 [MyInterceptor:74] - [GET] http://localhost:8080/account/join_result
+[INFO ] 24-11-11 10:01:08 [MyInterceptor:98] - running time: 76(ms)
+[INFO ] 24-11-11 10:01:09 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 10:01:09 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-11 10:01:09 [MyInterceptor:74] - [GET] http://localhost:8080/account/login
+[INFO ] 24-11-11 10:01:09 [MyInterceptor:88] - - REFERER : time=-1592, url=http://localhost:8080/account/join_result
+[INFO ] 24-11-11 10:01:09 [MyInterceptor:98] - running time: 51(ms)
+[INFO ] 24-11-11 12:44:13 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 8490 (/Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop)
+[DEBUG] 24-11-11 12:44:13 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 12:44:13 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 12:44:13 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 12:44:14 [MyshopApplication:56] - Started MyshopApplication in 1.237 seconds (process running for 1.468)
+[INFO ] 24-11-11 12:44:20 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 12:44:20 [MyInterceptor:56] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-11-11 12:44:20 [MyInterceptor:74] - [POST] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 12:44:20 [MyInterceptor:81] - (parma)<---user_name = 송길주
+[INFO ] 24-11-11 12:44:20 [MyInterceptor:81] - (parma)<---email = rlfwn528@gmail.com
+[INFO ] 24-11-11 12:44:33 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 12:44:33 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-11 12:44:33 [MyInterceptor:74] - [GET] http://localhost:8080/account/reset_pw
+[INFO ] 24-11-11 12:44:33 [MyInterceptor:98] - running time: 59(ms)
+[INFO ] 24-11-11 12:45:01 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 12:45:01 [MyInterceptor:56] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-11-11 12:45:01 [MyInterceptor:74] - [POST] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 12:45:01 [MyInterceptor:81] - (parma)<---user_name = 송길주
+[INFO ] 24-11-11 12:45:01 [MyInterceptor:81] - (parma)<---email = rlfwn528@gmail.com
+[INFO ] 24-11-11 12:46:21 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 8847 (/Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop)
+[DEBUG] 24-11-11 12:46:21 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 12:46:21 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 12:46:21 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 12:46:22 [MyshopApplication:56] - Started MyshopApplication in 1.285 seconds (process running for 1.506)
+[INFO ] 24-11-11 12:47:14 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 12:47:14 [MyInterceptor:56] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-11-11 12:47:14 [MyInterceptor:74] - [POST] http://localhost:8080/resources/mail_templates/reset_pw
+[INFO ] 24-11-11 12:47:14 [MyInterceptor:81] - (parma)<---user_name = 송길주
+[INFO ] 24-11-11 12:47:14 [MyInterceptor:81] - (parma)<---email = rlfwn528@gmail.com
+[INFO ] 24-11-11 12:47:31 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 12:47:31 [MyInterceptor:56] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-11-11 12:47:31 [MyInterceptor:74] - [POST] http://localhost:8080/mail_templates/reset_pw
+[INFO ] 24-11-11 12:47:31 [MyInterceptor:81] - (parma)<---user_name = 송길주
+[INFO ] 24-11-11 12:47:31 [MyInterceptor:81] - (parma)<---email = rlfwn528@gmail.com
+[INFO ] 24-11-11 12:49:09 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 12:49:09 [MyInterceptor:56] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-11-11 12:49:09 [MyInterceptor:74] - [POST] http://localhost:8080/mail_templates/reset_pw
+[INFO ] 24-11-11 12:49:09 [MyInterceptor:81] - (parma)<---user_name = rlfwn12
+[INFO ] 24-11-11 12:49:09 [MyInterceptor:81] - (parma)<---email = rlfwn528@gmail.com
+[INFO ] 24-11-11 12:49:34 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 12:49:34 [MyInterceptor:56] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-11-11 12:49:34 [MyInterceptor:74] - [POST] http://localhost:8080/mail_templates/reset_pw
+[INFO ] 24-11-11 12:49:34 [MyInterceptor:81] - (parma)<---user_name = rlfwn12
+[INFO ] 24-11-11 12:49:34 [MyInterceptor:81] - (parma)<---email = song@hanmail.net
+[INFO ] 24-11-11 12:50:30 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 12:50:30 [MyInterceptor:56] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-11-11 12:50:30 [MyInterceptor:74] - [POST] http://localhost:8080/mail_templates/reset_pw.html
+[INFO ] 24-11-11 12:50:30 [MyInterceptor:81] - (parma)<---user_name = rlfwn12
+[INFO ] 24-11-11 12:50:30 [MyInterceptor:81] - (parma)<---email = song@hanmail.net
+[INFO ] 24-11-11 12:50:36 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 12:50:36 [MyInterceptor:56] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-11-11 12:50:36 [MyInterceptor:74] - [POST] http://localhost:8080/mail_templates/reset_pw
+[INFO ] 24-11-11 12:50:36 [MyInterceptor:81] - (parma)<---user_name = rlfwn12
+[INFO ] 24-11-11 12:50:36 [MyInterceptor:81] - (parma)<---email = song@hanmail.net
+[INFO ] 24-11-11 12:50:37 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 12:50:37 [MyInterceptor:56] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-11-11 12:50:37 [MyInterceptor:74] - [POST] http://localhost:8080/mail_templates/reset_pw
+[INFO ] 24-11-11 12:50:37 [MyInterceptor:81] - (parma)<---user_name = rlfwn12
+[INFO ] 24-11-11 12:50:37 [MyInterceptor:81] - (parma)<---email = song@hanmail.net
+[INFO ] 24-11-11 12:51:14 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 12:51:14 [MyInterceptor:56] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-11-11 12:51:14 [MyInterceptor:74] - [POST] http://localhost:8080/mail_templates/reset_pw
+[INFO ] 24-11-11 12:51:14 [MyInterceptor:81] - (parma)<---user_name = rlfwn
+[INFO ] 24-11-11 12:51:14 [MyInterceptor:81] - (parma)<---email = rlfwn528@gmail.com
+[INFO ] 24-11-11 12:53:18 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 12:53:18 [MyInterceptor:56] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-11-11 12:53:18 [MyInterceptor:74] - [POST] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 12:53:18 [MyInterceptor:81] - (parma)<---user_name = rlfwn
+[INFO ] 24-11-11 12:53:18 [MyInterceptor:81] - (parma)<---email = rlfwn528@gmail.com
+[INFO ] 24-11-11 12:53:28 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 12:53:28 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-11 12:53:28 [MyInterceptor:74] - [GET] http://localhost:8080/mail_templates/reset_pw
+[INFO ] 24-11-11 12:59:00 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 11003 (/Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop)
+[DEBUG] 24-11-11 12:59:00 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 12:59:00 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 12:59:01 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 12:59:01 [MyshopApplication:56] - Started MyshopApplication in 1.243 seconds (process running for 1.465)
+[INFO ] 24-11-11 12:59:11 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 12:59:11 [MyInterceptor:56] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-11-11 12:59:11 [MyInterceptor:74] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 12:59:11 [MyInterceptor:81] - (parma)<---user_name = rlfwn
+[INFO ] 24-11-11 12:59:11 [MyInterceptor:81] - (parma)<---email = rlfwn528@gmail.com
+[INFO ] 24-11-11 12:59:50 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 12:59:50 [MyInterceptor:56] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-11-11 12:59:50 [MyInterceptor:74] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 12:59:50 [MyInterceptor:81] - (parma)<---user_name = rlfwn12
+[INFO ] 24-11-11 12:59:50 [MyInterceptor:81] - (parma)<---email = song@hanmail.net
+[INFO ] 24-11-11 13:00:02 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 13:00:02 [MyInterceptor:56] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-11-11 13:00:02 [MyInterceptor:74] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 13:00:02 [MyInterceptor:81] - (parma)<---user_id = rlfwn12
+[INFO ] 24-11-11 13:00:02 [MyInterceptor:81] - (parma)<---email = song@hanmail.net
+[INFO ] 24-11-11 13:00:33 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 13:00:33 [MyInterceptor:56] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-11-11 13:00:33 [MyInterceptor:74] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 13:00:33 [MyInterceptor:81] - (parma)<---user_id = rlfwn12
+[INFO ] 24-11-11 13:00:33 [MyInterceptor:81] - (parma)<---email = song@hanmail.net
+[INFO ] 24-11-11 13:00:54 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 13:00:54 [MyInterceptor:56] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-11-11 13:00:54 [MyInterceptor:74] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 13:00:54 [MyInterceptor:81] - (parma)<---user_id = rlfwn12
+[INFO ] 24-11-11 13:00:54 [MyInterceptor:81] - (parma)<---email = song@hanmail.net
+[INFO ] 24-11-11 13:05:48 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 11683 (/Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop)
+[DEBUG] 24-11-11 13:05:48 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 13:05:48 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 13:05:48 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 13:05:49 [MyshopApplication:56] - Started MyshopApplication in 1.348 seconds (process running for 1.579)
+[WARN ] 24-11-11 13:05:54 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+[WARN ] 24-11-11 13:06:23 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+[INFO ] 24-11-11 13:07:07 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 11683 (/Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop)
+[DEBUG] 24-11-11 13:07:07 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 13:07:07 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-11-11 13:07:08 [MyshopApplication:56] - Started MyshopApplication in 0.374 seconds (process running for 80.28)
+[INFO ] 24-11-11 13:07:20 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 11683 (/Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop)
+[DEBUG] 24-11-11 13:07:20 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 13:07:20 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-11-11 13:07:21 [MyshopApplication:56] - Started MyshopApplication in 0.233 seconds (process running for 93.083)
+[INFO ] 24-11-11 13:07:38 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 12153 (/Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop)
+[DEBUG] 24-11-11 13:07:38 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 13:07:38 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 13:07:39 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 13:07:40 [MyshopApplication:56] - Started MyshopApplication in 1.316 seconds (process running for 1.56)
+[WARN ] 24-11-11 13:07:41 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+[WARN ] 24-11-11 13:07:44 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+[WARN ] 24-11-11 13:07:45 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+[WARN ] 24-11-11 13:07:45 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+[WARN ] 24-11-11 13:08:20 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+[INFO ] 24-11-11 13:11:22 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 12153 (/Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop)
+[DEBUG] 24-11-11 13:11:22 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 13:11:22 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-11-11 13:11:22 [MyshopApplication:56] - Started MyshopApplication in 0.295 seconds (process running for 223.859)
+[INFO ] 24-11-11 14:00:48 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 13525 (/Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop)
+[DEBUG] 24-11-11 14:00:48 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 14:00:48 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 14:00:48 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 14:00:49 [MyshopApplication:56] - Started MyshopApplication in 1.212 seconds (process running for 1.448)
+[WARN ] 24-11-11 14:01:20 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+[INFO ] 24-11-11 14:03:01 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 14173 (/Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop)
+[DEBUG] 24-11-11 14:03:01 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 14:03:01 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 14:03:01 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 14:03:02 [MyshopApplication:56] - Started MyshopApplication in 1.265 seconds (process running for 1.487)
+[INFO ] 24-11-11 14:03:10 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 14:03:10 [MyInterceptor:56] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-11-11 14:03:10 [MyInterceptor:74] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 14:03:10 [MyInterceptor:81] - (parma)<---user_id = rlfwn12
+[INFO ] 24-11-11 14:03:10 [MyInterceptor:81] - (parma)<---email = song@hanmail.net
+[DEBUG] 24-11-11 14:03:10 [resetPw:135] - ==>  Preparing: UPDATE member SET user_pw = MD5(?) WHERE user_id = ? AND email = ?
+[DEBUG] 24-11-11 14:03:10 [resetPw:135] - ==> Parameters: 05PVy89C(String), rlfwn12(String), song@hanmail.net(String)
+[INFO ] 24-11-11 14:03:10 [sqlonly:228] - UPDATE member SET user_pw = MD5('05PVy89C') WHERE user_id = 'rlfwn12' AND email = 'song@hanmail.net'
+
+[DEBUG] 24-11-11 14:03:10 [resetPw:135] - <==    Updates: 1
+[DEBUG] 24-11-11 14:03:10 [MailHelper:41] - ---------------------------------------------
+[DEBUG] 24-11-11 14:03:10 [MailHelper:42] - RecvName: null
+[DEBUG] 24-11-11 14:03:10 [MailHelper:43] - RecvEmail: song@hanmail.net
+[DEBUG] 24-11-11 14:03:10 [MailHelper:44] - Subject: rlfwn12님의 비밀번호가 재설정 되엇습니다
+[DEBUG] 24-11-11 14:03:10 [MailHelper:45] - Content: <!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비밀번호 재설정 알림</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+      }
+      .email-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+      .email-header {
+        background-color: #4caf50;
+        padding: 20px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .email-body {
+        padding: 20px;
+        color: #333333;
+      }
+      .email-body h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .email-body p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .email-body p.newpw {
+        font-size: 24px;
+        font-weight: bold;
+        color: red;
+      }
+      .email-footer {
+        background-color: #333333;
+        color: #ffffff;
+        padding: 15px;
+        text-align: center;
+        font-size: 14px;
+      }
+      .email-footer a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      .logo-img {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .logo-img img {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="email-header">
+        <h1>비밀번호가 변경되었습니다</h1>
+      </div>
+      <div class="email-body">
+        <p class="logo-img">
+          <img
+            src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png"
+          />
+        </p>
+
+        <h1>비밀번호가 변경되었습니다</h1>
+        <p>{user_id}님의 비밀번호가 다음과 같이 변경되었습니다</p>
+        <p class="newpw">05PVy89C</p>
+      </div>
+      <div class="email-footer">
+        <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+        <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+      </div>
+    </div>
+  </body>
+</html>
+
+[DEBUG] 24-11-11 14:03:10 [MailHelper:46] - ---------------------------------------------
+[INFO ] 24-11-11 14:03:14 [MyInterceptor:98] - running time: 3619(ms)
+[INFO ] 24-11-11 14:10:12 [MembersMapperTest:50] - Starting MembersMapperTest using Java 17.0.2 with PID 15093 (started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop)
+[DEBUG] 24-11-11 14:10:12 [MembersMapperTest:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 14:10:12 [MembersMapperTest:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 14:10:12 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 14:10:13 [MembersMapperTest:56] - Started MembersMapperTest in 0.915 seconds (process running for 1.217)
+[DEBUG] 24-11-11 14:10:13 [resetPw:135] - ==>  Preparing: UPDATE member SET user_pw = MD5(?) WHERE user_id = ? AND email = ?
+[DEBUG] 24-11-11 14:10:13 [resetPw:135] - ==> Parameters: song1004(String), rlfwn12(String), song@hanmail.net(String)
+[INFO ] 24-11-11 14:10:13 [sqlonly:228] - UPDATE member SET user_pw = MD5('song1004') WHERE user_id = 'rlfwn12' AND email = 'song@hanmail.net'
+
+[DEBUG] 24-11-11 14:10:13 [resetPw:135] - <==    Updates: 1
+[DEBUG] 24-11-11 14:10:13 [MembersMapperTest:115] - output: 1
+[INFO ] 24-11-11 14:17:04 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 15257 (/Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop)
+[DEBUG] 24-11-11 14:17:04 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 14:17:04 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 14:17:05 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 14:17:05 [MyshopApplication:56] - Started MyshopApplication in 1.263 seconds (process running for 1.492)
+[INFO ] 24-11-11 14:17:16 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 14:17:17 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-11 14:17:17 [MyInterceptor:74] - [GET] http://localhost:8080/account/reset_pw
+[INFO ] 24-11-11 14:17:17 [MyInterceptor:98] - running time: 95(ms)
+[INFO ] 24-11-11 14:17:45 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 14:17:45 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-11 14:17:45 [MyInterceptor:74] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 14:17:45 [MyInterceptor:81] - (parma)<---user_id = rlfwn12
+[INFO ] 24-11-11 14:17:45 [MyInterceptor:81] - (parma)<---email = song@hanmail.net
+[INFO ] 24-11-11 14:17:45 [MyInterceptor:88] - - REFERER : time=-28814, url=http://localhost:8080/account/reset_pw
+[DEBUG] 24-11-11 14:17:46 [resetPw:135] - ==>  Preparing: UPDATE member SET user_pw = MD5(?) WHERE user_id = ? AND email = ?
+[DEBUG] 24-11-11 14:17:46 [resetPw:135] - ==> Parameters: 8%x5$d%p(String), rlfwn12(String), song@hanmail.net(String)
+[INFO ] 24-11-11 14:17:46 [sqlonly:228] - UPDATE member SET user_pw = MD5('8%x5$d%p') WHERE user_id = 'rlfwn12' AND email = 'song@hanmail.net'
+
+[DEBUG] 24-11-11 14:17:46 [resetPw:135] - <==    Updates: 1
+[DEBUG] 24-11-11 14:17:46 [MailHelper:41] - ---------------------------------------------
+[DEBUG] 24-11-11 14:17:46 [MailHelper:42] - RecvName: null
+[DEBUG] 24-11-11 14:17:46 [MailHelper:43] - RecvEmail: song@hanmail.net
+[DEBUG] 24-11-11 14:17:46 [MailHelper:44] - Subject: rlfwn12님의 비밀번호가 재설정 되엇습니다
+[DEBUG] 24-11-11 14:17:46 [MailHelper:45] - Content: <!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비밀번호 재설정 알림</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+      }
+      .email-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+      .email-header {
+        background-color: #4caf50;
+        padding: 20px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .email-body {
+        padding: 20px;
+        color: #333333;
+      }
+      .email-body h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .email-body p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .email-body p.newpw {
+        font-size: 24px;
+        font-weight: bold;
+        color: red;
+      }
+      .email-footer {
+        background-color: #333333;
+        color: #ffffff;
+        padding: 15px;
+        text-align: center;
+        font-size: 14px;
+      }
+      .email-footer a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      .logo-img {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .logo-img img {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="email-header">
+        <h1>비밀번호가 변경되었습니다</h1>
+      </div>
+      <div class="email-body">
+        <p class="logo-img">
+          <img
+            src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png"
+          />
+        </p>
+
+        <h1>비밀번호가 변경되었습니다</h1>
+        <p>{user_id}님의 비밀번호가 다음과 같이 변경되었습니다</p>
+        <p class="newpw">8%x5$d%p</p>
+      </div>
+      <div class="email-footer">
+        <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+        <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+      </div>
+    </div>
+  </body>
+</html>
+
+[DEBUG] 24-11-11 14:17:46 [MailHelper:46] - ---------------------------------------------
+[INFO ] 24-11-11 14:17:50 [MyInterceptor:98] - running time: 4440(ms)
+[INFO ] 24-11-11 14:17:58 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 14:17:58 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-11 14:17:58 [MyInterceptor:74] - [GET] http://localhost:8080/account/login
+[INFO ] 24-11-11 14:17:58 [MyInterceptor:88] - - REFERER : time=-8320, url=http://localhost:8080/account/reset_pw
+[INFO ] 24-11-11 14:17:58 [MyInterceptor:98] - running time: 35(ms)
+[INFO ] 24-11-11 14:18:59 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 14:18:59 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-11 14:18:59 [MyInterceptor:74] - [GET] http://localhost:8080/account/reset_pw
+[INFO ] 24-11-11 14:18:59 [MyInterceptor:98] - running time: 26(ms)
+[INFO ] 24-11-11 14:19:04 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 14:19:04 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-11 14:19:04 [MyInterceptor:74] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 14:19:04 [MyInterceptor:81] - (parma)<---user_id = rlfwn
+[INFO ] 24-11-11 14:19:04 [MyInterceptor:81] - (parma)<---email = rlfwn528@gmail.com
+[INFO ] 24-11-11 14:19:04 [MyInterceptor:88] - - REFERER : time=-4578, url=http://localhost:8080/account/reset_pw
+[DEBUG] 24-11-11 14:19:04 [resetPw:135] - ==>  Preparing: UPDATE member SET user_pw = MD5(?) WHERE user_id = ? AND email = ?
+[DEBUG] 24-11-11 14:19:04 [resetPw:135] - ==> Parameters: M0hUJvzp(String), rlfwn(String), rlfwn528@gmail.com(String)
+[INFO ] 24-11-11 14:19:04 [sqlonly:228] - UPDATE member SET user_pw = MD5('M0hUJvzp') WHERE user_id = 'rlfwn' AND email = 'rlfwn528@gmail.com'
+
+[DEBUG] 24-11-11 14:19:04 [resetPw:135] - <==    Updates: 1
+[DEBUG] 24-11-11 14:19:04 [MailHelper:41] - ---------------------------------------------
+[DEBUG] 24-11-11 14:19:04 [MailHelper:42] - RecvName: null
+[DEBUG] 24-11-11 14:19:04 [MailHelper:43] - RecvEmail: rlfwn528@gmail.com
+[DEBUG] 24-11-11 14:19:04 [MailHelper:44] - Subject: rlfwn님의 비밀번호가 재설정 되엇습니다
+[DEBUG] 24-11-11 14:19:04 [MailHelper:45] - Content: <!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비밀번호 재설정 알림</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+      }
+      .email-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+      .email-header {
+        background-color: #4caf50;
+        padding: 20px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .email-body {
+        padding: 20px;
+        color: #333333;
+      }
+      .email-body h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .email-body p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .email-body p.newpw {
+        font-size: 24px;
+        font-weight: bold;
+        color: red;
+      }
+      .email-footer {
+        background-color: #333333;
+        color: #ffffff;
+        padding: 15px;
+        text-align: center;
+        font-size: 14px;
+      }
+      .email-footer a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      .logo-img {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .logo-img img {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="email-header">
+        <h1>비밀번호가 변경되었습니다</h1>
+      </div>
+      <div class="email-body">
+        <p class="logo-img">
+          <img
+            src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png"
+          />
+        </p>
+
+        <h1>비밀번호가 변경되었습니다</h1>
+        <p>{user_id}님의 비밀번호가 다음과 같이 변경되었습니다</p>
+        <p class="newpw">M0hUJvzp</p>
+      </div>
+      <div class="email-footer">
+        <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+        <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+      </div>
+    </div>
+  </body>
+</html>
+
+[DEBUG] 24-11-11 14:19:04 [MailHelper:46] - ---------------------------------------------
+[INFO ] 24-11-11 14:19:08 [MyInterceptor:98] - running time: 3947(ms)
+[INFO ] 24-11-11 14:19:10 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 14:19:10 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-11 14:19:10 [MyInterceptor:74] - [GET] http://localhost:8080/account/login
+[INFO ] 24-11-11 14:19:10 [MyInterceptor:88] - - REFERER : time=-2171, url=http://localhost:8080/account/reset_pw
+[INFO ] 24-11-11 14:19:10 [MyInterceptor:98] - running time: 28(ms)
+[INFO ] 24-11-11 14:20:34 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 14:20:34 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-11 14:20:34 [MyInterceptor:74] - [GET] http://localhost:8080/account/join
+[INFO ] 24-11-11 14:20:34 [MyInterceptor:88] - - REFERER : time=-84453, url=http://localhost:8080/account/login
+[INFO ] 24-11-11 14:20:34 [MyInterceptor:98] - running time: 21(ms)
+[INFO ] 24-11-11 14:20:39 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 14:20:39 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-11 14:20:39 [MyInterceptor:74] - [GET] http://localhost:8080/account/reset_pw
+[INFO ] 24-11-11 14:20:39 [MyInterceptor:88] - - REFERER : time=-5077, url=http://localhost:8080/account/login
+[INFO ] 24-11-11 14:20:39 [MyInterceptor:98] - running time: 25(ms)
+[INFO ] 24-11-11 14:20:41 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 14:20:41 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-11 14:20:41 [MyInterceptor:74] - [GET] http://localhost:8080/account/login
+[INFO ] 24-11-11 14:20:41 [MyInterceptor:88] - - REFERER : time=-1448, url=http://localhost:8080/account/reset_pw
+[INFO ] 24-11-11 14:20:41 [MyInterceptor:98] - running time: 26(ms)
+[INFO ] 24-11-11 14:20:42 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 14:20:42 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-11 14:20:42 [MyInterceptor:74] - [GET] http://localhost:8080/account/reset_pw
+[INFO ] 24-11-11 14:20:42 [MyInterceptor:88] - - REFERER : time=-841, url=http://localhost:8080/account/login
+[INFO ] 24-11-11 14:20:42 [MyInterceptor:98] - running time: 27(ms)
+[INFO ] 24-11-11 14:20:49 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 14:20:49 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 130.0
+[INFO ] 24-11-11 14:20:49 [MyInterceptor:74] - [GET] http://localhost:8080/account/reset_pw
+[INFO ] 24-11-11 14:20:49 [MyInterceptor:98] - running time: 26(ms)
+[INFO ] 24-11-11 14:23:30 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-11-11 14:23:30 [MyInterceptor:56] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-11-11 14:23:30 [MyInterceptor:74] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 14:23:30 [MyInterceptor:81] - (parma)<---user_id = 헬로
+[INFO ] 24-11-11 14:23:30 [MyInterceptor:81] - (parma)<---email = abcd@naver.com
+[DEBUG] 24-11-11 14:23:30 [resetPw:135] - ==>  Preparing: UPDATE member SET user_pw = MD5(?) WHERE user_id = ? AND email = ?
+[DEBUG] 24-11-11 14:23:30 [resetPw:135] - ==> Parameters: H2DPnLsR(String), 헬로(String), abcd@naver.com(String)
+[INFO ] 24-11-11 14:23:30 [sqlonly:228] - UPDATE member SET user_pw = MD5('H2DPnLsR') WHERE user_id = '헬로' AND email = 'abcd@naver.com'
+
+[DEBUG] 24-11-11 14:23:30 [resetPw:135] - <==    Updates: 13
+[DEBUG] 24-11-11 14:23:30 [MailHelper:41] - ---------------------------------------------
+[DEBUG] 24-11-11 14:23:30 [MailHelper:42] - RecvName: null
+[DEBUG] 24-11-11 14:23:30 [MailHelper:43] - RecvEmail: abcd@naver.com
+[DEBUG] 24-11-11 14:23:30 [MailHelper:44] - Subject: 헬로님의 비밀번호가 재설정 되엇습니다
+[DEBUG] 24-11-11 14:23:30 [MailHelper:45] - Content: <!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비밀번호 재설정 알림</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+      }
+      .email-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+      .email-header {
+        background-color: #4caf50;
+        padding: 20px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .email-body {
+        padding: 20px;
+        color: #333333;
+      }
+      .email-body h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .email-body p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .email-body p.newpw {
+        font-size: 24px;
+        font-weight: bold;
+        color: red;
+      }
+      .email-footer {
+        background-color: #333333;
+        color: #ffffff;
+        padding: 15px;
+        text-align: center;
+        font-size: 14px;
+      }
+      .email-footer a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      .logo-img {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .logo-img img {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="email-header">
+        <h1>비밀번호가 변경되었습니다</h1>
+      </div>
+      <div class="email-body">
+        <p class="logo-img">
+          <img
+            src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png"
+          />
+        </p>
+
+        <h1>비밀번호가 변경되었습니다</h1>
+        <p>{user_id}님의 비밀번호가 다음과 같이 변경되었습니다</p>
+        <p class="newpw">H2DPnLsR</p>
+      </div>
+      <div class="email-footer">
+        <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+        <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+      </div>
+    </div>
+  </body>
+</html>
+
+[DEBUG] 24-11-11 14:23:30 [MailHelper:46] - ---------------------------------------------
+[INFO ] 24-11-11 14:23:33 [MyInterceptor:98] - running time: 3611(ms)

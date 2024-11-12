@@ -136,4 +136,26 @@ public interface MemberMapper {
         @Update("UPDATE member SET user_pw = MD5(#{user_pw}) " +
                         "WHERE user_id = #{user_id} AND email = #{email}")
         public int resetPw(Member input);
+
+        /**
+         *  로그인 처리
+         * @param input
+         * @return
+         */
+        @Select("SELECT \n" +
+        "id, user_id, user_pw, user_name, email, phone, birthday, gender, \n" +
+        "postcode, addr1, addr2, photo, is_out, is_admin, login_data, reg_data, edit_date \n" +
+        "FROM member \n" +
+        "WHERE user_id = #{user_id} AND user_pw = MD5(#{user_pw})")
+        @ResultMap("memberMap")
+        public Member login(Member input);
+
+
+        /**
+         * 현재시간으로 업데이트 ( 이 부분은 궂이 안해도됨)
+         * @param input
+         * @return
+         */
+        @Update("UPDATE member SET login_data=NOW() WHERE id = #{id}")
+        public int updateLoginDate(Member input);
 }

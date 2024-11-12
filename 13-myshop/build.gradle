@@ -42,6 +42,9 @@ dependencies {
 	implementation 'net.coobird:thumbnailator:0.4.20'
 
 
+	//spring session
+	implementation 'org.springframework.session:spring-session-jdbc'
+
 
 	// test 추가
 	testAnnotationProcessor 'org.projectlombok:lombok'

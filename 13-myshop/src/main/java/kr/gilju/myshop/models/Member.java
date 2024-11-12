@@ -1,12 +1,21 @@
 package kr.gilju.myshop.models;
 
+import java.io.Serializable;
+
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * Member 테이블의 구조를 정의하는 클래스
  */
+
+ /* 세션에 저장할 클래스 타입은 Serializable 인터페이스를 상속해야한다 ==> 이진수로 바꾸는법(순서대로 차곡차곡 만들어랏)
+  * 즉 Serializable 는  ==> 객채직렬화 임
+ ) */
+
 @Data
-public class Member {
+public class Member implements Serializable {
   private int id;                // 일련번호 (Primary Key)
   private String user_id;         // 아이디
   private String user_pw;         // 비밀번호(암호화저장)
@@ -24,4 +33,12 @@ public class Member {
   private String login_data;       // 마지막 로그인 일시
   private String reg_data;         // 등록일시
   private String edit_date;        // 변경일시
+
+  @Getter
+  @Setter
+  private static int listCount = 0;
+
+  @Getter
+  @Setter
+  private static int offset = 0;
 }

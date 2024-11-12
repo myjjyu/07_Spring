@@ -46,4 +46,10 @@ public class AccountController {
     return  "account/join_result";
   }
 
+  @GetMapping("/account")
+  public String index(){
+    return  "account/index";
+  }
+
+
 }

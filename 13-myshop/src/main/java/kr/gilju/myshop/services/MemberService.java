@@ -80,4 +80,12 @@ public interface MemberService {
    * @throws Exception
    */
   public void resetPw(Member input) throws Exception;
+
+  /**
+   * 로그인 서비스
+   * @param input
+   * @throws Exception
+   */
+  public Member login(Member input) throws Exception;
+
 }

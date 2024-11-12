@@ -407,4 +407,23 @@ public class FileHelper {
     }
     return uploadList;
   }
+
+  /**
+   * 파일 경로 앞에 url prefix를 덧붙여 리턴한다
+   * 외부에서 들어오는 문자열에는 무조건 trim 넣기 => 앞뒤공백제거
+   * 
+   * @param path 파일경로
+   * @return 웹 상에 노출 가능한 절대경로
+   */
+  public String getUrl(String path) {
+    if (path == null) {
+      return null;
+    }
+
+    StringBuilder builder = new StringBuilder();
+    builder.append(this.uploadUrl);
+    builder.append(path.trim());
+
+    return builder.toString();
+  }
 }

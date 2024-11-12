@@ -15,58 +15,53 @@ import lombok.extern.slf4j.Slf4j;
 @SpringBootTest
 public class MembersMapperTest {
 
-    @Autowired
-    private MemberMapper memberMapper;
+  @Autowired
+  private MemberMapper memberMapper;
 
-    @Test
-    @DisplayName("회원 추가 테스트")
-    void insertMembers() {
-        Member input = new Member();
-        input.setUser_id("헬로");
-        input.setUser_pw("월드");
-        input.setUser_name("메가");
-        input.setEmail("abcd@naver.com");
-        input.setPhone("010-1234-5678");
-        input.setBirthday("2021-06-01");  
-        input.setGender("F");              
-        input.setPostcode("12345");
-        input.setAddr1("서울시 강남구");
-        input.setAddr2("테스트동");
-        input.setPhoto(null);             
+  @Test
+  @DisplayName("회원 추가 테스트")
+  void insertMembers() {
+    Member input = new Member();
+    input.setUser_id("헬로");
+    input.setUser_pw("월드");
+    input.setUser_name("메가");
+    input.setEmail("abcd@naver.com");
+    input.setPhone("010-1234-5678");
+    input.setBirthday("2021-06-01");
+    input.setGender("F");
+    input.setPostcode("12345");
+    input.setAddr1("서울시 강남구");
+    input.setAddr2("테스트동");
+    input.setPhoto(null);
 
-        int output = memberMapper.insert(input);
+    int output = memberMapper.insert(input);
 
-        // 저장된 데이터의 수
-        log.debug("output: " + output);
-        // 생성된 pk값
-        log.debug("new member id: " + input.getId());
-    }
-  
-
+    // 저장된 데이터의 수
+    log.debug("output: " + output);
+    // 생성된 pk값
+    log.debug("new member id: " + input.getId());
+  }
 
   @Test
   @DisplayName("회원 수정 테스트")
   void updateMembers() {
     Member input = new Member();
-    input.setUser_id("헬로");  
+    input.setUser_id("헬로");
     input.setUser_pw("메가");
     input.setUser_name("스터디");
     input.setEmail("test@naver.com");
     input.setPhone("010-1234-1234");
-    input.setBirthday("2021-06-01");  
-    input.setGender("F");              
+    input.setBirthday("2021-06-01");
+    input.setGender("F");
     input.setPostcode("12345");
     input.setAddr1("서울시 서초구");
     input.setAddr2("행복동");
-    input.setPhoto(null);             
-
+    input.setPhoto(null);
 
     int output = memberMapper.update(input);
 
     log.debug("output: " + output);
   }
-
-
 
   @Test
   @DisplayName("회원 삭제 테스트")
@@ -76,17 +71,14 @@ public class MembersMapperTest {
 
     int output = memberMapper.delete(input);
 
-
     log.debug("output: " + output);
   }
-
 
   @Test
   @DisplayName("하나의 회원 조회 테스트")
   void selectOneMember() {
     Member input = new Member();
     input.setId(3);
-
 
     Member output = memberMapper.selectItem(input);
     log.debug("output: " + output.toString());
@@ -104,9 +96,9 @@ public class MembersMapperTest {
 
   @Test
   @DisplayName("비밀번호 재발급 테스트")
-  void resetpw(){
+  void resetpw() {
     Member input = new Member();
-    input.setUser_id("rlfwn12");  
+    input.setUser_id("rlfwn12");
     input.setUser_pw("song1004");
     input.setEmail("song@hanmail.net");
 
@@ -114,6 +106,28 @@ public class MembersMapperTest {
 
     log.debug("output: " + output);
   }
-  
 
+  @Test
+  @DisplayName("로그인 테스트")
+  void login() {
+    Member input = new Member();
+    input.setId(26);
+    input.setUser_id("hello123");
+    input.setUser_pw("rlfwn123");
+
+    Member output = memberMapper.login(input);
+    log.debug("output: " + output);
+    log.debug("output: " + output.toString());
+  }
+
+  @Test
+  @DisplayName("현재시간 업데이트 테스트")
+  void update() {
+    Member input = new Member();
+    input.setId(26);
+
+    int output = memberMapper.updateLoginDate(input);
+
+    log.debug("output: " + output);
+  }
 }
