@@ -116,7 +116,6 @@ public class MembersMapperTest {
     input.setUser_pw("rlfwn123");
 
     Member output = memberMapper.login(input);
-    log.debug("output: " + output);
     log.debug("output: " + output.toString());
   }
 
@@ -128,6 +127,18 @@ public class MembersMapperTest {
 
     int output = memberMapper.updateLoginDate(input);
 
+    log.debug("output: " + output);
+  }
+
+  @Test
+  @DisplayName("회원탈퇴 테스트")
+  void out(){
+    Member input = new Member();
+    input.setId(28);
+    input.setUser_id("song123");
+    input.setUser_pw("123");
+
+    int output = memberMapper.out(input);
     log.debug("output: " + output);
   }
 }

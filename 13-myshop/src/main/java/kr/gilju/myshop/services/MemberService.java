@@ -88,4 +88,13 @@ public interface MemberService {
    */
   public Member login(Member input) throws Exception;
 
+
+  /**
+   * 회원탈퇴
+   * @param input
+   * @return
+   * @throws Exception
+   */
+  public int out(Member input) throws Exception;
+
 }

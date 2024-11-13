@@ -189,4 +189,21 @@ public class MemberServiceImpl implements MemberService {
         }
         return output;
     }
+
+    // 회원탈퇴
+    @Override
+    public int out(Member input) throws Exception {
+        int rows = 0;
+
+        try {
+            rows = memberMapper.out(input);
+            if (rows == 0) {
+                throw new Exception("비밀번호 확인이 잘못되었거나 존재하지 앟는 회원에 대한 요청입니다");
+            }
+        } catch (Exception e) {
+            log.error("Member 데이터 수정에 실패했습니다", e);
+            throw e;
+        }
+        return rows;
+    }
 }

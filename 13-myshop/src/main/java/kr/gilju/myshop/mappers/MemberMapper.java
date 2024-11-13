@@ -119,11 +119,12 @@ public interface MemberMapper {
 
         /**
          * 아이디 찾기
+         * 
          * @param input
          * @return
          */
         @Select("SELECT user_id FROM member " +
-                        "WHERE user_name = #{user_name} AND email = #{email}")
+                        "WHERE user_name = #{user_name} AND email = #{email} AND is_out='N")
         @ResultMap("memberMap") // resultMap 으로하면 에러남,,?!
         public Member findId(Member input);
 
@@ -134,28 +135,42 @@ public interface MemberMapper {
          * @return
          */
         @Update("UPDATE member SET user_pw = MD5(#{user_pw}) " +
-                        "WHERE user_id = #{user_id} AND email = #{email}")
+                        "WHERE user_id = #{user_id} AND email = #{email} AND is_out='N")
         public int resetPw(Member input);
 
         /**
-         *  로그인 처리
+         * 로그인 처리
+         * 
          * @param input
          * @return
          */
         @Select("SELECT \n" +
-        "id, user_id, user_pw, user_name, email, phone, birthday, gender, \n" +
-        "postcode, addr1, addr2, photo, is_out, is_admin, login_data, reg_data, edit_date \n" +
-        "FROM member \n" +
-        "WHERE user_id = #{user_id} AND user_pw = MD5(#{user_pw})")
+                        "id, user_id, user_pw, user_name, email, phone, birthday, gender, \n" +
+                        "postcode, addr1, addr2, photo, is_out, is_admin, login_data, reg_data, edit_date \n" +
+                        "FROM member \n" +
+                        "WHERE user_id = #{user_id} AND user_pw = MD5(#{user_pw}) AND is_out='N")
         @ResultMap("memberMap")
         public Member login(Member input);
 
-
         /**
          * 현재시간으로 업데이트 ( 이 부분은 궂이 안해도됨)
+         * 
          * @param input
          * @return
          */
-        @Update("UPDATE member SET login_data=NOW() WHERE id = #{id}")
+        @Update("UPDATE member SET login_data=NOW() WHERE id = #{id} AND is_out='N")
         public int updateLoginDate(Member input);
+
+        /**
+         * 회원탈퇴
+         * 탈퇴한 사람을 또 탈퇴처리할수 없기에 AND 조건문 붙이기
+         * 
+         * @param input
+         * @return
+         */
+        @Update("UPDATE member \n" +
+                        "SET is_out='Y', edit_date=NOW() \n" +
+                        "WHERE id = #{id} AND user_pw = MD5(#{user_pw}) AND is_out = 'N'")
+        public int out(Member input);
+
 }
