@@ -124,7 +124,7 @@ public interface MemberMapper {
          * @return
          */
         @Select("SELECT user_id FROM member " +
-                        "WHERE user_name = #{user_name} AND email = #{email} AND is_out='N")
+                        "WHERE user_name = #{user_name} AND email = #{email} AND is_out='N'")
         @ResultMap("memberMap") // resultMap 으로하면 에러남,,?!
         public Member findId(Member input);
 
@@ -135,7 +135,7 @@ public interface MemberMapper {
          * @return
          */
         @Update("UPDATE member SET user_pw = MD5(#{user_pw}) " +
-                        "WHERE user_id = #{user_id} AND email = #{email} AND is_out='N")
+                        "WHERE user_id = #{user_id} AND email = #{email} AND is_out='N'")
         public int resetPw(Member input);
 
         /**
@@ -148,7 +148,7 @@ public interface MemberMapper {
                         "id, user_id, user_pw, user_name, email, phone, birthday, gender, \n" +
                         "postcode, addr1, addr2, photo, is_out, is_admin, login_data, reg_data, edit_date \n" +
                         "FROM member \n" +
-                        "WHERE user_id = #{user_id} AND user_pw = MD5(#{user_pw}) AND is_out='N")
+                        "WHERE user_id = #{user_id} AND user_pw = MD5(#{user_pw}) AND is_out='N'")
         @ResultMap("memberMap")
         public Member login(Member input);
 
@@ -158,7 +158,7 @@ public interface MemberMapper {
          * @param input
          * @return
          */
-        @Update("UPDATE member SET login_data=NOW() WHERE id = #{id} AND is_out='N")
+        @Update("UPDATE member SET login_data=NOW() WHERE id = #{id} AND is_out='N'")
         public int updateLoginDate(Member input);
 
         /**
@@ -172,5 +172,25 @@ public interface MemberMapper {
                         "SET is_out='Y', edit_date=NOW() \n" +
                         "WHERE id = #{id} AND user_pw = MD5(#{user_pw}) AND is_out = 'N'")
         public int out(Member input);
+
+        /**
+         * 탈퇴회원 조회 및 삭제 실패
+         * @return
+         */
+        @Select("SELECT photo FROM member \n" +
+                        "WHERE is_out='Y' AND \n" +
+                        "edit_date < DATE_ADD(NOW(), interval -1 minute) AND \n" +
+                        "photo IS NOT NULL")
+        @ResultMap("memberMap")
+        public List<Member> selectOutMembersPhoto();
+
+        /**
+         * 탈퇴회원 조회 및 삭제 실패
+         * @return
+         */
+        @Delete("DELETE FROM member \n" +
+                        "WHERE is_out='Y' AND \n" +
+                        "edit_date < DATE_ADD(NOW(), interval -20 second)")
+        public int deleteOutMembers();
 
 }

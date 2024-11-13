@@ -97,4 +97,11 @@ public interface MemberService {
    */
   public int out(Member input) throws Exception;
 
+
+  /**
+   * 탈퇴한 회원삭제
+   * @return
+   * @throws Exception
+   */
+  public List<Member> processOutMembers() throws Exception;
 }

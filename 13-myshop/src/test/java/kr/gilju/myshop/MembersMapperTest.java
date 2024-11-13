@@ -9,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import kr.gilju.myshop.mappers.MemberMapper;
 import kr.gilju.myshop.models.Member;
+import kr.gilju.myshop.services.MemberService;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -17,6 +18,9 @@ public class MembersMapperTest {
 
   @Autowired
   private MemberMapper memberMapper;
+
+  @Autowired
+  private MemberService memberService;
 
   @Test
   @DisplayName("회원 추가 테스트")
@@ -140,5 +144,33 @@ public class MembersMapperTest {
 
     int output = memberMapper.out(input);
     log.debug("output: " + output);
+  }
+
+  @Test
+  @DisplayName("탈퇴한 회원삭제")
+  void deleteMemberTest(){
+    int output = memberMapper.deleteOutMembers();
+
+    log.debug("output: " + output);
+  }
+
+
+  @Test
+  @DisplayName("탈퇴한 회원삭제 테스트")
+  void processOutMembers()throws Exception{
+    List<Member> output = null;
+
+    try {
+      output = memberService.processOutMembers();
+    } catch (Exception e) {
+      log.error("-----서비스 구현 에러----");
+      throw e;
+    }
+   
+    if(output != null){
+      for(Member item : output) {
+        log.debug("output : " + item.toString());
+      }
+    }
   }
 }

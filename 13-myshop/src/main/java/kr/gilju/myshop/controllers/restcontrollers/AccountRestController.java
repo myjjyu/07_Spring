@@ -267,26 +267,19 @@ public class AccountRestController {
     return restHelper.sendJson();
   }
 
-  // 회원탈퇴 처리
-  // 로그인 api를 호출할때는 sesscion에 묶음
-  // 세션데이터에 들어이쓴ㄴ 회원정보를 가지고 서비스릃 호출
-  // 세션 데이터를 가지고오는 방법
-  // 1) httpservrreqest requset 로 세션 받아온후 세션값 가져오기 ==> 지금까지 사용하던 방식
-  // HttpSession session = request.getSession();
-  // session.setAttribute("memberInfo", output);
-  // 2 ) 세션 어드리뷰터 어노테이션 걸로 멤버인포를 가져와서 멤버타임의 멤버인포 변수로 넣어주기
-  // 멤버서비스.out (세션정보 넣어주기) -> 세션어트리뷰티와 레스트파람 어노테이션 받아서
-  // 각각 ㄱ멤버와 스트링으로 변수넌어주기
-  // 트라이캐치문 넣어주기 캐치문에 리턴문 레스트헬퍼.서비스에러
-  // 리턴 게스트헬퍼.센드제이슨
-
-  // 단위테스트진행하기
-  // 회원탈퇴처리 단위테스틑 순셔 => post 로 먼저 로그인 테스트 후 user_pw를 패스워드로 변경후 접속방식 딜리트로 진행
-  // http://localhost:8080/api/account/login
-  // http://localhost:8080/api/account/out
-
-  // 하지만 정보에는 로그인은 세션에 남아있기때문에 강제로 로그아웃처리도 해줘야함(로그아웃을위해 세션을 삭제)
-
+  /**
+   * 회원탈퇴처리
+   * 
+   * @param request
+   * @param memberInfo
+   * @param password
+   * @return
+   * // 단위테스트진행하기
+   * 회원탈퇴처리 단위테스틑 순셔 => post 로 먼저 로그인 테스트 후 
+   * user_pw를 패스워드로 변경후 접속방식 딜리트로 진행
+   * 로그인 => http://localhost:8080/api/account/login
+   * 회원탈퇴 => http://localhost:8080/api/account/out
+   */
   @DeleteMapping("/api/account/out")
   public Map<String, Object> out(
       HttpServletRequest request,
@@ -310,5 +303,7 @@ public class AccountRestController {
 
     return restHelper.sendJson();
   }
+
+  
 
 }
