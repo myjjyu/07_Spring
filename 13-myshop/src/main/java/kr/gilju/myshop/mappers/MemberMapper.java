@@ -34,25 +34,40 @@ public interface MemberMapper {
         int insert(Member input);
 
         /**
+         * 수정하기
          * 
          * @param input
          * @return
          */
-        @Update("UPDATE member SET " +
-                        "user_id=#{user_id}, " +
-                        "user_pw=MD5(#{user_pw}), " +
+        @Update("<script>" +
+                        "UPDATE member SET " +
+                        // 아이디는 수정하지 않는다
+                        // "user_id=#{user_id}, ",
                         "user_name=#{user_name}, " +
+                        // 신규 비밀번호가 입력된 경우만 UPDATE 절에 추가함
+                        "<if test='new_user_pw != null and new_user_pw != \"\"'>" +
+                        "user_pw = MD5(#{new_user_pw})," +
+                        "</if>" +
                         "email=#{email}, " +
                         "phone=#{phone}, " +
                         "birthday=#{birthday}, " +
-                        "gender=#{gender}, " +
+                        "gender=#{gender, jdbcType=CHAR}, " +
                         "postcode=#{postcode}, " +
                         "addr1=#{addr1}, " +
                         "addr2=#{addr2}, " +
+                        // "photo = #{photo}",
                         "edit_date=now() " +
-                        "WHERE id = #{id}")
-        int update(Member input);
+                        // 세션의 일련번호와 입력한 비밀번호가 일치할 경우만 수정
+                        "WHERE id = #{id} AND user_pw = MD5(#{user_pw})" +
+                        "</script>")
+        public int update(Member input);
 
+        /**
+         * 삭제
+         * 
+         * @param input
+         * @return
+         */
         @Delete("DELETE FROM member WHERE id=#{id}")
         int delete(Member input);
 
@@ -104,6 +119,7 @@ public interface MemberMapper {
         public List<Member> selectList(Member input);
 
         /**
+         * 아이디, 이메일 중복체크
          * 
          * @param input
          * @return
@@ -113,6 +129,8 @@ public interface MemberMapper {
                         "<where>" +
                         "<if test ='user_id != null'>user_id = #{user_id}</if>\n" +
                         "<if test ='email != null'>email = #{email}</if>\n" +
+                        // 회원정보 수정시 내 정보는 제외하고 중복검사 수행
+                        "<if test ='id != 0'>AND id != #{id}</if>\n" +
                         "</where>\n" +
                         "</script>")
         public int selectCount(Member input);
@@ -175,6 +193,7 @@ public interface MemberMapper {
 
         /**
          * 탈퇴회원 조회 및 삭제 실패
+         * 
          * @return
          */
         @Select("SELECT photo FROM member \n" +
@@ -186,11 +205,11 @@ public interface MemberMapper {
 
         /**
          * 탈퇴회원 조회 및 삭제 실패
+         * 
          * @return
          */
         @Delete("DELETE FROM member \n" +
                         "WHERE is_out='Y' AND \n" +
                         "edit_date < DATE_ADD(NOW(), interval -20 second)")
         public int deleteOutMembers();
-
 }

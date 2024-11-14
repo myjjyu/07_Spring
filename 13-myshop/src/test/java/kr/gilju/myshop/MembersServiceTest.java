@@ -9,15 +9,18 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import kr.gilju.myshop.mappers.MemberMapper;
 import kr.gilju.myshop.models.Member;
+import kr.gilju.myshop.services.MemberService;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @SpringBootTest
-public class MembersMapperTest {
+public class MembersServiceTest {
 
   @Autowired
   private MemberMapper memberMapper;
 
+  @Autowired
+  private MemberService memberService;
 
   @Test
   @DisplayName("회원 추가 테스트")
@@ -152,6 +155,25 @@ public class MembersMapperTest {
   }
 
   @Test
+  @DisplayName("탈퇴한 회원삭제 테스트")
+  void processOutMembers() throws Exception {
+    List<Member> output = null;
+
+    try {
+      output = memberService.processOutMembers();
+    } catch (Exception e) {
+      log.error("-----서비스 구현 에러----");
+      throw e;
+    }
+
+    if (output != null) {
+      for (Member item : output) {
+        log.debug("output : " + item.toString());
+      }
+    }
+  }
+
+  @Test
   @DisplayName("아이디 이메일 중복체크 테스트")
   void selectCountTest() {
 
@@ -162,16 +184,16 @@ public class MembersMapperTest {
     int output = memberMapper.selectCount(input);
     log.debug("output: " + output);
 
-    //중복이면 0 중복아니면 1
+    // 중복이면 0 중복아니면 1
   }
 
   @Test
-@DisplayName("내 정보수정 업데이트 테스트")
-void updateTest() {
+  @DisplayName("내 정보수정 업데이트 테스트")
+  void updateTest() {
     // 테스트용 input 데이터
     Member input = new Member();
     input.setUser_name("rlfwn0528");
-    input.setNew_user_pw("12345");    
+    input.setNew_user_pw("12345");
     input.setEmail("rlfwn528@gmail.com");
     input.setPhone("01050921795");
     input.setBirthday("2024-10-31");
@@ -182,12 +204,12 @@ void updateTest() {
     input.setId(33);
 
     // 새로운 비밀번호를 설정할 경우 현재비밀번호 적기
-    input.setNew_user_pw("1234"); 
+    input.setNew_user_pw("1234");
 
     // memberMapper.update 호출
     int output = memberMapper.update(input);
 
     // 반환값 확인
-    log.debug("output: " + output); 
-}
+    log.debug("output: " + output);
+  }
 }

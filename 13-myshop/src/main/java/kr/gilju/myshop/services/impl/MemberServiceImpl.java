@@ -11,14 +11,7 @@ import kr.gilju.myshop.models.Member;
 import kr.gilju.myshop.services.MemberService;
 import lombok.extern.slf4j.Slf4j;
 
-/**
- * 학과 관리 기능과 관련된 MyBatis Mapper를 간접적으로 호출하기 위한 기능 명세
- * 
- * 1) 모든 메서드를 재정의 한 직후 리턴값 먼저 정의
- */
-
 @Slf4j
-
 @Service
 public class MemberServiceImpl implements MemberService {
 
@@ -27,22 +20,30 @@ public class MemberServiceImpl implements MemberService {
     private MemberMapper memberMapper;
 
     @Override
-    public Member addItem(Member input) throws ServiceNoResultException, Exception {
+    public Member addItem(Member input) throws Exception {
         int rows = memberMapper.insert(input);
 
         if (rows == 0) {
-            throw new ServiceNoResultException("저장된 데이터가 없습니다");
+            throw new Exception("저장된 데이터가 없습니다");
         }
 
         return memberMapper.selectItem(input);
     }
 
     @Override
-    public Member editItem(Member input) throws ServiceNoResultException, Exception {
-        int rows = memberMapper.update(input);
+    public Member editItem(Member input) throws Exception {
+        int rows = 0;
 
-        if (rows == 0) {
-            throw new ServiceNoResultException("수정된 데이터가 없습니다");
+        try {
+            rows = memberMapper.update(input);
+
+            // where 절 조건에 맞는 데이터가 없는경우 --> 비밀번호 잘못됨
+            if (rows == 0) {
+                throw new Exception("현재 비밀번호를 확인하세요");
+            }
+        } catch (Exception e) {
+            log.error("Member 데이터 수정에 실패했습니다", e);
+            throw e;
         }
 
         return memberMapper.selectItem(input);
@@ -100,9 +101,9 @@ public class MemberServiceImpl implements MemberService {
 
     // 이메일 검사 & 중복검사
     @Override
-    public void isUniqueEmail(String email) throws Exception {
-        Member input = new Member();
-        input.setEmail(email);
+    public void isUniqueEmail(Member input) throws Exception {
+        // Member input = new Member();
+        // input.setEmail(email);
 
         int output = 0;
 
@@ -206,7 +207,6 @@ public class MemberServiceImpl implements MemberService {
         }
         return rows;
     }
-
 
     // 프로필사진을 가지고있는 회원 삭제 조회
     @Override

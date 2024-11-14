@@ -50,6 +50,14 @@ public class AccountController {
   public String index(){
     return  "account/index";
   }
+  
 
-
+  /**
+   * 내 정보 수정
+   * @return
+   */
+  @GetMapping("/account/edit")
+  public String edit(){
+    return  "account/edit";
+  }
 }

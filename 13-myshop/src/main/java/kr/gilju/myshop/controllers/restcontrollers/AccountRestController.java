@@ -42,6 +42,12 @@ public class AccountRestController {
   @Autowired
   private MemberService memberService;
 
+  /**
+   * 아이디 중복체크
+   * 
+   * @param user_id
+   * @return
+   */
   @GetMapping("/api/account/id_unique_check")
   public Map<String, Object> idUniqueCheck(@RequestParam("user_id") String user_id) {
     try {
@@ -52,10 +58,29 @@ public class AccountRestController {
     return restHelper.sendJson();
   }
 
+  /**
+   * 이메일 중복체크
+   * 가입할때와 변경할때 사용
+   * 세션이 없기 때문에 미필수 false로 걸어주기
+   * 멤버객채를 받아와서 파라미터로 받는 멤버객체 준비후 인풋에 회원 일련번호 걸가ㅣ
+   * @param email
+   * @return
+   */
   @GetMapping("/api/account/email_unique_check")
-  public Map<String, Object> emailUniqueCheck(@RequestParam("email") String email) {
+  public Map<String, Object> emailUniqueCheck(
+      @SessionAttribute(value = "memberInfo", required = false) Member memberInfo,
+      @RequestParam("email") String email) {
+
+    Member input = new Member();
+    input.setEmail(email);
+
+    // 로그인 중이라면 현재 회원의 일련번호를 함께 전달한다
+    if (memberInfo != null) {
+      input.setId(memberInfo.getId());
+    }
+
     try {
-      memberService.isUniqueUserId(email);
+      memberService.isUniqueEmail(input);
     } catch (Exception e) {
       return restHelper.badRequest(e);
     }
@@ -86,8 +111,11 @@ public class AccountRestController {
     }
 
     /** 3) 이메일 중복 검사 */
+    Member input = new Member();
+    input.setEmail(email);
+
     try {
-      memberService.isUniqueUserId(email);
+      memberService.isUniqueEmail(input);
     } catch (Exception e) {
       return restHelper.badRequest(e);
     }
@@ -274,11 +302,11 @@ public class AccountRestController {
    * @param memberInfo
    * @param password
    * @return
-   * // 단위테스트진행하기
-   * 회원탈퇴처리 단위테스틑 순셔 => post 로 먼저 로그인 테스트 후 
-   * user_pw를 패스워드로 변경후 접속방식 딜리트로 진행
-   * 로그인 => http://localhost:8080/api/account/login
-   * 회원탈퇴 => http://localhost:8080/api/account/out
+   *         // 단위테스트진행하기
+   *         회원탈퇴처리 단위테스틑 순셔 => post 로 먼저 로그인 테스트 후
+   *         user_pw를 패스워드로 변경후 접속방식 딜리트로 진행
+   *         로그인 => http://localhost:8080/api/account/login
+   *         회원탈퇴 => http://localhost:8080/api/account/out
    */
   @DeleteMapping("/api/account/out")
   public Map<String, Object> out(
@@ -304,6 +332,68 @@ public class AccountRestController {
     return restHelper.sendJson();
   }
 
-  
+  @PutMapping("/api/account/edit")
+  public Map<String, Object> putMethName(
+      HttpServletRequest request, // 세션 갱신용
+      @SessionAttribute("memberInfo") Member memberInfo, // 현재 세션 정보 확인용
+      @RequestParam("user_pw") String user_pw, // 현재 비밀번호(정보확인용)
+      @RequestParam("new_user_pw") String new_user_pw, // 신규 비밀번호(정보 변경용)
+      @RequestParam("user_name") String user_name,
+      @RequestParam("email") String email,
+      @RequestParam("phone") String phone,
+      @RequestParam("birthday") String birthday,
+      @RequestParam("gender") String gender,
+      @RequestParam("postcode") String postcode,
+      @RequestParam("addr1") String addr1,
+      @RequestParam("addr2") String addr2,
+      @RequestParam(value = "delete_photo", defaultValue = "N") String deletePhoto,
+      @RequestParam(value = "photo", required = false) MultipartFile photo) {
+    /** 1) 입력값에 대한 유효성 검사 */
+    // 여기서는 생략!!!
 
+    /** 2) 이메일 중복 검사 */
+    Member input = new Member();
+    input.setEmail(email);
+    input.setId(memberInfo.getId());
+
+    try {
+      memberService.isUniqueEmail(input);
+    } catch (Exception e) {
+      return restHelper.badRequest(e);
+    }
+
+    /** 3) 업로드 처리 */
+ 
+
+    /** 4) 정보를 service에 전달하기 위한 객체 구성 */
+    // 아이디는 수정할 필요가 없으므로 설정하지 않는다
+    Member member = new Member();
+    member.setId(memberInfo.getId());
+    member.setUser_pw(user_pw);
+    member.setNew_user_pw(new_user_pw);
+    member.setUser_name(user_name);
+    member.setEmail(email);
+    member.setPhone(phone);
+    member.setBirthday(birthday);
+    member.setGender(gender);
+    member.setPostcode(postcode);
+    member.setAddr1(addr1);
+    member.setAddr2(addr2);
+
+    /** 5) DB에 저장 */
+    Member output = null;
+    try {
+      output = memberService.editItem(member);
+    } catch (Exception e) {
+      return restHelper.serverError(e);
+    }
+
+    // 프로필 사진의 경로를 url로 변환
+    output.setPhoto(fileHelper.getUrl(output.getPhoto()));
+    /** 6) 변경된 정보로 세션 갱신 */
+    request.getSession().setAttribute("memberInfo", output);
+
+    return restHelper.sendJson();
+  }
 }
+

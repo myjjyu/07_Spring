@@ -6,7 +6,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.EnableAsync;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import kr.gilju.myshop.models.Member;
@@ -35,8 +34,10 @@ public class AccountScheduler {
 
   // 매일 오전 4시에 자동실행
   // @Scheduled(cron = "0 0 4 * * ?")
+  
   // 매 분마다 15초에 실행
-  @Scheduled(cron = "15 * * * * ?")
+  // @Scheduled(cron = "15 * * * * ?")
+
   public void processOutMembers() throws InterruptedException {
     log.debug("탈퇴 회원 정리 시작");
 

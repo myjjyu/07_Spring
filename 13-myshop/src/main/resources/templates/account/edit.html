@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <th:bloc
+      th:replace="~{/_fragments/_head :: my-head('내 정보 수정')}"
+    ></th:bloc>
+    <link rel="stylesheet" th:href="@{/assets/css/account.css}" />
+
+    <style>
+      .input-container {
+        input[disabled] {
+          cursor: not-allowed;
+        }
+
+        &.info {
+          flex-direction: column;
+
+          input {
+            flex-basis: 100%;
+          }
+
+          p {
+            font-size: 12px;
+            margin-top: 5px;
+            color: #f22;
+            padding-left: 5px;
+            font-style: italic;
+          }
+          .img-container {
+            display: flex;
+            align-items: center;
+
+            img {
+              display: block;
+              object-fit: cover;
+              margin: 10px;
+              border-radius: 50%;
+              width: 100px;
+            }
+
+            label {
+              display: block;
+              font-size: 12px;
+              margin: 5px 0;
+              align-items: center;
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="account-container">
+      <h2 class="page-title">내 정보 수정</h2>
+      <form id="signup-form">
+        <!-- 아이디 -->
+        <div class="input-container">
+          <input
+            th:value="${session.memberInfo.user_id}"
+            disabled
+            type="text"
+            name="user_id"
+            id="user_id"
+            class="input-field"
+            placeholder="아이디"
+          />
+        </div>
+        <!-- 비밀번호 -->
+        <div class="input-container">
+          <input
+            type="password"
+            id="user_pw"
+            name="user_pw"
+            class="input-field"
+            placeholder="현재 비밀번호"
+          />
+        </div>
+
+        <!-- 변경할 비밀번호 -->
+        <div class="input-container info">
+          <input
+            type="password"
+            id="new_user_pw"
+            name="new_user_pw"
+            class="input-field"
+            placeholder="새로운 비밀번호"
+          />
+          <p>수정을 원하는 경우에만 입력하세요</p>
+        </div>
+
+        <!-- 변경할 비밀번호 확인-->
+        <div class="input-container">
+          <input
+            type="password"
+            id="new_user_pw_confirm"
+            name="new_user_pw_confirm"
+            class="input-field"
+            placeholder="새로운 비밀번호 확인"
+          />
+        </div>
+
+        <!-- 이름 -->
+        <div class="input-container">
+          <input
+            th:value="${session.memberInfo.user_name}"
+            type="text"
+            id="user_name"
+            name="user_name"
+            class="input-field"
+            placeholder="이름"
+          />
+        </div>
+
+        <!-- 이메일 -->
+        <div class="input-container">
+         <input
+            th:value="${session.memberInfo.email}"
+            type="email"
+            id="email"
+            name="email"
+            class="input-field"
+            placeholder="이메일"
+          />
+          <button type="button" class="inline-btn" id="email-unique-check">
+            중복 검사
+          </button>
+          <!-- 기존 이메일은 중복검사가 필요 없으므로 중복 검사가 완료된 상태로 시작 : Y
+          이메일 입력값이 변경되면 js에 의해서 값이 N으로 변경되므로 중복검사가 필요하게 된다 -->
+          <input type="hidden" name="email-check" id="email-check" value="Y" />
+        </div>
+
+        <!-- 전화번호 -->
+        <div class="input-container">
+          <!-- `_`기호제거 -->
+          <input
+            th:value="${session.memberInfo.phone.replace('_','')}"
+            type="tel"
+            id="phone"
+            name="phone"
+            class="input-field"
+            placeholder="전화번호"
+          />
+        </div>
+
+        <!-- 생년월일 -->
+        <div class="input-container">
+          <input
+            th:value="${session.memberInfo.birthday}"
+            type="date"
+            id="birthday"
+            name="birthday"
+            class="input-field"
+            placeholder="생년월일"
+          />
+        </div>
+
+        <!-- 성별 (라디오 버튼 형태) -->
+        <div class="input-container gender-container">
+          <span>성별:</span>/
+          <label class="gender-label">
+            <input
+              th:checked="${session.memberInfo.gender =='M'}"
+              type="radio"
+              name="gender"
+              value="M"
+              class="gender-input"
+            />
+            <span class="gender-custom"></span>남성
+          </label>
+          <label class="gender-label">
+            <input
+              th:checked="${session.memberInfo.gender == 'F'}"
+              type="radio"
+              name="gender"
+              value="F"
+              class="gender-input"
+            />
+            <span class="gender-custom"></span>여성
+          </label>
+        </div>
+
+        <!-- 우편번호 -->
+        <div class="input-container">
+          <input
+            th:value="${session.memberInfo.postcode}"
+            type="text"
+            id="postcode"
+            name="postcode"
+            class="input-field"
+            placeholder="우편번호"
+            readonly
+          />
+          <button type="button" id="find-postcode" class="inline-btn">
+            우편번호 찾기
+          </button>
+        </div>
+
+        <!-- 주소 -->
+        <div class="input-container">
+          <input
+            th:value="${session.memberInfo.addr1}"
+            type="text"
+            id="addr1"
+            name="addr1"
+            class="input-field"
+            placeholder="주소"
+            readonly
+          />
+        </div>
+        <div class="input-container">
+          <input
+            th:value="${session.memberInfo.addr2}"
+            type="text"
+            id="addr2"
+            name="addr2"
+            class="input-field"
+            placeholder="상세 주소"
+          />
+        </div>
+
+        <!-- 사진 -->
+        <div class="input-container info">
+          <th:block
+            th:if="${session.memberInfo.photo == null or session.memberInfo.photo == ''}"
+          >
+            <!-- 등록된 프로필 사진이 없을경우 : 파일 업로드 가능 -->
+            <input type="file" name="photo" id="photo" class="input-field" />
+          </th:block>
+          <th:block
+            th:unless="${session.memberInfo.photo == null or session.memberInfo.photo == ''}"
+          >
+            <!-- 등록된 프로필 사진이 있을경우 : 삭제 여부를 선택해야만 업로드 가능 -->
+            <input
+              type="file"
+              name="photo"
+              id="photo"
+              class="input-field"
+              disabled
+            />
+            <div class="img-container">
+              <img class="use-ico" th:src="${session.memberInfo.photo}" />
+              <div>
+                <p
+                  th:text="${session.memberInfo.photo + '(이)가 등록되어 있습니다'}"
+                ></p>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="delete_photo"
+                    id="delete_photo"
+                    value="Y"
+                    data-disabled="#photo"
+                  />
+                  삭제
+                </label>
+              </div>
+            </div>
+          </th:block>
+        </div>
+
+        <!-- 회원가입 버튼 -->
+        <button type="submit" class="btn">정보수정</button>
+
+        <div class="form-footer">
+          <p><a th:href="@{/account/out}">회원탈퇴</a></p>
+        </div>
+      </form>
+    </div>
+
+    <th:bloc th:replace="~{/_fragments/_scripts :: my-scripts}"></th:bloc>
+    <!-- 다움 우편번호 검색 -->
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+    <script>
+      /**
+       * 파일 삭제 여부 체크에 따른 업로드 필드 활성화 처리
+       * -data-disabled 라는 속성을 갖는 모든 요소에 대해 일괄 처리 한다
+       */
+      document.querySelectorAll("*[data-disabled]").forEach((v, i) => {
+        v.addEventListener("change", (e) => {
+          e.preventDefault();
+
+          const current = e.currentTarget;
+          document.querySelector(current.dataset.disabled).disabled =
+            !current.checked;
+        });
+      });
+
+      document
+        .querySelector("#find-postcode")
+        .addEventListener("click", async (e) => {
+          e.preventDefault();
+          utilHelper.findPostCode();
+        });
+
+
+        /**
+         * 아이디 중복 검사 처리는 필요 없으므로 제거
+        */
+
+      // 이메일 검사
+      document
+        .querySelector("#email-unique-check")
+        .addEventListener("click", async (e) => {
+          e.preventDefault();
+          try {
+            regexHelper.value("#email", "이메일을 입력하세요");
+          } catch (e) {
+            await untilHelper.alertDanger(e.messge);
+            e.element.focus();
+            return;
+          }
+
+          const email = document.querySelector("#email").value;
+          const data = await axiosHelper.get(
+            `/api/account/email_unique_check`,
+            {
+              email: email
+            });
+
+          if (data) {
+            await utilHelper.alertSuccess("사용 가능한 이메일 입니다");
+            document.querySelector("#email-check").value = "Y";
+          }
+        });
+
+      // 유효성 검사 통과후 이메일 변경했을때 재 검사
+      document.querySelector("#email").addEventListener("change", e => {
+        document.querySelector("#email-check").value = "N";
+      });
+
+      // 아이디, 이메일 중복검사
+      document
+        .getElementById("signup-form")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          //** 입력값 유효성 검사 **//
+          try {
+            // 현재비밀번호에 대한 입력 여부 확인
+            regexHelper.value("#user_pw", "현재 비밀번호를 입력하세요");
+
+            // 변경할 비밀번호와 변경한 비밀번호의 확인값
+            const new_user_pw = document.querySelector("#new_user_pw").value;
+            const new_user_pw_confirm = document.querySelector(
+              "#new_user_pw_confirm"
+            ).value;
+
+            // 새로운 비밀번호가 입력되었을때 확인값 검사
+            if (new_user_pw || new_user_pw_confirm) {
+              regexHelper.compareTo(
+                "#new_user_pw",
+                "#new_user_pw_confirm",
+                "비밀번호 확인이 잘못되었습니다"
+              );
+            }
+
+            // 이름입력 검사
+            regexHelper.value("#user_name", "이름을 입력하세요");
+            regexHelper.kor("#user_name", "이름은 한글로만 입력할수 있습니다");
+            regexHelper.maxLength(
+              "#user_name",
+              20,
+              "아이디는 2자 이상 20자 이하로 입력하세요"
+            );
+            regexHelper.minLength(
+              "#user_name",
+              2,
+              "아이디는 2자 이상 20자 이하로 입력하세요"
+            );
+
+            // 이메일, 전화번호, 생일, 성별 입력 검사
+            regexHelper.value("#email", "이메일 주소를 입력하세요");
+            regexHelper.email("#email", "이메일 주소가 잘못 되었습니다");
+
+            regexHelper.value("#phone", "전화번호를 입력하세요");
+            regexHelper.phone("#phone", "전화번호 주소가 잘못 되었습니다");
+
+            regexHelper.value("#birthday", "생일을 입력하세요");
+
+            regexHelper.check(".gender-input", "성별을 선택하세요");
+
+            // 우편번호 검사
+            regexHelper.value("#postcode", "우편번호를 검색하세요");
+            regexHelper.maxLength("#postcode", "우편번호는 5자로 입력하세요");
+            regexHelper.minLength("#postcode", "우편번호는 5자로 입력하세요");
+            regexHelper.num(
+              "#postcode",
+              "우편번호는 숫자로만 입력할수 있습니다"
+            );
+
+            // 주소 검사
+            regexHelper.value("#addr1", "주소를 입력하세요");
+            regexHelper.value("#addr2", "상세주소를 입력하세요");
+          } catch (e) {
+            await utilHelper.alertDanger(e.message);
+            setTimeout(() => e.element.focus(), 300);
+            return;
+          }
+
+          // 아이디 중복검사 루틴제거
+          const emailCheck = document.querySelector("#email-check").value;
+
+          if (emailCheck === "N") {
+            await utilHelper.alertWarning("이메일 중복 검사를 진행해 주세요");
+            return;
+          }
+
+          const formData = new FormData(e.currentTarget);
+
+          const data = await axiosHelper.putMultipart(
+            "[[@{/api/account/edit}]]",
+            formData
+          );
+
+          if (data) {
+            await utilHelper.alertSuccess("회원 정보가 수정되었습니다");
+            window.location = "[[@{/accoun}]]";
+          }
+        });
+    </script>
+  </body>
+</html>
