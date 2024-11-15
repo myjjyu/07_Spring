@@ -1,13 +1,14 @@
 package kr.gilju.myshop.schedulers;
 
-import java.io.File;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import kr.gilju.myshop.helpers.FileHelper;
 import kr.gilju.myshop.models.Member;
 import kr.gilju.myshop.services.MemberService;
 import lombok.extern.slf4j.Slf4j;
@@ -32,12 +33,16 @@ public class AccountScheduler {
   @Autowired
   private MemberService memberService;
 
+  @Autowired
+  private FileHelper fileHelper;
+
   // 매일 오전 4시에 자동실행
   // @Scheduled(cron = "0 0 4 * * ?")
-  
+
   // 매 분마다 15초에 실행
   // @Scheduled(cron = "15 * * * * ?")
 
+  @Scheduled(cron = "0 0/30 * * * ?") // 30분 마다 실행(0분, 30분)
   public void processOutMembers() throws InterruptedException {
     log.debug("탈퇴 회원 정리 시작");
 
@@ -56,21 +61,9 @@ public class AccountScheduler {
       return;
     }
 
-    for (int i=0; i<outMember.size(); i++) {
+    for (int i = 0; i < outMember.size(); i++) {
       Member m = outMember.get(i);
-
-      //사용자가 업로드한 프로필 사진의 실제경로
-      File f = new File(uploadDir, m.getPhoto());
-      log.debug("파일 삭제 >>>" + f.getAbsolutePath());
-
-      if (f.exists()) {
-        try {
-          f.delete();
-          log.debug("파일 삭제 성공");
-        } catch (Exception e) {
-          log.error("파일 삭제 실패", e);
-        }
-      }
+      fileHelper.deleteUploadFile(m.getPhoto());
     }
   }
 }

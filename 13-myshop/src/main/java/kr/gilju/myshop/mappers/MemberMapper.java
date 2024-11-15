@@ -55,7 +55,7 @@ public interface MemberMapper {
                         "postcode=#{postcode}, " +
                         "addr1=#{addr1}, " +
                         "addr2=#{addr2}, " +
-                        // "photo = #{photo}",
+                        "photo = #{photo}, " +
                         "edit_date=now() " +
                         // 세션의 일련번호와 입력한 비밀번호가 일치할 경우만 수정
                         "WHERE id = #{id} AND user_pw = MD5(#{user_pw})" +
@@ -77,7 +77,7 @@ public interface MemberMapper {
          * @return
          */
         @Select("SELECT " +
-                        "user_id, user_pw, user_name, email, phone, " +
+                        "id, user_id, user_pw, user_name, email, phone, " +
                         "DATE_FORMAT(birthday,'%Y-%m-%d') as birthday, " +
                         "gender, postcode, addr1, addr2, photo, " +
                         "is_out, is_admin, login_data, reg_data, edit_date " +
