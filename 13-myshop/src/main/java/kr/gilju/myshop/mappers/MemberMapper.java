@@ -72,7 +72,7 @@ public interface MemberMapper {
         int delete(Member input);
 
         /**
-         * 
+         * 단일조회
          * @param input
          * @return
          */
@@ -105,7 +105,7 @@ public interface MemberMapper {
         public Member selectItem(Member input);
 
         /**
-         * 
+         * 다중조회
          * @param input
          * @return
          */

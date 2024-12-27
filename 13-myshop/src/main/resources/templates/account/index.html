@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
   <head>
-    <th:block th:replace="~{/_fragments/_head :: my-head('로그인 후')}" />
+    <th:block th:replace="~{_fragments/_head :: my-head('로그인 후')}" />
     <link rel="stylesheet" th:href="@{/assets/css/account.css}" />
     <style>
       .user-ico {
@@ -47,7 +47,7 @@
       />
 
       <h2 class="page-title">
-        환영합니다, [<span th:text="${session.memberInfo.user_name}" />]]님!
+        환영합니다, [<span th:text="${session.memberInfo.user_name}" />]님!
       </h2>
       <p>계정을 통해 다양한 서비스를 이용하세요.</p>
 
@@ -77,6 +77,6 @@
           });
       </script>
     </div>
-    <th:block th:replace="~{/_fragments/_scripts :: my-scripts}" />
+    <th:block th:replace="~{_fragments/_scripts :: my-scripts}" />
   </body>
 </html>

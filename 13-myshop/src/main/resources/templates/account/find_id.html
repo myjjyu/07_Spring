@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
   <head>
-    <th:bloc th:replace="~{/_fragments/_head :: my-head('아이디 찾기')}" />
+    <th:bloc th:replace="~{_fragments/_head :: my-head('아이디 찾기')}" />
     <link rel="stylesheet" th:href="@{/assets/css/account.css}" />
   </head>
   <style>
@@ -63,7 +63,7 @@
       </div>
     </div>
 
-    <th:bloc th:replace="~{/_fragments/_scripts :: my-scripts}"></th:bloc>
+    <th:bloc th:replace="~{_fragments/_scripts :: my-scripts}"></th:bloc>
     <script>
       document
         .getElementById("find-id-form")

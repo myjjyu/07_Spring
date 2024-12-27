@@ -1,0 +1,893 @@
+[INFO ] 24-12-24 11:11:13 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 6728 (/Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop/bin/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop)
+[DEBUG] 24-12-24 11:11:13 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-12-24 11:11:13 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-12-24 11:11:14 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-12-24 11:11:15 [MyshopApplication:56] - Started MyshopApplication in 1.518 seconds (process running for 1.797)
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [MyInterceptor:39] - ----------------- new client connect -----------------
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Mac, Mac OS X, 10.15, Chrome, 131.0
+[INFO ] 24-12-24 11:11:24 [MyInterceptor:74] - [GET] http://localhost/account/out
+[INFO ] 24-12-24 11:11:24 [MyInterceptor:98] - running time: 149(ms)
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [sqlonly:228] - SELECT S.PRIMARY_ID, S.SESSION_ID, S.CREATION_TIME, S.LAST_ACCESS_TIME, S.MAX_INACTIVE_INTERVAL, SA.ATTRIBUTE_NAME, SA.ATTRIBUTE_BYTES
+FROM SPRING_SESSION S
+LEFT JOIN SPRING_SESSION_ATTRIBUTES SA ON S.PRIMARY_ID = SA.SESSION_PRIMARY_ID
+WHERE S.SESSION_ID = '9794674a-0093-437b-a76e-32654413075a'
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+
+[INFO ] 24-12-24 11:11:24 [resultsettable:610] - 
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|primary_id |session_id |creation_time |last_access_time |max_inactive_interval |attribute_name |attribute_bytes |
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+|-----------|-----------|--------------|-----------------|----------------------|---------------|----------------|
+

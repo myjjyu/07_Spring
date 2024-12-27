@@ -1997,12 +1997,12 @@ org.thymeleaf.exceptions.TemplateInputException: An error happened during templa
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.attoparser.ParseException: Could not parse as expression: "@{/assets/css/reset.css" (template: "/_fragments/_head" - line 5, col 26)
+Caused by: org.attoparser.ParseException: Could not parse as expression: "@{/assets/css/reset.css" (template: "_fragments/_head" - line 5, col 26)
 	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
 	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
 	... 52 common frames omitted
-Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "@{/assets/css/reset.css" (template: "/_fragments/_head" - line 5, col 26)
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "@{/assets/css/reset.css" (template: "_fragments/_head" - line 5, col 26)
 	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
 	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
 	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
@@ -2028,7 +2028,7 @@ Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse
 	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
 	... 54 common frames omitted
 [ERROR] 24-11-07 11:10:02 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/account/after.html]")] with root cause
-org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "@{/assets/css/reset.css" (template: "/_fragments/_head" - line 5, col 26)
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "@{/assets/css/reset.css" (template: "_fragments/_head" - line 5, col 26)
 	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
 	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
 	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
@@ -2161,12 +2161,12 @@ org.thymeleaf.exceptions.TemplateInputException: An error happened during templa
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.attoparser.ParseException: Error resolving fragment: "~{'/_fragments/_scripts' :: my-_scripts}": template or fragment could not be resolved (template: "account/join" - line 147, col 14)
+Caused by: org.attoparser.ParseException: Error resolving fragment: "~{'_fragments/_scripts' :: my-_scripts}": template or fragment could not be resolved (template: "account/join" - line 147, col 14)
 	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
 	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
 	... 52 common frames omitted
-Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{'/_fragments/_scripts' :: my-_scripts}": template or fragment could not be resolved (template: "account/join" - line 147, col 14)
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{'_fragments/_scripts' :: my-_scripts}": template or fragment could not be resolved (template: "account/join" - line 147, col 14)
 	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:598)
 	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:419)
 	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:115)
@@ -2186,7 +2186,7 @@ Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving frag
 	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
 	... 54 common frames omitted
 [ERROR] 24-11-07 11:12:03 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/account/join.html]")] with root cause
-org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{'/_fragments/_scripts' :: my-_scripts}": template or fragment could not be resolved (template: "account/join" - line 147, col 14)
+org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{'_fragments/_scripts' :: my-_scripts}": template or fragment could not be resolved (template: "account/join" - line 147, col 14)
 	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:598)
 	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:419)
 	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:115)

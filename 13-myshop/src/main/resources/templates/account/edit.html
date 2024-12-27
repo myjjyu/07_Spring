@@ -2,7 +2,7 @@
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
   <head>
     <th:bloc
-      th:replace="~{/_fragments/_head :: my-head('내 정보 수정')}"
+      th:replace="~{_fragments/_head :: my-head('내 정보 수정')}"
     ></th:bloc>
     <link rel="stylesheet" th:href="@{/assets/css/account.css}" />
 
@@ -267,7 +267,7 @@
       </form>
     </div>
 
-    <th:bloc th:replace="~{/_fragments/_scripts :: my-scripts}"></th:bloc>
+    <th:bloc th:replace="~{_fragments/_scripts :: my-scripts}"></th:bloc>
     <!-- 다움 우편번호 검색 -->
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 

@@ -50,15 +50,18 @@ dependencies {
 	implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
 	implementation 'net.coobird:thumbnailator:0.4.20'
 
-
-	//spring session
-	implementation 'org.springframework.session:spring-session-jdbc'
-
-
-	// test 추가
+	//test
 	testAnnotationProcessor 'org.projectlombok:lombok'
 	testCompileOnly 'org.projectlombok:lombok'
+
+	/** Spring Session */
+	// 프로젝트 생성 후 아래 구문을 직접 등록한다.
+	implementation 'org.springframework.session:spring-session-jdbc'
+
+	/** Swagger */
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
 }
+
 
 tasks.named('test') {
 	useJUnitPlatform()

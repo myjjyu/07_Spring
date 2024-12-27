@@ -1,0 +1,38 @@
+[INFO ] 24-12-13 10:43:26 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 3243 (/Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop/build/classes/java/main started by song-gilju in /Users/song-gilju/Desktop/web3/09-SpringBoot/13-myshop)
+[DEBUG] 24-12-13 10:43:26 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-12-13 10:43:26 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-12-13 10:43:27 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-12-13 10:43:27 [MyshopApplication:56] - Started MyshopApplication in 1.157 seconds (process running for 1.305)
+[INFO ] 24-12-13 10:44:00 [sqlonly:228] - DELETE FROM SPRING_SESSION
+WHERE EXPIRY_TIME < 1734054240005
+
+[INFO ] 24-12-13 10:45:00 [sqlonly:228] - DELETE FROM SPRING_SESSION
+WHERE EXPIRY_TIME < 1734054300006
+
+[INFO ] 24-12-13 10:46:00 [sqlonly:228] - DELETE FROM SPRING_SESSION
+WHERE EXPIRY_TIME < 1734054360004
+
+[INFO ] 24-12-13 10:47:00 [sqlonly:228] - DELETE FROM SPRING_SESSION
+WHERE EXPIRY_TIME < 1734054420003
+
+[INFO ] 24-12-13 10:48:00 [sqlonly:228] - DELETE FROM SPRING_SESSION
+WHERE EXPIRY_TIME < 1734054480002
+
+[INFO ] 24-12-13 10:49:00 [sqlonly:228] - DELETE FROM SPRING_SESSION
+WHERE EXPIRY_TIME < 1734054540003
+
+[INFO ] 24-12-13 10:50:00 [sqlonly:228] - DELETE FROM SPRING_SESSION
+WHERE EXPIRY_TIME < 1734054600007
+
+[INFO ] 24-12-13 10:51:00 [sqlonly:228] - DELETE FROM SPRING_SESSION
+WHERE EXPIRY_TIME < 1734054660005
+
+[INFO ] 24-12-13 10:52:00 [sqlonly:228] - DELETE FROM SPRING_SESSION
+WHERE EXPIRY_TIME < 1734054720007
+
+[INFO ] 24-12-13 10:53:00 [sqlonly:228] - DELETE FROM SPRING_SESSION
+WHERE EXPIRY_TIME < 1734054780003
+
+[INFO ] 24-12-13 10:54:00 [sqlonly:228] - DELETE FROM SPRING_SESSION
+WHERE EXPIRY_TIME < 1734054840007
+
